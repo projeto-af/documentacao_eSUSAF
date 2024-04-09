@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>HU004 - Solicitar Uma Permissão de acesso - e-SUS AF - Documentação Negocial</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "HU004 - Solicitar Uma Permiss\u00e3o de acesso";
+        var mkdocs_page_input_path = "HistoriasDeUsuario/HU004.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> e-SUS AF - Documentação Negocial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Histórias de Usuário</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">HU004 - Solicitar Uma Permissão de acesso</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#descricao">Descrição</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#criterio-de-aceite">Critério de Aceite</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#modelo-de-dados">Modelo de Dados</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#design-conceitual">Design Conceitual</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Casos de Teste</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CasosDeTeste/CT004/">CT004 - Solicitar Uma Permissão de acesso</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../sobre.md">Sobre</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">e-SUS AF - Documentação Negocial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Histórias de Usuário</li>
+      <li class="breadcrumb-item active">HU004 - Solicitar Uma Permissão de acesso</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="hu-004-solicitacao-de-perfil">HU 004: Solicitação de Perfil</h1>
+<p>Como um usuário, quero solicitar um perfil no sistema, para acessar funcionalidades especificas daquele determinado perfil.  </p>
+<h2 id="descricao">Descrição</h2>
+<p>Após acessar o sistema, o usuário deseja solicitar um perfil de acesso para ele, para que ele possa ter permissões condizentes com o perfil solicitado.  </p>
+<h2 id="criterio-de-aceite">Critério de Aceite</h2>
+<ul>
+<li>Os perfis de Administrador e Gestor Master não devem ser apresentados para solicitação.  </li>
+<li>O usuário deverá selecionar o perfil e o estabelecimento desejados e clicar em "solicitar".  </li>
+<li>Caso o usuário já tenha um perfil em um determinado estabelecimento, o perfil que ele já possuir deve aparecer inativo para seleção.  </li>
+<li>O usuário só poderá selecionar um perfil e estabelecimento por solicitação.  </li>
+<li>Ele poderá acumular mais de um tipo de perfil.  </li>
+<li>Caso tenha mais de um perfil, ele deverá acumular as permissões de todos os perfis aprovados, levando em consideração o estabelecimento vinculado ao perfil.  </li>
+<li>O usuário deverá ser notificado do envio da solicitação.  </li>
+<li>O usuário também deverá ser notificado quando a solicitação for aprovada ou recusada.  </li>
+<li>Após ter um ou mais perfis aprovados, o usuário deverá ter acesso a todas as funcionalidades referentes a todos os perfis aprovados.  </li>
+</ul>
+<h2 id="modelo-de-dados">Modelo de Dados</h2>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Descrição</th>
+<th>Cardinalidade</th>
+<th>Tipo de Dados</th>
+<th>Tamanho</th>
+<th>Formato</th>
+<th>Exemplo</th>
+<th>Obrigatoriedade</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Esfera de Gestão</td>
+<td>Esfera de gestão relacionada à entidade a qual se solicita perfil</td>
+<td>1..1</td>
+<td>Campo Enumerado</td>
+<td>1</td>
+<td>-</td>
+<td>M</td>
+<td>N</td>
+<td>Trata-se apenas de um recurso de frontend, não deve ser armazenado</td>
+</tr>
+<tr>
+<td>Id da Instância</td>
+<td>Identificador do ente na tabela instância de configuração</td>
+<td>1..1</td>
+<td>número</td>
+<td>-</td>
+<td>-</td>
+<td>1</td>
+<td>S</td>
+<td>-</td>
+</tr>
+<tr>
+<td>cpf</td>
+<td>CPF do usuário que realiza a solicitação de perfil</td>
+<td>1..1</td>
+<td>Texto</td>
+<td>11</td>
+<td>00000000000</td>
+<td>00000000000</td>
+<td>S</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Id do Estabelecimento</td>
+<td>Identificador do Estabelecimento para qual se solicita o perfil</td>
+<td>1..1</td>
+<td>número</td>
+<td>-</td>
+<td>-</td>
+<td>1</td>
+<td>N</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Id do Perfil</td>
+<td>Identificador do perfil solicitado</td>
+<td>1..1</td>
+<td>número</td>
+<td>-</td>
+<td>-</td>
+<td>1</td>
+<td>S</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Justificativa de Solicitação</td>
+<td>Motivação do pedido de solicitação de acesso ao perfil</td>
+<td>1..1</td>
+<td>Texto</td>
+<td>250</td>
+<td>-</td>
+<td>Acesso ao estabelecimento para movimentação logística</td>
+<td>S</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="design-conceitual">Design Conceitual</h2>
+<p><a href="https://xd.adobe.com/view/61ef362e-1abc-453c-81c7-658e701362e5-34bc/screen/ae513758-3e88-4778-9b7c-f6c4e1e4ef83">Design Conceitual: Solicitação de Perfil</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../CasosDeTeste/CT004/" class="btn btn-neutral float-right" title="CT004 - Solicitar Uma Permissão de acesso">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../CasosDeTeste/CT004/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

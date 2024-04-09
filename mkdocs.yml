@@ -1,1 +1,13 @@
-site_name: My Docs
+site_name: e-SUS AF - Documentação Negocial
+
+dev_addr: 127.0.0.1:8005
+
+nav:
+  - Home: index.md
+  - Histórias de Usuário:
+    - HU004 - Solicitar Uma Permissão de acesso: HistoriasDeUsuario/HU004.md
+  - Casos de Teste:
+    - CT004 - Solicitar Uma Permissão de acesso: CasosDeTeste/CT004.md
+  - Sobre: sobre.md
+
+theme: readthedocs

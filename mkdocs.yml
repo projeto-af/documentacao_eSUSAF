@@ -6,6 +6,7 @@ nav:
   - Home: index.md
   - Histórias de Usuário:
     - HU004 - Solicitar Uma Permissão de acesso: HistoriasDeUsuario/HU004.md
+    - Especificação Técnica 001 - Cadastro e Login: HistoriasDeUsuario/ETE001.md
   - Casos de Teste:
     - CT004 - Solicitar Uma Permissão de acesso: CasosDeTeste/CT004.md
   - Sobre: sobre.md

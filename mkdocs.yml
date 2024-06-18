@@ -4,9 +4,11 @@ dev_addr: 127.0.0.1:8005
 
 nav:
   - Home: index.md
+  - Especificações Técnicas: 
+    - ETE001 - Cadastro e login: EspecificacoesTecnicas/ETE001.md
   - Histórias de Usuário:
+    - HU001 - Solicitar Uma Permissão de acesso: HistoriasDeUsuario/HU001.md
     - HU004 - Solicitar Uma Permissão de acesso: HistoriasDeUsuario/HU004.md
-    - Especificação Técnica 001 - Cadastro e Login: HistoriasDeUsuario/ETE001.md
   - Casos de Teste:
     - CT004 - Solicitar Uma Permissão de acesso: CasosDeTeste/CT004.md
   - Sobre: sobre.md

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>HU017 - Cadastrar Entrada - e-SUS AF - Documentação Negocial</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "HU017 - Cadastrar Entrada";
+        var mkdocs_page_input_path = "HistoriasDeUsuario/HU017.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> e-SUS AF - Documentação Negocial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeMensagens/">Documento de Mensagens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeRegras/">Documento de Regras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE001/">ETE001 - Cadastro e login</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE017/">ETE017 - Cadastrar Entrada</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Histórias de Usuário</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Documento%20de%20Mensagens/">Documento de Mensagens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Documento%20de%20Regras/">Documento de Regras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../HU001/">HU001 - Cadastro e Login</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../HU004/">HU004 - Solicitar Acesso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../HU016/">HU016 - Consultar Entrada</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">HU017 - Cadastrar Entrada</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#descricao">Descrição</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#regras">Regras</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#criterios-de-aceite">Critérios de aceite</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#modelo-de-dados">Modelo de dados</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#design-conceitual">Design Conceitual</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Casos de Teste</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CasosDeTeste/CT004/">CT004 - Solicitar Uma Permissão de acesso</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../sobre.md">Sobre</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">e-SUS AF - Documentação Negocial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Histórias de Usuário</li>
+      <li class="breadcrumb-item active">HU017 - Cadastrar Entrada</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="hu016-cadastrar-entrada">HU016 - Cadastrar Entrada</h1>
+<h2 id="descricao">Descrição</h2>
+<p>Como usuário, desejo cadastrar as entradas de produtos, de modo a disponibilizar produtos no estoque para uso.</p>
+<h2 id="regras">Regras</h2>
+<ul>
+<li>Ao selecionar "Saldo de Implantação” ou “Ajuste de Estoque” como Tipo de Movimentação, os campos a seguir não deverão ser considerados obrigatórios.<ul>
+<li>Modalidade de Licitação</li>
+<li>Tipo de Documento</li>
+<li>Número do Documento</li>
+<li>Data do Documento</li>
+<li>CNES/CNPJ (fornecedor)</li>
+<li>Razão Social (fornecedor)</li>
+</ul>
+</li>
+<li>Ao selecionar “Produção Própria”, os campos a seguir não deverão ser considerados obrigatórios.<ul>
+<li>Tipo de Documento</li>
+<li>Número do Documento</li>
+<li>Data do Documento</li>
+</ul>
+</li>
+<li>Ao selecionar "Nota Fiscal Eletrônica” no campo “Tipo de documento”, apresentar o campo NFe (XML) para o usuário.</li>
+<li>Ao inserir o arquivo NFe (XML) no sistema, preencher os campos abaixo automaticamente, com dados extraídos do XML<ul>
+<li>Nº Documento</li>
+<li>Data do documento</li>
+<li>Valor do documento</li>
+<li>Fornecedor</li>
+<li>Produto com Fabricante</li>
+<li>Lote</li>
+<li>Validade</li>
+</ul>
+</li>
+<li>Ao excluir o arquivo NFe (XML), apresentar uma mensagem de confirmação de exclusão e, caso seja confirmado, apagar os dados dos campos que foram preenchidos automaticamente.</li>
+<li>Em relação às datas:<ul>
+<li>Não permitir data anterior a 1 ano da data atual</li>
+<li>Não permitir data posterior à data atual</li>
+</ul>
+</li>
+<li>O campo "Valor do Documento" deverá ser calculado automaticamente com a somatória dos valores dos produtos adicionados à entrada, sendo apresentado da seguinte forma:<ul>
+<li>valor em reais (R$)</li>
+<li>com duas casas decimais</li>
+<li>seguindo a norma NBR 5891 da ABNT (que trata de arredondamento de números decimais)</li>
+</ul>
+</li>
+<li>CNES e CNPJ deverão ser validados e:<ul>
+<li>se forem existentes, preencher o campo Razão Social do fornecedor</li>
+<li>se forem inexistentes, apresentar mensagem de erro MSG0017</li>
+<li>se o dados for inválido, apresentar mensagem de erro MSG0015</li>
+</ul>
+</li>
+<li>O campo "Data do Recebimento" deverá ser preenchido </li>
+</ul>
+<h2 id="criterios-de-aceite">Critérios de aceite</h2>
+<p><strong>Cenário: Cadastrar nova entrada</strong><br />
+<strong>Dado</strong> que o usuário que possui permissão esteja na tela de cadastrar entrada<br />
+<strong>Quando</strong> ele preencher o formulário conforme obrigatoriedade dos campos<br />
+<strong>E</strong> clicar no botão armazenar<br />
+<strong>Então</strong> uma nova entrada será cadastrada</p>
+<p><strong>Cenário: Salvar rascunho de uma nova entrada</strong><br />
+<strong>Dado</strong> que o usuário que possui permissão esteja na tela de cadastrar entrada<br />
+<strong>Quando</strong> ele preencher o formulário conforme obrigatoriedade dos campos<br />
+<strong>E</strong> clicar no botão Salvar Parcial<br />
+<strong>Então</strong> um rascunho da nova entrada será salvo</p>
+<p><strong>Cenário: Excluir arquivo da Nota Fiscal Eletrônica (XML)</strong><br />
+<strong>Dado</strong> que um arquivo NFe (XML) foi importado para o sistema<br />
+<strong>Quando</strong> ele for excluído<br />
+<strong>Então</strong> apresentar uma mensagem de confirmação de exclusão ao usuário</p>
+<h2 id="modelo-de-dados">Modelo de dados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Nível</th>
+<th>Atributo</th>
+<th>Descrição</th>
+<th style="text-align: center;">Cardinalidade</th>
+<th style="text-align: center;">Tipo de Dados</th>
+<th style="text-align: center;">Tamanho</th>
+<th style="text-align: center;">Formato</th>
+<th style="text-align: center;">Obrigatoriedade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="design-conceitual">Design Conceitual</h2>
+<p><img alt="alt text" src="../../imagens/10-cadastrar-entrada.png" /></p>
+<p><img alt="alt text" src="../../imagens/11-estornar-entrada.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../HU016/" class="btn btn-neutral float-left" title="HU016 - Consultar Entrada"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../CasosDeTeste/CT004/" class="btn btn-neutral float-right" title="CT004 - Solicitar Uma Permissão de acesso">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../HU016/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../CasosDeTeste/CT004/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

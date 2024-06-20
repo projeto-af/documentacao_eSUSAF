@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>ETE017 - Cadastrar Entrada - e-SUS AF - Documentação Negocial</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "ETE017 - Cadastrar Entrada";
+        var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE017.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> e-SUS AF - Documentação Negocial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeMensagens/">Documento de Mensagens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegras/">Documento de Regras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE001/">ETE001 - Cadastro e login</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">ETE017 - Cadastrar Entrada</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Histórias de Usuário</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../HistoriasDeUsuario/Documento%20de%20Mensagens/">Documento de Mensagens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../HistoriasDeUsuario/Documento%20de%20Regras/">Documento de Regras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../HistoriasDeUsuario/HU001/">HU001 - Cadastro e Login</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../HistoriasDeUsuario/HU004/">HU004 - Solicitar Acesso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../HistoriasDeUsuario/HU016/">HU016 - Consultar Entrada</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../HistoriasDeUsuario/HU017/">HU017 - Cadastrar Entrada</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Casos de Teste</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CasosDeTeste/CT004/">CT004 - Solicitar Uma Permissão de acesso</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../sobre.md">Sobre</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">e-SUS AF - Documentação Negocial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Especificações Técnicas</li>
+      <li class="breadcrumb-item active">ETE017 - Cadastrar Entrada</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ete017-cadastrar-entrada">ETE017 - Cadastrar Entrada</h1>
+<h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
+<p>Como usuário quero cadastrar uma entrada de produto(s) para adicioná-lo(s) ao estoque do estabelecimento de saúde logado</p>
+<h2 id="prototipo-001">Protótipo 001</h2>
+<p><img alt="cadastrar-entrada" src="../../imagens/10-cadastrar-entrada.png" /></p>
+<h2 id="elementos-de-tela">Elementos de Tela</h2>
+<ul>
+<li>Bread Crumbs – “Movimentação / Entrada / Cadastro” </li>
+<li>Título da página – “Cadastrar Entrada” </li>
+<li>“Seta” – M - retorna para a Tela de Consultar Entrada (ETE016) </li>
+<li>“Consultar” – BT - retorna para a Tela de Consultar Entrada (ETE016) </li>
+<li>Nº da Entrada – N (11) – Desabilitado para edição </li>
+<li>Nº do Empenho – A (14) (xxxxxxxxxx/aaaa) </li>
+<li>Modalidade de Licitação* – SU / AC </li>
+<li>Tipo de Movimentação* – SU / AC </li>
+<li>Tipo de Documento* – SU / AC  </li>
+<li>NFe (XML) – A (30) <ul>
+<li>“Carregar” – BT - upload do XML da NFe (ETE020) </li>
+<li>“Excluir” – M - excluir upload do XML da NFe </li>
+</ul>
+</li>
+<li>Nº do Documento* – A (20) </li>
+<li>Data do Documento* – D (dd/mm/aaaa) </li>
+<li>Valor do Documento* – N (13,9) (R$ 99999999999999,999999999) - Desabilitado para edição </li>
+<li>Fornecedor <ul>
+<li>CNES ou CNPJ* – N (14) (9999999 / 99.999.999/9999-99) </li>
+<li>“Lupa” – M - consulta de dados no portal do CNES e/ou RFB </li>
+<li>Razão Social* – A (80) - Desabilitado para edição </li>
+</ul>
+</li>
+<li>Data do Recebimento* – D (dd/mm/aaaa) </li>
+<li>Data do Armazenamento* – D (dd/mm/aaaa) - Desabilitado para edição </li>
+<li>“Em Análise” – SU </li>
+<li>Observações – A (4000) - contador regressivo </li>
+<li>Produto(s) <ul>
+<li>Produto* – A (500) / AC </li>
+<li>Lista de produtos da entrada - desabilitados para edição: <ul>
+<li>Código de Barras – N (13) </li>
+<li>Princípio Ativo + Concentração – A (500) </li>
+<li>CATMAT – N (6) </li>
+<li>Forma Farmacêutica – A (20) </li>
+<li>Fabricante – A (80) &lt;9999999&gt; / &lt;99.999.999/9999-99&gt;-<Razão Social> </li>
+<li>Qtd Total – N  </li>
+<li>Valor Unitário – N (6,9) (R$ 999999,999999999) </li>
+<li>Valor Total – N (13,2) (R$ 99999999999999,99) </li>
+<li>“Excluir” – BT </li>
+<li>“Expandir/Retrair” – M </li>
+<li>Detalhe Produto <ul>
+<li>Nº do Lote* – A (20) </li>
+<li>Data de Validade* – D (dd/mm/aaaa) </li>
+<li>Quantidade Recebida* – N   </li>
+<li>Valor Unitário* – N (6,9) (R$ 999999,999999999)  </li>
+<li>Programa de Saúde* – SU / AC / A </li>
+<li>Condições Especiais de Armazenamento – SU / AC </li>
+<li>Descrição* – A (80)  </li>
+<li>Endereçamento Físico – SU / AC <Código do Endereço>-<Identificação do Endereço> </li>
+<li>“Incluir” – BT </li>
+<li>“Limpar” – BT </li>
+<li>Lista detalhe produto </li>
+<li>Nº do Lote </li>
+<li>Data de Validade </li>
+<li>Qtd Recebida </li>
+<li>Programa de Saúde </li>
+<li>“Editar” – BT </li>
+<li>“Excluir” – BT </li>
+<li>“Detalhar – BT – direciona para tela com os dados do detalhe do produto </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>“Armazenar” – BT </li>
+<li>“Salvar Parcial” – BT </li>
+<li>“Limpar” – BT </li>
+</ul>
+<p><strong>Legenda</strong><br />
+TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.<br />
+</p>
+<h2 id="criterios-de-aceite">Critérios de Aceite</h2>
+<ul>
+<li>O usuário somente pode acessar a funcionalidade caso tenha permissão; RGN001 </li>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Movimentação”, subitem “Entrada”, na tela “Consultar Entrada” quando for acionada a opção “Novo”; </li>
+<li>No campo “Modalidade de Licitação”, o sistema deve apresentar as opções: Concorrência, Convite, Diálogo Competitivo, Dispensa de Licitação, Inexigibilidade, Pregão, Tomada de Preço; </li>
+<li>No campo “Tipo de Movimentação”, o sistema deve apresentar as opções: Ajuste de Estoque, Doação/Permuta, Entrada Ordinária, Produção Própria, Requisição, Saldo de Implantação. Exceto os tipos de movimentação criados para entradas geradas automaticamente pelo sistema: “Requisição”, “Entrada por Estorno de Saída”, “Entrada por Estorno de Dispensação” e “Entrada por Estorno de Distribuição”; </li>
+<li>No campo “Tipo de Documento”, o sistema deve apresentar as opções: Aviso, Boletim, Carta, Certidão, Circular, Comprovante, Contrato, Convênio, Decreto, Despacho, Edital, Fax, Guia, Guia De Remessa, Instrução Normativa, Memorando, Mensagem, Nota Fiscal, Nota Fiscal Eletrônica, Ofício, Ordem De Serviço, Parecer, Portaria, Requerimento, Requisição, Resolução; </li>
+<li>Quando o usuário selecionar no campo “Tipo de Movimentação” a opção: “Saldo de Implantação” ou “Ajuste de Estoque”, o preenchimento dos campos “Modalidade de Licitação”, “CNES/CNPJ” (fornecedor), “Razão Social” (fornecedor), “Tipo de Documento”, “Número do Documento” e “Data do Documento” deixa de ser obrigatório. Já se selecionar a opção “Produção Própria”, o preenchimento dos campos “Tipo de Documento”, “Número do Documento” e “Data do Documento” deixam de ser obrigatórios; RGN024 </li>
+<li>Quando o usuário selecionar a opção “Nota Fiscal Eletrônica” no campo “Tipo de documento”, o sistema deve apresentar o campo “NFe (XML), permitir realizar o upload do XML da NFe e carregar automaticamente os campos: Fornecedor, Nº Documento, Data do documento, Valor do documento e Produto com Fabricante, Lote, Validade; (ETE020) </li>
+<li>Quando o usuário acionar a opção “Excluir” o arquivo XML da NFe, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, apaga as informações carregadas automaticamente e permanece na tela de cadastro da entrada, bem como se a ação não for confirmada; MSG032 </li>
+<li>O sistema deve validar a data do documento informada: </li>
+<li>Caso a data seja superior a data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; MSG018 </li>
+<li>Caso a data seja inferior a 1 ano da data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; MSG019 </li>
+<li>O campo “Valor do Documento” deve ser desabilitado para edição, calculado automaticamente somando todos os valores totais dos produtos adicionados à entrada e apresentado em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; RGN026 RGN028 </li>
+<li>Quando o usuário informar o CNES ou CNPJ do fornecedor e acionar a consulta, o sistema deve:  <ul>
+<li>Validar o CNES ou CNPJ. Caso o dado seja inválido, o sistema deve realçar o campo e alertar ao usuário; MSG015 </li>
+<li>Recuperar e apresentar o nome do fornecedor do CNES informado, através da integração com o portal do Cadastro Nacional dos Estabelecimentos de Saúde (CNES). Caso não seja encontrado um estabelecimento para o dado informado, o sistema deve apresentar uma mensagem de alerta ao usuário; RGN020 RGN021 MSG017 </li>
+<li>Recuperar e apresentar a razão social do fornecedor do CNPJ informado, através da integração com o portal da Receita Federal do Brasil (RFB). Caso não seja encontrado a pessoa jurídica para o CNPJ, o sistema deve apresentar uma mensagem de alerta ao usuário; RGN020 RGN021 MSG017 </li>
+</ul>
+</li>
+<li>O campo “Data do Recebimento” dever ser preenchido automaticamente com a data atual e habilitado para edição; </li>
+<li>O sistema deve validar a data de recebimento informada: </li>
+<li>Caso a data seja superior a data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; MSG020 </li>
+<li>Caso a data seja inferior a 1 ano da data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; MSG021 </li>
+<li>O campo “Data do Armazenamento” dever ser preenchido automaticamente com a data atual e desabilitado para edição; </li>
+<li>O campo “Em Análise” pode ser selecionado enquanto o(s) produtos da entrada não for(em) armazenado(s). Quando for selecionado, o sistema desabilita o botão “Armazenar”; </li>
+<li>No campo “Produto” quando o usuário informar: <ul>
+<li>O Código de Barras do produto, o sistema deve: <ul>
+<li>Recuperar o produto relacionado ao código de barras da base de dados de medicamentos; RGN015 </li>
+<li>Emitir um alerta ao usuário caso o sistema não encontre o produto na base de dados de medicamentos; MSG022 </li>
+<li>Limpar o campo Produto, quando o dado de código de barras for apagado. </li>
+</ul>
+</li>
+<li>O Princípio Ativo ou Nome Comercial de um Medicamento ou Descrição do Produto para Saúde, o sistema deve: <ul>
+<li>Emitir um alerta ao usuário caso o sistema não encontre o produto na base de dados de medicamentos ou produtos para saúde; MSG022 </li>
+<li>Apresentar a lista de produtos ativos no sistema correspondestes ao valor informado no campo autocomplete a partir da indicação do 3º caractere; RGN015 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>O sistema não deve permitir adicionar um produto já relacionado à entrada; MSG023 </li>
+<li>O sistema deve apresentar a lista de produtos adicionados à entrada por ordem alfabética. A lista será expansiva, permitindo o preenchimento dos campos de detalhamento do produto; RGN023 </li>
+<li>O(s) produto(s) adicionado(s) à entrada pode(m) ser excluído(s) desde que não tenha(m) detalhamento(s) vinculado(s) a ele; RGN025</li>
+<li>O campo “Qtd Total Recebida” deve ser desabilitado para edição e o sistema deve:  </li>
+<li>Recuperar automaticamente a quantidade informada no campo “Qtd. Recebida” quando apenas um detalhamento do produto for adicionado; </li>
+<li>Calcular automaticamente somando todas as quantidades informadas nos detalhamentos adicionados ao produto; RGN037 </li>
+<li>O campo “Valor Unitário” será carregado automaticamente com o dado informado neste campo no primeiro detalhamento do produto adicionado, ser apresentado em reais (R$) com até 9 dígitos após a virgula e desabilitado para edição; </li>
+<li>O campo “Valor Total” deve ser desabilitado para edição, calculado automaticamente através da fórmula: Qtd Total Recebida X Valor Unitário do produto e apresentado em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; RGN027 RGN028 </li>
+<li>No detalhamento do Produto, o sistema deve verificar se: <ul>
+<li>A data de validade informada é inferior ou igual à data atual ou com vencimento superior a 10 anos e emitir um alerta ao usuário; MSG024 </li>
+<li>A quantidade recebida do produto é inferior a 1 e emitir um alerta ao usuário; MSG025 </li>
+<li>O valor unitário informado para o produto é inferior a 0 e emitir um alerta ao usuário; MSG026 </li>
+</ul>
+</li>
+<li>No campo “Valor Unitário” no detalhamento do Produto, o sistema deve: <ul>
+<li>Apresentá-lo em reais (R$) com até 9 dígitos após a virgula;  </li>
+<li>Atribuir o mesmo valor unitário informado no primeiro detalhamento desse produto aos demais detalhamentos e desabilitar o campo para edição; </li>
+</ul>
+</li>
+<li>No campo “Programa de Saúde” no detalhamento do Produto, o sistema deve apresentar as opções: Ação Judicial, Alimentação e Nutrição, Aciden. por Anim. Peçonhentos, Alzheimer, Antimicrobianos, Assistência Farmacêutica, Assist. Farmacêutica Básica, Assist. Farmacêutica Indígena, Assistência Social, Atenção Secundária, Brucelose, Calamidade Pública, Coagulopatias, Cólera, Coqueluche, Covid-19, Dengue, Diabetes, Doença de Chagas, Doença Falciforme, DPOC, DST/AIDS, DST/AIDS - Infec. Oportunistas, Enxerto contra hospedeiro, Endemias Focais, Especializado, Esquistossomose, Febre Maculosa, Filariose, Geohelmintíases, Glaucoma, Imunização, Hanseníase, Hemoderivados, Hemoglobinopatias, Hepatites, Hipertensão, Hospitalar, Influenza, Insumos e Produtos para saúde, Leishmaniose, Lúpus Eritematoso Sistêmico, Malária, Manipulados, Meningite, Micoses Sistêmicas, Mieloma Múltiplo, Odontologia, Oncologia, Órteses e Próteses, Parkinson, Peste, Programa de Toxicologia, Raiva, Sarampo, Saúde da Criança, Saúde da Família, Saúde do Idoso, Saúde Mental, Saúde da Mulher, Saúde Prisional, Sífilis, Suplementação de Ferro, Tabagismo, Toxoplasmose, Tracoma, Tuberculose, Tuberculose Multirresistente, Urgência e emergência. </li>
+<li>No campo “Condições Especiais de Armazenamento” no detalhamento do Produto, o sistema deve apresentar as opções: Climatizado (15°C a 30°C), Congelado (Abaixo de 0°C), Resfriado (2°C a 8°C), Sem Condições Especiais, Outros. </li>
+<li>O campo “Descrição” somente será apresentado quando no campo “Condições Especiais de Armazenamento” for selecionada a opção “Outros”.  </li>
+<li>No campo “Endereçamento Físico” no detalhamento do Produto, o sistema deve: <ul>
+<li>Desabilitá-lo para edição quando o estabelecimento não possuir um endereçamento físico cadastrado e ativo; </li>
+<li>Preenche-lo automaticamente com endereçamento físico quando o estabelecimento possuir apenas um endereço cadastrado e ativo; </li>
+<li>Apresentar a lista de endereçamentos físicos cadastrados e ativos para o estabelecimento quando este possuir mais de um endereço. </li>
+</ul>
+</li>
+<li>Os Campos “CNES/CNPJ” e “Razão Social” do Fabricante, no detalhamento do Produto, somente serão apresentados quando o produto adicionado for um Produto para a Saúde (<Descrição do Produto> + <CATMAT>); </li>
+<li>Quando o usuário informar o CNES ou CNPJ do fabricante e acionar a consulta, o sistema deve: <ul>
+<li>Validar o CNES ou CNPJ. Caso o dado seja inválido, o sistema deve realçar o campo e alertar ao usuário; MSG015 </li>
+<li>Recuperar e apresentar o nome do fabricante do CNES informado, através da integração com o portal do Cadastro Nacional dos Estabelecimentos de Saúde (CNES). Caso não seja encontrado um estabelecimento para o dado informado, o sistema deve apresentar uma mensagem de alerta ao usuário; RGN020 RGN021 MSG045 </li>
+<li>Recuperar e apresentar a razão social do fabricante do CNPJ informado, através da integração com o portal da Receita Federal do Brasil (RFB). Caso não seja encontrado a pessoa jurídica para o CNPJ, o sistema deve apresentar uma mensagem de alerta ao usuário; RGN020 RGN021 MSG045 </li>
+</ul>
+</li>
+<li>O sistema deve permitir adicionar mais de um detalhamento ao produto, permitindo a entrada do mesmo produto com lotes e datas de validades diferentes; </li>
+<li>O(s) detalhamento(s) vinculado(s) ao produto pode(m) ser excluído(s); </li>
+<li>O sistema não deve permitir adicionar um detalhamento com o mesmo Nº do Lote e Data de Validade de um detalhamento já vinculado o produto na entrada; MSG027 </li>
+<li>Quando o usuário acionar a opção de “Salvar Parcial”, o sistema deve verificar se: <ul>
+<li>Existe uma entrada com o mesmo tipo, número de documento e fornecedor de uma entrada armazenada ou em preenchimento para o estabelecimento. Caso sim, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; RGN029 MSG028 </li>
+<li>Existe ao menos um detalhamento vinculado ao(s) produto(s) da entrada. Caso não, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; MSG029 </li>
+<li>Atendendo as validações, o sistema grava o registro da entrada com estado “Ativo” e a situação “Em preenchimento” e permanece na tela de cadastro da entrada; MSG031 RGN030 RGN005 </li>
+</ul>
+</li>
+<li>Quando o usuário acionar a opção “Armazenar”, o sistema deve verificar se: <ul>
+<li>Existe uma entrada com o mesmo tipo, número de documento e fornecedor de uma entrada armazenada ou em preenchimento para o estabelecimento. Caso sim, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; RGN029 MSG028 </li>
+<li>Existe ao menos um produto relacionado à entrada. Caso não, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; MSG030 </li>
+<li>O detalhamento de todos os produtos da entrada foi incluído. Caso não, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; MSG029 </li>
+<li>Atendendo as validações, o sistema efetiva o cadastro da entrada, grava o estado do registro como “Ativo” e a situação como “Armazenada”, armazena os produtos no estoque do estabelecimento, apresenta a mensagem de sucesso e retorna à tela de consulta às entradas apresentando este registro como o primeiro da relação das entradas cadastradas para o estabelecimento; MSG044 RGN030 RGN005 </li>
+</ul>
+</li>
+<li>O sistema, identificando que uma entrada de produto(s) foi armazenada, deve creditar a quantidade no saldo deste(s), considerando lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou a entrada; RGN031 </li>
+<li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema apresenta a mensagem de alerta ao usuário. Caso confirme a ação, retorna à tela de consulta as entradas e não salva as edições realizadas. Caso a ação não seja confirmada, permanece na tela de cadastro da entrada; MSG006 </li>
+<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. RGN005</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ETE001/" class="btn btn-neutral float-left" title="ETE001 - Cadastro e login"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../HistoriasDeUsuario/Documento%20de%20Mensagens/" class="btn btn-neutral float-right" title="Documento de Mensagens">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ETE001/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../HistoriasDeUsuario/Documento%20de%20Mensagens/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

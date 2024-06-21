@@ -8,6 +8,7 @@ nav:
     - Documento de Mensagens: EspecificacoesTecnicas/DocumentoDeMensagens.md
     - Documento de Regras: EspecificacoesTecnicas/DocumentoDeRegras.md
     - ETE001 - Cadastro e login: EspecificacoesTecnicas/ETE001.md
+    - ETE016 - Consultar Entrada: EspecificacoesTecnicas/ETE016.md
     - ETE017 - Cadastrar Entrada: EspecificacoesTecnicas/ETE017.md
   - Histórias de Usuário:
     - Documento de Mensagens: HistoriasDeUsuario/Documento de Mensagens.md

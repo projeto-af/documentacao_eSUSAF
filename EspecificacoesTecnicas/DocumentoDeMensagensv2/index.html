@@ -13,7 +13,7 @@
       <script>
         // Current page data
         var mkdocs_page_name = "Documento de Mensagens";
-        var mkdocs_page_input_path = "EspecificacoesTecnicas/DocumentoDeMensagens.md";
+        var mkdocs_page_input_path = "EspecificacoesTecnicas/DocumentoDeMensagensv2.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -44,8 +44,10 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeMensagensv2/">Documento de Mensagens</a>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Documento de Mensagens</a>
+    <ul class="current">
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegrasv2/">Documento de Regras</a>
                   </li>
@@ -98,6 +100,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Especificações Técnicas</li>
       <li class="breadcrumb-item active">Documento de Mensagens</li>
     <li class="wy-breadcrumbs-aside">
     </li>
@@ -108,121 +111,113 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="documento-de-mensagens">Documento de Mensagens</h1>
-<h2 id="msg-001-010">MSG 001-010</h2>
-<h3 id="msg001">MSG001:</h3>
+<h1 id="msg001">MSG001:</h1>
 <p>O sistema, deve informar ao usuário sempre que não encontrar um registro, um campo obrigatório não preenchido, ação executada com sucesso sempre contextualizado com a funcionalidade em questão...  </p>
-<h3 id="msg002">MSG002:</h3>
+<h1 id="msg002">MSG002:</h1>
 <p>Estabelecimento de saúde não encontrado ou com cadastro inativo para o CNES informado. Acesse o Portal do CNES para consulta. (Incluir link do “Portal do CNES”, ao ser acionado, direcionará o usuário ao Portal do Cadastro Nacional de Estabelecimentos de Saúde).  </p>
-<h3 id="msg003">MSG003:</h3>
+<h1 id="msg003">MSG003:</h1>
 <p>A UF do CRF do Farmacêutico é diferente da UF do estabelecimento de saúde.  </p>
-<h3 id="msg004">MSG004:</h3>
+<h1 id="msg004">MSG004:</h1>
 <p>O estabelecimento do CNES informado já está cadastrado no sistema para este ente/mantenedor, deseja editá-lo?  </p>
-<h3 id="msg005">MSG005:</h3>
+<h1 id="msg005">MSG005:</h1>
 <p>É obrigatório incluir um farmacêutico responsável para este estabelecimento de saúde.  </p>
-<h3 id="msg006">MSG006:</h3>
+<h1 id="msg006">MSG006:</h1>
 <p>As informações não salvas serão perdidas. Deseja sair da tela? (Sim/Não)  </p>
-<h3 id="msg007">MSG007:</h3>
+<h1 id="msg007">MSG007:</h1>
 <p>Já existe um endereço cadastrado com o código informado.  </p>
-<h3 id="msg008">MSG008:</h3>
+<h1 id="msg008">MSG008:</h1>
 <p>Não é permitido a exclusão de endereçamento que possua subníveis de endereçamentos sem que estes sejam excluídos.  </p>
-<h3 id="msg009">MSG009:</h3>
+<h1 id="msg009">MSG009:</h1>
 <p>Exclusão não permitida. Este endereçamento físico &lt;<Sigla>&gt; - &lt;<Descrição do Endereçamento>&gt; possui produto(s) em estoque vinculado(s) a ele.</p>
-<hr />
-<h3 id="msg010">MSG010:</h3>
+<h1 id="msg010">MSG010:</h1>
 <p>Tem certeza que deseja excluir o registro? (Sim/Não)  </p>
-<hr />
-<h2 id="msg-011-020">MSG 011-020</h2>
-<h3 id="msg011">MSG011:</h3>
+<h1 id="msg011">MSG011:</h1>
 <p>Deseja inativar o estabelecimento?  </p>
-<h3 id="msg012">MSG012:</h3>
+<h1 id="msg012">MSG012:</h1>
 <p>Deseja ativar o estabelecimento?  </p>
-<h3 id="msg013">MSG013:</h3>
+<h1 id="msg013">MSG013:</h1>
 <p>Inativação não permitida. O estabelecimento <Nome do Estabelecimento> possui estoque.  </p>
-<h3 id="msg014">MSG014:</h3>
+<h1 id="msg014">MSG014:</h1>
 <p>O estabelecimento informado não está vinculado ao seu ente/mantenedor. Verifique o dado informado ou consulte o gestor do estabelecimento.  </p>
-<h3 id="msg015">MSG015:</h3>
+<h1 id="msg015">MSG015:</h1>
 <p>Dado Inválido.  </p>
-<h3 id="msg016">MSG016:</h3>
+<h1 id="msg016">MSG016:</h1>
 <p>Tem certeza que deseja estornar o registro? (Sim/Não)  </p>
-<h3 id="msg017">MSG017:</h3>
+<h1 id="msg017">MSG017:</h1>
 <p>Nenhum Fornecedor encontrado para o CNES/CNPJ informado.  </p>
-<h3 id="msg018">MSG018:</h3>
+<h1 id="msg018">MSG018:</h1>
 <p>Não é permitida a entrada de produtos com a data do documento superior a data atual.  </p>
-<h3 id="msg019">MSG019:</h3>
+<h1 id="msg019">MSG019:</h1>
 <p>Não é permitida a entrada de produtos com a data do documento inferior a 1 ano da data atual.   </p>
-<h3 id="msg020">MSG020:</h3>
+<h1 id="msg020">MSG020:</h1>
 <p>Não é permitida a entrada de produtos com a data de recebimento superior a data atual.  </p>
-<hr />
-<h2 id="msg-021-030">MSG 021-030</h2>
-<h3 id="msg021">MSG021:</h3>
+<h1 id="msg021">MSG021:</h1>
 <p>Não é permitida a entrada de produtos com a data de recebimento inferior a 1 ano da data atual.  </p>
-<h3 id="msg022">MSG022:</h3>
+<h1 id="msg022">MSG022:</h1>
 <p>O dado informado não está associado a um produto na base de dados.  </p>
-<h3 id="msg023">MSG023:</h3>
+<h1 id="msg023">MSG023:</h1>
 <p>Este produto já foi adicionado à entrada.  </p>
-<h3 id="msg024">MSG024:</h3>
+<h1 id="msg024">MSG024:</h1>
 <p>Produto com data de validade fora dos limites de aceite: inferior ou igual a data atual ou superior a 10 anos.  </p>
-<h3 id="msg025">MSG025:</h3>
+<h1 id="msg025">MSG025:</h1>
 <p>A quantidade do produto deve ser igual ou superior a 1.  </p>
-<h3 id="msg026">MSG026:</h3>
+<h1 id="msg026">MSG026:</h1>
 <p>O valor unitário do produto deve ser superior a 0.  </p>
-<h3 id="msg027">MSG027:</h3>
+<h1 id="msg027">MSG027:</h1>
 <p>Já existe um detalhamento com os mesmos dados vinculado ao produto.  </p>
-<h3 id="msg028">MSG028:</h3>
+<h1 id="msg028">MSG028:</h1>
 <p>Já existe uma entrada armazenada ou em preenchimento com o mesmo tipo, número do documento e fornecedor neste estabelecimento.  </p>
-<h3 id="msg029">MSG029:</h3>
+<h1 id="msg029">MSG029:</h1>
 <p>O detalhamento do produto <Combinação de Princípios Ativos + Concentração> / <Descrição do Produto para Saúde> não foi informado.</p>
-<h3 id="msg030">MSG030:</h3>
+<h1 id="msg030">MSG030:</h1>
 <p>Ao menos um produto deve ser relacionado à entrada.  </p>
-<hr />
-<h2 id="msg-031-040">MSG 031-040</h2>
-<h3 id="msg031">MSG031:</h3>
+<h1 id="msg031">MSG031:</h1>
 <p>Dados salvos parcialmente!  </p>
-<h3 id="msg032">MSG032:</h3>
+<h1 id="msg032">MSG032:</h1>
 <p>Tem certeza que deseja excluir o arquivo XML? (Sim/Não). Caso confirme a ação os dados recuperados do arquivo serão perdidos.  </p>
-<h3 id="msg033">MSG033:</h3>
+<h1 id="msg033">MSG033:</h1>
 <p>Não há lotes vencidos para este produto.  </p>
-<h3 id="msg034">MSG034:</h3>
+<h1 id="msg034">MSG034:</h1>
 <p>Este produto já foi adicionado à saída diversa.  </p>
-<h3 id="msg035">MSG035:</h3>
+<h1 id="msg035">MSG035:</h1>
 <p>Não há estoque para o produto informado.  </p>
-<h3 id="msg036">MSG036:</h3>
+<h1 id="msg036">MSG036:</h1>
 <p>Já existe um detalhamento com os dados informados para o produto.  </p>
-<h3 id="msg037">MSG037:</h3>
+<h1 id="msg037">MSG037:</h1>
 <p>Quantidade de saída informada superior ao estoque disponível do produto.  </p>
-<h3 id="msg038">MSG038:</h3>
+<h1 id="msg038">MSG038:</h1>
 <p>Já existe uma saída diversa registrada ou em preenchimento com o mesmo tipo de saída diversa, tipo e número de documento e justificativa neste estabelecimento.  </p>
-<h3 id="msg039">MSG039:</h3>
+<h1 id="msg039">MSG039:</h1>
 <p>A Saída Diversa foi registrada!  </p>
-<h3 id="msg040">MSG040:</h3>
+<h1 id="msg040">MSG040:</h1>
 <p>Ao menos um produto deve ser relacionado à saída diversa.  </p>
-<hr />
-<h2 id="msg-041-050">MSG 041-050</h2>
-<h3 id="msg041">MSG041:</h3>
+<h1 id="msg041">MSG041:</h1>
 <p>Nenhum registro encontrado para o(s) filtro(s) informado(s).  </p>
-<h3 id="msg042">MSG042:</h3>
+<h1 id="msg042">MSG042:</h1>
 <p>A Entrada foi excluída!  </p>
-<h3 id="msg043">MSG043:</h3>
+<h1 id="msg043">MSG043:</h1>
 <p>A Entrada foi estornada!  </p>
-<h3 id="msg044">MSG044:</h3>
+<h1 id="msg044">MSG044:</h1>
 <p>A Entrada foi armazenada!  </p>
-<h3 id="msg045">MSG045:</h3>
+<h1 id="msg045">MSG045:</h1>
 <p>Nenhum Fabricante encontrado para o CNES/CNPJ informado.  </p>
-<h3 id="msg046">MSG046:</h3>
+<h1 id="msg046">MSG046:</h1>
 <p>A Saída Diversa foi excluída!  </p>
-<h3 id="msg047">MSG047:</h3>
+<h1 id="msg047">MSG047:</h1>
 <p>A Saída Diversa foi estornada!  </p>
-<h3 id="msg048">MSG048:</h3>
+<h1 id="msg048">MSG048:</h1>
 <p>O Estabelecimento foi excluído!  </p>
-<h3 id="msg049">MSG049:</h3>
+<h1 id="msg049">MSG049:</h1>
 <p>O Estabelecimento foi inativado!  </p>
-<h3 id="msg050">MSG050:</h3>
+<h1 id="msg050">MSG050:</h1>
 <p>O Estabelecimento foi ativado!  </p>
-<hr />
-<h2 id="msg-051-060">MSG 051-060</h2>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../DocumentoDeRegrasv2/" class="btn btn-neutral float-right" title="Documento de Regras">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -244,6 +239,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../DocumentoDeRegrasv2/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

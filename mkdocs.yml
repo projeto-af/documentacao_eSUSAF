@@ -5,13 +5,13 @@ dev_addr: 127.0.0.1:8005
 nav:
   - Home: index.md
   - Especificações Técnicas: 
-    - Documento de Mensagens: EspecificacoesTecnicas/DocumentoDeMensagens.md
-    - Documento de Regras: EspecificacoesTecnicas/DocumentoDeRegras.md
+    - Documento de Mensagens: EspecificacoesTecnicas/DocumentoDeMensagensv2.md
+    - Documento de Regras: EspecificacoesTecnicas/DocumentoDeRegrasv2.md
     - ETE001 - Cadastro e login: EspecificacoesTecnicas/ETE001.md
     - ETE016 - Consultar Entrada: EspecificacoesTecnicas/ETE016.md
     - ETE017 - Cadastrar Entrada: EspecificacoesTecnicas/ETE017.md
     - ETE018 - Editar Entrada: EspecificacoesTecnicas/ETE018.md
-    - ETE019 - Editar Entrada: EspecificacoesTecnicas/ETE019.md
+    - ETE019 - Detalhar Entrada: EspecificacoesTecnicas/ETE019.md
   - Histórias de Usuário:
     - Documento de Mensagens: HistoriasDeUsuario/Documento de Mensagens.md
     - Documento de Regras: HistoriasDeUsuario/Documento de Regras.md

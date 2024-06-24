@@ -65,6 +65,10 @@
     </li>
     </ul>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE018/">ETE018 - Editar Entrada</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE019/">ETE019 - Editar Entrada</a>
+                  </li>
               </ul>
               <p class="caption"><span class="caption-text">Histórias de Usuário</span></p>
               <ul>
@@ -373,20 +377,20 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>Quando o usuário acionar a opção de “Salvar Parcial”, o sistema deve verificar se: <ul>
 <li>Existe uma entrada com o mesmo tipo, número de documento e fornecedor de uma entrada armazenada ou em preenchimento para o estabelecimento. Caso sim, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; RGN029 MSG028 </li>
 <li>Existe ao menos um detalhamento vinculado ao(s) produto(s) da entrada. Caso não, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; MSG029 </li>
-<li>Atendendo as validações, o sistema grava o registro da entrada com estado “Ativo” e a situação “Em preenchimento” e permanece na tela de cadastro da entrada; MSG031 RGN030 RGN005 </li>
 </ul>
 </li>
 </ul>
+<p>Atendendo as validações, o sistema grava o registro da entrada com estado “Ativo” e a situação “Em preenchimento” e permanece na tela de cadastro da entrada; MSG031 RGN030 RGN005 </p>
 <hr />
 <ul>
 <li>Quando o usuário acionar a opção “Armazenar”, o sistema deve verificar se: <ul>
 <li>Existe uma entrada com o mesmo tipo, número de documento e fornecedor de uma entrada armazenada ou em preenchimento para o estabelecimento. Caso sim, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; RGN029 MSG028 </li>
 <li>Existe ao menos um produto relacionado à entrada. Caso não, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; MSG030 </li>
 <li>O detalhamento de todos os produtos da entrada foi incluído. Caso não, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; MSG029 </li>
-<li>Atendendo as validações, o sistema efetiva o cadastro da entrada, grava o estado do registro como “Ativo” e a situação como “Armazenada”, armazena os produtos no estoque do estabelecimento, apresenta a mensagem de sucesso e retorna à tela de consulta às entradas apresentando este registro como o primeiro da relação das entradas cadastradas para o estabelecimento; MSG044 RGN030 RGN005 </li>
 </ul>
 </li>
 </ul>
+<p>Atendendo as validações, o sistema efetiva o cadastro da entrada, grava o estado do registro como “Ativo” e a situação como “Armazenada”, armazena os produtos no estoque do estabelecimento, apresenta a mensagem de sucesso e retorna à tela de consulta às entradas apresentando este registro como o primeiro da relação das entradas cadastradas para o estabelecimento; MSG044 RGN030 RGN005 </p>
 <hr />
 <ul>
 <li>O sistema, identificando que uma entrada de produto(s) foi armazenada, deve creditar a quantidade no saldo deste(s), considerando lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou a entrada; RGN031 </li>
@@ -404,7 +408,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../ETE016/" class="btn btn-neutral float-left" title="ETE016 - Consultar Entrada"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../HistoriasDeUsuario/Documento%20de%20Mensagens/" class="btn btn-neutral float-right" title="Documento de Mensagens">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ETE018/" class="btn btn-neutral float-right" title="ETE018 - Editar Entrada">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -430,7 +434,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
       <span><a href="../ETE016/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../HistoriasDeUsuario/Documento%20de%20Mensagens/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../ETE018/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

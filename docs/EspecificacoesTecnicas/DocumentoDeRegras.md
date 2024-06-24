@@ -255,7 +255,7 @@ O sistema deve permitir apenas saída de produtos que possuem estoque no estabel
 ### RGN043:  Quantidade de Saída do Produto
 O sistema somente deve permitir informar uma quantidade de saída menor ou igual ao estoque disponível do produto, lote, validade e programa de saúde no estabelecimento logado.  
 
-### RGN044: Validar Saída Diversa do Produto
+### <RGN044>: Validar Saída Diversa do Produto
 O sistema deve validar se já existe uma saída diversa com o mesmo tipo de saída diversa, tipo e número de documento e justificativa de uma saída diversa registrada ou em preenchimento para o estabelecimento.  
 
 ### RGN045: Número de Registro da Saída Diversa

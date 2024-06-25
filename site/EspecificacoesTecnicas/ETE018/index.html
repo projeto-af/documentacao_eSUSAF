@@ -45,9 +45,9 @@
               </ul>
               <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeMensagens/">Documento de Mensagens</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeMensagensv2/">Documento de Mensagens</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegras/">Documento de Regras</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegrasv2/">Documento de Regras</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE001/">ETE001 - Cadastro e login</a>
                   </li>
@@ -67,7 +67,7 @@
     </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE019/">ETE019 - Editar Entrada</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE019/">ETE019 - Detalhar Entrada</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Histórias de Usuário</span></p>
@@ -118,7 +118,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="ete017-editar-entrada">ETE017 - Editar Entrada</h1>
+                <h1 id="ete018-editar-entrada">ETE018 - Editar Entrada</h1>
 <h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
 <p>Como usuário quero editar uma entrada de produto(s) para adicioná-lo(s) ao estoque do estabelecimento de saúde logado</p>
 <h2 id="prototipo-001">Protótipo 001</h2>
@@ -201,7 +201,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </p>
 <h2 id="criterios-de-aceite">Critérios de Aceite</h2>
 <ul>
-<li>O usuário somente pode acessar a funcionalidade caso tenha permissão; RGN001 </li>
+<li>O usuário somente pode acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a> </li>
 </ul>
 <hr />
 <ul>
@@ -225,7 +225,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </ul>
 <hr />
 <ul>
-<li>Quando o usuário selecionar no campo “Tipo de Movimentação” a opção: “Saldo de Implantação” ou “Ajuste de Estoque”, o preenchimento dos campos “Modalidade de Licitação”, “CNES/CNPJ” (fornecedor), “Razão Social” (fornecedor), “Tipo de Documento”, “Número do Documento” e “Data do Documento” deixa de ser obrigatório. Já se selecionar a opção “Produção Própria”, o preenchimento dos campos “Tipo de Documento”, “Número do Documento” e “Data do Documento” deixam de ser obrigatórios; RGN024 </li>
+<li>Quando o usuário selecionar no campo “Tipo de Movimentação” a opção: “Saldo de Implantação” ou “Ajuste de Estoque”, o preenchimento dos campos “Modalidade de Licitação”, “CNES/CNPJ” (fornecedor), “Razão Social” (fornecedor), “Tipo de Documento”, “Número do Documento” e “Data do Documento” deixa de ser obrigatório. Já se selecionar a opção “Produção Própria”, o preenchimento dos campos “Tipo de Documento”, “Número do Documento” e “Data do Documento” deixam de ser obrigatórios; <a href="../DocumentoDeRegrasv2/#rgn024">RGN024</a> </li>
 </ul>
 <hr />
 <ul>
@@ -237,26 +237,26 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </ul>
 <hr />
 <ul>
-<li>Quando o usuário acionar a opção “Excluir” o arquivo XML da NFe, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, apaga as informações carregadas automaticamente e permanece na tela de cadastro da entrada, bem como se a ação não for confirmada; MSG032 </li>
+<li>Quando o usuário acionar a opção “Excluir” o arquivo XML da NFe, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, apaga as informações carregadas automaticamente e permanece na tela de cadastro da entrada, bem como se a ação não for confirmada; <a href="../DocumentoDeMensagensv2/#msg032">MSG032</a> </li>
 </ul>
 <hr />
 <ul>
 <li>O sistema deve validar a data do documento informada: <ul>
-<li>Caso a data seja superior a data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; MSG018 </li>
-<li>Caso a data seja inferior a 1 ano da data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; MSG019 </li>
+<li>Caso a data seja superior a data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg018">MSG018</a> </li>
+<li>Caso a data seja inferior a 1 ano da data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg019">MSG019</a> </li>
 </ul>
 </li>
 </ul>
 <hr />
 <ul>
-<li>O campo “Valor do Documento” deve ser inabilitado para edição e o sistema deve calculá-lo automaticamente somado todos os valores totais dos produtos adicionados à entrada e apresentado em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; RGN026 RGN028 </li>
+<li>O campo “Valor do Documento” deve ser inabilitado para edição e o sistema deve calculá-lo automaticamente somado todos os valores totais dos produtos adicionados à entrada e apresentado em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; <a href="../DocumentoDeRegrasv2/#rgn026">RGN026</a> <a href="../DocumentoDeRegrasv2/#rgn028">RGN028</a> </li>
 </ul>
 <hr />
 <ul>
 <li>Quando o usuário informar o CNES ou CNPJ do fornecedor e acionar a consulta, o sistema deve:  <ul>
-<li>Validar o CNES ou CNPJ. Caso o dado seja inválido, o sistema deve realçar o campo e alertar ao usuário; MSG015 </li>
-<li>Recuperar e apresentar o nome do fornecedor do CNES informado, através da integração com o portal do Cadastro Nacional dos Estabelecimentos de Saúde (CNES). Caso não seja encontrado um estabelecimento para o dado informado, o sistema deve apresentar uma mensagem de alerta ao usuário; RGN020 RGN021 MSG017 </li>
-<li>Recuperar e apresentar a razão social do fornecedor do CNPJ informado, através da integração com o portal da Receita Federal do Brasil (RFB). Caso não seja encontrado a pessoa jurídica para o CNPJ, o sistema deve apresentar uma mensagem de alerta ao usuário; RGN020 RGN021 MSG017 </li>
+<li>Validar o CNES ou CNPJ. Caso o dado seja inválido, o sistema deve realçar o campo e alertar ao usuário; <a href="../DocumentoDeMensagensv2/#msg015">MSG015</a> </li>
+<li>Recuperar e apresentar o nome do fornecedor do CNES informado, através da integração com o portal do Cadastro Nacional dos Estabelecimentos de Saúde (CNES). Caso não seja encontrado um estabelecimento para o dado informado, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeRegrasv2/#rgn020">RGN020</a> <a href="../DocumentoDeRegrasv2/#rgn021">RGN021</a> <a href="../DocumentoDeMensagensv2/#msg017">MSG017</a> </li>
+<li>Recuperar e apresentar a razão social do fornecedor do CNPJ informado, através da integração com o portal da Receita Federal do Brasil (RFB). Caso não seja encontrado a pessoa jurídica para o CNPJ, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeRegrasv2/#rgn020">RGN020</a> <a href="../DocumentoDeRegrasv2/#rgn021">RGN021</a> <a href="../DocumentoDeMensagensv2/#msg017">MSG017</a> </li>
 </ul>
 </li>
 </ul>
@@ -267,8 +267,8 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <hr />
 <ul>
 <li>O sistema deve validar a data de recebimento informada: <ul>
-<li>Caso a data seja superior a data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; MSG020 </li>
-<li>Caso a data seja inferior a 1 ano da data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; MSG021 </li>
+<li>Caso a data seja superior a data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg020">MSG020</a> </li>
+<li>Caso a data seja inferior a 1 ano da data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg021">MSG021</a> </li>
 </ul>
 </li>
 </ul>
@@ -284,14 +284,14 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <ul>
 <li>No campo “Produto” quando o usuário informar: <ul>
 <li>O Código de Barras do produto, o sistema deve: <ul>
-<li>Recuperar o produto relacionado ao código de barras da base de dados de medicamentos; RGN015 </li>
-<li>Emitir um alerta ao usuário caso o sistema não encontre o produto na base de dados de medicamentos; MSG022 </li>
+<li>Recuperar o produto relacionado ao código de barras da base de dados de medicamentos; <a href="../DocumentoDeRegrasv2/#rgn015">RGN015</a> </li>
+<li>Emitir um alerta ao usuário caso o sistema não encontre o produto na base de dados de medicamentos; <a href="../DocumentoDeMensagensv2/#msg022">MSG022</a> </li>
 <li>Limpar o campo Produto, quando o dado de código de barras for apagado. </li>
 </ul>
 </li>
 <li>O Princípio Ativo ou Nome Comercial de um Medicamento ou Descrição do Produto para Saúde, o sistema deve: <ul>
-<li>Emitir um alerta ao usuário caso o sistema não encontre o produto na base de dados de medicamentos ou produtos para saúde; MSG022 </li>
-<li>Apresentar a lista de produtos ativos no sistema correspondestes ao valor informado no campo autocomplete a partir da indicação do 3º caractere; RGN015 </li>
+<li>Emitir um alerta ao usuário caso o sistema não encontre o produto na base de dados de medicamentos ou produtos para saúde; <a href="../DocumentoDeMensagensv2/#msg022">MSG022</a> </li>
+<li>Apresentar a lista de produtos ativos no sistema correspondestes ao valor informado no campo autocomplete a partir da indicação do 3º caractere; <a href="../DocumentoDeRegrasv2/#rgn015">RGN015</a> </li>
 </ul>
 </li>
 </ul>
@@ -299,21 +299,21 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </ul>
 <hr />
 <ul>
-<li>O sistema não deve permitir adicionar um produto já relacionado à entrada; MSG023 </li>
+<li>O sistema não deve permitir adicionar um produto já relacionado à entrada; <a href="../DocumentoDeMensagensv2/#msg023">MSG023</a> </li>
 </ul>
 <hr />
 <ul>
-<li>O sistema deve apresentar a lista de produtos adicionados à entrada por ordem alfabética. A lista será expansiva, permitindo o preenchimento dos campos de detalhamento do produto; RGN023 </li>
+<li>O sistema deve apresentar a lista de produtos adicionados à entrada por ordem alfabética. A lista será expansiva, permitindo o preenchimento dos campos de detalhamento do produto; <a href="../DocumentoDeRegrasv2/#rgn023">RGN023</a> </li>
 </ul>
 <hr />
 <ul>
-<li>O(s) produto(s) adicionado(s) à entrada pode(m) ser excluído(s) desde que não tenha(m) detalhamento(s) vinculado(s) a ele; RGN025 </li>
+<li>O(s) produto(s) adicionado(s) à entrada pode(m) ser excluído(s) desde que não tenha(m) detalhamento(s) vinculado(s) a ele; <a href="../DocumentoDeRegrasv2/#rgn025">RGN025</a> </li>
 </ul>
 <hr />
 <ul>
 <li>O campo “Qtd Total Recebida” deve ser inabilitado para edição e o sistema deve:  <ul>
 <li>Recuperar automaticamente a quantidade informada no campo “Qtd. Recebida” quando apenas um detalhamento do produto for adicionado;</li>
-<li>Calcular automaticamente somando todas as quantidades informadas nos detalhamentos adicionados ao produto; RGN037 </li>
+<li>Calcular automaticamente somando todas as quantidades informadas nos detalhamentos adicionados ao produto; <a href="../DocumentoDeRegrasv2/#rgn037">RGN037</a> </li>
 </ul>
 </li>
 </ul>
@@ -323,14 +323,14 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </ul>
 <hr />
 <ul>
-<li>O campo “Valor Total” deve ser desabilitado para edição, calculado automaticamente através da fórmula: Qtd Total Recebida X Valor Unitário do produto e apresentado em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; RGN027 RGN028 </li>
+<li>O campo “Valor Total” deve ser desabilitado para edição, calculado automaticamente através da fórmula: Qtd Total Recebida X Valor Unitário do produto e apresentado em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; <a href="../DocumentoDeRegrasv2/#rgn027">RGN027</a> <a href="../DocumentoDeRegrasv2/#rgn028">RGN028</a> </li>
 </ul>
 <hr />
 <ul>
 <li>No detalhamento do Produto, o sistema deve verificar se: <ul>
-<li>A data de validade informada é inferior ou igual à data atual ou com vencimento superior a 10 anos e emitir um alerta ao usuário; MSG024 </li>
-<li>A quantidade recebida do produto é inferior a 1 e emitir um alerta ao usuário; MSG025 </li>
-<li>O valor unitário informado para o produto é inferior a 0 e emitir um alerta ao usuário; MSG026 </li>
+<li>A data de validade informada é inferior ou igual à data atual ou com vencimento superior a 10 anos e emitir um alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg024">MSG024</a> </li>
+<li>A quantidade recebida do produto é inferior a 1 e emitir um alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg025">MSG025</a> </li>
+<li>O valor unitário informado para o produto é inferior a 0 e emitir um alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg026">MSG026</a> </li>
 </ul>
 </li>
 </ul>
@@ -370,9 +370,9 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <hr />
 <ul>
 <li>Quando o usuário informar o CNES ou CNPJ do fabricante e acionar a consulta, o sistema deve: <ul>
-<li>Validar o CNES ou CNPJ. Caso o dado seja inválido, o sistema deve realçar o campo e alertar ao usuário; MSG015 </li>
-<li>Recuperar e apresentar o nome do fabricante do CNES informado, através da integração com o portal do Cadastro Nacional dos Estabelecimentos de Saúde (CNES). Caso não seja encontrado um estabelecimento para o dado informado, o sistema deve apresentar uma mensagem de alerta ao usuário; RGN020 RGN021 MSG045 </li>
-<li>Recuperar e apresentar a razão social do fabricante do CNPJ informado, através da integração com o portal da Receita Federal do Brasil (RFB). Caso não seja encontrado a pessoa jurídica para o CNPJ, o sistema deve apresentar uma mensagem de alerta ao usuário; RGN020 RGN021 MSG045 </li>
+<li>Validar o CNES ou CNPJ. Caso o dado seja inválido, o sistema deve realçar o campo e alertar ao usuário; <a href="../DocumentoDeMensagensv2/#msg015">MSG015</a> </li>
+<li>Recuperar e apresentar o nome do fabricante do CNES informado, através da integração com o portal do Cadastro Nacional dos Estabelecimentos de Saúde (CNES). Caso não seja encontrado um estabelecimento para o dado informado, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeRegrasv2/#rgn020">RGN020</a> <a href="../DocumentoDeRegrasv2/#rgn021">RGN021</a> <a href="../DocumentoDeMensagensv2/#msg045">MSG45</a> </li>
+<li>Recuperar e apresentar a razão social do fabricante do CNPJ informado, através da integração com o portal da Receita Federal do Brasil (RFB). Caso não seja encontrado a pessoa jurídica para o CNPJ, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeRegrasv2/#rgn020">RGN020</a> <a href="../DocumentoDeRegrasv2/#rgn021">RGN021</a> <a href="../DocumentoDeMensagensv2/#msg045">MSG45</a> </li>
 </ul>
 </li>
 </ul>
@@ -386,45 +386,45 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </ul>
 <hr />
 <ul>
-<li>O sistema não deve permitir adicionar um detalhamento com o mesmo Nº do Lote e Data de Validade de um detalhamento já vinculado o produto na entrada; MSG027 </li>
+<li>O sistema não deve permitir adicionar um detalhamento com o mesmo Nº do Lote e Data de Validade de um detalhamento já vinculado o produto na entrada; <a href="../DocumentoDeMensagensv2/#msg027">MSG027</a>  </li>
 </ul>
 <hr />
 <ul>
 <li>Quando o usuário acionar a opção de “Salvar Parcial”, o sistema deve verificar se: <ul>
-<li>Existe uma entrada com o mesmo tipo, número de documento e fornecedor de uma entrada armazenada ou em preenchimento para o estabelecimento. Caso sim, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; RGN029 MSG028 </li>
-<li>Existe ao menos um detalhamento vinculado ao(s) produto(s) da entrada. Caso não, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; MSG029 </li>
+<li>Existe uma entrada com o mesmo tipo, número de documento e fornecedor de uma entrada armazenada ou em preenchimento para o estabelecimento. Caso sim, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; <a href="../DocumentoDeRegrasv2/#rgn029">RGN029</a>  <a href="../DocumentoDeMensagensv2/#msg028">MSG028</a>  </li>
+<li>Existe ao menos um detalhamento vinculado ao(s) produto(s) da entrada. Caso não, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; <a href="../DocumentoDeMensagensv2/#msg029">MSG029</a>  </li>
 </ul>
 </li>
 </ul>
-<p>Atendendo as validações, o sistema mantém o registro da entrada com estado “Ativo” e a situação “Em preenchimento” e permanece na tela de cadastro da entrada; MSG031 RGN030 RGN005 </p>
+<p>Atendendo as validações, o sistema mantém o registro da entrada com estado “Ativo” e a situação “Em preenchimento” e permanece na tela de cadastro da entrada; <a href="../DocumentoDeMensagensv2/#msg031">MSG031</a> <a href="../DocumentoDeRegrasv2/#rgn030">RGN030</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </p>
 <hr />
 <ul>
 <li>Quando o usuário acionar a opção “Armazenar”, o sistema deve verificar se: <ul>
-<li>Existe uma entrada com o mesmo tipo, número de documento e fornecedor de uma entrada armazenada ou em preenchimento para o estabelecimento. Caso sim, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; RGN029 MSG028 </li>
-<li>Existe ao menos um produto relacionado à entrada. Caso não, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; MSG030 </li>
-<li>O detalhamento de todos os produtos da entrada foi incluído. Caso não, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; MSG029 </li>
+<li>Existe uma entrada com o mesmo tipo, número de documento e fornecedor de uma entrada armazenada ou em preenchimento para o estabelecimento. Caso sim, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; <a href="../DocumentoDeMensagensv2/#msg029">MSG029</a> <a href="../DocumentoDeMensagensv2/#msg028">MSG028</a> </li>
+<li>Existe ao menos um produto relacionado à entrada. Caso não, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; <a href="../DocumentoDeMensagensv2/#msg030">MSG030</a> </li>
+<li>O detalhamento de todos os produtos da entrada foi incluído. Caso não, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; <a href="../DocumentoDeMensagensv2/#msg029">MSG029</a> </li>
 </ul>
 </li>
 </ul>
-<p>Atendendo as validações, o sistema efetiva o cadastro da entrada, mantém o estado do registro como “Ativo”, grava a situação como “Armazenada”, armazena os produtos no estoque do estabelecimento, apresenta a mensagem de sucesso e retorna à tela de consulta às entradas apresentando este registro como o primeiro da relação das entradas cadastradas para o estabelecimento; MSG044 RGN030 RGN005 </p>
+<p>Atendendo as validações, o sistema efetiva o cadastro da entrada, mantém o estado do registro como “Ativo”, grava a situação como “Armazenada”, armazena os produtos no estoque do estabelecimento, apresenta a mensagem de sucesso e retorna à tela de consulta às entradas apresentando este registro como o primeiro da relação das entradas cadastradas para o estabelecimento; <a href="../DocumentoDeMensagensv2/#msg044">MSG044</a> <a href="../DocumentoDeRegrasv2/#rgn030">RGN030</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </p>
 <hr />
 <ul>
-<li>O sistema, identificando que uma entrada de produto(s) foi armazenada, deve creditar a quantidade no saldo deste(s), considerando lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou a entrada; RGN031 </li>
+<li>O sistema, identificando que uma entrada de produto(s) foi armazenada, deve creditar a quantidade no saldo deste(s), considerando lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou a entrada; <a href="../DocumentoDeRegrasv2/#rgn031">RGN031</a> </li>
 </ul>
 <hr />
 <ul>
-<li>a mensagem de alerta ao usuário. Caso confirme a ação, retorna à tela de consulta as entradas e não salva as edições realizadas. Caso a ação não seja confirmada, permanece na tela de cadastro da entrada; MSG006 </li>
+<li>a mensagem de alerta ao usuário. Caso confirme a ação, retorna à tela de consulta as entradas e não salva as edições realizadas. Caso a ação não seja confirmada, permanece na tela de cadastro da entrada; <a href="../DocumentoDeMensagensv2/#msg006">MSG006</a> </li>
 </ul>
 <hr />
 <ul>
-<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. RGN005</li>
+<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
 </ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../ETE017/" class="btn btn-neutral float-left" title="ETE017 - Cadastrar Entrada"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../ETE019/" class="btn btn-neutral float-right" title="ETE019 - Editar Entrada">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ETE019/" class="btn btn-neutral float-right" title="ETE019 - Detalhar Entrada">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>

@@ -45,9 +45,9 @@
               </ul>
               <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeMensagens/">Documento de Mensagens</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeMensagensv2/">Documento de Mensagens</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegras/">Documento de Regras</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegrasv2/">Documento de Regras</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE001/">ETE001 - Cadastro e login</a>
                   </li>
@@ -67,7 +67,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE018/">ETE018 - Editar Entrada</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE019/">ETE019 - Editar Entrada</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE019/">ETE019 - Detalhar Entrada</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Histórias de Usuário</span></p>
@@ -118,7 +118,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="ete017-consultar-entrada">ETE017 - Consultar Entrada</h1>
+                <h1 id="ete016-consultar-entrada">ETE016 - Consultar Entrada</h1>
 <h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
 <p>Como usuário quero consultar a(s) entrada(s) de produto(s) realizada(s) no estabelecimento de saúde logado</p>
 <h2 id="prototipo-001">Protótipo 001</h2>
@@ -168,7 +168,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </p>
 <h2 id="criterios-de-aceite">Critérios de Aceite</h2>
 <ul>
-<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; RGN001 </li>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a> </li>
 </ul>
 <hr />
 <ul>
@@ -181,8 +181,8 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <hr />
 <ul>
 <li>Quando o campo “Produto” for informado, o sistema deve: <ul>
-<li>Apresentar a lista de produtos ativos no sistema que correspondam ao valor informado no campo autocomplete a partir da indicação do 3º caractere, consultando por nome do produto ou princípio ativo do medicamento, código de barras e CATMAT Raiz; RGN015 </li>
-<li>Validar se o produto informado foi encontrado. Caso não, o sistema deve realçar o campo e alertar ao usuário; MSG015 </li>
+<li>Apresentar a lista de produtos ativos no sistema que correspondam ao valor informado no campo autocomplete a partir da indicação do 3º caractere, consultando por nome do produto ou princípio ativo do medicamento, código de barras e CATMAT Raiz; <a href="../DocumentoDeRegrasv2/#rgn015">RGN015</a> </li>
+<li>Validar se o produto informado foi encontrado. Caso não, o sistema deve realçar o campo e alertar ao usuário; <a href="../DocumentoDeMensagensv2/#msg015">MSG015</a> </li>
 <li>Recuperar e apresentar a(s) entrada(s) cujo ao menos um do(s) produto(s) relacionado(s) a ela, possua um dos dados informados: Código de Barras, CATMAT, forma farmacêutica ou princípio ativo do medicamento.  </li>
 </ul>
 </li>
@@ -193,7 +193,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </ul>
 <hr />
 <ul>
-<li>Quando o campo “CNES/CNPJ do Fornecedor” for informado, o sistema deve verificar se o dado é válido.  Caso não, o sistema deve realçar o campo e alertar ao usuário; MSG015 </li>
+<li>Quando o campo “CNES/CNPJ do Fornecedor” for informado, o sistema deve verificar se o dado é válido.  Caso não, o sistema deve realçar o campo e alertar ao usuário; <a href="../DocumentoDeMensagensv2/#msg015">MSG015</a> </li>
 </ul>
 <hr />
 <ul>
@@ -205,7 +205,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </ul>
 <hr />
 <ul>
-<li>O sistema, não encontrando a(s) entrada(s) para os filtros informados, deve informar que o(s) registro(s) não foram encontrados; MSG041 </li>
+<li>O sistema, não encontrando a(s) entrada(s) para os filtros informados, deve informar que o(s) registro(s) não foram encontrados; <a href="../DocumentoDeMensagensv2/#msg041">MSG041</a> </li>
 </ul>
 <hr />
 <ul>
@@ -229,7 +229,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </ul>
 <hr />
 <ul>
-<li>As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta; RGN004  </li>
+<li>As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta; <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a>  </li>
 </ul>
 <hr />
 <ul>
@@ -249,15 +249,15 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </ul>
 <hr />
 <ul>
-<li>Quando o usuário acionar a opção “Excluir”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve excluir o registro da entrada e deixar de apresentá-lo no resultado da consulta. Caso a ação não seja confirmada, o sistema permanece na tela de consulta. A exclusão física somente será possível para entrada(s) com situação “Em preenchimento”; MSG010 MSG042 RGN016 </li>
+<li>Quando o usuário acionar a opção “Excluir”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve excluir o registro da entrada e deixar de apresentá-lo no resultado da consulta. Caso a ação não seja confirmada, o sistema permanece na tela de consulta. A exclusão física somente será possível para entrada(s) com situação “Em preenchimento”; <a href="../DocumentoDeMensagensv2/#msg010">MSG010</a> <a href="../DocumentoDeMensagensv2/#msg042">MSG042</a> <a href="../DocumentoDeRegrasv2/#rgn016">RGN016</a> </li>
 </ul>
 <hr />
 <ul>
-<li>Quando o usuário acionar a opção “Estornar”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema estorna a entrada do(s) produto(s), altera a situação da entrada para “Estornada” e retira o(s) produto(s) do estoque do estabelecimento da entrada estornada, considerando o lote, validade e programa de saúde, através da criação de um registro de saída. Caso a ação não seja confirmada, o sistema permanecerá na tela de consulta; MSG016 MSG043 RGN005 </li>
+<li>Quando o usuário acionar a opção “Estornar”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema estorna a entrada do(s) produto(s), altera a situação da entrada para “Estornada” e retira o(s) produto(s) do estoque do estabelecimento da entrada estornada, considerando o lote, validade e programa de saúde, através da criação de um registro de saída. Caso a ação não seja confirmada, o sistema permanecerá na tela de consulta; <a href="../DocumentoDeMensagensv2/#msg016">MSG016</a> <a href="../DocumentoDeMensagensv2/#msg043">MSG043</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </li>
 </ul>
 <hr />
 <ul>
-<li>O sistema não deve permitir estornar uma entrada se ao menos um do(s) produto(s) vinculado(s) a ela foi movimentado, ou seja, distribuído, dispensado ou uma saída diversa foi registrada no estoque; RGN017 </li>
+<li>O sistema não deve permitir estornar uma entrada se ao menos um do(s) produto(s) vinculado(s) a ela foi movimentado, ou seja, distribuído, dispensado ou uma saída diversa foi registrada no estoque; <a href="../DocumentoDeRegrasv2/#rgn017">RGN017</a> </li>
 </ul>
 <hr />
 <ul>
@@ -281,20 +281,20 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>Situação do registro de saída como “Registrada”; </li>
 </ul>
 </li>
-<li>Alterar a situação do cadastro da entrada para “Estornada”; RGN005 RGN018 </li>
+<li>Alterar a situação do cadastro da entrada para “Estornada”; <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> <a href="../DocumentoDeRegrasv2/#rgn018">RGN018</a> </li>
 </ul>
 </li>
 </ul>
 <hr />
 <ul>
-<li>O sistema, identificando que uma entrada de produto(s) foi estornada, deve debitar a quantidade do saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou o estorno da entrada; RGN019 </li>
+<li>O sistema, identificando que uma entrada de produto(s) foi estornada, deve debitar a quantidade do saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou o estorno da entrada; <a href="../DocumentoDeRegrasv2/#rgn019">RGN019</a> </li>
 </ul>
 <hr />
 <ul>
 <li>Quando o usuário acionar a opção “Detalhar”, o sistema deve direcionar para a tela de detalhamento dos dados da entrada; (ETE019) </li>
 </ul>
 <p>--
-* O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração na situação do registro. RGN005 </p>
+* O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração na situação do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </p>
               
             </div>
           </div><footer>

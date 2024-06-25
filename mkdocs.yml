@@ -12,7 +12,7 @@ nav:
     - ETE017 - Cadastrar Entrada: EspecificacoesTecnicas/ETE017.md
     - ETE018 - Editar Entrada: EspecificacoesTecnicas/ETE018.md
     - ETE019 - Detalhar Entrada: EspecificacoesTecnicas/ETE019.md
-    - ETE020 - : EspecificacoesTecnicas/ETE020.md
+#     - ETE020 - : EspecificacoesTecnicas/ETE020.md
     - ETE021 - Consultar Saída Diversa: EspecificacoesTecnicas/ETE021.md
     - ETE022 - Cadastrar Saída Diversa: EspecificacoesTecnicas/ETE022.md
     - ETE023 - Editar Saída Diversa: EspecificacoesTecnicas/ETE023.md

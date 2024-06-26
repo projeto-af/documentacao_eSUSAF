@@ -8,6 +8,10 @@ nav:
     - Documento de Mensagens: EspecificacoesTecnicas/DocumentoDeMensagensv2.md
     - Documento de Regras: EspecificacoesTecnicas/DocumentoDeRegrasv2.md
     - ETE001 - Cadastro e login: EspecificacoesTecnicas/ETE001.md
+    - ETE012 - Consultar Estabelecimento de Saúde: EspecificacoesTecnicas/ETE012.md
+    - ETE013 - Cadastrar Estabelecimento de Saúde: EspecificacoesTecnicas/ETE013.md
+    - ETE014 - Editar Estabelecimento de Saúde: EspecificacoesTecnicas/ETE014.md
+    - ETE015 - Detalhar Estabelecimento de Saúde: EspecificacoesTecnicas/ETE015.md
     - ETE016 - Consultar Entrada: EspecificacoesTecnicas/ETE016.md
     - ETE017 - Cadastrar Entrada: EspecificacoesTecnicas/ETE017.md
     - ETE018 - Editar Entrada: EspecificacoesTecnicas/ETE018.md

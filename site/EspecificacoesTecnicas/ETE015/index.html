@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>ETE001 - Cadastro e login - e-SUS AF - Documentação Negocial</title>
+    <title>ETE015 - Detalhar Estabelecimento de Saúde - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "ETE001 - Cadastro e login";
-        var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE001.md";
+        var mkdocs_page_name = "ETE015 - Detalhar Estabelecimento de Sa\u00fade";
+        var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE015.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -49,15 +49,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegrasv2/">Documento de Regras</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">ETE001 - Cadastro e login</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#descricao">Descrição</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela:</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#criterio-de-aceite">Critério de aceite</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE001/">ETE001 - Cadastro e login</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE012/">ETE012 - Consultar Estabelecimento de Saúde</a>
                   </li>
@@ -65,7 +57,17 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE014/">ETE014 - Editar Estabelecimento de Saúde</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE015/">ETE015 - Detalhar Estabelecimento de Saúde</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">ETE015 - Detalhar Estabelecimento de Saúde</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
+    </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE016/">ETE016 - Consultar Entrada</a>
                   </li>
@@ -108,7 +110,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Especificações Técnicas</li>
-      <li class="breadcrumb-item active">ETE001 - Cadastro e login</li>
+      <li class="breadcrumb-item active">ETE015 - Detalhar Estabelecimento de Saúde</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -117,59 +119,93 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="especificacao-tecnica-001-cadastro-login">Especificação Técnica 001 - Cadastro / Login</h1>
-<h2 id="descricao">Descrição</h2>
-<p>O usuário deseja criar uma conta para acessar o sistema e suas funcionalidades.</p>
-<h2 id="elementos-de-tela">Elementos de Tela:</h2>
+                <h1 id="ete015-detalhar-estabelecimento-de-saude">ETE015 - Detalhar Estabelecimento de Saúde</h1>
+<h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
+<p>Como usuário quero detalhar os dados de estabelecimento de saúde. </p>
+<h2 id="prototipo-001">Protótipo 001</h2>
+<p>[Inserir imagem do protótipo aqui]<br />
+<a href="https://xd.adobe.com/view/153e76da-8687-401d-a008-4ba101ed6f9b-406d/">Link para protótipo no Adobe XD</a></p>
+<h2 id="elementos-de-tela">Elementos de Tela</h2>
 <ul>
-<li>CPF</li>
-<li>Cartão Nacional do SUS (CNS)</li>
-<li>Nome Completo</li>
-<li>E-mail</li>
-<li>Celular</li>
-<li>CEP</li>
-<li>Endereço</li>
-<li>UF</li>
-<li>Município</li>
-<li>Senha</li>
-<li>Confirme a Senha</li>
-<li>Botão “Cadastrar”</li>
-</ul>
-<h2 id="criterio-de-aceite">Critério de aceite</h2>
-<ul>
-<li>O sistema deve apresentar o campo CPF para preenchimento e verificar se existe um cadastro prévio,  </li>
-<li>Preencher os campos: <ul>
-<li>Cartão Nacional do SUS (CNS)  </li>
-<li>Nome Completo (Caso tenha cadastro prévio, o sistema deve preencher automaticamente o campo)  </li>
-<li>E-mail  </li>
-<li>Celular  </li>
-<li>CEP (consulta API Correios)  </li>
-<li>Endereço (carregar os dados retornado da API dos Correios)  </li>
-<li>UF (carregar os dados retornado da API dos Correios)  </li>
-<li>Município (carregar os dados retornado da API dos Correios)  </li>
-<li>Senha  </li>
-<li>Confirme a Senha  </li>
+<li>Bread Crumb – “Cadastro / Estabelecimento / Dados do Estabelecimento” </li>
+<li>Título da página – “Detalhar Estabelecimento” </li>
+<li>“Seta” – M - retorna para a Tela de Consultar Estabelecimento (ETE012) </li>
+<li>“Imprimir” – BT </li>
+<li>“Consultar” – BT - retorna para a Tela de Consultar Estabelecimento (ETE012) </li>
+<li>Logotipo e-SUS AF - M </li>
+<li>Cabeçalho:  <ul>
+<li>Estabelecimento: <ul>
+<li>CNES / Nome do estabelecimento logado / Município / UF  </li>
 </ul>
 </li>
-<li>Ao inserir o CEP, o sistema deve preencher automaticamente os campos “Endereço”, “UF” e Município” com os dados retornados da consulta à API dos Correios; </li>
-<li>Após finalizar o cadastro, o sistema deve enviar um e-mail de confirmação para o usuário; </li>
-<li>O usuário, após confirmar o cadastro por e-mail, deve conseguir realizar login usando suas credenciais; </li>
-<li>A senha do usuário deverá ter: <ul>
-<li>Mínimo de 8 caracteres </li>
-<li>Máximo de 30 caracteres </li>
-<li>Letras maiúsculas: pelo menos uma </li>
-<li>Letras minúsculas: pelo menos uma </li>
-<li>Número: pelo menos um </li>
-<li>Caracteres especiais: pelo menos um </li>
+<li>Alterado por:  <ul>
+<li>CPF / Nome completo do usuário que realizou a última ação no cadastro da entrada (anonimizar os dados)  </li>
+<li>Data e Hora da última alteração: </li>
 </ul>
 </li>
+</ul>
+</li>
+<li>CNES  </li>
+<li>CNPJ </li>
+<li>Razão Social  </li>
+<li>Tipo Gestão </li>
+<li>Nome Fantasia </li>
+<li>Tipo de Estabelecimento  </li>
+<li>CEP </li>
+<li>Endereço </li>
+<li>Número </li>
+<li>Bairro </li>
+<li>Município </li>
+<li>UF </li>
+<li>É obrigatória a indicação de um farmacêutico responsável para este estabelecimento? - Sim ou Não </li>
+<li>Farmacêutico(s) <ul>
+<li>CPF </li>
+<li>Nome </li>
+<li>UF/Nº CRF </li>
+<li>Responsável - Sim ou Não </li>
+</ul>
+</li>
+<li>Departamento(s) <ul>
+<li>Descrição departamento </li>
+</ul>
+</li>
+<li>Mapa do Endereçamento Físico de Armazenamento <ul>
+<li>Código &gt; Descrição Endereço </li>
+</ul>
+</li>
+<li>Situação do Registro
+ </li>
+</ul>
+<h2 id="criterios-de-aceite">Critérios de Aceite</h2>
+<ul>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
+</ul>
+<hr />
+<ul>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Cadastro”, subitem “Estabelecimento”, na tela “Consultar Estabelecimento” quando for acionada a opção “Detalhar”;   </li>
+</ul>
+<hr />
+<ul>
+<li>O sistema deve recuperar e apresentar os dados relacionados ao cadastro do estabelecimento de saúde que o usuário deseja detalhar; </li>
+</ul>
+<hr />
+<ul>
+<li>Os dados do CNES, Nome, Município e UF, do cabeçalho (Emitido por:), devem ser recuperados do cadastro do estabelecimento do usuário logado. Já o Nome e CPF do usuário responsável pela última alteração no registro do cadastro e a data dessa ação devem ser recuperados do histórico do registro da funcionalidade em questão; <a href="../DocumentoDeRegrasv2/#rgn014">RGN014</a></li>
+</ul>
+<hr />
+<ul>
+<li>Quando o usuário acionar a opção de “Imprimir”, o sistema deve permitir imprimir as informações da tela ou salvá-las em um arquivo no formato desejado (padrão Windows); </li>
+</ul>
+<hr />
+<ul>
+<li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema finaliza o detalhamento e retorna à tela de consulta aos estabelecimentos de saúde. </li>
 </ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../DocumentoDeRegrasv2/" class="btn btn-neutral float-left" title="Documento de Regras"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../ETE012/" class="btn btn-neutral float-right" title="ETE012 - Consultar Estabelecimento de Saúde">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ETE014/" class="btn btn-neutral float-left" title="ETE014 - Editar Estabelecimento de Saúde"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ETE016/" class="btn btn-neutral float-right" title="ETE016 - Consultar Entrada">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -192,10 +228,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../DocumentoDeRegrasv2/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../ETE014/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../ETE012/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../ETE016/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

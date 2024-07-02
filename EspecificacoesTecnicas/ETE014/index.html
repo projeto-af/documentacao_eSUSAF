@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>ETE014 - Editar Estabelecimento de Saúde - e-SUS AF - Documentação Negocial</title>
+    <title>ETE014 - Editar Estabelecimento - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "ETE014 - Editar Estabelecimento de Sa\u00fade";
+        var mkdocs_page_name = "ETE014 - Editar Estabelecimento";
         var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE014.md";
         var mkdocs_page_url = null;
       </script>
@@ -49,13 +49,11 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegrasv2/">Documento de Regras</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE001/">ETE001 - Cadastro e login</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE012/">ETE012 - Consultar Estabelecimento</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE012/">ETE012 - Consultar Estabelecimento de Saúde</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE013/">ETE013 - Cadastrar Estabelecimento</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE013/">ETE013 - Cadastrar Estabelecimento de Saúde</a>
-                  </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">ETE014 - Editar Estabelecimento de Saúde</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">ETE014 - Editar Estabelecimento</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
     </li>
@@ -129,7 +127,7 @@
     </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE015/">ETE015 - Detalhar Estabelecimento de Saúde</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE015/">ETE015 - Detalhar Estabelecimento</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE016/">ETE016 - Consultar Entrada</a>
                   </li>
@@ -146,11 +144,6 @@
                   <li class="toctree-l1"><a class="reference internal" href="../ETE023/">ETE023 - Editar Saída Diversa</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE024/">ETE024 - Detalhar Saída Diversa</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Casos de Teste</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../CasosDeTeste/CT004/">CT004 - Solicitar Uma Permissão de acesso</a>
                   </li>
               </ul>
               <ul>
@@ -172,7 +165,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Especificações Técnicas</li>
-      <li class="breadcrumb-item active">ETE014 - Editar Estabelecimento de Saúde</li>
+      <li class="breadcrumb-item active">ETE014 - Editar Estabelecimento</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -185,7 +178,10 @@
 <h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
 <p>Como usuário quero editar os dados do cadastro de um estabelecimento de saúde dentre os participantes da instância para mantê-los atualizados</p>
 <h2 id="prototipo-001">Protótipo 001</h2>
-<p>[Inserir imagem do protótipo aqui]<br />
+<p><img alt="cadastrar-entrada" src="../../imagens/cadastro-estabelecimento-geral.png" /><br />
+<img alt="cadastrar-entrada" src="../../imagens/cadastro-estabelecimento-farmaceuticos.png" /><br />
+<img alt="cadastrar-entrada" src="../../imagens/cadastro-estabelecimento-departamentos.png" /><br />
+<img alt="cadastrar-entrada" src="../../imagens/cadastro-estabelecimento-endereco-fisico.png" /><br />
 <a href="https://xd.adobe.com/view/153e76da-8687-401d-a008-4ba101ed6f9b-406d/">Link para protótipo no Adobe XD</a></p>
 <h2 id="elementos-de-tela">Elementos de Tela</h2>
 <ul>
@@ -270,6 +266,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <ul>
 <li>Para registro com o estado “Ativo” e a situação “Em preenchimento”, o sistema deve recuperar e apresentar os dados do estabelecimento de saúde cadastrado previamente, permitindo a edição de todos os campos; </li>
 </ul>
+<hr />
 <h3 id="004">004</h3>
 <ul>
 <li>Para registro com o estado “Ativo” e a situação “Ativo”, o sistema deve recuperar e apresentar os dados do estabelecimento de saúde cadastrado previamente, permitindo a edição dos campos: Tipo de Estabelecimento, Farmacêutico, Departamento, Endereçamento Físico e indicar a obrigatoriedade de farmacêutico responsável pelo estabelecimento;</li>
@@ -433,8 +430,8 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../ETE013/" class="btn btn-neutral float-left" title="ETE013 - Cadastrar Estabelecimento de Saúde"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../ETE015/" class="btn btn-neutral float-right" title="ETE015 - Detalhar Estabelecimento de Saúde">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ETE013/" class="btn btn-neutral float-left" title="ETE013 - Cadastrar Estabelecimento"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ETE015/" class="btn btn-neutral float-right" title="ETE015 - Detalhar Estabelecimento">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>

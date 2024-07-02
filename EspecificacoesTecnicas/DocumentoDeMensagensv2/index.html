@@ -51,15 +51,13 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegrasv2/">Documento de Regras</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE001/">ETE001 - Cadastro e login</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE012/">ETE012 - Consultar Estabelecimento</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE012/">ETE012 - Consultar Estabelecimento de Saúde</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE013/">ETE013 - Cadastrar Estabelecimento</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE013/">ETE013 - Cadastrar Estabelecimento de Saúde</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE014/">ETE014 - Editar Estabelecimento</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE014/">ETE014 - Editar Estabelecimento de Saúde</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE015/">ETE015 - Detalhar Estabelecimento de Saúde</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE015/">ETE015 - Detalhar Estabelecimento</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE016/">ETE016 - Consultar Entrada</a>
                   </li>
@@ -76,11 +74,6 @@
                   <li class="toctree-l1"><a class="reference internal" href="../ETE023/">ETE023 - Editar Saída Diversa</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE024/">ETE024 - Detalhar Saída Diversa</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Casos de Teste</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../CasosDeTeste/CT004/">CT004 - Solicitar Uma Permissão de acesso</a>
                   </li>
               </ul>
               <ul>
@@ -112,106 +105,261 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="documento-de-mensagens">Documento de Mensagens</h1>
-<h1 id="msg001">MSG001:</h1>
-<p>O sistema, deve informar ao usuário sempre que não encontrar um registro, um campo obrigatório não preenchido, ação executada com sucesso sempre contextualizado com a funcionalidade em questão...  </p>
+<h1 id="msg001-removido">MSG001: (removido)</h1>
+<hr />
 <h1 id="msg002">MSG002:</h1>
-<p>Estabelecimento de saúde não encontrado ou com cadastro inativo para o CNES informado. Acesse o Portal do CNES para consulta. (Incluir link do “Portal do CNES”, ao ser acionado, direcionará o usuário ao Portal do Cadastro Nacional de Estabelecimentos de Saúde).  </p>
+<p>Estabelecimento de saúde não encontrado ou com cadastro inativo para o CNES informado. Acesse o Portal do CNES para consulta. (Incluir link do “Portal do CNES”, ao ser acionado, direcionará o usuário ao Portal do Cadastro Nacional de Estabelecimentos de Saúde).</p>
+<hr />
 <h1 id="msg003">MSG003:</h1>
-<p>A UF do CRF do Farmacêutico é diferente da UF do estabelecimento de saúde.  </p>
+<p>A UF do CRF do Farmacêutico é diferente da UF do estabelecimento de saúde.</p>
+<hr />
 <h1 id="msg004">MSG004:</h1>
-<p>O estabelecimento do CNES informado já está cadastrado no sistema para este ente/mantenedor, deseja editá-lo?  </p>
+<p>O estabelecimento do CNES informado já está cadastrado no sistema para esta instância, deseja editá-lo?</p>
+<hr />
 <h1 id="msg005">MSG005:</h1>
-<p>É obrigatório incluir um farmacêutico responsável para este estabelecimento de saúde.  </p>
+<p>É obrigatório incluir um farmacêutico responsável para este estabelecimento de saúde. </p>
+<hr />
 <h1 id="msg006">MSG006:</h1>
-<p>As informações não salvas serão perdidas. Deseja sair da tela? (Sim/Não)  </p>
+<p>As informações não salvas serão perdidas. Deseja sair da tela? (Sim/Não)</p>
+<hr />
 <h1 id="msg007">MSG007:</h1>
-<p>Já existe um endereço cadastrado com o código informado.  </p>
+<p>Já existe um endereço cadastrado com o código informado. </p>
+<hr />
 <h1 id="msg008">MSG008:</h1>
-<p>Não é permitido a exclusão de endereçamento que possua subníveis de endereçamentos sem que estes sejam excluídos.  </p>
+<p>Não é permitido a exclusão de endereçamento que possua subníveis de endereçamentos sem que estes sejam excluídos. </p>
+<hr />
 <h1 id="msg009">MSG009:</h1>
-<p>Exclusão não permitida. Este endereçamento físico &lt;<Sigla>&gt; - &lt;<Descrição do Endereçamento>&gt; possui produto(s) em estoque vinculado(s) a ele.</p>
+<p>Exclusão não permitida. Este endereçamento físico [(Sigla) - (Descrição do Endereçamento)] possui produto(s) em estoque vinculado(s) a ele.</p>
+<hr />
 <h1 id="msg010">MSG010:</h1>
-<p>Tem certeza que deseja excluir o registro? (Sim/Não)  </p>
+<p>Tem certeza que deseja excluir o registro? (Sim/Não) </p>
+<hr />
 <h1 id="msg011">MSG011:</h1>
-<p>Deseja inativar o estabelecimento?  </p>
+<p>Deseja inativar o estabelecimento?</p>
+<hr />
 <h1 id="msg012">MSG012:</h1>
 <p>Deseja ativar o estabelecimento?  </p>
+<hr />
 <h1 id="msg013">MSG013:</h1>
-<p>Inativação não permitida. O estabelecimento <Nome do Estabelecimento> possui estoque.  </p>
-<h1 id="msg014">MSG014:</h1>
-<p>O estabelecimento informado não está vinculado ao seu ente/mantenedor. Verifique o dado informado ou consulte o gestor do estabelecimento.  </p>
+<p>Inativação não permitida. O estabelecimento (Nome do Estabelecimento) possui estoque.  </p>
+<hr />
+<h1 id="msg014-removido">MSG014: (removido)</h1>
+<hr />
 <h1 id="msg015">MSG015:</h1>
-<p>Dado Inválido.  </p>
+<p>Dado Inválido.</p>
+<hr />
 <h1 id="msg016">MSG016:</h1>
 <p>Tem certeza que deseja estornar o registro? (Sim/Não)  </p>
+<hr />
 <h1 id="msg017">MSG017:</h1>
 <p>Nenhum Fornecedor encontrado para o CNES/CNPJ informado.  </p>
+<hr />
 <h1 id="msg018">MSG018:</h1>
-<p>Não é permitida a entrada de produtos com a data do documento superior a data atual.  </p>
+<p>Não é permitida a entrada de produtos com a data do documento posterior à data atual.  </p>
+<hr />
 <h1 id="msg019">MSG019:</h1>
-<p>Não é permitida a entrada de produtos com a data do documento inferior a 1 ano da data atual.   </p>
+<p>Não é permitida a entrada de produtos com a data do documento anterior a 1 ano da data atual.   </p>
+<hr />
 <h1 id="msg020">MSG020:</h1>
-<p>Não é permitida a entrada de produtos com a data de recebimento superior a data atual.  </p>
+<p>Não é permitida a entrada de produtos com a data de recebimento posterior à data atual.  </p>
+<hr />
 <h1 id="msg021">MSG021:</h1>
-<p>Não é permitida a entrada de produtos com a data de recebimento inferior a 1 ano da data atual.  </p>
+<p>Não é permitida a entrada de produtos com a data de recebimento anterior a 1 ano da data atual.  </p>
+<hr />
 <h1 id="msg022">MSG022:</h1>
 <p>O dado informado não está associado a um produto na base de dados.  </p>
+<hr />
 <h1 id="msg023">MSG023:</h1>
 <p>Este produto já foi adicionado à entrada.  </p>
+<hr />
 <h1 id="msg024">MSG024:</h1>
-<p>Produto com data de validade fora dos limites de aceite: inferior ou igual a data atual ou superior a 10 anos.  </p>
+<p>Produto com data de validade fora dos limites de aceite: anteior ou igual a data atual ou posterior a 10 anos.  </p>
+<hr />
 <h1 id="msg025">MSG025:</h1>
 <p>A quantidade do produto deve ser igual ou superior a 1.  </p>
+<hr />
 <h1 id="msg026">MSG026:</h1>
 <p>O valor unitário do produto deve ser superior a 0.  </p>
+<hr />
 <h1 id="msg027">MSG027:</h1>
 <p>Já existe um detalhamento com os mesmos dados vinculado ao produto.  </p>
+<hr />
 <h1 id="msg028">MSG028:</h1>
 <p>Já existe uma entrada armazenada ou em preenchimento com o mesmo tipo, número do documento e fornecedor neste estabelecimento.  </p>
+<hr />
 <h1 id="msg029">MSG029:</h1>
-<p>O detalhamento do produto <Combinação de Princípios Ativos + Concentração> / <Descrição do Produto para Saúde> não foi informado.</p>
+<p>O detalhamento do produto (Combinação de Princípios Ativos + Concentração) / (Descrição do Produto para Saúde) não foi informado.</p>
+<hr />
 <h1 id="msg030">MSG030:</h1>
 <p>Ao menos um produto deve ser relacionado à entrada.  </p>
+<hr />
 <h1 id="msg031">MSG031:</h1>
 <p>Dados salvos parcialmente!  </p>
+<hr />
 <h1 id="msg032">MSG032:</h1>
 <p>Tem certeza que deseja excluir o arquivo XML? (Sim/Não). Caso confirme a ação os dados recuperados do arquivo serão perdidos.  </p>
+<hr />
 <h1 id="msg033">MSG033:</h1>
 <p>Não há lotes vencidos para este produto.  </p>
+<hr />
 <h1 id="msg034">MSG034:</h1>
 <p>Este produto já foi adicionado à saída diversa.  </p>
+<hr />
 <h1 id="msg035">MSG035:</h1>
 <p>Não há estoque para o produto informado.  </p>
+<hr />
 <h1 id="msg036">MSG036:</h1>
 <p>Já existe um detalhamento com os dados informados para o produto.  </p>
+<hr />
 <h1 id="msg037">MSG037:</h1>
 <p>Quantidade de saída informada superior ao estoque disponível do produto.  </p>
+<hr />
 <h1 id="msg038">MSG038:</h1>
 <p>Já existe uma saída diversa registrada ou em preenchimento com o mesmo tipo de saída diversa, tipo e número de documento e justificativa neste estabelecimento.  </p>
+<hr />
 <h1 id="msg039">MSG039:</h1>
 <p>A Saída Diversa foi registrada!  </p>
+<hr />
 <h1 id="msg040">MSG040:</h1>
 <p>Ao menos um produto deve ser relacionado à saída diversa.  </p>
+<hr />
 <h1 id="msg041">MSG041:</h1>
 <p>Nenhum registro encontrado para o(s) filtro(s) informado(s).  </p>
+<hr />
 <h1 id="msg042">MSG042:</h1>
 <p>A Entrada foi excluída!  </p>
+<hr />
 <h1 id="msg043">MSG043:</h1>
 <p>A Entrada foi estornada!  </p>
+<hr />
 <h1 id="msg044">MSG044:</h1>
 <p>A Entrada foi armazenada!  </p>
+<hr />
 <h1 id="msg045">MSG045:</h1>
 <p>Nenhum Fabricante encontrado para o CNES/CNPJ informado.  </p>
+<hr />
 <h1 id="msg046">MSG046:</h1>
 <p>A Saída Diversa foi excluída!  </p>
+<hr />
 <h1 id="msg047">MSG047:</h1>
 <p>A Saída Diversa foi estornada!  </p>
+<hr />
 <h1 id="msg048">MSG048:</h1>
 <p>O Estabelecimento foi excluído!  </p>
+<hr />
 <h1 id="msg049">MSG049:</h1>
 <p>O Estabelecimento foi inativado!  </p>
+<hr />
 <h1 id="msg050">MSG050:</h1>
 <p>O Estabelecimento foi ativado!  </p>
+<hr />
+<h1 id="msg051">MSG051:</h1>
+<p>O Farmacêutico informado já está relacionado neste estabelecimento de saúde. </p>
+<hr />
+<h1 id="msg052">MSG052:</h1>
+<p>O Estabelecimento foi cadastrado! </p>
+<hr />
+<h1 id="msg053">MSG053:</h1>
+<p>Campo obrigatório.</p>
+<hr />
+<h1 id="msg054">MSG054:</h1>
+<p>A confirmação da senha não confere.</p>
+<hr />
+<h1 id="msg055">MSG055:</h1>
+<p>Confirmação<br />
+Seus dados estão corretos? (Sim/Não) </p>
+<hr />
+<h1 id="msg056">MSG056:</h1>
+<p>(Nome do Usuário), o seu cadastro foi efetuado com sucesso!<br />
+Clique no botão abaixo para acessar a página de login do sistema e-SUS AF. </p>
+<hr />
+<h1 id="msg057">MSG057:</h1>
+<p>E-mail confirmação cadastro usuário  </p>
+<p><strong>Título:</strong> e-SUS AF – Confirme seu cadastro<br />
+<strong>Mensagem:</strong><br />
+Logotipo e-SUS AF<br />
+Meu cadastro<br />
+Seu cadastro foi efetuado!<br />
+Sua autenticação será efetuada no seu primeiro acesso.  </p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPF</td>
+<td>XXX.XXX.XXX-XX</td>
+</tr>
+<tr>
+<td>CNS:</td>
+<td>XXXXXXXXXXXXXXX</td>
+</tr>
+<tr>
+<td>Nome Completo</td>
+<td>Nome do Usuário</td>
+</tr>
+<tr>
+<td>E-mail</td>
+<td>XXXXX@XXXXXX.XXXX.XX</td>
+</tr>
+<tr>
+<td>Telefone</td>
+<td>(XX) XXXXX-XXXX</td>
+</tr>
+<tr>
+<td>CEP</td>
+<td>XX.XXX-XXX</td>
+</tr>
+<tr>
+<td>UF</td>
+<td>XX (sigla UF)</td>
+</tr>
+<tr>
+<td>Município</td>
+<td>Nome do município</td>
+</tr>
+<tr>
+<td>Bairro</td>
+<td>Nome do bairro</td>
+</tr>
+<tr>
+<td>Endereço</td>
+<td>Descrição do endereço</td>
+</tr>
+</tbody>
+</table>
+<p>BT - Link - Confirme seu cadastro</p>
+<hr />
+<h1 id="msg058">MSG058:</h1>
+<p>Usuário não cadastrado.</p>
+<hr />
+<h1 id="msg059">MSG059</h1>
+<p>(Nome do Usuário), sua solicitação para alterar senha foi efetuada com sucesso!<br />
+Uma mensagem contendo instruções foi encaminhada para o e-mail usuario@servidor.com.br.<br />
+Caso você não receba o e-mail em alguns minutos, verifique a sua caixa de spam ou faça uma nova solicitação. </p>
+<hr />
+<h1 id="msg060-e-mail-alteracao-de-senha">MSG060: E-mail alteração de senha</h1>
+<p><strong>Título:</strong> e-SUS AF – Alteração de Senha<br />
+<strong>Mensagem:</strong><br />
+Logotipo e-SUS AF<br />
+Recuperação de senha<br />
+Olá (Nome do Usuário), Tudo bem?<br />
+Caso não tenha solicitado a alteração de senha, por favor, ignore esta mensagem. Mas se foi você, é só clicar no botão abaixo.<br />
+BT - Link – Quero alterar minha senha </p>
+<hr />
+<h1 id="msg061-pronto-a-sua-senha-foi-redefinida-com-sucesso">MSG061: Pronto <Nome do Usuário>, a sua senha foi redefinida com sucesso!</h1>
+<hr />
+<h1 id="msg062">MSG062:</h1>
+<p>O cadastro do estabelecimento foi atualizado! </p>
+<hr />
+<h1 id="msg063">MSG063:</h1>
+<p>Credenciais inválidas. </p>
+<hr />
+<h1 id="msg064">MSG064:</h1>
+<p>Seu usuário está inativo, enviamos um e-mail para confirmação do acesso ao sistema. </p>
               
             </div>
           </div><footer>

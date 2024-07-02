@@ -3,116 +3,104 @@
 # RGN001
 ## Permissão de acesso por funcionalidade
 
-| Funcionalidade | Administrador (ADM) | Gestor (GST) | Gestor Estabelecimento (GEST) | Farmacêutico (FAR) | Atendente (ATD) |
-| -------------- | :-----------------: | :----------: | :---------------------------: | :----------------: | :-------------: |
-| **CONFIGURAR INSTALAÇÃO** | - | - | - | - | - |
-| Cadastrar Ente |  |  |  |  |  |
-| **CONTROLE DE ACESSO** | - | - | - | - | - |
-| Consultar Perfil | X | X | X | X | X |
-| Solicitar Perfil | X | X | X | X | X |
-| Moderar Perfil | X | X | X |  |  |
-| Atribuir Perfil | X | X | X |  |  |
-| Detalhar Perfil | X | X | X | X | X |
-| Gerenciar Perfil |  | X |  |  |  |
-| **ESTABELECIMENTO** | - | - | - | - | - |
-| Consultar Estabelecimento |  | X | X | X | X |
-| Cadastrar Estabelecimento |  | X |  |  |  |
-| Editar Estabelecimento |  | X | X |  |  |
-| Detalhar Dados Estabelecimento |  | X | X | X | X |
-| Ativar / Desativar Estabelecimento |  | X |  |  |  |
-| **ENTRADA** | - | - | - | - | - |
-| Consultar Entrada |  | X | X | X | X |
-| Cadastrar Entrada |  | X | X | X | X |
-| Editar Entrada |  | X | X | X | X |
-| Detalhar Dados Entrada |  | X | X | X | X |
-| **SAÍDA DIVERSA** | - | - | - | - | - |
-| Consultar Saída Diversa |  | X | X | X | X |
-| Cadastrar Saída Diversa |  | X | X | X | X |
-| Editar Saída Diversa |  | X | X | X | X |
-| Detalhar Dados Saída Diversa |  | X | X | X | X |
-| **USUÁRIO SUS** | - | - | - | - | - |
-| Consultar Usuário SUS |  | X | X | X | X |
-| Incluir Usuário SUS |  | X | X | X | X |
-| Editar Usuário SUS |  | X | X | X | X |
-| Detalhar Dados Usuário SUS |  | X | X | X | X |
+| Funcionalidade | Instalador | Administrador (ADM) | Gestor (GST) | Gestor Estabelecimento (GEST) | Farmacêutico (FAR) | Atendente (ATD) |
+| -------------- | :-----------------: | :-----------------: | :----------: | :---------------------------: | :----------------: | :-------------: |
+| **CONFIGURAR INSTALAÇÃO** |
+| Cadastrar Ente |  |  |  |  |  |  |
+| **CONTROLE DE ACESSO** |
+| Consultar Perfil |  |  |  |  |  |  |
+| Solicitar Perfil |  |  |  |  |  |  |
+| Moderar Perfil |  |  |  |  |  |  |
+| Atribuir Perfil |  |  |  |  |  |  |
+| Detalhar Perfil |  |  |  |  |  |  |
+| Gerenciar Perfil |  |  |  |  |  |  |
+| **ESTABELECIMENTO** |
+| Consultar Estabelecimento |  |  | X | X | X | X |
+| Ativar / Inativar Estabelecimento |  |  | X |  |  |  |
+| Cadastrar Estabelecimento |  |  | X |  |  |  |
+| Editar Estabelecimento |  |  | X | X |  |  |
+| Detalhar Dados Estabelecimento |  |  | X | X | X | X |
+| **ENTRADA** |
+| Consultar Entrada |  |  | X | X | X | X |
+| Cadastrar Entrada |  |  | X | X | X | X |
+| Editar Entrada |  |  | X | X | X | X |
+| Detalhar Dados Entrada |  |  | X | X | X | X |
+| **SAÍDA DIVERSA** |
+| Consultar Saída Diversa |  |  | X | X | X | X |
+| Cadastrar Saída Diversa |  |  | X | X | X | X |
+| Editar Saída Diversa |  |  | X | X | X | X |
+| Detalhar Dados Saída Diversa |  |  | X | X | X | X |
+| **USUÁRIO SUS** |
+| Consultar Usuário SUS |  |  |  |  |  |  |
+| Incluir Usuário SUS |  |  |  |  |  |  |
+| Editar Usuário SUS |  |  |  |  |  |  |
+| Detalhar Dados Usuário SUS |  |  |  |  |  |  |
 |  |  |  |  |  |  |
 
 ---
 # RGN002
-## Recuperação de Estabelecimento de Saúde vinculados aos participantes da instância:
-O sistema deve recuperar como resultado da consulta os estabelecimentos de saúde dentre os cadastrados e vinculados aos participantes da instância, configuração prévia deste.  
+## Recuperação de Estabelecimento de Saúde vinculados aos participantes da instância: 
+O sistema deve recuperar como resultado da consulta os estabelecimentos de saúde dentre os cadastrados e vinculados aos participantes da instância, configuração prévia deste.   
 
 ---
 # RGN003
-## Cadastro de Estabelecimento de Saúde/CNES
-Não é permitido o cadastro de mais de um Estabelecimento de Saúde com o mesmo CNES.  
+## Cadastro de Estabelecimento de Saúde/CNES 
+Não é permitido o cadastro de mais de um Estabelecimento de Saúde com o mesmo CNES para a mesma instância.  
 
 ---
 # RGN004
-## Resultado de consultas
-As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta.  
+## Resultado de consultas 
+As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta.   
 
 ---
 # RGN005
-## Gravação do Responsável pela Operação
-O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no registro (inclusão, edição, exclusão, armazenamento, estorno, saída, análise, devolução, em preenchimento, atendimento, atendimento automático, recusa, autorização, não autorização, dispensação).  
+## Gravação do Responsável pela Operação 
+O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no registro (inclusão, edição, exclusão, armazenamento, estorno, saída, análise, devolução, em preenchimento, atendimento, atendimento automático, recusa, autorização, não autorização, dispensação). 
 
 ---
 # RGN006
-## Hierarquia de Endereçamento
-Somente será permitido a exclusão de um endereçamento quando este não possuir endereçamentos hierarquicamente abaixo dele, sendo necessário a exclusão destes subníveis.  
+## Hierarquia de Endereçamento 
+Somente será permitido a exclusão de um endereçamento quando este não possuir endereçamentos hierarquicamente abaixo dele, sendo necessário a exclusão destes subníveis. 
 
 ---
 # RGN007
-## Excluir de Endereçamento
-Não será permitido a exclusão de um endereçamento físico caso este possua, vinculado a ele, produto(s) no estoque do estabelecimento.  
+## Excluir de Endereçamento 
+Não será permitido a exclusão de um endereçamento físico caso este possua, vinculado a ele, produto(s) no estoque do estabelecimento. 
 
 ---
 # RGN008
-## Inativar Estabelecimento de Saúde
-Somente será possível inativar estabelecimentos de saúde que não possuem itens em estoque.  
+## Inativar Estabelecimento de Saúde 
+Somente será possível inativar estabelecimentos de saúde que não possuem itens em estoque. 
 
 ---
-# RGN009
+# RGN009 (removido)
 ## Recuperação de dados do estabelecimento do usuário logado
-Os dados de UF, Município e Estabelecimentos devem ser recuperados do cadastro do estabelecimento vinculado ao perfil do usuário logado.  
 
 ---
-# RGN010
+# RGN010 (removido)
 ## Recuperação de perfil vinculados ao Ente/Mantenedor:
-O sistema deve recuperar para solicitação de acesso somente os perfis dentre os configurados pelo ente/mantenedor.  
 
 ---
-# RGN011
+# RGN011 (removido)
 ## Busca Textual do Estabelecimento
-O sistema deve recuperar o estabelecimento através de busca textual do CNES ou nome informado.  
 
 ---
-# RGN012
+# RGN012 (removido)
 ## Solicitação de perfil acesso.
-O usuário pode solicitar:
-
-* Um ou mais perfis de acesso ao sistema;  
-* Apenas um perfil por estabelecimento;  
-* O mesmo perfil para estabelecimentos diferentes.  
  
 ---
-# RGN013
+# RGN013 (removido)
 ## Solicitações com status:
-
-* “Aguardando aprovação” podem ser aprovadas ou reprovadas; 
-* “Aprovado” podem ser inativadas; 
-* “Reprovado” ou “Inativo” não podem ser aprovados ou reativados, para tanto uma nova solicitação será necessária. 
 
 ---
 # RGN014
-## Recuperação de dados do cabeçalho
-Os dados do CNES, Nome, Município e UF, do cabeçalho (Emitido por:), devem ser recuperados do cadastro do estabelecimento do usuário logado. Já o Nome e CPF do usuário responsável pela última alteração no registro do cadastro e a data dessa ação devem ser recuperados do histórico do registro da funcionalidade em questão.  
+## Recuperação de dados do cabeçalho 
+Os dados do CNES, Nome, Município e UF, do cabeçalho (Emitido por:), devem ser recuperados do cadastro do estabelecimento do usuário logado. Já o Nome e CPF do usuário responsável pela última alteração no registro do cadastro e a data dessa ação devem ser recuperados do histórico do registro da funcionalidade em questão. 
 
 ---
 # RGN015
-## Recuperação do Produto
-Os campos de Produto apresentarão a lista de produtos ativos no sistema a partir da indicação do 3º caractere ou código de barras ou CATMAT Raiz, conforme as máscaras:  
+## Recuperação do Produto 
+Os campos de Produto apresentarão a lista de produtos ativos no sistema a partir da indicação do 3º caractere ou código de barras ou CATMAT Raiz, conforme as máscaras: 
 
 * Para Medicamentos:
     * Código de Barras
@@ -128,13 +116,13 @@ Os campos de Produto apresentarão a lista de produtos ativos no sistema a parti
 
 ---
 # RGN016
-## Exclusão de um registro
-As exclusões permitidas no sistema sempre serão lógicas. Exceto para registro(s) na situação “Em preenchimento” a qual deve ser física.  
+## Exclusão de um registro 
+As exclusões permitidas no sistema sempre serão lógicas, sendo necessário manter o histórico temporal da existência do registro. Exceto para registro(s) na situação “Em preenchimento” a qual deve ser física.  
 
 ---
 # RGN017
-## Estorno de entrada de produto(s)
-O sistema não deve permitir estornar uma entrada se ao menos um do(s) produto(s) vinculado(s) a ela foi movimentado, ou seja, distribuído, dispensado ou uma saída diversa foi registrada no estoque.  
+## Estorno de entrada de produto(s) 
+O sistema não deve permitir estornar uma entrada se ao menos um do(s) produto(s) vinculado(s) a ela foi movimentado, ou seja, distribuído, dispensado ou uma saída diversa foi registrada no estoque. 
 
 ---
 # RGN018
@@ -159,8 +147,8 @@ A realizar o estorno da entrada do(s) produto(s), o sistema deve: 
 
 ---
 # RGN019
-## Atualização de estoque após estorno de entrada
-O sistema, identificando que uma entrada de produto(s) foi estornada, deve debitar a quantidade do saldo deste(s), considerando o lote e validade e atualizar a posição de estoque do estabelecimento que realizou o estorno da entrada.  
+## Atualização de estoque após estorno de entrada 
+O sistema, identificando que uma entrada de produto(s) foi estornada, deve debitar a quantidade do saldo deste(s), considerando o lote e validade e atualizar a posição de estoque do estabelecimento que realizou o estorno da entrada. 
 
 ---
 # RGN020
@@ -179,9 +167,8 @@ O sistema deve consultar:
 
 
 ---
-~~# RGN022~~
-~~## Verificação de Código de Barras**~~  
-~~Para verificar se o número informado é um código de barras, o sistema deve confirmar se este possui 13 caracteres.~~  
+# RGN022 (removido)
+## Verificação de Código de Barras  
 
 ---
 # RGN023
@@ -209,22 +196,33 @@ Para a apresentação e/ou validação de produtos, o sistema deverá seguir as 
 ---
 # RGN024
 ## Restringir Campos da Entrada de Produto para Tipo de Movimentação
-Quando o usuário selecionar no campo “Tipo de Movimentação” a opção: “Saldo de Implantação” ou “Ajuste de Estoque”, o preenchimento dos campos “Modalidade de Licitação”, “CNES/CNPJ” (fornecedor), “Razão Social” (fornecedor), “Tipo de Documento”, “Número do Documento” e “Data do Documento” deixa de ser obrigatório. Já se selecionar a opção “Produção Própria”, o preenchimento dos campos “Tipo de Documento”, “Número do Documento” e “Data do Documento” deixam de ser obrigatórios.  
+* No campo “Tipo de Movimentação”, caso o usuário selecione:
+    * “Saldo de Implantação” ou “Ajuste de Estoque”, os campos abaixo deixam de ser obrigatórios:
+        * “Modalidade de Licitação”
+        * “CNES/CNPJ” (fornecedor)
+        * “Razão Social” (fornecedor)
+        * “Tipo de Documento”
+        * “Número do Documento”
+        * “Data do Documento”
+    * “Produção Própria”, os campos abaixo deixam de ser obrigatórios:
+        * “Tipo de Documento”
+        * “Número do Documento”
+        * “Data do Documento” 
 
 ---
 # RGN025
-## Exclusão de produto na entrada
-Somente será permitida a exclusão de um produto adicionado à entrada se não houver nenhum detalhamento vinculado a ele.  
+## Exclusão de produto na entrada 
+Somente será permitida a exclusão de um produto adicionado à entrada se não houver nenhum detalhamento vinculado a ele. 
 
 ---
 # RGN026
-## Cálculo do Valor do Documento na Entrada do Produto
-O sistema deve calcular o Valor do Documento, somando todos os valores totais dos produtos adicionados à entrada.  
+## Cálculo do Valor do Documento na Entrada do Produto 
+O sistema deve calcular o Valor do Documento, somando todos os valores totais dos produtos adicionados à entrada. 
 
 ---
 # RGN027
-## Cálculo do Valor Total da Entrada para o Produto
-O sistema deve calcular o Valor Total da Entrada, pela fórmula:  Qtd Total Recebida X Valor Unitário do produto. 
+## Cálculo do Valor Total da Entrada para o Produto 
+O sistema deve calcular o Valor Total da Entrada, pela fórmula:  Qtd Total Recebida X Valor Unitário do produto. 
 
 ---
 # RGN028

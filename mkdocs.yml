@@ -7,16 +7,16 @@ nav:
   - Especificações Técnicas: 
     - Documento de Mensagens: EspecificacoesTecnicas/DocumentoDeMensagensv2.md
     - Documento de Regras: EspecificacoesTecnicas/DocumentoDeRegrasv2.md
-    - ETE001 - Cadastro e login: EspecificacoesTecnicas/ETE001.md
-    - ETE012 - Consultar Estabelecimento de Saúde: EspecificacoesTecnicas/ETE012.md
-    - ETE013 - Cadastrar Estabelecimento de Saúde: EspecificacoesTecnicas/ETE013.md
-    - ETE014 - Editar Estabelecimento de Saúde: EspecificacoesTecnicas/ETE014.md
-    - ETE015 - Detalhar Estabelecimento de Saúde: EspecificacoesTecnicas/ETE015.md
+#    - ETE001 - Cadastro e login: EspecificacoesTecnicas/ETE001.md
+    - ETE012 - Consultar Estabelecimento: EspecificacoesTecnicas/ETE012.md
+    - ETE013 - Cadastrar Estabelecimento: EspecificacoesTecnicas/ETE013.md
+    - ETE014 - Editar Estabelecimento: EspecificacoesTecnicas/ETE014.md
+    - ETE015 - Detalhar Estabelecimento: EspecificacoesTecnicas/ETE015.md
     - ETE016 - Consultar Entrada: EspecificacoesTecnicas/ETE016.md
     - ETE017 - Cadastrar Entrada: EspecificacoesTecnicas/ETE017.md
     - ETE018 - Editar Entrada: EspecificacoesTecnicas/ETE018.md
     - ETE019 - Detalhar Entrada: EspecificacoesTecnicas/ETE019.md
-#     - ETE020 - : EspecificacoesTecnicas/ETE020.md
+#    - ETE020 - : EspecificacoesTecnicas/ETE020.md
     - ETE021 - Consultar Saída Diversa: EspecificacoesTecnicas/ETE021.md
     - ETE022 - Cadastrar Saída Diversa: EspecificacoesTecnicas/ETE022.md
     - ETE023 - Editar Saída Diversa: EspecificacoesTecnicas/ETE023.md
@@ -26,8 +26,8 @@ nav:
 #    - HU004 - Solicitar Acesso: HistoriasDeUsuario/HU004.md
 #    - HU016 - Consultar Entrada: HistoriasDeUsuario/HU016.md
 #    - HU017 - Cadastrar Entrada: HistoriasDeUsuario/HU017.md
-  - Casos de Teste:
-    - CT004 - Solicitar Uma Permissão de acesso: CasosDeTeste/CT004.md
+#  - Casos de Teste:
+#    - CT004 - Solicitar Uma Permissão de acesso: CasosDeTeste/CT004.md
   - Sobre: sobre.md
 
 theme: readthedocs

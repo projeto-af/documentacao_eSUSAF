@@ -12,15 +12,15 @@ nav:
     - ETE013 - Cadastrar Estabelecimento: EspecificacoesTecnicas/ETE013.md
     - ETE014 - Editar Estabelecimento: EspecificacoesTecnicas/ETE014.md
     - ETE015 - Detalhar Estabelecimento: EspecificacoesTecnicas/ETE015.md
-    - ETE016 - Consultar Entrada: EspecificacoesTecnicas/ETE016.md
-    - ETE017 - Cadastrar Entrada: EspecificacoesTecnicas/ETE017.md
-    - ETE018 - Editar Entrada: EspecificacoesTecnicas/ETE018.md
-    - ETE019 - Detalhar Entrada: EspecificacoesTecnicas/ETE019.md
-#    - ETE020 - : EspecificacoesTecnicas/ETE020.md
-    - ETE021 - Consultar Saída Diversa: EspecificacoesTecnicas/ETE021.md
-    - ETE022 - Cadastrar Saída Diversa: EspecificacoesTecnicas/ETE022.md
-    - ETE023 - Editar Saída Diversa: EspecificacoesTecnicas/ETE023.md
-    - ETE024 - Detalhar Saída Diversa: EspecificacoesTecnicas/ETE024.md
+    - ETE019 - Consultar Entrada: EspecificacoesTecnicas/ETE019.md
+    - ETE020 - Cadastrar Entrada: EspecificacoesTecnicas/ETE020.md
+    - ETE021 - Editar Entrada: EspecificacoesTecnicas/ETE021.md
+    - ETE022 - Detalhar Entrada: EspecificacoesTecnicas/ETE022.md
+#    - ETE023 - : EspecificacoesTecnicas/ETE023.md
+    - ETE024 - Consultar Saída Diversa: EspecificacoesTecnicas/ETE024.md
+    - ETE025 - Cadastrar Saída Diversa: EspecificacoesTecnicas/ETE025.md
+    - ETE026 - Editar Saída Diversa: EspecificacoesTecnicas/ETE026.md
+    - ETE027 - Detalhar Saída Diversa: EspecificacoesTecnicas/ETE027.md
 #  - Histórias de Usuário:
 #    - HU001 - Cadastro e Login: HistoriasDeUsuario/HU001.md
 #    - HU004 - Solicitar Acesso: HistoriasDeUsuario/HU004.md

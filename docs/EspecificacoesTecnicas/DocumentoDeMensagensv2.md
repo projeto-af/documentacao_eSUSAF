@@ -91,7 +91,7 @@ Este produto já foi adicionado à entrada. 
 
 ---
 # MSG024:
-Produto com data de validade fora dos limites de aceite: anteior ou igual a data atual ou posterior a 10 anos.  
+Produto com data de validade fora dos limites de aceite: anterior ou igual a data atual ou superior a 10 anos.  
 
 ---
 # MSG025:
@@ -268,10 +268,11 @@ Logotipo e-SUS AF
 Recuperação de senha  
 Olá (Nome do Usuário), Tudo bem?  
 Caso não tenha solicitado a alteração de senha, por favor, ignore esta mensagem. Mas se foi você, é só clicar no botão abaixo.  
-BT - Link – Quero alterar minha senha 
+BT - Link – Quero alterar minha senha  
+Atenção! Esse link expira em 20 minutos, após esse prazo, uma nova solicitação deverá ser realizada.
 
 ---
-# MSG061: Pronto <Nome do Usuário>, a sua senha foi redefinida com sucesso! 
+# MSG061: Pronto (Nome do Usuário), a sua senha foi redefinida com sucesso! 
 
 ---
 # MSG062:
@@ -283,4 +284,9 @@ Credenciais inválidas.
 
 ---
 # MSG064:
-Seu usuário está inativo, enviamos um e-mail para confirmação do acesso ao sistema. 
+Seu cadastro está inativo, enviamos um e-mail para confirmação do acesso ao sistema. 
+
+---
+# MSG065
+Tem certeza que deseja limpar os dados informados? (Sim / Não)
+

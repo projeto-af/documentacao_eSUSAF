@@ -5,37 +5,47 @@
 
 | Funcionalidade | Instalador | Administrador (ADM) | Gestor (GST) | Gestor Estabelecimento (GEST) | Farmacêutico (FAR) | Atendente (ATD) |
 | -------------- | :-----------------: | :-----------------: | :----------: | :---------------------------: | :----------------: | :-------------: |
-| **CONFIGURAR INSTALAÇÃO** |
-| Cadastrar Ente |  |  |  |  |  |  |
 | **CONTROLE DE ACESSO** |
-| Consultar Perfil |  |  |  |  |  |  |
-| Solicitar Perfil |  |  |  |  |  |  |
-| Moderar Perfil |  |  |  |  |  |  |
-| Atribuir Perfil |  |  |  |  |  |  |
-| Detalhar Perfil |  |  |  |  |  |  |
-| Gerenciar Perfil |  |  |  |  |  |  |
-| **ESTABELECIMENTO** |
-| Consultar Estabelecimento |  |  | X | X | X | X |
-| Ativar / Inativar Estabelecimento |  |  | X |  |  |  |
-| Cadastrar Estabelecimento |  |  | X |  |  |  |
-| Editar Estabelecimento |  |  | X | X |  |  |
-| Detalhar Dados Estabelecimento |  |  | X | X | X | X |
-| **ENTRADA** |
-| Consultar Entrada |  |  | X | X | X | X |
-| Cadastrar Entrada |  |  | X | X | X | X |
-| Editar Entrada |  |  | X | X | X | X |
-| Detalhar Dados Entrada |  |  | X | X | X | X |
-| **SAÍDA DIVERSA** |
-| Consultar Saída Diversa |  |  | X | X | X | X |
-| Cadastrar Saída Diversa |  |  | X | X | X | X |
-| Editar Saída Diversa |  |  | X | X | X | X |
-| Detalhar Dados Saída Diversa |  |  | X | X | X | X |
-| **USUÁRIO SUS** |
-| Consultar Usuário SUS |  |  |  |  |  |  |
-| Incluir Usuário SUS |  |  |  |  |  |  |
-| Editar Usuário SUS |  |  |  |  |  |  |
-| Detalhar Dados Usuário SUS |  |  |  |  |  |  |
-|  |  |  |  |  |  |
+| **MODERAR ACESSO** | 
+| Consultar Permissões Acesso | X | X | X | X |
+| Atribuir Perfil | X | X | X | X |
+| Detalhar Permissões Acesso | X | X | X | X |
+| **SOLICITAR PERFIL** | 
+| Consultar Meu Perfil | | X | X | X | X | X |
+| Solicitar Perfil | | X | X | X | X | X |
+| Detalhar Meu Perfil | | X | X | X | X | X |
+| **GERENCIAR PERFIL** | 
+| Consultar Perfil | | | X | 
+| Cadastrar Perfil | | | X |
+| Detalhar Perfil | | | X |
+| **CONFIGURAÇÃO** | 
+| **Cadastro de Entes** | 
+| Consultar Ente | | X | 
+| Cadastrar Ente | | X | 
+| **CADASTRO** | 
+| **Estabelecimento** | 
+| Consultar Estabelecimento | | | X | X | X | X |
+| Cadastrar Estabelecimento | | | X |
+| Editar Estabelecimento | | | X | X | X | X |
+| Detalhar Estabelecimento | | | X | X | X | X |
+| **MOVIMENTAÇÃO** | 
+| **Entrada** | 
+| Consultar Entrada | | | X | X | X | X |
+| Cadastrar Entrada | | | X | X | X | X |
+| Editar Entrada | | | X | X | X | X |
+| Detalhar Entrada | | | X | X | X | X |
+| **Saída Diversa** | 
+| Consultar Saída Diversa | | | X | X | X | X |  
+| Cadastrar Saída Diversa | | | X | X | X | X |
+| Editar Saída Diversa | | | X | X | X | X |
+| Detalhar Saída Diversa | | | X | X | X | X |
+
+**OBSERVAÇÃO:**  
+As açoes realizadas pelos perfis de acordo com os proviégios afetam:
+
+* Perfil Instalador e Administrador: Instância; 
+* Perfil Gestor: Instância e Estabelecimento (se vinculado a um estabelecimento); 
+* Perfil Gestor Estabelecimento, Farmacêutico e Atendente: Estabelecimento. 
 
 ---
 # RGN002
@@ -50,7 +60,7 @@ Não é permitido o cadastro de mais de um Estabelecimento de Saúde com o mesmo
 ---
 # RGN004
 ## Resultado de consultas 
-As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta.   
+A grid com resultados de consultas deve ser apresentada somente após ser acidonada a opção "Consultar" e permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta.   
 
 ---
 # RGN005
@@ -103,14 +113,13 @@ Os dados do CNES, Nome, Município e UF, do cabeçalho (Emitido por:), devem ser
 Os campos de Produto apresentarão a lista de produtos ativos no sistema a partir da indicação do 3º caractere ou código de barras ou CATMAT Raiz, conforme as máscaras: 
 
 * Para Medicamentos:
-    * Código de Barras
-    * (Nome Comercial) 
+    * (Código de Barras)
     * Princípios ativos cadastrados para o medicamento no formato: {[(Princípio Ativo 1) (Concentração 1) (Sigla da Unidade de Medida 1)] + [(Princípio Ativo 2) (Concentração 2) (Sigla da Unidade de Medida 2)]  + ....}
     * CATMAT: (CATMAT Raiz)
     * Forma Farmacêutica: (Forma Farmacêutica)
     * Fabricante: [(CNPJ) - (Razão Social)]
  
-* Para Produtos para Saúde:
+* Para Produtos para Saúde e Equipamentos:
     * (Descrição do produto CATMAT)
     * CATMAT: (CATMAT Raiz)
 
@@ -176,14 +185,14 @@ O sistema deve consultar:
 Para a apresentação e/ou validação de produtos, o sistema deverá seguir as máscaras abaixo: 
 
 * Para Medicamentos com forma farmacêutica em estado “Semissólidas” ou “Gasosa” ou “Líquida” (no cadastro de medicamentos): 
-    * Nome Comercial: (Nome da Marca)
+    * (Código de Barras)
     * Princípios ativos cadastrados para o medicamento no formato: {[(Princípio Ativo 1) (Concentração 1) (Sigla da Unidade de Medida 1)] + [(Princípio Ativo 2) (Concentração 2) (Sigla da Unidade de Medida 2)]  + ....}
     * CATMAT: (CATMAT Raiz + Unidade CATMAT)
     * Forma Farmacêutica: (Forma Farmacêutica) - (Volume) (Unidade de Medida)
     * Fabricante: (CNPJ) - (Razão Social)
  
 * Para Medicamentos com forma farmacêutica em estado “Sólidas” (no cadastro de medicamentos):
-    * Nome Comercial: (Nome da Marca)
+    * (Código de Barras)
     * Princípios ativos cadastrados para o medicamento no formato: {[(Princípio Ativo 1) (Concentração 1) (Sigla da Unidade de Medida 1)] + [(Princípio Ativo 2) (Concentração 2) (Sigla da Unidade de Medida 2)]  + ....}
     * CATMAT: (CATMAT Raiz + Unidade CATMAT)
     * Forma Farmacêutica: (Forma Farmacêutica) - (Volume) (Unidade de Medida)
@@ -242,7 +251,7 @@ O sistema deve validar se já existe uma entrada com o mesmo tipo, número de do
 ---
 # RGN030
 ## Número de Registro da Entrada
-Ao salvar parcial ou armazenar uma entrada de produtos, caso ainda não exista, o sistema deve gerar um número identificador único para a entrada e apresentá-lo ao usuário.  
+Ao salvar uma entrada de produtos, caso ainda não exista, o sistema deve gerar um número identificador único para a entrada e apresentá-lo ao usuário.  
 
 ---
 # RGN031
@@ -344,4 +353,9 @@ Ao salvar parcial ou registar uma saída diversa de produtos, caso ainda não ex
 # RGN046
 ## Atualização de estoque após registrar uma saída diversa
 O sistema, identificando que uma saída diversa de produto(s) foi registrada, deve debitar a quantidade no saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou a saída diversa.
+
+---
+# RGN047
+## Validade do token de recuperação de senha
+O tempo de validade do token gerado para recuperação de senha é de 20 minutos.
 

@@ -7,11 +7,18 @@ nav:
   - Especificações Técnicas: 
     - Documento de Mensagens: EspecificacoesTecnicas/DocumentoDeMensagensv2.md
     - Documento de Regras: EspecificacoesTecnicas/DocumentoDeRegrasv2.md
-#    - ETE001 - Cadastro e login: EspecificacoesTecnicas/ETE001.md
-    - ETE012 - Consultar Estabelecimento: EspecificacoesTecnicas/ETE012.md
-    - ETE013 - Cadastrar Estabelecimento: EspecificacoesTecnicas/ETE013.md
-    - ETE014 - Editar Estabelecimento: EspecificacoesTecnicas/ETE014.md
-    - ETE015 - Detalhar Estabelecimento: EspecificacoesTecnicas/ETE015.md
+    - ETE001 - Realizar Login: EspecificacoesTecnicas/ETE001.md
+    - ETE002 - Cadastrar Usuário do Sistema: EspecificacoesTecnicas/ETE002.md
+    - ETE003 - Recuperar Senha: EspecificacoesTecnicas/ETE003.md
+    - ETE006 - Detalhar Permissão de Acesso: EspecificacoesTecnicas/ETE006.md
+    - ETE007 - Consultar Meus Perfis: EspecificacoesTecnicas/ETE007.md
+    - ETE009 - Detalhar Meu Perfil : EspecificacoesTecnicas/ETE009.md
+    - ETE010 - Consultar Perfil : EspecificacoesTecnicas/ETE010.md
+    - ETE012 - Detalhar Perfil : EspecificacoesTecnicas/ETE012.md
+    - ETE015 - Consultar Estabelecimento: EspecificacoesTecnicas/ETE015.md
+    - ETE016 - Cadastrar Estabelecimento: EspecificacoesTecnicas/ETE016.md
+    - ETE017 - Editar Estabelecimento: EspecificacoesTecnicas/ETE017.md
+    - ETE018 - Detalhar Estabelecimento: EspecificacoesTecnicas/ETE018.md
     - ETE019 - Consultar Entrada: EspecificacoesTecnicas/ETE019.md
     - ETE020 - Cadastrar Entrada: EspecificacoesTecnicas/ETE020.md
     - ETE021 - Editar Entrada: EspecificacoesTecnicas/ETE021.md

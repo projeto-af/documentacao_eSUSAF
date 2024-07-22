@@ -186,8 +186,7 @@ A Saída Diversa foi excluída! 
 A Saída Diversa foi estornada!  
 
 ---
-# MSG048:
-O Estabelecimento foi excluído!  
+# MSG048: (removido)
 
 ---
 # MSG049:
@@ -266,13 +265,14 @@ Caso você não receba o e-mail em alguns minutos, verifique a sua caixa de spam
 **Mensagem:**  
 Logotipo e-SUS AF  
 Recuperação de senha  
-Olá (Nome do Usuário), Tudo bem?  
+Olá (Nome do Usuário), tudo bem?  
 Caso não tenha solicitado a alteração de senha, por favor, ignore esta mensagem. Mas se foi você, é só clicar no botão abaixo.  
 BT - Link – Quero alterar minha senha  
 Atenção! Esse link expira em 20 minutos, após esse prazo, uma nova solicitação deverá ser realizada.
 
 ---
-# MSG061: Pronto (Nome do Usuário), a sua senha foi redefinida com sucesso! 
+# MSG061:
+Pronto (Nome do Usuário), a sua senha foi redefinida com sucesso!  
 
 ---
 # MSG062:
@@ -289,4 +289,24 @@ Seu cadastro está inativo, enviamos um e-mail para confirmação do acesso ao s
 ---
 # MSG065
 Tem certeza que deseja limpar os dados informados? (Sim / Não)
+
+---
+# MSG066
+Tem certeza que deseja ativar a participação deste ente? (Sim / Não)
+
+---
+# MSG067
+Tem certeza que deseja inativar a participação desse ente? (Sim / Não)
+
+---
+# MSG068
+Participação ativada.  
+
+---
+# MSG069
+Participação inativada.
+
+---
+# MSG070
+O perfil foi excluído.
 

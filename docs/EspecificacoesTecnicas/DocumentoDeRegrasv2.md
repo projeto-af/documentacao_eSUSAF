@@ -26,7 +26,7 @@
 | **Estabelecimento** | 
 | Consultar Estabelecimento | | | X | X | X | X |
 | Cadastrar Estabelecimento | | | X |
-| Editar Estabelecimento | | | X | X | X | X |
+| Editar Estabelecimento | | | X | X | X |
 | Detalhar Estabelecimento | | | X | X | X | X |
 | **MOVIMENTAÇÃO** | 
 | **Entrada** | 
@@ -359,3 +359,7 @@ O sistema, identificando que uma saída diversa de produto(s) foi registrada, de
 ## Validade do token de recuperação de senha
 O tempo de validade do token gerado para recuperação de senha é de 20 minutos.
 
+---
+# RGN048
+## Recuperação de dados do estabelecimento do usuário logado
+Os dados de UF, Município e Estabelecimentos devem ser recuperados do cadastro do estabelecimento vinculado ao perfil do usuário logado.

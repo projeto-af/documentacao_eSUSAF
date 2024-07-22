@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>ETE022 - Detalhar Entrada - e-SUS AF - Documentação Negocial</title>
+    <title>ETE007 - Consultar Meus Perfis - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "ETE022 - Detalhar Entrada";
-        var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE022.md";
+        var mkdocs_page_name = "ETE007 - Consultar Meus Perfis";
+        var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE007.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -57,7 +57,11 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE007/">ETE007 - Consultar Meus Perfis</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">ETE007 - Consultar Meus Perfis</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#descricao">Descrição</a>
+    </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE009/">ETE009 - Detalhar Meu Perfil</a>
                   </li>
@@ -79,17 +83,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE021/">ETE021 - Editar Entrada</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">ETE022 - Detalhar Entrada</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE022/">ETE022 - Detalhar Entrada</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE024/">ETE024 - Consultar Saída Diversa</a>
                   </li>
@@ -119,7 +113,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Especificações Técnicas</li>
-      <li class="breadcrumb-item active">ETE022 - Detalhar Entrada</li>
+      <li class="breadcrumb-item active">ETE007 - Consultar Meus Perfis</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -128,107 +122,53 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="ete022-detalhar-entrada">ETE022 - Detalhar Entrada</h1>
-<h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
-<p>Como usuário quero detalhar os dados de uma entrada de produto</p>
-<h2 id="prototipo-001">Protótipo 001</h2>
-<p><img alt="cadastrar-entrada" src="../../imagens/entrada-impressao.png" />
-<a href="https://xd.adobe.com/view/153e76da-8687-401d-a008-4ba101ed6f9b-406d/">Link para protótipo no Adobe XD</a></p>
-<h2 id="elementos-de-tela">Elementos de Tela</h2>
+                <h1 id="especificacao-tecnica-007-consultar-meus-perfis">Especificação Técnica 007 - Consultar Meus Perfis</h1>
+<h2 id="descricao">Descrição</h2>
+<p>Como usuário quero consultar a relação de perfis vinculados ao meu cadastro. </p>
+<h1 id="prototipo-001">Protótipo 001</h1>
+<h2 id="elementos-de-tela">Elementos de Tela:</h2>
 <ul>
-<li>Bread Crumb – “Movimentação / Entrada / Dados da Entrada” </li>
-<li>Título da página – “Detalhar Entrada” </li>
-<li>“Seta” – M - retorna para a Tela de Consultar Entrada (ETE016) </li>
-<li>“Imprimir” – BT </li>
-<li>“Consultar” – BT </li>
-<li>Logotipo e-SUS AF - M </li>
-<li>Cabeçalho:  <ul>
-<li>Estabelecimento: <ul>
-<li>CNES / Nome do estabelecimento logado / Município / UF  </li>
+<li>Bread Crumb – “Controle de Acesso / Solicitar Perfil / Consulta” </li>
+<li>Título da página – “Consultar Meus Perfis” </li>
+<li>“Seta” – M - retorna para a Tela Inicial/Dashboard </li>
+<li>“Novo” – BT - direciona para a Tela de Solicitar Perfil  </li>
+<li>“CPF” – N (11) </li>
+<li>“Nome Completo” – A (50) </li>
+<li>Lista de perfil(is) do usuário <ul>
+<li>“Perfil” – A (50) </li>
+<li>“UF” – A (2) </li>
+<li>Município – A (50) </li>
+<li>Estabelecimento – A (50) </li>
+<li>Situação – A (20) </li>
+<li>Detalhar – BT - direciona para a Tela de Detalhar Perfil  </li>
 </ul>
 </li>
-<li>Alterado por:  <ul>
-<li>CPF / Nome completo do usuário que realizou a última ação no cadastro da entrada (anonimizar os dados)  </li>
-</ul>
-</li>
-<li>Data e Hora da última alteração: </li>
-</ul>
-</li>
-<li>Nº da Entrada </li>
-<li>Nº do Empenho  </li>
-<li>Modalidade de Licitação  </li>
-<li>Tipo de Movimentação  </li>
-<li>Tipo de Documento  </li>
-<li>Nº do Documento  </li>
-<li>Data do Documento  </li>
-<li>Valor do Documento  </li>
-<li>NFe (XML) <ul>
-<li>Nome do arquivo XML </li>
-</ul>
-</li>
-<li>Data do Recebimento </li>
-<li>Data do Armazenamento </li>
-<li>Fornecedor <ul>
-<li>CNES ou CNPJ </li>
-<li>Razão Social </li>
-</ul>
-</li>
-<li>Observações </li>
-<li>Produto(s) – lista produtos adicionados à entrada <ul>
-<li>Código de Barras: </li>
-<li>Descrição do Produto</li>
-<li>CATMAT: </li>
-<li>Forma Farmacêutica</li>
-<li>Fabricante: CNPJ-Razão Social</li>
-<li>Qtd Total </li>
-<li>Valor Unitário  </li>
-<li>Valor Total  </li>
-<li>Detalhe Produto <ul>
-<li>Nº do Lote </li>
-<li>Data de Validade </li>
-<li>Quantidade Recebida </li>
-<li>Valor Unitário  </li>
-<li>Valor Total  </li>
-<li>Programa de Saúde </li>
-<li>Condições Especiais de Armazenamento </li>
-<li>Descrição</li>
-<li>Endereçamento Físico </li>
-<li>Fabricante CNES ou CNPJ-Nome Razão Social</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Situação </li>
-<li>Responsável pelo Armazenamento:  <ul>
-<li>CPF / Nome Completo  </li>
-</ul>
-</li>
-<li>Data Estorno: </li>
-<li>Responsável pelo Estorno: <ul>
-<li>CPF / Nome Completo </li>
-</ul>
-</li>
+<li>Ordenação nas colunas </li>
+<li>Paginação </li>
+<li>Registro por página </li>
+<li>Ir para página </li>
 </ul>
 <p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.</p>
-<h2 id="criterios-de-aceite">Critérios de Aceite</h2>
+TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório. </p>
+<h2 id="criterios-de-aceite">Critérios de aceite</h2>
 <ol>
-<li>O usuário somente pode acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a> </li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Movimentação”, subitem “Entrada”, na tela “Consultar Entrada” quando for acionada a opção “Detalhar”; </li>
-<li>O sistema deve recuperar e apresentar os dados relacionados ao cadastro da entrada de produto(s) que o usuário deseja detalhar; </li>
-<li>Os dados do CNES, Nome, Município e UF, do cabeçalho (Emitido por:), devem ser recuperados do cadastro do estabelecimento do usuário logado. Já o Nome e CPF do usuário responsável pela última alteração no registro do cadastro e a data dessa ação devem ser recuperados do histórico do registro da funcionalidade em questão; <a href="../DocumentoDeRegrasv2/#rgn014">RGN014</a> </li>
-<li>Os produtos relacionados na entrada devem ser apresentados conforme o padrão do sistema; <a href="../DocumentoDeRegrasv2/#rgn023">RGN023</a> </li>
-<li>Os campos "Data o Armazenamento" e “Responsável pelo Armazenamento” somente serão apresentados quando o registro da entrada estiver com a situação “Armazenada” ou “Estornada”; </li>
-<li>Os campos “Data do Estorno” e “Responsável pelo Estorno” somente serão apresentados quando o registro da entrada estiver com a situação “Estornada”; </li>
-<li>Quando o usuário acionar a opção de “Imprimir”, o sistema deve permitir imprimir as informações da tela ou salvá-las em um arquivo no formato desejado (padrão Windows); </li>
-<li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema finaliza o detalhamento e retorna à tela de consulta às entradas de produtos. </li>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso” quando acionar o subitem “Solicitar Perfil”; </li>
+<li>A funcionalidade deve sempre estar disponível para acesso independente do usuário possuir ou não um perfil vinculado ao seu cadastro; </li>
+<li>Quando o usuário acionar a opção de “Voltar”, o sistema deve retornar à tela inicial do sistema (dashboard); </li>
+<li>Quando o usuário acionar a opção “Novo”, o sistema deve direcionar à tela de “Solicitar Perfil”; <a href="ETE008.md">ETE008</a></li>
+<li>O sistema deve recuperar e apresentar o CPF e o Nome Completo do usuário logado e a lista dos perfis vinculados ao seu cadastro com a respectiva situação de cada registro. Caso não exista deve apresentar a grid sem registros;  </li>
+<li>O sistema, encontrando os registros de perfis do usuário logado, deve apresentar os dados: Perfil, UF, Município, Estabelecimento, Situação e a ação de “Detalhar”; </li>
+<li>Os dados de UF, Município e Estabelecimento devem ser recuperados do cadastro do estabelecimento vinculado ao perfil do usuário logado; <a href="../DocumentoDeRegrasv2/#rgn048">RGN048</a></li>
+<li>As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta; <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a></li>
+<li>Quando o usuário acionar a opção “Detalhar”, o sistema deve direcionar à tela de “Detalhar Meu Perfil”. <a href="../ETE009/">ETE009</a></li>
 </ol>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../ETE021/" class="btn btn-neutral float-left" title="ETE021 - Editar Entrada"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../ETE024/" class="btn btn-neutral float-right" title="ETE024 - Consultar Saída Diversa">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ETE006/" class="btn btn-neutral float-left" title="ETE006 - Detalhar Permissão de Acesso"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ETE009/" class="btn btn-neutral float-right" title="ETE009 - Detalhar Meu Perfil">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -251,10 +191,10 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../ETE021/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../ETE006/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../ETE024/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../ETE009/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

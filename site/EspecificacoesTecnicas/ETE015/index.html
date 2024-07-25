@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>ETE015 - Detalhar Estabelecimento - e-SUS AF - Documentação Negocial</title>
+    <title>ETE015 - Consultar Estabelecimento - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "ETE015 - Detalhar Estabelecimento";
+        var mkdocs_page_name = "ETE015 - Consultar Estabelecimento";
         var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE015.md";
         var mkdocs_page_url = null;
       </script>
@@ -49,13 +49,23 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegrasv2/">Documento de Regras</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE012/">ETE012 - Consultar Estabelecimento</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE001/">ETE001 - Realizar Login</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE013/">ETE013 - Cadastrar Estabelecimento</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE002/">ETE002 - Cadastrar Usuário do Sistema</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE014/">ETE014 - Editar Estabelecimento</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE003/">ETE003 - Recuperar Senha</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">ETE015 - Detalhar Estabelecimento</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE007/">ETE007 - Consultar Meus Perfis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE009/">ETE009 - Detalhar Meu Perfil</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE010/">ETE010 - Consultar Perfil</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE012/">ETE012 - Detalhar Perfil</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">ETE015 - Consultar Estabelecimento</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
     </li>
@@ -64,22 +74,14 @@
     <li class="toctree-l2"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#001">001</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#002">002</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#003">003</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#004">004</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#005">005</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#006">006</a>
-    </li>
-        </ul>
     </li>
     </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE016/">ETE016 - Cadastrar Estabelecimento</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE017/">ETE017 - Editar Estabelecimento</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE018/">ETE018 - Detalhar Estabelecimento</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE019/">ETE019 - Consultar Entrada</a>
                   </li>
@@ -117,7 +119,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Especificações Técnicas</li>
-      <li class="breadcrumb-item active">ETE015 - Detalhar Estabelecimento</li>
+      <li class="breadcrumb-item active">ETE015 - Consultar Estabelecimento</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -126,99 +128,88 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="ete015-detalhar-estabelecimento-de-saude">ETE015 - Detalhar Estabelecimento de Saúde</h1>
+                <h1 id="ete015-consultar-estabelecimento-de-saude">ETE015 - Consultar Estabelecimento de Saúde</h1>
 <h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
-<p>Como usuário quero detalhar os dados de estabelecimento de saúde. </p>
+<p>Como usuário quero consultar o(s) estabelecimento(s) de saúde dentre os cadastrados e vinculados aos participantes da instância</p>
 <h2 id="prototipo-001">Protótipo 001</h2>
-<p><img alt="cadastrar-entrada" src="../../imagens/cadastro-estabelecimento-impressao.png" /><br />
+<p>[Inserir imagem]
 <a href="https://xd.adobe.com/view/153e76da-8687-401d-a008-4ba101ed6f9b-406d/">Link para protótipo no Adobe XD</a></p>
 <h2 id="elementos-de-tela">Elementos de Tela</h2>
 <ul>
-<li>Bread Crumb – “Cadastro / Estabelecimento / Dados do Estabelecimento” </li>
-<li>Título da página – “Detalhar Estabelecimento” </li>
-<li>“Seta” – M - retorna para a Tela de Consultar Estabelecimento (ETE012) </li>
-<li>“Imprimir” – BT </li>
-<li>“Consultar” – BT - retorna para a Tela de Consultar Estabelecimento (ETE012) </li>
-<li>Logotipo e-SUS AF - M </li>
-<li>Cabeçalho:  <ul>
-<li>Estabelecimento: <ul>
-<li>CNES / Nome do estabelecimento logado / Município / UF  </li>
+<li>Bread Crumb – “Cadastro / Estabelecimento / Consulta” </li>
+<li>Título da página – “Consultar Estabelecimento” </li>
+<li>“Seta” – M - retorna para a Tela Inicial/Dashboard </li>
+<li>“Novo” – BT - direciona para a Tela de Cadastrar Estabelecimento</li>
+<li>Filtros para consulta: <ul>
+<li>CNES/CNPJ – N (7/14) </li>
+<li>Nome do Estabelecimento – A (150) </li>
+<li>Situação – SU </li>
+<li>Tipo de Estabelecimento – SM </li>
 </ul>
 </li>
-<li>Alterado por:  <ul>
-<li>CPF / Nome completo do usuário que realizou a última ação no cadastro da entrada (anonimizar os dados)  </li>
-<li>Data e Hora da última alteração: </li>
+<li>“Consultar” – BT </li>
+<li>“Limpar” – BT </li>
+<li>Lista de estabelecimentos dentre os participantes da instância do usuário do logado <ul>
+<li>Buscar por – A / AC </li>
+<li>CNES (0000000) </li>
+<li>CNPJ (00.000.000/0000-00) </li>
+<li>Nome do Estabelecimento </li>
+<li>Situação – A (9) </li>
 </ul>
 </li>
+<li>Ações conforme situação: <ul>
+<li>Editar – BT - direciona para a Tela de Editar Estabelecimento</li>
+<li>Excluir – BT </li>
+<li>Ativar – BT  </li>
+<li>Inativar – BT  </li>
+<li>Detalhar – BT - direciona para a Tela de Detalhar Estabelecimento</li>
 </ul>
 </li>
-<li>CNES  </li>
-<li>CNPJ </li>
-<li>Razão Social  </li>
-<li>Tipo Gestão </li>
-<li>Nome Fantasia </li>
-<li>Tipo de Estabelecimento  </li>
-<li>CEP </li>
-<li>Endereço </li>
-<li>Número </li>
-<li>Bairro </li>
-<li>Município </li>
-<li>UF </li>
-<li>É obrigatória a indicação de um farmacêutico responsável para este estabelecimento? - Sim ou Não </li>
-<li>Farmacêutico(s) <ul>
-<li>CPF </li>
-<li>Nome </li>
-<li>UF/Nº CRF </li>
-<li>Responsável - Sim ou Não </li>
+<li>Ordenação nas colunas </li>
+<li>Paginação </li>
+<li>Registro por página </li>
+<li>Ir para página </li>
 </ul>
-</li>
-<li>Departamento(s) <ul>
-<li>Descrição departamento </li>
-</ul>
-</li>
-<li>Mapa do Endereçamento Físico de Armazenamento <ul>
-<li>Código &gt; Descrição Endereço </li>
-</ul>
-</li>
-<li>Situação do Registro
- </li>
-</ul>
+<p><strong>Legenda</strong><br />
+TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.<br />
+</p>
 <h2 id="criterios-de-aceite">Critérios de Aceite</h2>
-<h3 id="001">001</h3>
-<ul>
+<ol>
 <li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Cadastro” quando acionar o subitem “Estabelecimento”; </li>
+<li>Quando o usuário acionar a opção de “Voltar”, o sistema deve retornar para a tela inicial do sistema (dashboard); </li>
+<li>Quando o usuário acionar a opção de “Novo”, o sistema o sistema deve direcionar para a tela de cadastro de um novo estabelecimento de saúde; <a href="../ETE013/">ETE013</a></li>
+<li>No campo “Situação”, o sistema deve apresentar as opções: Em preenchimento, Ativo e Inativo; </li>
+<li>No campo “Tipo de Estabelecimento”, o sistema deve apresentar as opções: Almoxarifado/CAF, Almoxarifado Regional/Regional de Saúde e/ou Farmácia/Dispensário; </li>
+<li>Quando o usuário acionar a opção “Consultar”, o sistema deve recuperar e apresentar o(s) estabelecimento(s) de saúde dentre os cadastrados e vinculados os participantes da instância do usuário do logado de acordo com o(s) filtro(s) informado(s). Caso não seja informado nenhum filtro, o sistema deve recuperar e apresentar todo(s) o(s) estabelecimento(s) da instância. Caso algum campo retorne vazio, o sistema deve apresentar a descrição “Sem informação”; <a href="../DocumentoDeRegrasv2/#rgn002">RGN002</a></li>
+<li>O sistema, não encontrando o(s) estabelecimento(s) para os filtros informados, deve informar que o(s) registro(s) não foram encontrados; <a href="../DocumentoDeMensagensv2/#msg041">MSG041</a></li>
+<li>O sistema, encontrando o(s) estabelecimento(s) de saúde, deve apresentá-lo(s) em ordem decrescente de inclusão com os respectivos dados: CNES, CNPJ, Nome do Estabelecimento, Situação e as ações desejáveis para cada registro; </li>
+<li>No campo “Nome do Estabelecimento”, na grid do resultado, o sistema deve recuperar e apresentar o nome fantasia informado no cadastro do estabelecimento, caso retorne vazio deve apresentar a razão social deste; </li>
+<li>O sistema deve permitir excluir, editar, ativar, inativar ou detalhar um registro de estabelecimento de saúde; </li>
+<li>O sistema deve apresentar as ações conforme: <ul>
+<li>Para registro com situação “Ativo”, as opções “Editar”, “Inativar” e “Detalhar”; </li>
+<li>Para registro com situação “Inativo”, as opções “Ativar” e “Detalhar”;</li>
 </ul>
-<hr />
-<h3 id="002">002</h3>
-<ul>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Cadastro”, subitem “Estabelecimento”, na tela “Consultar Estabelecimento” quando for acionada a opção “Detalhar”;   </li>
+</li>
+<li>As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta; <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a></li>
+<li>Quando o usuário acionar a opção de “Limpar”, o sistema deve limpar o(s) filtro(s) informado(s), o resultado consulta e permanecer na tela de consultar estabelecimento; </li>
+<li>Quando o usuário acionar a opção “Editar”, o sistema deve direcionar para a tela de edição de um estabelecimento de saúde; <a href="ETE014.md">ETE014</a></li>
+<li>As opções “Ativar” e “Inativar” somente serão apresentadas para usuários com perfil de “Gestor”; </li>
+<li>Quando o usuário acionar a opção “Inativar”, o sistema deve: <ul>
+<li>Verificar se existe(m) produto(s) no estoque do estabelecimento, caso possua apresenta uma mensagem de impedimento; <a href="../DocumentoDeRegrasv2/#rgn008">RGN008</a> <a href="../DocumentoDeMensagensv2/#msg013">MSG013</a></li>
+<li>Apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema altera o estado e a situação do registro para “Inativo” e apresenta a mensagem de sucesso. Caso a ação não seja confirmada, o sistema permanece na tela de consulta; <a href="../DocumentoDeMensagensv2/#msg011">MSG011</a> <a href="../DocumentoDeMensagensv2/#msg049">MSG049</a> </li>
 </ul>
-<hr />
-<h3 id="003">003</h3>
-<ul>
-<li>O sistema deve recuperar e apresentar os dados relacionados ao cadastro do estabelecimento de saúde que o usuário deseja detalhar; </li>
-</ul>
-<hr />
-<h3 id="004">004</h3>
-<ul>
-<li>Os dados do CNES, Nome, Município e UF, do cabeçalho (Emitido por:), devem ser recuperados do cadastro do estabelecimento do usuário logado. Já o Nome e CPF do usuário responsável pela última alteração no registro do cadastro e a data dessa ação devem ser recuperados do histórico do registro da funcionalidade em questão; <a href="../DocumentoDeRegrasv2/#rgn014">RGN014</a></li>
-</ul>
-<hr />
-<h3 id="005">005</h3>
-<ul>
-<li>Quando o usuário acionar a opção de “Imprimir”, o sistema deve permitir imprimir as informações da tela ou salvá-las em um arquivo no formato desejado (padrão Windows); </li>
-</ul>
-<hr />
-<h3 id="006">006</h3>
-<ul>
-<li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema finaliza o detalhamento e retorna à tela de consulta aos estabelecimentos de saúde. </li>
-</ul>
+</li>
+<li>Quando o usuário acionar a opção “Ativar”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve o sistema altera o estado e a situação do registro para “Ativo” e apresenta a mensagem de sucesso; <a href="../DocumentoDeMensagensv2/#msg012">MSG012</a> <a href="../DocumentoDeMensagensv2/#msg050">MSG050</a></li>
+<li>Quando o usuário acionar a opção “Detalhar”, o sistema deve direcionar para a tela de detalhamento dos dados do estabelecimento de saúde; <a href="./">ETE015</a></li>
+<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
+</ol>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../ETE014/" class="btn btn-neutral float-left" title="ETE014 - Editar Estabelecimento"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../ETE019/" class="btn btn-neutral float-right" title="ETE019 - Consultar Entrada">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ETE012/" class="btn btn-neutral float-left" title="ETE012 - Detalhar Perfil"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ETE016/" class="btn btn-neutral float-right" title="ETE016 - Cadastrar Estabelecimento">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -241,10 +232,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../ETE014/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../ETE012/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../ETE019/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../ETE016/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -122,8 +122,7 @@ Ao menos um produto deve ser relacionado à entrada. 
 Dados salvos parcialmente!  
 
 ---
-# MSG032:
-Tem certeza que deseja excluir o arquivo XML? (Sim/Não). Caso confirme a ação os dados recuperados do arquivo serão perdidos.  
+# MSG032: (removido)
 
 ---
 # MSG033:
@@ -308,5 +307,40 @@ Participação inativada.
 
 ---
 # MSG070
-O perfil foi excluído.
+O perfil foi inativado.
 
+---
+# MSG071
+O Ente foi cadastrado. 
+
+---
+# MSG072
+O cadastro desse Ente já existe.
+
+---
+# MSG073
+O Ente do CNES informado já está cadastrado para esta instância.
+
+---
+# MSG074
+Tem certeza que deseja ativar este perfil?  (Sim/Não) 
+
+---
+# MSG075
+Tem certeza que deseja inativar este perfil?  (Sim/Não)
+
+---
+# MSG076
+O perfil foi ativado!
+
+---
+# MSG077
+O perfil já existe.
+
+---
+# MSG078
+O perfil foi cadastrado! 
+
+---
+# MSG079
+O cadastro do perfil foi atualizado!

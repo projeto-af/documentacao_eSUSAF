@@ -363,3 +363,18 @@ O tempo de validade do token gerado para recuperação de senha é de 20 minutos
 # RGN048
 ## Recuperação de dados do estabelecimento do usuário logado
 Os dados de UF, Município e Estabelecimentos devem ser recuperados do cadastro do estabelecimento vinculado ao perfil do usuário logado.
+
+---
+# RGN049
+## Cadastro de Ente 
+O sistema não deve permitir o cadastro de um ente com mesma UF e/ou Município e CNES. 
+
+---
+# RGN050
+## Gerenciar perfil 
+O sistema não deve permitir editar e inativar perfis do tipo “Padrão” e do tipo “Personalizado” que estão atribuídos ao cadastrado de ao menos um usuário do sistema. 
+
+---
+# RGN051
+## Cadastro de Perfil 
+O sistema não deve permitir o cadastro de um perfil com a mesma descrição de um perfil já cadastrado para a instância. 

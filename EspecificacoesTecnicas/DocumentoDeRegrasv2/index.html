@@ -57,9 +57,15 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE003/">ETE003 - Recuperar Senha</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE004/">ETE004 - Consultar Permissões de Acesso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE005/">ETE005 - Atribuir Perfil de Acesso</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE007/">ETE007 - Consultar Meus Perfis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE008/">ETE008 - Solicitar Perfil</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE009/">ETE009 - Detalhar Meu Perfil</a>
                   </li>
@@ -89,13 +95,17 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE022/">ETE022 - Detalhar Entrada</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE024/">ETE024 - Consultar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída Diversa</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE025/">ETE025 - Cadastrar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída Diversa</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE026/">ETE026 - Editar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída Diversa</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE027/">ETE027 - Detalhar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída Diversa</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
                   </li>
               </ul>
               <ul>
@@ -448,6 +458,24 @@
 <td style="text-align: center;">X</td>
 <td style="text-align: center;">X</td>
 </tr>
+<tr>
+<td><strong>Relatórios</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Posição de Estoque</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
 </tbody>
 </table>
 <p><strong>OBSERVAÇÃO:</strong><br />
@@ -495,11 +523,25 @@ As açoes realizadas pelos perfis de acordo com os proviégios afetam:</p>
 <h1 id="rgn011-removido">RGN011 (removido)</h1>
 <h2 id="busca-textual-do-estabelecimento">Busca Textual do Estabelecimento</h2>
 <hr />
-<h1 id="rgn012-removido">RGN012 (removido)</h1>
+<h1 id="rgn012">RGN012</h1>
 <h2 id="solicitacao-de-perfil-acesso">Solicitação de perfil acesso.</h2>
+<p>O sistema deve permitir solicitar: </p>
+<ul>
+<li>Perfis de acesso iguais em estabelecimentos diferentes;  </li>
+<li>Perfis de acesso para uma UF e/ou a um Município e/ou a um Estabelecimento;  </li>
+<li>Perfis de acesso para UF a qual já possui permissão de acesso no Município e/ou Estabelecimento desta UF; </li>
+<li>Perfis de acesso para municípios distintos na mesma UF. </li>
+</ul>
+<p>O sistema não deve permitir solicitar mais de um perfil de acesso por estabelecimento. </p>
 <hr />
-<h1 id="rgn013-removido">RGN013 (removido)</h1>
-<h2 id="solicitacoes-com-status">Solicitações com status:</h2>
+<h1 id="rgn013">RGN013</h1>
+<h2 id="aprovacao-e-reativacao-de-permissoes-de-acesso">Aprovação e reativação de permissões de acesso.</h2>
+<p>Para permissões de acesso com situação: </p>
+<ul>
+<li>“Solicitado” o sistema deve permitir aprovar ou reprovar; </li>
+<li>“Aprovado” o sistema deve permitir inativar; </li>
+<li>“Reprovado” ou “Inativo” o sistema não deve permitir aprovar ou reativar, sendo necessário realizar uma nova solicitação. </li>
+</ul>
 <hr />
 <h1 id="rgn014">RGN014</h1>
 <h2 id="recuperacao-de-dados-do-cabecalho">Recuperação de dados do cabeçalho</h2>
@@ -727,7 +769,7 @@ As açoes realizadas pelos perfis de acordo com os proviégios afetam:</p>
 <hr />
 <h1 id="rgn040">RGN040</h1>
 <h2 id="calculo-da-media-do-valor-unitario-do-produto">Cálculo da Média do Valor Unitário do Produto</h2>
-<p>O sistema deve calcular o Valor Unitário do Produto através da média simples dos valores unitários do produto informados na(s) entrada(s), independente de lota, validade ou programa de saúde, ou seja, realiza-se o somatório de todos os elementos do rol e divide-se essa soma pela quantidade de elementos.  </p>
+<p>O sistema deve calcular o Valor Unitário do Produto através da média simples dos valores unitários do produto informados na(s) entrada(s), independente de Nº do Lote, Validade, Fabricante, Programa de Saúde e Endereçamento Físico, ou seja, realiza-se o somatório de todos os elementos do rol e divide-se essa soma pela quantidade de elementos. </p>
 <hr />
 <h1 id="rgn041">RGN041</h1>
 <h2 id="calculo-do-valor-total-da-saida-para-o-produto">Cálculo do Valor Total da Saída para o Produto</h2>
@@ -747,7 +789,7 @@ As açoes realizadas pelos perfis de acordo com os proviégios afetam:</p>
 <hr />
 <h1 id="rgn045">RGN045</h1>
 <h2 id="numero-de-registro-da-saida-diversa">Número de Registro da Saída Diversa</h2>
-<p>Ao salvar parcial ou registar uma saída diversa de produtos, caso ainda não exista, o sistema deve gerar um número identificador único para a saída diversa e apresentá-lo ao usuário.  </p>
+<p>Ao salvar uma saída diversa de produtos, caso ainda não exista, o sistema deve gerar um número identificador único para a saída diversa e apresentá-lo ao usuário. </p>
 <hr />
 <h1 id="rgn046">RGN046</h1>
 <h2 id="atualizacao-de-estoque-apos-registrar-uma-saida-diversa">Atualização de estoque após registrar uma saída diversa</h2>
@@ -772,6 +814,81 @@ As açoes realizadas pelos perfis de acordo com os proviégios afetam:</p>
 <h1 id="rgn051">RGN051</h1>
 <h2 id="cadastro-de-perfil">Cadastro de Perfil</h2>
 <p>O sistema não deve permitir o cadastro de um perfil com a mesma descrição de um perfil já cadastrado para a instância. </p>
+<hr />
+<h1 id="rgn052">RGN052</h1>
+<h2 id="recuperacao-e-apresentacao-das-permissoes-de-acesso">Recuperação e apresentação das permissões de acesso</h2>
+<p>O sistema deve apresentar as ações observando o perfil solicitado e a situação do registro conforme: </p>
+<ul>
+<li>Para perfil “Instalador” a opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados; </li>
+<li>Para perfil “Administrador”: <ul>
+<li>A opção “Inativar” para permissões de acesso com perfil “Administrador” e “Gestor” atribuídos por ele; </li>
+<li>A opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados. </li>
+</ul>
+</li>
+<li>Para perfil “Gestor”: <ul>
+<li>As opções “Aprovar”, “Reprovar” e “Inativar” para todas as permissões de acesso exceto do perfil de “Administrador”; </li>
+<li>A opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados. </li>
+</ul>
+</li>
+<li>Para perfil “Gestor Estabelecimento”: <ul>
+<li>As opções “Aprovar”, “Reprovar” e “Inativar” para todas as permissões de acesso relacionadas ao seu estabelecimento; </li>
+<li>A opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados. </li>
+</ul>
+</li>
+<li>Para registro com situação “Aguardando Aprovação”, as opções “Aprovar”, “Reprovar” e “Detalhar”;  </li>
+<li>Para registro com situação “Aprovado”, as opções “Inativar” e “Detalhar”; </li>
+<li>Para registro com situação “Reprovado” ou “Inativo”, a opção “Detalhar”.  </li>
+</ul>
+<hr />
+<h1 id="rgn053">RGN053</h1>
+<h2 id="inclusao-justificativa">Inclusão justificativa</h2>
+<p>Ao solicitar ou reprovar ou inativar uma solicitação de permissão de acesso ao sistema, o usuário deve informar obrigatoriamente uma justificativa. </p>
+<hr />
+<h1 id="rgn054">RGN054</h1>
+<h2 id="atribuicao-de-perfil-de-acesso">Atribuição de perfil de acesso</h2>
+<p>O sistema deve permitir a atribuição de perfis conforme: </p>
+<ul>
+<li>Usuário com perfil de “Instalador” atribui somente perfil de “Administrador”; </li>
+<li>Usuário com perfil de “Administrador” atribui perfil de “Administrador” e “Gestor”; </li>
+<li>Usuário com perfil de “Gestor” atribui qualquer perfil cadastrado e ativo, exceto perfil de “Administrador; </li>
+<li>Usuário com perfil de “Gestor Estabelecimento” atribui qualquer perfil de acesso para seu estabelecimento; </li>
+<li>Perfis de acesso iguais para o mesmo usuário em estabelecimentos diferentes;  </li>
+<li>Vincular perfis de acesso a uma UF e/ou a um Município e/ou a um Estabelecimento;  </li>
+<li>Para UF as quais o usuário já possua perfil de acesso no Município ou Estabelecimento desta UF; </li>
+<li>Para municípios distintos na mesma UF para o mesmo usuário; </li>
+<li>À um usuário que ainda não possui cadastro para acesso ao sistema.  </li>
+</ul>
+<p>O sistema não deve permitir atribuir mais de um perfil de acesso por estabelecimento. </p>
+<hr />
+<h1 id="rgn055">RGN055</h1>
+<h2 id="indicacao-de-estabelecimento-na-atribuicao-de-perfil-de-acesso">Indicação de estabelecimento na atribuição de perfil de acesso</h2>
+<p>Para atribuição de perfil de acesso é obrigatória a indicação de um estabelecimento exceto para os perfis de “Administrador” e “Gestor”. </p>
+<hr />
+<h1 id="rgn056">RGN056</h1>
+<h2 id="indicacao-de-estabelecimento-na-solicitacao-de-perfil-de-acesso">Indicação de estabelecimento na solicitação de perfil de acesso</h2>
+<p>Para solicitações de acesso é obrigatória a indicação de um estabelecimento exceto para os perfis de “Gestor”. </p>
+<hr />
+<h1 id="rgn057">RGN057</h1>
+<h2 id="periodo-para-a-emissao-do-relatorio-de-posicao-de-estoque">Período para a Emissão do Relatório de Posição de Estoque</h2>
+<p>O sistema deve possibilitar a emissão do relatório de posição do estoque de apenas 01 (um) dia.<br />
+Para datas anteriores a data atual o sistema deve considerar a posição de estoque às 23:59 horas do dia selecionado.<br />
+Para data atual o sistema deve considerar a data e hora do momento da emissão do relatório.  </p>
+<hr />
+<h1 id="rgn058">RGN058</h1>
+<h2 id="emissao-do-relatorio-de-posicao-de-estoque">Emissão do Relatório de Posição de Estoque</h2>
+<p>Caso o usuário não informe nenhum filtro de pesquisa, o sistema deve considerar todas as opções ao gerar o relatório. Exceto para usuários com perfil de “Gestor” que desejam emitir a posição de estoque de todos os estabelecimentos de sua instância, que deve indicar ao menos um produto.</p>
+<hr />
+<h1 id="rgn059">RGN059</h1>
+<h2 id="calculo-do-valor-total-do-produto-em-estoque">Cálculo do Valor Total do Produto em estoque</h2>
+<p>O sistema deve calcular o Valor Total do Produto em estoque somando os valores totais de cada detalhamento do produto. </p>
+<hr />
+<h1 id="rgn060">RGN060</h1>
+<h2 id="calculo-da-quantidade-total-do-produto-em-estoque">Cálculo da Quantidade Total do Produto em estoque</h2>
+<p>O sistema deve calcular a Quantidade Total do Produto em estoque somando as quantidades em estoque no detalhamento de cada produto.</p>
+<hr />
+<h1 id="rgn061">RGN061</h1>
+<h2 id="calculo-do-valor-total-de-cada-detalhamento-do-produto-em-estoque">Cálculo do Valor Total de cada detalhamento do Produto em estoque</h2>
+<p>O sistema deve calcular o Valor Total de cada detalhamento do Produto em estoque pela fórmula: Qtd Estoque X Valor Unitário do produto (média simples dos valores unitários informados na entrada do produto). </p>
               
             </div>
           </div><footer>

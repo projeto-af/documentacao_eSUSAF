@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>ETE015 - Consultar Estabelecimento - e-SUS AF - Documentação Negocial</title>
+    <title>ETE005 - Atribuir Perfil de Acesso - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "ETE015 - Consultar Estabelecimento";
-        var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE015.md";
+        var mkdocs_page_name = "ETE005 - Atribuir Perfil de Acesso";
+        var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE005.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -57,7 +57,11 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE004/">ETE004 - Consultar Permissões de Acesso</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE005/">ETE005 - Atribuir Perfil de Acesso</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">ETE005 - Atribuir Perfil de Acesso</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#descricao">Descrição</a>
+    </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
                   </li>
@@ -77,17 +81,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE014/">ETE014 - Cadastrar Ente</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">ETE015 - Consultar Estabelecimento</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE015/">ETE015 - Consultar Estabelecimento</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE016/">ETE016 - Cadastrar Estabelecimento</a>
                   </li>
@@ -135,7 +129,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Especificações Técnicas</li>
-      <li class="breadcrumb-item active">ETE015 - Consultar Estabelecimento</li>
+      <li class="breadcrumb-item active">ETE005 - Atribuir Perfil de Acesso</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -144,88 +138,58 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="ete015-consultar-estabelecimento-de-saude">ETE015 - Consultar Estabelecimento de Saúde</h1>
-<h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
-<p>Como usuário quero consultar o(s) estabelecimento(s) de saúde dentre os cadastrados e vinculados aos participantes da instância</p>
-<h2 id="prototipo-001">Protótipo 001</h2>
-<p><img alt="alt text" src="../../imagens/ete-015-prot-001.png" />
-<a href="https://xd.adobe.com/view/153e76da-8687-401d-a008-4ba101ed6f9b-406d/">Link para protótipo no Adobe XD</a></p>
-<h2 id="elementos-de-tela">Elementos de Tela</h2>
+                <h1 id="especificacao-tecnica-005-atribuir-perfil-de-acesso">Especificação Técnica 005 - Atribuir Perfil de Acesso</h1>
+<h2 id="descricao">Descrição</h2>
+<p>Como usuário quero atribuir um perfil de acesso às funcionalidades do sistema para outro usuário. </p>
+<h1 id="prototipo-001">Protótipo 001</h1>
+<h2 id="elementos-de-tela">Elementos de Tela:</h2>
 <ul>
-<li>Bread Crumb – “Cadastro / Estabelecimento / Consulta” </li>
-<li>Título da página – “Consultar Estabelecimento” </li>
-<li>“Seta” – M - retorna para a Tela Inicial/Dashboard </li>
-<li>“Novo” – BT - direciona para a Tela de Cadastrar Estabelecimento</li>
-<li>Filtros para consulta: <ul>
-<li>CNES/CNPJ – N (7/14) </li>
-<li>Nome do Estabelecimento – A (150) </li>
-<li>Situação – SU </li>
-<li>Tipo de Estabelecimento – SM </li>
-</ul>
-</li>
-<li>“Consultar” – BT </li>
+<li>Bread Crumb – “Controle de Acesso / Moderar Acesso / Cadastro” </li>
+<li>Título da página – “Atribuir Perfil de Acesso” </li>
+<li>“Seta” – M - retorna para a Tela Consulta de Permissões de Acesso </li>
+<li>“Consultar” – BT - retorna para a Consulta de Permissões de Acesso </li>
+<li>CPF* – N (11) </li>
+<li>Perfil* – A (50) </li>
+<li>UF – A (50) </li>
+<li>Município – A (50) </li>
+<li>Estabelecimento – A (50) </li>
+<li>“Atribuir” – BT </li>
 <li>“Limpar” – BT </li>
-<li>Lista de estabelecimentos dentre os participantes da instância do usuário do logado <ul>
-<li>Buscar por – A / AC </li>
-<li>CNES (0000000) </li>
-<li>CNPJ (00.000.000/0000-00) </li>
-<li>Nome do Estabelecimento </li>
-<li>Situação – A (9) </li>
-</ul>
-</li>
-<li>Ações conforme situação: <ul>
-<li>Editar – BT - direciona para a Tela de Editar Estabelecimento</li>
-<li>Excluir – BT </li>
-<li>Ativar – BT  </li>
-<li>Inativar – BT  </li>
-<li>Detalhar – BT - direciona para a Tela de Detalhar Estabelecimento</li>
-</ul>
-</li>
-<li>Ordenação nas colunas </li>
-<li>Paginação </li>
-<li>Registro por página </li>
-<li>Ir para página </li>
 </ul>
 <p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.<br />
-</p>
-<h2 id="criterios-de-aceite">Critérios de Aceite</h2>
+TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório. </p>
+<h2 id="criterios-de-aceite">Critérios de aceite</h2>
 <ol>
 <li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Cadastro” quando acionar o subitem “Estabelecimento”; </li>
-<li>Quando o usuário acionar a opção de “Voltar”, o sistema deve retornar para a tela inicial do sistema (dashboard); </li>
-<li>Quando o usuário acionar a opção de “Novo”, o sistema o sistema deve direcionar para a tela de cadastro de um novo estabelecimento de saúde; <a href="../ETE013/">ETE013</a></li>
-<li>No campo “Situação”, o sistema deve apresentar as opções: Em preenchimento, Ativo e Inativo; </li>
-<li>No campo “Tipo de Estabelecimento”, o sistema deve apresentar as opções: Almoxarifado/CAF, Almoxarifado Regional/Regional de Saúde e/ou Farmácia/Dispensário; </li>
-<li>Quando o usuário acionar a opção “Consultar”, o sistema deve recuperar e apresentar o(s) estabelecimento(s) de saúde dentre os cadastrados e vinculados os participantes da instância do usuário do logado de acordo com o(s) filtro(s) informado(s). Caso não seja informado nenhum filtro, o sistema deve recuperar e apresentar todo(s) o(s) estabelecimento(s) da instância. Caso algum campo retorne vazio, o sistema deve apresentar a descrição “Sem informação”; <a href="../DocumentoDeRegrasv2/#rgn002">RGN002</a></li>
-<li>O sistema, não encontrando o(s) estabelecimento(s) para os filtros informados, deve informar que o(s) registro(s) não foram encontrados; <a href="../DocumentoDeMensagensv2/#msg041">MSG041</a></li>
-<li>O sistema, encontrando o(s) estabelecimento(s) de saúde, deve apresentá-lo(s) em ordem decrescente de inclusão com os respectivos dados: CNES, CNPJ, Nome do Estabelecimento, Situação e as ações desejáveis para cada registro; </li>
-<li>No campo “Nome do Estabelecimento”, na grid do resultado, o sistema deve recuperar e apresentar o nome fantasia informado no cadastro do estabelecimento, caso retorne vazio deve apresentar a razão social deste; </li>
-<li>O sistema deve permitir excluir, editar, ativar, inativar ou detalhar um registro de estabelecimento de saúde; </li>
-<li>O sistema deve apresentar as ações conforme: <ul>
-<li>Para registro com situação “Ativo”, as opções “Editar”, “Inativar” e “Detalhar”; </li>
-<li>Para registro com situação “Inativo”, as opções “Ativar” e “Detalhar”;</li>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso”, subitem “Moderar Perfil”, na tela “Consultar Permissões de Acesso”, quando acionar a opção “Novo”; </li>
+<li>O sistema deve permitir a atribuição de perfis conforme: <ul>
+<li>Usuário com perfil de “Instalador” atribui somente perfil de “Administrador”; </li>
+<li>Usuário com perfil de “Administrador” atribui perfil de “Administrador” e “Gestor”; </li>
+<li>Usuário com perfil de “Gestor” atribui qualquer perfil cadastrado e ativo, exceto perfil de “Administrador; </li>
+<li>Usuário com perfil de “Gestor Estabelecimento” atribui qualquer perfil de acesso para seu estabelecimento; </li>
+<li>Perfis de acesso iguais para o mesmo usuário em estabelecimentos diferentes;  </li>
+<li>Vincular perfis de acesso somente a uma UF e/ou a um Município e/ou a um Estabelecimento;  </li>
+<li>Para UF as quais o usuário já possua perfil de acesso no Município ou Estabelecimento desta UF; </li>
+<li>Para municípios distintos na mesma UF para o mesmo usuário; </li>
+<li>À um usuário que ainda não possui cadastro para acesso ao sistema. <a href="../DocumentoDeRegrasv2/#rgn054">RGN054</a> </li>
 </ul>
 </li>
-<li>As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta; <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a></li>
-<li>Quando o usuário acionar a opção de “Limpar”, o sistema deve limpar o(s) filtro(s) informado(s), o resultado consulta e permanecer na tela de consultar estabelecimento; </li>
-<li>Quando o usuário acionar a opção “Editar”, o sistema deve direcionar para a tela de edição de um estabelecimento de saúde; <a href="../ETE014/">ETE014</a></li>
-<li>As opções “Ativar” e “Inativar” somente serão apresentadas para usuários com perfil de “Gestor”; </li>
-<li>Quando o usuário acionar a opção “Inativar”, o sistema deve: <ul>
-<li>Verificar se existe(m) produto(s) no estoque do estabelecimento, caso possua apresenta uma mensagem de impedimento; <a href="../DocumentoDeRegrasv2/#rgn008">RGN008</a> <a href="../DocumentoDeMensagensv2/#msg013">MSG013</a></li>
-<li>Apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema altera o estado e a situação do registro para “Inativo” e apresenta a mensagem de sucesso. Caso a ação não seja confirmada, o sistema permanece na tela de consulta; <a href="../DocumentoDeMensagensv2/#msg011">MSG011</a> <a href="../DocumentoDeMensagensv2/#msg049">MSG049</a> </li>
-</ul>
-</li>
-<li>Quando o usuário acionar a opção “Ativar”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve o sistema altera o estado e a situação do registro para “Ativo” e apresenta a mensagem de sucesso; <a href="../DocumentoDeMensagensv2/#msg012">MSG012</a> <a href="../DocumentoDeMensagensv2/#msg050">MSG050</a></li>
-<li>Quando o usuário acionar a opção “Detalhar”, o sistema deve direcionar para a tela de detalhamento dos dados do estabelecimento de saúde; <a href="./">ETE015</a></li>
-<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
+<li>O sistema não deve permitir atribuir mais de um perfil de acesso por estabelecimento; <a href="../DocumentoDeRegrasv2/#rgn054">RGN054</a> <a href="../DocumentoDeMensagensv2/#msg085">MSG085</a> </li>
+<li>Para atribuição de perfil de acesso é obrigatória a indicação de um estabelecimento exceto para os perfis de “Administrador” e “Gestor”; <a href="../DocumentoDeRegrasv2/#rgn055">RGN055</a> </li>
+<li>No campo “UF” o sistema deve recuperar e apresentar as unidades federativas participantes da instância; </li>
+<li>No campo “Município” o sistema deve recuperar e apresentar a relação dos municípios vinculados à UF informada; </li>
+<li>No campo “Estabelecimento” o sistema deve recuperar e apresentar a relação dos estabelecimentos vinculados a UF ou Município informados; </li>
+<li>Quando o usuário acionar a opção “Atribuir”, o sistema deve atribuir o perfil de acesso ao sistema, gravar o estado do registro como “Ativo” e a situação como “Aprovado”, envia um e-mail informativo ao solicitante, apresentar a mensagem de sucesso e retornar para a tela de consultar permissões de acesso; <a href="../DocumentoDeMensagensv2/#msg082">MSG082</a> <a href="../DocumentoDeMensagensv2/#msg086">MSG086</a></li>
+<li>Quando o usuário acionar a opção de “Limpar”, o sistema deve limpar os dados informados e permanece na tela de atribuir perfil.</li>
+<li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, retorna à tela de consulta aos meus perfis e não salva os dados preenchidos. Caso a ação não seja confirmada, permanece na tela de solicitar perfil; <a href="../DocumentoDeMensagensv2/#msg006">MSG006</a></li>
+<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
 </ol>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../ETE014/" class="btn btn-neutral float-left" title="ETE014 - Cadastrar Ente"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../ETE016/" class="btn btn-neutral float-right" title="ETE016 - Cadastrar Estabelecimento">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ETE004/" class="btn btn-neutral float-left" title="ETE004 - Consultar Permissões de Acesso"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ETE006/" class="btn btn-neutral float-right" title="ETE006 - Detalhar Permissão de Acesso">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -248,10 +212,10 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../ETE014/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../ETE004/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../ETE016/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../ETE006/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

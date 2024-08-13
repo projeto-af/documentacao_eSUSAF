@@ -55,9 +55,15 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE003/">ETE003 - Recuperar Senha</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE004/">ETE004 - Consultar Permissões de Acesso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE005/">ETE005 - Atribuir Perfil de Acesso</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE007/">ETE007 - Consultar Meus Perfis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE008/">ETE008 - Solicitar Perfil</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE009/">ETE009 - Detalhar Meu Perfil</a>
                   </li>
@@ -91,13 +97,17 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE022/">ETE022 - Detalhar Entrada</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE024/">ETE024 - Consultar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída Diversa</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE025/">ETE025 - Cadastrar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída Diversa</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE026/">ETE026 - Editar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída Diversa</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE027/">ETE027 - Detalhar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída Diversa</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
                   </li>
               </ul>
               <ul>
@@ -186,7 +196,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso”, subitem “Gerenciar Perfil”, na tela “Consultar Perfis”, quando acionar a opção “Copiar”; </li>
 <li>O sistema deve recuperar e apresentar os dados informados no cadastro do perfil copiado e permitir a edição de todos os campos para cadastrar um novo perfil com características iguais ou similares, além dos botões “Salvar”, “Cadastrar” e “Limpar”;  </li>
 <li>Quando o usuário acionar a opção “Salvar”, o sistema deve verificar se existe um perfil com a mesma descrição de um perfil já cadastrado para a instância. Caso sim, o sistema apresenta uma mensagem de alerta ao usuário e permanece na tela de cadastro da entrada; <a href="../DocumentoDeRegrasv2/#rgn051">RGN051</a> <a href="../DocumentoDeMensagensv2/#msg077">MSG077</a>
-Atendendo a validações, o sistema grava o registro do perfil com estado e situação “Ativo”, apresenta a relação das permissões por funcionalidades informadas no cadastro do perfil copiado e habilitada para edição.; <a href="../DocumentoDeMensagensv2/#msg031">MSG031</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
+Atendendo a validações, o sistema grava o registro do perfil com estado e situação “Ativo”, herda a abrangência do escopo do perfil copiado, apresenta a relação das permissões por funcionalidades informadas no cadastro do perfil copiado e habilitada para edição.; <a href="../DocumentoDeMensagensv2/#msg031">MSG031</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
 <li>Quando o usuário acionar a opção de “Cadastrar”, o sistema deve verificar se o preenchimento das informações atende às validações listadas, efetivar o cadastro do perfil, manter e gravar o estado e a situação do registro como “Ativo”, apresentar a mensagem de sucesso e retornar à tela de consulta aos perfis apresentando este registro como o primeiro da relação dos perfis cadastrados para a instância; <a href="../DocumentoDeMensagensv2/#msg078">MSG078</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
 <li>Quando o usuário acionar a opção de “Limpar”, o sistema deve limpar os dados informados e permanece na tela de cadastro de perfil. </li>
 <li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, retorna à tela de consulta aos perfis e não salva os dados incluídos. Caso a ação não seja confirmada, permanece na tela de cadastro de perfil; <a href="../DocumentoDeMensagensv2/#msg006">MSG006</a></li>

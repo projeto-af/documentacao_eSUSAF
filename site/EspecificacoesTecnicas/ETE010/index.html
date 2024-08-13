@@ -67,9 +67,13 @@
     </li>
     </ul>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE011/">ETE011 - Cadastrar Perfil</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE012/">ETE012 - Detalhar Perfil</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE013/">ETE013 - Consultar Entes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE014/">ETE014 - Cadastrar Ente</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE015/">ETE015 - Consultar Estabelecimento</a>
                   </li>
@@ -128,7 +132,6 @@
 <h2 id="descricao">Descrição</h2>
 <p>Como usuário quero consultar os perfis de acesso ao sistema. </p>
 <h1 id="prototipo-001">Protótipo 001</h1>
-<p><img alt="alt text" src="../../imagens/ete-010-prot-001.png" /></p>
 <h2 id="elementos-de-tela">Elementos de Tela:</h2>
 <ul>
 <li>Bread Crumb – “Controle de Acesso / Gerenciar Perfil / Consulta” </li>
@@ -139,6 +142,7 @@
 <li>Lista de perfis <ul>
 <li>Perfil </li>
 <li>Tipo </li>
+<li>Situação</li>
 <li>“Copiar” – BT </li>
 <li>“Editar” – BT </li>
 <li>“Detalhar” – BT </li>
@@ -156,14 +160,19 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
 <li>O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso”, quando acionar o subitem “Gerenciar Perfil”; </li>
 <li>Quando o usuário acionar a opção de “Voltar”, o sistema deve retornar à tela inicial do sistema (dashboard); </li>
-<li>Quando o usuário acionar a opção de “Novo”, o sistema deve direcionar à tela “Cadastrar Perfil”; <a href="ETE011.md">ETE011</a></li>
-<li>O sistema deve recuperar e apresentar a lista do(s) perfil(is) de acesso ao sistema com os dados: Perfil, Tipo e as ações de “Editar”, “Copiar”, “Excluir” e “Detalhar”; </li>
-<li>O sistema deve apresentar as ações conforme: </li>
+<li>Quando o usuário acionar a opção de “Novo”, o sistema deve direcionar à tela “Cadastrar Perfil”; <a href="../ETE011/">ETE011</a></li>
+<li>O sistema deve recuperar e apresentar a lista do(s) perfil(is) de acesso ao sistema com os dados: Perfil, Tipo, Situação e as ações de “Editar”, “Copiar”, "Ativar", "Inativar" e “Detalhar”; </li>
+<li>O sistema deve apresentar as ações conforme: <ul>
 <li>Para perfis do tipo “Padrão” com situação “Ativo”, as opções “Copiar” e “Detalhar”; </li>
-<li>Para perfis do tipo “Personalizado” com situação “Ativo”, as opções “Editar”, “Copiar”, “Excluir” e “Detalhar”. </li>
-<li>Quando o usuário acionar a opção “Copiar”, o sistema deve direcionar à tela “Cadastrar Perfil” e carregar automaticamente os dados informados no cadastro do perfil que deseja copiar, para cadastrar um novo perfil com características iguais ou similares; <a href="ETE011.md">ETE011</a></li>
-<li>Quando o usuário acionar a opção “Editar”, o sistema deve direcionar à tela “Cadastrar Perfil”, carregar automaticamente os dados informados no cadastro do perfil e permitir a edição de todos os campos; <a href="ETE011.md">ETE011</a></li>
-<li>Quando o usuário acionar a opção “Excluir”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve excluir o registro do perfil personalizado, apresentar a mensagem de sucesso e deixar de apresentá-lo no resultado da consulta. Caso a ação não seja confirmada, o sistema permanece na tela de consulta; <a href="../DocumentoDeMensagensv2/#msg010">MSG010</a> <a href="../DocumentoDeMensagensv2/#msg070">MSG070</a> <a href="../DocumentoDeRegrasv2/#rgn016">RGN016</a></li>
+<li>Para perfis do tipo “Personalizado” com situação “Ativo”, as opções “Editar”, “Copiar”, “Inativar” e “Detalhar”;</li>
+<li>Para perfis do tipo “Personalizado” com situação “Inativo”, as opções “Ativar” e “Detalhar”. </li>
+</ul>
+</li>
+<li>O sistema não deve permitir editar e inativar perfis do tipo “Padrão” e do tipo “Personalizado” que estão atribuídos ao cadastrado de ao menos um usuário do sistema; <a href="../DocumentoDeRegrasv2/#rgn050">RGN050</a> </li>
+<li>Quando o usuário acionar a opção “Copiar”, o sistema deve direcionar à tela “Cadastrar Perfil” e carregar automaticamente os dados informados no cadastro do perfil que deseja copiar, para cadastrar um novo perfil com características iguais ou similares; <a href="../ETE011/">ETE011</a></li>
+<li>Quando o usuário acionar a opção “Editar”, o sistema deve direcionar à tela “Cadastrar Perfil”, carregar automaticamente os dados informados no cadastro do perfil e permitir a edição das permissões de acesso às funcionalidades; <a href="../ETE011/">ETE011</a></li>
+<li>Quando o usuário acionar a opção “Inativar”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve excluir o registro do perfil personalizado, apresentar a mensagem de sucesso e deixar de apresentá-lo no resultado da consulta. Caso a ação não seja confirmada, o sistema permanece na tela de consulta; <a href="../DocumentoDeMensagensv2/#msg075">MSG075</a> <a href="../DocumentoDeMensagensv2/#msg070">MSG070</a> <a href="../DocumentoDeRegrasv2/#rgn016">RGN016</a> </li>
+<li>Quando o usuário acionar a opção “Ativar”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve excluir o registro do perfil personalizado, apresentar a mensagem de sucesso e deixar de apresentá-lo no resultado da consulta. Caso a ação não seja confirmada, o sistema permanece na tela de consulta; <a href="../DocumentoDeMensagensv2/#msg074">MSG074</a> <a href="../DocumentoDeMensagensv2/#msg076">MSG076</a> <a href="../DocumentoDeRegrasv2/#rgn016">RGN016</a></li>
 <li>Quando o usuário acionar a opção “Detalhar”, o sistema deve direcionar à tela “Dados do Perfil”; <a href="../ETE012/">ETE012</a></li>
 <li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
 </ol>
@@ -231,7 +240,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../ETE009/" class="btn btn-neutral float-left" title="ETE009 - Detalhar Meu Perfil"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../ETE012/" class="btn btn-neutral float-right" title="ETE012 - Detalhar Perfil">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ETE011/" class="btn btn-neutral float-right" title="ETE011 - Cadastrar Perfil">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -257,7 +266,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
       <span><a href="../ETE009/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../ETE012/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../ETE011/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

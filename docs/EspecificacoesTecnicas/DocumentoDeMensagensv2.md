@@ -344,3 +344,54 @@ O perfil foi cadastrado! 
 ---
 # MSG079
 O cadastro do perfil foi atualizado!
+
+---
+# MSG080
+Tem certeza que deseja aprovar a solicitação?
+
+---
+# MSG081
+A solicitação foi aprovada!
+
+---
+# MSG082
+**Título:** s-SUS AF - Solicitação de Acesso Moderada  
+**Mensagem:**  
+**Solicitação de Acesso e-SUS AF**  
+Detalhes sobre a sua solicitação de perfil:  
+
+|  |  |
+| --- | --- |
+| UF | XX (sigla UF) |
+| Município | Nome do município |
+| Estabelecimento | Nome do Estabelecimento de Saúde |
+| Situação | Situação do Registro |
+| Justificativa | Descrição da Justificativa |
+
+---
+# MSG083
+A solicitação foi reprovada! 
+
+---
+# MSG084
+A solicitação foi inativada! 
+
+---
+# MSG085
+O usuário já possui um perfil de acesso para este estabelecimento! 
+
+---
+# MSG086
+O perfil de acesso foi atribuído! 
+
+---
+# MSG087
+Você já possui um perfil de acesso para este estabelecimento! 
+
+---
+# MSG088
+A solicitação foi realizada! 
+
+---
+# MSG089
+Este produto já foi adicionado para consulta à posição de estoque. 

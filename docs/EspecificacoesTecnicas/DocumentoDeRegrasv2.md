@@ -39,6 +39,8 @@
 | Cadastrar Saída Diversa | | | X | X | X | X |
 | Editar Saída Diversa | | | X | X | X | X |
 | Detalhar Saída Diversa | | | X | X | X | X |
+| **Relatórios** | 
+| Posição de Estoque | | | X | X | X |
 
 **OBSERVAÇÃO:**  
 As açoes realizadas pelos perfis de acordo com os proviégios afetam:
@@ -95,12 +97,25 @@ Somente será possível inativar estabelecimentos de saúde que não possuem ite
 ## Busca Textual do Estabelecimento
 
 ---
-# RGN012 (removido)
+# RGN012
 ## Solicitação de perfil acesso.
- 
+O sistema deve permitir solicitar: 
+
+* Perfis de acesso iguais em estabelecimentos diferentes;  
+* Perfis de acesso para uma UF e/ou a um Município e/ou a um Estabelecimento;  
+* Perfis de acesso para UF a qual já possui permissão de acesso no Município e/ou Estabelecimento desta UF; 
+* Perfis de acesso para municípios distintos na mesma UF. 
+
+O sistema não deve permitir solicitar mais de um perfil de acesso por estabelecimento. 
+
 ---
-# RGN013 (removido)
-## Solicitações com status:
+# RGN013
+## Aprovação e reativação de permissões de acesso.
+Para permissões de acesso com situação: 
+
+* “Solicitado” o sistema deve permitir aprovar ou reprovar; 
+* “Aprovado” o sistema deve permitir inativar; 
+* “Reprovado” ou “Inativo” o sistema não deve permitir aprovar ou reativar, sendo necessário realizar uma nova solicitação. 
 
 ---
 # RGN014
@@ -322,7 +337,7 @@ O sistema deve calcular a Quantidade Total da Saída somando todas as quantidade
 ---
 # RGN040
 ## Cálculo da Média do Valor Unitário do Produto
-O sistema deve calcular o Valor Unitário do Produto através da média simples dos valores unitários do produto informados na(s) entrada(s), independente de lota, validade ou programa de saúde, ou seja, realiza-se o somatório de todos os elementos do rol e divide-se essa soma pela quantidade de elementos.  
+O sistema deve calcular o Valor Unitário do Produto através da média simples dos valores unitários do produto informados na(s) entrada(s), independente de Nº do Lote, Validade, Fabricante, Programa de Saúde e Endereçamento Físico, ou seja, realiza-se o somatório de todos os elementos do rol e divide-se essa soma pela quantidade de elementos. 
 
 ---
 # RGN041
@@ -347,7 +362,7 @@ O sistema deve validar se já existe uma saída diversa com o mesmo tipo de saí
 ---
 # RGN045
 ## Número de Registro da Saída Diversa
-Ao salvar parcial ou registar uma saída diversa de produtos, caso ainda não exista, o sistema deve gerar um número identificador único para a saída diversa e apresentá-lo ao usuário.  
+Ao salvar uma saída diversa de produtos, caso ainda não exista, o sistema deve gerar um número identificador único para a saída diversa e apresentá-lo ao usuário. 
 
 ---
 # RGN046
@@ -378,3 +393,82 @@ O sistema não deve permitir editar e inativar perfis do tipo “Padrão” e do
 # RGN051
 ## Cadastro de Perfil 
 O sistema não deve permitir o cadastro de um perfil com a mesma descrição de um perfil já cadastrado para a instância. 
+
+---
+# RGN052
+## Recuperação e apresentação das permissões de acesso
+O sistema deve apresentar as ações observando o perfil solicitado e a situação do registro conforme: 
+
+* Para perfil “Instalador” a opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados; 
+* Para perfil “Administrador”: 
+    * A opção “Inativar” para permissões de acesso com perfil “Administrador” e “Gestor” atribuídos por ele; 
+    * A opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados. 
+* Para perfil “Gestor”: 
+    * As opções “Aprovar”, “Reprovar” e “Inativar” para todas as permissões de acesso exceto do perfil de “Administrador”; 
+    * A opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados. 
+* Para perfil “Gestor Estabelecimento”: 
+    * As opções “Aprovar”, “Reprovar” e “Inativar” para todas as permissões de acesso relacionadas ao seu estabelecimento; 
+    * A opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados. 
+* Para registro com situação “Aguardando Aprovação”, as opções “Aprovar”, “Reprovar” e “Detalhar”;  
+* Para registro com situação “Aprovado”, as opções “Inativar” e “Detalhar”; 
+* Para registro com situação “Reprovado” ou “Inativo”, a opção “Detalhar”.  
+
+---
+# RGN053
+## Inclusão justificativa 
+Ao solicitar ou reprovar ou inativar uma solicitação de permissão de acesso ao sistema, o usuário deve informar obrigatoriamente uma justificativa. 
+
+---
+# RGN054
+## Atribuição de perfil de acesso 
+O sistema deve permitir a atribuição de perfis conforme: 
+
+* Usuário com perfil de “Instalador” atribui somente perfil de “Administrador”; 
+* Usuário com perfil de “Administrador” atribui perfil de “Administrador” e “Gestor”; 
+* Usuário com perfil de “Gestor” atribui qualquer perfil cadastrado e ativo, exceto perfil de “Administrador; 
+* Usuário com perfil de “Gestor Estabelecimento” atribui qualquer perfil de acesso para seu estabelecimento; 
+* Perfis de acesso iguais para o mesmo usuário em estabelecimentos diferentes;  
+* Vincular perfis de acesso a uma UF e/ou a um Município e/ou a um Estabelecimento;  
+* Para UF as quais o usuário já possua perfil de acesso no Município ou Estabelecimento desta UF; 
+* Para municípios distintos na mesma UF para o mesmo usuário; 
+* À um usuário que ainda não possui cadastro para acesso ao sistema.  
+
+O sistema não deve permitir atribuir mais de um perfil de acesso por estabelecimento. 
+
+---
+# RGN055
+## Indicação de estabelecimento na atribuição de perfil de acesso 
+Para atribuição de perfil de acesso é obrigatória a indicação de um estabelecimento exceto para os perfis de “Administrador” e “Gestor”. 
+
+---
+# RGN056
+## Indicação de estabelecimento na solicitação de perfil de acesso 
+Para solicitações de acesso é obrigatória a indicação de um estabelecimento exceto para os perfis de “Gestor”. 
+
+---
+# RGN057
+## Período para a Emissão do Relatório de Posição de Estoque 
+O sistema deve possibilitar a emissão do relatório de posição do estoque de apenas 01 (um) dia.  
+Para datas anteriores a data atual o sistema deve considerar a posição de estoque às 23:59 horas do dia selecionado.  
+Para data atual o sistema deve considerar a data e hora do momento da emissão do relatório.  
+
+---
+# RGN058
+## Emissão do Relatório de Posição de Estoque 
+Caso o usuário não informe nenhum filtro de pesquisa, o sistema deve considerar todas as opções ao gerar o relatório. Exceto para usuários com perfil de “Gestor” que desejam emitir a posição de estoque de todos os estabelecimentos de sua instância, que deve indicar ao menos um produto.
+
+---
+# RGN059
+## Cálculo do Valor Total do Produto em estoque 
+O sistema deve calcular o Valor Total do Produto em estoque somando os valores totais de cada detalhamento do produto. 
+
+---
+# RGN060
+## Cálculo da Quantidade Total do Produto em estoque 
+O sistema deve calcular a Quantidade Total do Produto em estoque somando as quantidades em estoque no detalhamento de cada produto.
+
+---
+# RGN061
+## Cálculo do Valor Total de cada detalhamento do Produto em estoque 
+O sistema deve calcular o Valor Total de cada detalhamento do Produto em estoque pela fórmula: Qtd Estoque X Valor Unitário do produto (média simples dos valores unitários informados na entrada do produto). 
+

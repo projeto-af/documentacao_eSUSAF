@@ -10,8 +10,11 @@ nav:
     - ETE001 - Realizar Login: EspecificacoesTecnicas/ETE001.md
     - ETE002 - Cadastrar Usuário do Sistema: EspecificacoesTecnicas/ETE002.md
     - ETE003 - Recuperar Senha: EspecificacoesTecnicas/ETE003.md
+    - ETE004 - Consultar Permissões de Acesso: EspecificacoesTecnicas/ETE004.md
+    - ETE005 - Atribuir Perfil de Acesso: EspecificacoesTecnicas/ETE005.md
     - ETE006 - Detalhar Permissão de Acesso: EspecificacoesTecnicas/ETE006.md
     - ETE007 - Consultar Meus Perfis: EspecificacoesTecnicas/ETE007.md
+    - ETE008 - Solicitar Perfil: EspecificacoesTecnicas/ETE008.md
     - ETE009 - Detalhar Meu Perfil : EspecificacoesTecnicas/ETE009.md
     - ETE010 - Consultar Perfil : EspecificacoesTecnicas/ETE010.md
     - ETE011 - Cadastrar Perfil : EspecificacoesTecnicas/ETE011.md
@@ -26,11 +29,12 @@ nav:
     - ETE020 - Cadastrar Entrada: EspecificacoesTecnicas/ETE020.md
     - ETE021 - Editar Entrada: EspecificacoesTecnicas/ETE021.md
     - ETE022 - Detalhar Entrada: EspecificacoesTecnicas/ETE022.md
-#    - ETE023 - : EspecificacoesTecnicas/ETE023.md
-    - ETE024 - Consultar Saída Diversa: EspecificacoesTecnicas/ETE024.md
-    - ETE025 - Cadastrar Saída Diversa: EspecificacoesTecnicas/ETE025.md
-    - ETE026 - Editar Saída Diversa: EspecificacoesTecnicas/ETE026.md
-    - ETE027 - Detalhar Saída Diversa: EspecificacoesTecnicas/ETE027.md
+    - ETE023 - Consultar Saída Diversa: EspecificacoesTecnicas/ETE023.md
+    - ETE024 - Cadastrar Saída Diversa: EspecificacoesTecnicas/ETE024.md
+    - ETE025 - Editar Saída Diversa: EspecificacoesTecnicas/ETE025.md
+    - ETE026 - Detalhar Saída Diversa: EspecificacoesTecnicas/ETE026.md
+    - ETE027 - Emitir Relatório de Posição de Estoque: EspecificacoesTecnicas/ETE027.md
+    - ETE028 - Detalhar Relatório de Posição de Estoque : EspecificacoesTecnicas/ETE028.md
 #  - Histórias de Usuário:
 #    - HU001 - Cadastro e Login: HistoriasDeUsuario/HU001.md
 #    - HU004 - Solicitar Acesso: HistoriasDeUsuario/HU004.md

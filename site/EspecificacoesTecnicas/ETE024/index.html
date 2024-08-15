@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>ETE024 - Consultar Saída Diversa - e-SUS AF - Documentação Negocial</title>
+    <title>ETE024 - Cadastrar Saída Diversa - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "ETE024 - Consultar Sa\u00edda Diversa";
+        var mkdocs_page_name = "ETE024 - Cadastrar Sa\u00edda Diversa";
         var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE024.md";
         var mkdocs_page_url = null;
       </script>
@@ -55,9 +55,15 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE003/">ETE003 - Recuperar Senha</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE004/">ETE004 - Consultar Permissões de Acesso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE005/">ETE005 - Atribuir Perfil de Acesso</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE007/">ETE007 - Consultar Meus Perfis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE008/">ETE008 - Solicitar Perfil</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE009/">ETE009 - Detalhar Meu Perfil</a>
                   </li>
@@ -87,7 +93,9 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE022/">ETE022 - Detalhar Entrada</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">ETE024 - Consultar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída Diversa</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">ETE024 - Cadastrar Saída Diversa</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
     </li>
@@ -139,19 +147,25 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#021">021</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#021_1">021</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#022">022</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#023">023</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#024">024</a>
     </li>
         </ul>
     </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE025/">ETE025 - Cadastrar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída Diversa</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE026/">ETE026 - Editar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída Diversa</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE027/">ETE027 - Detalhar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
                   </li>
               </ul>
               <ul>
@@ -173,7 +187,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Especificações Técnicas</li>
-      <li class="breadcrumb-item active">ETE024 - Consultar Saída Diversa</li>
+      <li class="breadcrumb-item active">ETE024 - Cadastrar Saída Diversa</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -182,55 +196,75 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="ete021-consultar-saida-diversa">ETE021 - Consultar Saída Diversa</h1>
+                <h1 id="ete024-cadastrar-saida-diversa">ETE024 - Cadastrar Saída Diversa</h1>
 <h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
-<p>Como usuário quero consultar a(s) saída(s) diversa(s) de produto(s) realizada(s) no estabelecimento de saúde logado</p>
+<p>Como usuário quero cadastrar uma saída diversa de produto(s) para retirá-lo(s) do estoque do estabelecimento de saúde logado. </p>
 <h2 id="prototipo-001">Protótipo 001</h2>
-<p><img alt="alt text" src="../../imagens/ete-024-prot-001.png" /></p>
-<p><a href="https://xd.adobe.com/view/153e76da-8687-401d-a008-4ba101ed6f9b-406d/">Link para protótipo no Adobe XD</a></p>
+<p>[Inserir imagem do protótipo aqui]<br />
+<a href="https://xd.adobe.com/view/153e76da-8687-401d-a008-4ba101ed6f9b-406d/">Link para protótipo no Adobe XD</a></p>
 <h2 id="elementos-de-tela">Elementos de Tela</h2>
 <ul>
-<li>Bread Crumbs – “Movimentação / Saída Diversa / Consulta” </li>
-<li>Título da página – “Consultar Saída Diversa” </li>
-<li>“Seta” – M - retorna para a Tela Inicial/Dashboard </li>
-<li>“Novo” – BT - direciona para a Tela de Cadastrar Entrada (ETE022) </li>
-<li>Filtros para consulta: <ul>
-<li>Nº da Saída Diversa – N (11) </li>
-<li>Nº do Documento – A (20) </li>
-<li>Tipo de Saída Diversa – SU </li>
-<li>Produto – AC (500) </li>
-<li>Lote do Produto – A (20) </li>
-<li>Justificativa – SU </li>
-<li>Data Início da Saída Diversa – D (dd/mm/aaaa) </li>
-<li>Data Fim da Saída Diversa – D (dd/mm/aaaa) </li>
-<li>Situação – SM </li>
-</ul>
-</li>
+<li>Bread Crumbs – “Movimentação / Saída Diversa / Cadastro” </li>
+<li>Título da página – “Cadastrar Saída Diversa” </li>
+<li>“Seta” – M - retorna para a Tela de Consultar Saída Diversa (ETE021) </li>
 <li>“Consultar” – BT </li>
+<li>Nº da Saída Diversa* – N (11) – Desabilitado para edição </li>
+<li>Tipo de Saída Diversa* – SU / AC </li>
+<li>Data da Saída Diversa* – D (dd/mm/aaaa </li>
+<li>Valor Total Saída Diversa* – N (13,9) (R$ 99999999999999,999999999) - Desabilitado para edição </li>
+<li>Nº do Documento* – A (20) </li>
+<li>Tipo de Documento* – SU / AC  </li>
+<li>Justificativa* – SU / AC </li>
+<li>Detalhar Justificativa – A (4000) - contador regressivo </li>
+<li>Produto(s) <ul>
+<li>Produto* – A (500) / AC </li>
+<li>Lista de produtos da saída - desabilitados para edição: <ul>
+<li>Código de Barras – N (13) </li>
+<li>Princípio Ativo + Concentração – A (500) </li>
+<li>CATMAT – N (6) </li>
+<li>Forma Farmacêutica – A (20) </li>
+<li>Fabricante – A (80) &lt;9999999&gt; / &lt;99.999.999/9999-99&gt;-<Razão Social> </li>
+<li>Qtd Estoque Atual – N  </li>
+<li>Quantidade Total – N  </li>
+<li>Valor Unitário – N (6,9) (R$ 999999,999999999) </li>
+<li>Valor Total – N (13,2) (R$ 99999999999999,99) </li>
+<li>“Excluir” – BT </li>
+<li>“Expandir/Retrair” – M </li>
+</ul>
+</li>
+<li>Detalhe Produto <ul>
+<li>Nº do Lote* – A (20) </li>
+<li>Data de Validade* – D (dd/mm/aaaa) </li>
+<li>Quantidade Estoque* – N - desabilitado para edição </li>
+<li>Quantidade Saída* – N   </li>
+<li>Valor Unitário* – N (6,9) (R$ 999999,999999999)  </li>
+<li>Programa de Saúde* – SU / AC / A </li>
+<li>“Incluir” – BT </li>
+<li>“Limpar” – BT <ul>
+<li>Lista detalhe produto <ul>
+<li>Nº do Lote </li>
+<li>Data de Validade </li>
+<li>Programa de Saúde </li>
+<li>Qtd Estoque </li>
+<li>Qtd Saída </li>
+<li>“Editar” – BT </li>
+<li>“Excluir” – BT </li>
+<li>“Detalhar – BT - direciona para tela com os dados do detalhe do produto </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>“Registrar” – BT </li>
+<li>“Salvar Parcial” – BT </li>
 <li>“Limpar” – BT </li>
-<li>Lista de registro da(s) saída(s) diversa(s) no estabelecimento logado: <ul>
-<li>Buscar por – A / AC </li>
-<li>Nº da Saída </li>
-<li>Data da Saída </li>
-<li>Tipo da Saída </li>
-<li>Justificativa </li>
-<li>Situação </li>
-</ul>
-</li>
-<li>Ações conforme situação: <ul>
-<li>Editar – BT - direciona para a Tela de Editar Saída Diversa (ETE023) </li>
-<li>Excluir – BT </li>
-<li>Estornar – BT </li>
-<li>Detalhar - direciona para a Tela de Detalhar Entrada (ETE024) </li>
-</ul>
-</li>
-<li>Ordenação nas colunas </li>
-<li>Paginação </li>
-<li>Registro por página </li>
-<li>Ir para página </li>
 </ul>
 <p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.</p>
+TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.
+ </p>
 <h2 id="criterios-de-aceite">Critérios de Aceite</h2>
 <h3 id="001">001</h3>
 <ul>
@@ -239,155 +273,181 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <hr />
 <h3 id="002">002</h3>
 <ul>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Movimentação” quando acionar o subitem “Saída Diversa”;</li>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Movimentação”, subitem “Saída Diversa”, na tela “Consultar Saída Diversa” quando for acionada a opção “Novo”; </li>
 </ul>
 <hr />
 <h3 id="003">003</h3>
 <ul>
-<li>No campo “Tipo de Saída Diversa” o sistema deve apresentar as opções: Ajuste de Estoque, Amostra, Exposição e Análise, Apreensão Sanitária, Empréstimo, Perda, Requisição, Roubo, “Saída por Dispensação”, Saída por Estorno de Distribuição, Saída por Estorno de Entrada, Transferência, Usuário SUS, Validade Vencida; </li>
+<li>No campo “Tipo de Saída Diversa” o sistema deve apresentar as opções: Ajuste de Estoque, Amostra, Exposição e Análise, Apreensão Sanitária, Empréstimo, Perda, Roubo, Transferência, Usuário SUS, Validade Vencida. Exceto os tipos criados para saídas geradas automaticamente pelo sistema: “Requisição”, “Saída por Estorno de Entrada”, “Saída por Dispensação” e “Saída por Estorno de Distribuição”; </li>
 </ul>
 <hr />
 <h3 id="004">004</h3>
 <ul>
-<li>Quando o campo “Produto” for informado, o sistema deve: <ul>
-<li>Apresentar a lista de produtos ativos no sistema que correspondam ao valor informado no campo autocomplete a partir da indicação do 3º caractere, consultando por nome do produto ou princípio ativo do medicamento, código de barras e CATMAT Raiz; <a href="../DocumentoDeRegrasv2/#rgn015">RGN015</a> </li>
-<li>Validar se o produto informado foi encontrado. Caso não, o sistema deve realçar o campo e alertar ao usuário; <a href="../DocumentoDeMensagensv2/#msg015">MSG015</a> </li>
-<li>Recuperar e apresentar a(s) entrada(s) cujo ao menos um do(s) produto(s) relacionado(s) a ela, possua um dos dados informados: Código de Barras, CATMAT, forma farmacêutica ou princípio ativo do medicamento.</li>
-</ul>
-</li>
+<li>O campo “Data da Saída Diversa” dever ser preenchido automaticamente com a data atual e desabilitado para edição; </li>
 </ul>
 <hr />
 <h3 id="005">005</h3>
 <ul>
-<li>Quando o campo “Lote do Produto” for informado, o sistema deve recuperar e apresentar a(s) saída(s) diversa(s) cujo ao menos um dos produtos relacionados a ela, possua o dado informado;</li>
+<li>O campo “Valor Total da Saída Diversa” deve ser desabilitado para edição, calculado automaticamente somando todos os valores totais dos produtos adicionados à saída diversa e apresentado em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; <a href="../DocumentoDeRegrasv2/#rgn038">RGN038</a> <a href="../DocumentoDeRegrasv2/#rgn028">RGN028</a> </li>
 </ul>
 <hr />
 <h3 id="006">006</h3>
 <ul>
-<li>No campo “Justificativa” o sistema deve apresentar as opções: Diferença de Estoque, Quebra do produto/medicamento, Recebimento maior que a demanda, Recebimento próximo da validade, Roubo, Sistema Inoperante, Outros; </li>
+<li>No campo “Tipo de Documento” o sistema deve apresentar as opções: Aviso, Boletim, Carta, Certidão, Circular, Comprovante, Contrato, Convênio, Decreto, Despacho, Edital, Fax, Guia, Guia De Remessa, Instrução Normativa, Memorando, Mensagem, Nota Fiscal, Nota Fiscal Eletrônica, Ofício, Ordem De Serviço, Parecer, Portaria, Requerimento, Requisição, Resolução; </li>
 </ul>
 <hr />
 <h3 id="007">007</h3>
 <ul>
-<li>No campo “Situação”, o sistema deve apresentar as opções: Em preenchimento, Registrada e Estornada; </li>
+<li>No campo “Justificativa” o sistema deve apresentar as opções: Diferença de Estoque, Quebra do produto/medicamento, Recebimento maior que a demanda, Recebimento próximo da validade, Roubo, Sistema Inoperante, Outros; </li>
 </ul>
 <hr />
 <h3 id="008">008</h3>
 <ul>
-<li>Quando o usuário acionar a opção “Consultar”, o sistema deve recuperar e apresentar o(s) registro(s) de saída diversa do estabelecimento logado de acordo com o(s) filtro(s) informado(s). Caso não seja informado nenhum filtro, o sistema deve recuperar e apresentar todo(s) o(s) registro(s) de saída diversa do estabelecimento logado. Caso algum campo retorne vazio, o sistema deve apresentar a descrição “Sem informação”; </li>
+<li>No campo “Produto” quando o usuário informar: <ul>
+<li>O Código de Barras do produto, o sistema deve:  <ul>
+<li>Recuperar o produto relacionado ao código de barras da base de dados de medicamentos; <a href="../DocumentoDeRegrasv2/#rgn015">RGN015</a>  </li>
+<li>Emitir um alerta ao usuário caso o sistema não encontre o produto na base de dados de medicamentos; <a href="../DocumentoDeMensagensv2/#msg022">MSG022</a>  </li>
+<li>Limpar o campo Produto, quando o dado de código de barras for apagado.  </li>
+</ul>
+</li>
+<li>O Princípio Ativo ou Nome Comercial de um Medicamento ou Descrição do Produto para Saúde, o sistema deve: <ul>
+<li>Emitir um alerta ao usuário caso o sistema não encontre o produto na base de dados de medicamentos ou produtos para saúde; <a href="../DocumentoDeMensagensv2/#msg022">MSG022</a></li>
+<li>Apresentar a lista de produtos ativos no sistema correspondestes ao valor informado no campo autocomplete a partir da indicação do 3º caractere; <a href="../DocumentoDeRegrasv2/#rgn015">RGN015</a> </li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <hr />
 <h3 id="009">009</h3>
 <ul>
-<li>O sistema, não encontrando a(s) saída(s) diversa(s) para os filtros informados, deve informar que o(s) registro(s) não foram encontrados; <a href="../DocumentoDeMensagensv2/#msg041">MSG041</a> </li>
+<li>Quando o usuário adicionar o produto, o sistema deve: <ul>
+<li>Verificar se existe estoque para o produto informado no estabelecimento logado. Caso não, o sistema emite um alerta ao usuário e não permite adicioná-lo na lista dos produtos; <a href="../DocumentoDeRegrasv2/#rgn042">RGN042</a> <a href="../DocumentoDeMensagensv2/#msg035">MSG035</a> </li>
+<li>Verificar a opção informada no campo “Tipo de Saída”, se: 
+        *  “Validade Vencida”, o sistema verifica se existem lotes/validades do produto vencidos em estoque. Caso não exista, emite um alerta ao usuário e limpa os campos preenchidos; <a href="../DocumentoDeRegrasv2/#rgn034">RGN034</a> <a href="../DocumentoDeMensagensv2/#msg033">MSG033</a><br />
+        *  “Ajuste de Estoque”, “Usuário SUS”, “Apreensão Sanitária”, “Empréstimo” ou “Transferência”, o sistema considera e/ou apresenta os lotes/validades que estejam válidos, com a data de validade igual ou superior a data atual; RGN034 
+        *  “Perda” ou “Roubo”, o sistema considera e/ou apresenta todos os lotes/validades independente da data de validade. <a href="../DocumentoDeRegrasv2/#rgn034">RGN034</a> </li>
+</ul>
+</li>
 </ul>
 <hr />
 <h3 id="010">010</h3>
 <ul>
-<li>O sistema, encontrando a(s) saída(s) diversa(s), deve apresentá-la(s) em ordem decrescente de data da saída com os respectivos dados: Nº da Saída, Data da Saída, Tipo da Saída, Justificativa e Situação e as ações desejáveis para cada registro; </li>
+<li>O sistema não deve permitir adicionar um produto já relacionado à saída diversa; <a href="../DocumentoDeMensagensv2/#msg034">MSG034</a>  </li>
 </ul>
 <hr />
 <h3 id="011">011</h3>
 <ul>
-<li>O sistema deve permitir excluir, editar, estornar ou detalhar um registro de saída diversa; </li>
+<li>O sistema deve apresentar a lista de produtos adicionados à saída diversa por ordem alfabética. A lista será expansiva, permitindo o preenchimento dos campos de detalhamento do produto; <a href="../DocumentoDeRegrasv2/#rgn023">RGN023</a> </li>
 </ul>
 <hr />
 <h3 id="012">012</h3>
 <ul>
-<li>O sistema deve apresentar as ações conforme: <ul>
-<li>Para registro com situação “Em preenchimento” as opções “Excluir”, “Editar” e “Detalhar”; </li>
-<li>Para registro com situação “Registrada” as opções “Estornar” e “Detalhar”, exceto para a situação a seguir: <ul>
-<li>Para a(s) saída(s) diversa(s) do tipo “Requisição”, Saída por Dispensação”, “Saída por Estorno de Distribuição” e “Saída por Estorno de Entrada”, o sistema deve apresentar apenas a opção “Detalhar”, uma vez que se trata(m) de saída(s) diversa(s) gerada(s) automaticamente pelo sistema para o controle de estoque. </li>
-</ul>
-</li>
-<li>Para registro com situação “Estornada” a opção “Detalhar”. </li>
-</ul>
-</li>
+<li>O(s) produto(s) adicionado(s) à saída diversa pode(m) ser excluído(s) desde que não tenha(m) detalhamento(s) vinculado(s) a ele; <a href="../DocumentoDeRegrasv2/#rgn035">RGN035</a> </li>
 </ul>
 <hr />
 <h3 id="013">013</h3>
 <ul>
-<li>As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta; <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a>  </li>
+<li>O campo “Qtd Estoque Atual” deve ser desabilitado para edição e carregado automaticamente com o saldo do produto em estoque do estabelecimento logado, no momento, independente de lote/validade/programa de saúde; <a href="../DocumentoDeRegrasv2/#rgn036">RGN036</a> </li>
 </ul>
 <hr />
 <h3 id="014">014</h3>
 <ul>
-<li>Quando o usuário acionar a opção “Novo”, o sistema deve direcionar para a tela de cadastro de uma nova saída diversa; (ETE022) </li>
+<li>O campo “Quantidade Total” deve ser desabilitado para edição e o sistema deve: <ul>
+<li>Recuperar automaticamente a quantidade informada no campo “Quantidade Saída” quando apenas um detalhamento do produto for adicionado; </li>
+<li>Calcular automaticamente somando todas as quantidades informadas nos detalhamentos adicionados ao produto; <a href="../DocumentoDeRegrasv2/#rgn039">RGN039</a> </li>
+</ul>
+</li>
 </ul>
 <hr />
 <h3 id="015">015</h3>
 <ul>
-<li>Quando o usuário acionar a opção “Limpar”, o sistema deve limpar o(s) filtro(s) informado(s), o resultado consulta e permanecer na tela de consultar saída diversa;  </li>
+<li>O campo “Valor Unitário” deve ser desabilitado para edição, calculado automaticamente através de uma média simples dos valores unitários informados na(s) entrada(s) deste produto, independente de lote/validade/programa de saúde, e apresentado em reais (R$) com até 9 dígitos após a virgula; <a href="../DocumentoDeRegrasv2/#rgn040">RGN040</a>  </li>
 </ul>
 <hr />
 <h3 id="016">016</h3>
 <ul>
-<li>Quando o usuário acionar a opção “Voltar”, o sistema deve retornar para a tela inicial do sistema (dashboard); </li>
+<li>O campo “Valor Total” deve ser desabilitado para edição, calculado automaticamente através da fórmula: Quantidade Total da Saída X Valor Unitário do produto e apresentado em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; <a href="../DocumentoDeRegrasv2/#rgn041">RGN041</a> <a href="../DocumentoDeRegrasv2/#rgn028">RGN028</a> </li>
 </ul>
 <hr />
 <h3 id="017">017</h3>
 <ul>
-<li>Quando o usuário acionar a opção “Editar”, o sistema deve direcionar para a tela de edição de uma saída diversa; (ETE023) </li>
+<li>Após adicionar o produto à saída diversa, no detalhamento deste, o sistema deve: <ul>
+<li>Apresentar os campos “Nº do Lote” e “Programa de Saúde” habilitados para seleção e no campo “Quantidade Estoque” o valor “0” e desabilitado para edição; </li>
+<li>Quando existir apenas um lote/validade, recuperar e apresentar automaticamente os campos “Nº do Lote”, ‘Data de Validade”, “Programa de Saúde” e “Quantidade Estoque” do referido lote/validade e programa de saúde e desabilitar o campo para edição; </li>
+<li>Quando existir mais de um lote/validade, recuperar e apresentar a lista de lote(s)/validade(s) com respectivo(s) programa(s) de saúde para seleção; </li>
+<li>Quando o usuário selecionar um lote/validade: <ul>
+<li>E existir apenas um programa de saúde vinculado a ele, o sistema recupera e apresenta automaticamente este programa com respectiva quantidade em estoque no estabelecimento logado e desabilita os campos para edição; </li>
+<li>E existir mais de um programa de saúde, o sistema recupera e apresenta a lista dos programas de saúde vinculados a ele para seleção e no campo “Quantidade Estoque” recupera e apresenta o saldo em estoque do referido produto, lote e validade no estabelecimento logado; </li>
+<li>Ao selecionar um programa de saúde, o sistema apresenta saldo em estoque do referido produto, lote/validade e programa de saúde no estabelecimento logado; </li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <hr />
 <h3 id="018">018</h3>
 <ul>
-<li>Quando o usuário acionar a opção “Excluir”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve excluir o registro da saída diversa e deixar de apresentá-lo no resultado da consulta. Caso a ação não seja confirmada, o sistema permanece na tela de consulta. A exclusão física somente será possível para saída(s) diversa(s) com situação “Em preenchimento”; <a href="../DocumentoDeMensagensv2/#msg010">MSG010</a> <a href="../DocumentoDeMensagensv2/#msg046">MSG046</a> <a href="../DocumentoDeRegrasv2/#rgn016">RGN016</a> </li>
+<li>Quando o usuário adicionar um detalhamento do produto à saída diversa, o sistema deve verificar se: <ul>
+<li>Já existe um detalhamento com o mesmo Lote, Validade e Programa de Saúde adicionado ao produto. Caso sim, o sistema deve emitir um alerta ao usuário e não permitir adicioná-lo na lista de detalhamentos; <a href="../DocumentoDeMensagensv2/#msg036">MSG036</a></li>
+<li>A quantidade de saída informada é inferior a 1. Caso sim, o sistema deve emitir um alerta ao usuário e limpar o valor informado no campo; <a href="../DocumentoDeMensagensv2/#msg025">MSG025</a></li>
+<li>A quantidade de saída informada para o produto, lote, validade e programa de saúde é superior a quantidade disponível no estoque do estabelecimento, o sistema deve emitir um alerta ao usuário e limpar o valor informado no campo. <a href="../DocumentoDeMensagensv2/#msg037">MSG037</a> <a href="../DocumentoDeRegrasv2/#rgn043">RGN043</a></li>
+</ul>
+</li>
 </ul>
 <hr />
 <h3 id="019">019</h3>
 <ul>
-<li>Quando o usuário acionar a opção “Estornar”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema estorna a saída diversa do(s) produto(s), altera a situação da saída diversa para “Estornada” e credita o(s) produto(s) no estoque do estabelecimento da saída diversa estornada, considerando lote, validade e programa de saúde, através da criação de um registro de entrada. Caso a ação não seja confirmada, o sistema permanecerá na tela de consulta; <a href="../DocumentoDeMensagensv2/#msg016">MSG016</a> <a href="../DocumentoDeMensagensv2/#msg047">MSG047</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </li>
+<li>O sistema deve permitir adicionar mais de um detalhamento ao produto, permitindo a saída do mesmo produto com lotes, validades e programas de saúdes diferentes; </li>
 </ul>
 <hr />
 <h3 id="020">020</h3>
 <ul>
-<li>Ao realizar o estorno da saída diversa do(s) produto(s), o sistema deve: <ul>
-<li>Creditar o(s) produto(s) no estoque do estabelecimento da saída estornada, através da criação de um registro de entrada, gravando as seguintes informações: <ul>
-<li>Modalidade de Licitação = “Saída Diversa”;      </li>
-<li>Tipo de Movimentação = “Entrada por Estorno de Saída Diversa”;  </li>
-<li>Fornecedor = CNES ou CNPJ do estabelecimento que realizou saída;  </li>
-<li>Tipo de Documento = “Estorno de Saída Diversa”;  </li>
-<li>Número do Documento = Número da saída que foi estornada; </li>
-<li>No detalhamento do produto:  <ul>
-<li>Princípio ativo ou Descrição do produto </li>
-<li>Concentração + Forma farmacêutica (se for medicamento) </li>
-<li>CATMAT </li>
-<li>Fabricante </li>
-<li>Lote </li>
-<li>Validade </li>
-<li>Valor Unitário </li>
-<li>Quantidade  </li>
-</ul>
-</li>
-<li>Situação do registro de entrada como “Armazenada”; </li>
-</ul>
-</li>
-<li>Alterar a situação do registro da saída diversa para “Estornada”. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> <a href="../DocumentoDeRegrasv2/#rgn032">RGN032</a> </li>
-</ul>
-</li>
+<li>O(s) detalhamento(s) vinculado(s) ao produto pode(m) ser excluído(s); </li>
 </ul>
 <hr />
 <h3 id="021">021</h3>
 <ul>
-<li>O sistema, identificando que uma saída diversa de produto(s) foi estornada, deve creditar a quantidade no saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou o estorno da saída diversa; <a href="../DocumentoDeRegrasv2/#rgn033">RGN033</a> </li>
+<li>Quando o usuário acionar a opção de “Salvar Parcial”, o sistema deve verificar se: <ul>
+<li>Existe uma saída diversa com o mesmo tipo de saída diversa, tipo e número de documento e justificativa de uma saída diversa registrada ou em preenchimento para o estabelecimento. Caso sim, o sistema deve apresentar uma mensagem de alerta ao usuário. <a href="../DocumentoDeRegrasv2/#rgn044">RGN044</a> <a href="../DocumentoDeMensagensv2/#msg038">MSG038</a> </li>
+<li>Existe ao menos um produto relacionado à saída diversa. Caso não, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg040">MSG040</a> </li>
+<li>Existe ao menos um detalhamento vinculado ao(s) produto(s) da saída diversa. Caso não, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg029">MSG029</a> </li>
 </ul>
+</li>
+</ul>
+<p>Atendendo as validações, o sistema grava o registro da saída diversa com estado “Ativo” e a situação “Em preenchimento” e permanece na tela de cadastro da saída diversa; <a href="../DocumentoDeMensagensv2/#msg031">MSG031</a> <a href="../DocumentoDeRegrasv2/#rgn045">RGN045</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </p>
+<hr />
+<h3 id="021_1">021</h3>
+<ul>
+<li>Quando o usuário acionar a opção “Registrar”, o sistema deve verificar se: <ul>
+<li>Existe uma saída diversa com o mesmo tipo de saída diversa, tipo e número de documento e justificativa de uma saída diversa registrada ou em preenchimento para o estabelecimento. Caso sim, o sistema deve apresentar uma mensagem de alerta ao usuário. <a href="../DocumentoDeRegrasv2/#rgn044">RGN044</a> <a href="../DocumentoDeMensagensv2/#msg038">MSG038</a> </li>
+<li>Existe ao menos um produto relacionado à saída diversa. Caso não, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg040">MSG040</a> </li>
+<li>O detalhamento de todos os produtos da saída diversa foi incluído. Caso não, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg029">MSG029</a> </li>
+</ul>
+</li>
+</ul>
+<p>Atendendo as validações, o sistema efetiva o cadastro da saída diversa, grava o estado do registro como “Ativo” e a situação como “Registrada”, debita os produtos do estoque do estabelecimento, considerando lote, validade e programa de saúde, apresenta a mensagem de sucesso e retorna à tela de consulta às saídas diversas apresentando este registro como o primeiro da relação das saídas diversas cadastradas para o estabelecimento; <a href="../DocumentoDeMensagensv2/#msg039">MSG039</a> <a href="../DocumentoDeRegrasv2/#rgn045">RGN045</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a>  </p>
 <hr />
 <h3 id="022">022</h3>
 <ul>
-<li>Quando o usuário acionar a opção “Detalhar”, o sistema deve direcionar para a tela de detalhamento dos dados da saída diversa; (ETE024) </li>
+<li>O sistema, identificando que uma saída diversa de produto(s) foi registrada, deve debitar a quantidade no saldo deste(s), considerando lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou a saída diversa; <a href="../DocumentoDeRegrasv2/#rgn046">RGN046</a> </li>
 </ul>
 <hr />
 <h3 id="023">023</h3>
 <ul>
-<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração na situação do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </li>
+<li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, retorna à tela de consulta às saídas diversas e não salva as edições realizadas. Caso a ação não seja confirmada, permanece na tela de cadastro da entrada; <a href="../DocumentoDeMensagensv2/#msg006">MSG006</a> </li>
+</ul>
+<hr />
+<h3 id="024">024</h3>
+<ul>
+<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </li>
 </ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../ETE022/" class="btn btn-neutral float-left" title="ETE022 - Detalhar Entrada"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../ETE025/" class="btn btn-neutral float-right" title="ETE025 - Cadastrar Saída Diversa">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ETE023/" class="btn btn-neutral float-left" title="ETE023 - Consultar Saída Diversa"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ETE025/" class="btn btn-neutral float-right" title="ETE025 - Editar Saída Diversa">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -410,7 +470,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../ETE022/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../ETE023/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../ETE025/" style="color: #fcfcfc">Next &raquo;</a></span>

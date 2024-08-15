@@ -55,9 +55,15 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE003/">ETE003 - Recuperar Senha</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE004/">ETE004 - Consultar Permissões de Acesso</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE005/">ETE005 - Atribuir Perfil de Acesso</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE007/">ETE007 - Consultar Meus Perfis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE008/">ETE008 - Solicitar Perfil</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE009/">ETE009 - Detalhar Meu Perfil</a>
                   </li>
@@ -91,13 +97,17 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ETE022/">ETE022 - Detalhar Entrada</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE024/">ETE024 - Consultar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída Diversa</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE025/">ETE025 - Cadastrar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída Diversa</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE026/">ETE026 - Editar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída Diversa</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ETE027/">ETE027 - Detalhar Saída Diversa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída Diversa</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
                   </li>
               </ul>
               <ul>
@@ -145,11 +155,6 @@
 <li>Modalidade de Licitação* – SU / AC </li>
 <li>Tipo de Movimentação* – SU / AC </li>
 <li>Tipo de Documento* – SU / AC  </li>
-<li>NFe (XML) – A (30) <ul>
-<li>“Carregar” – BT - upload do XML da NFe (ETE020) </li>
-<li>“Excluir” – M - excluir upload do XML da NFe </li>
-</ul>
-</li>
 <li>Nº do Documento* – A (20) </li>
 <li>Data do Documento* – D (dd/mm/aaaa) </li>
 <li>Valor do Documento* – N (13,9) (R$ 99999999999999,999999999) - Desabilitado para edição </li>
@@ -180,8 +185,6 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>No campo “Tipo de Movimentação”, o sistema deve apresentar as opções: Ajuste de Estoque, Doação/Permuta, Entrada Ordinária, Produção Própria, Requisição, Saldo de Implantação. Exceto os tipos de movimentação criados para entradas geradas automaticamente pelo sistema: “Entrada por Estorno de Saída”, “Entrada por Estorno de Dispensação” e “Entrada por Estorno de Distribuição”; </li>
 <li>No campo “Tipo de Documento”, o sistema deve apresentar as opções: Aviso, Boletim, Carta, Certidão, Circular, Comprovante, Contrato, Convênio, Decreto, Despacho, Edital, Fax, Guia, Guia De Remessa, Instrução Normativa, Memorando, Mensagem, Nota Fiscal, Nota Fiscal Eletrônica, Ofício, Ordem De Serviço, Parecer, Portaria, Requerimento, Requisição, Resolução; </li>
 <li>Quando o usuário selecionar no campo “Tipo de Movimentação” a opção: “Saldo de Implantação” ou “Ajuste de Estoque”, o preenchimento dos campos “Modalidade de Licitação”, “CNES/CNPJ” (fornecedor), “Razão Social” (fornecedor), “Tipo de Documento”, “Número do Documento” e “Data do Documento” deixa de ser obrigatório. Já se selecionar a opção “Produção Própria”, o preenchimento dos campos “Tipo de Documento”, “Número do Documento” e “Data do Documento” deixam de ser obrigatórios; <a href="../DocumentoDeRegrasv2/#rgn024">RGN024</a> </li>
-<li>Quando o usuário selecionar a opção “Nota Fiscal Eletrônica” no campo “Tipo de documento”, o sistema deve apresentar o campo “NFe (XML)”, permitir realizar o upload do XML da NFe e carregar automaticamente os campos: Nº Documento, Data do documento, Valor do documento e Fornecedor; </li>
-<li>Quando o usuário acionar a opção “Excluir” o arquivo XML da NFe, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, apaga as informações carregadas automaticamente e permanece na tela de cadastro da entrada, bem como se a ação não for confirmada; <a href="../DocumentoDeMensagensv2/#msg032">MSG032</a></li>
 <li>O sistema deve validar a data do documento informada: <ul>
 <li>Caso a data seja posterior a data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg018">MSG018</a></li>
 <li>Caso a data seja anterior a 1 ano da data atual, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg019">MSG019</a></li>
@@ -243,6 +246,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>O sistema não deve permitir adicionar um produto já relacionado à entrada. <a href="../DocumentoDeMensagensv2/#msg023">MSG023</a> </li>
 </ol>
 <h1 id="prototipo-003">Protótipo 003</h1>
+<h2 id="elementos-de-tela_2">Elementos de Tela</h2>
 <ul>
 <li>Lista de produtos da entrada - desabilitados para edição: <ul>
 <li>Código de Barras – N (13)  </li>
@@ -292,14 +296,8 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </ul>
 <p><strong>Legenda</strong><br />
 TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.  </p>
+<h2 id="criterios-de-aceite_2">Critérios de Aceite</h2>
 <ol>
-<li>Quando o usuário realizar o upload do XML da NFe, o sistema deve: <ul>
-<li>Identificar o(s) produto(s) da nota fiscal, recuperá-lo(s) na base de dados de medicamentos ou produtos para saúde; </li>
-<li>Apresentar em ordem alfabética a lista expansiva do(s) produto(s) recuperado(s) com o respectivo fabricante; <a href="../DocumentoDeRegrasv2/#rgn023">RGN023</a></li>
-<li>Recuperar e apresentar o Nº do Lote e a Data de Validade e permitir o preenchimento dos demais campos de detalhamento do produto.</li>
-</ul>
-</li>
-<li>Quando o usuário acionar a opção “Excluir” o arquivo XML da NFe, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, apaga as informações carregadas automaticamente e permanece na tela de cadastro da entrada, bem como se a ação não for confirmada; <a href="../DocumentoDeMensagensv2/#msg032">MSG032</a></li>
 <li>Quando o usuário realizar a busca de um produto e selecioná-lo, o sistema deve incluí-lo  a lista de produtos adicionados à entrada por ordem alfabética. A lista será expansiva, permitindo o preenchimento dos campos de detalhamento do produto; <a href="../DocumentoDeRegrasv2/#rgn023">RGN023</a></li>
 <li>O(s) produto(s) adicionado(s) à entrada pode(m) ser excluído(s) desde que não tenha(m) detalhamento(s) vinculado(s) a ele; <a href="../DocumentoDeRegrasv2/#rgn025">RGN025</a></li>
 <li>O campo “Qtd Total” deve ser desabilitado para edição e o sistema deve:  <ul>
@@ -452,7 +450,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </ol>
 <h1 id="prototipo-004">Protótipo 004</h1>
 <p><img alt="Detalhamento do Produto da Entrada" src="../imagens/entrada-detalhes.png" /></p>
-<h2 id="elementos-de-tela_2">Elementos de Tela</h2>
+<h2 id="elementos-de-tela_3">Elementos de Tela</h2>
 <ul>
 <li>Título – “Detalhamento do Produto da Entrada” </li>
 <li>Código de Barras </li>
@@ -474,7 +472,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <p><strong>Legenda</strong><br />
 TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.<br />
 </p>
-<h2 id="criterios-de-aceite_2">Critérios de Aceite</h2>
+<h2 id="criterios-de-aceite_3">Critérios de Aceite</h2>
 <ol>
 <li>O acesso aos dados de um detalhamento do produto da entrada é realizado quando o usuário acionar a opção “Detalhar” no cadastro da entrada; </li>
 <li>O sistema deve recuperar e apresentar os dados relacionados ao detalhamento do produto da entrada que o usuário deseja detalhar;</li>

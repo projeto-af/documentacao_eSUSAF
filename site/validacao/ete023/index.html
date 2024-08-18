@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>ETE023 - Consultar Saídas - e-SUS AF - Documentação Negocial</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "ETE023 - Consultar Sa\u00eddas";
+        var mkdocs_page_input_path = "validacao/ete023.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> e-SUS AF - Documentação Negocial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/">Documento de Mensagens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeRegrasv2/">Documento de Regras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Especificações</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE001/">ETE001 - Realizar Login</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE002/">ETE002 - Cadastrar Usuário do Sistema</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE003/">ETE003 - Recuperar Senha</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE004/">ETE004 - Consultar Permissões de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE005/">ETE005 - Atribuir Perfil de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE007/">ETE007 - Consultar Meus Perfis</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE008/">ETE008 - Solicitar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE009/">ETE009 - Detalhar Meu Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE010/">ETE010 - Consultar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE011/">ETE011 - Cadastrar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE012/">ETE012 - Detalhar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE013/">ETE013 - Consultar Entes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE014/">ETE014 - Cadastrar Ente</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE015/">ETE015 - Consultar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE016/">ETE016 - Cadastrar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE017/">ETE017 - Editar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE018/">ETE018 - Detalhar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE019/">ETE019 - Consultar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE020/">ETE020 - Cadastrar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE021/">ETE021 - Editar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE022/">ETE022 - Detalhar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE023/">ETE023 - Consultar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE024/">ETE024 - Cadastrar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE025/">ETE025 - Editar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE026/">ETE026 - Detalhar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Para Validação</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">ETE023 - Consultar Saídas</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#1-historia-de-usuario">1. História de Usuário</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-elementos-de-tela">2. Elementos de tela</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#21-itens-de-tela-de-consulta">2.1. Itens de tela de consulta</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#22-resultado-da-consulta">2.2. Resultado da consulta</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-criterios-de-aceitacao">3. Critérios de aceitação</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-campos-enumerados">4. Campos Enumerados</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ete024/">ETE024 - Cadastrar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ete025/">ETE025 - Editar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ete026/">ETE026 - Detalhar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ete029/">ETE029 - Estornar Saída</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">e-SUS AF - Documentação Negocial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Especificações Técnicas</li>
+          <li class="breadcrumb-item">Para Validação</li>
+      <li class="breadcrumb-item active">ETE023 - Consultar Saídas</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="especificacao-tecnica-023-consultar-saidas">Especificação Técnica 023: Consultar Saídas</h1>
+<h2 id="1-historia-de-usuario">1. História de Usuário</h2>
+<p>Como usuário da aplicação quero que seja possível consultar as saídas mantidas pela a aplicação.</p>
+<h2 id="2-elementos-de-tela">2. Elementos de tela</h2>
+<h3 id="21-itens-de-tela-de-consulta">2.1. Itens de tela de consulta</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Tipo</th>
+<th style="text-align: left;">Detalhamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Nº da saída</td>
+<td style="text-align: left;">Identificador da saída, corresponde ao UUID da saída realizada</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tipo de Saída</td>
+<td style="text-align: left;">Campo enumerado com tipos de saída</td>
+<td style="text-align: left;">enum</td>
+<td style="text-align: left;">CE01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tipo de Documento</td>
+<td style="text-align: left;">Campo enumerado com tipos de documentos</td>
+<td style="text-align: left;">enum</td>
+<td style="text-align: left;">CE02</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nº do documento</td>
+<td style="text-align: left;">Campo com o número de documento</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Destino</td>
+<td style="text-align: left;">Campo com destino da saída</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">CNPJ/CNES/Descrição</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Campo enumerado com status da saída</td>
+<td style="text-align: left;">enum</td>
+<td style="text-align: left;">CE03</td>
+</tr>
+<tr>
+<td style="text-align: left;">Item</td>
+<td style="text-align: left;">Campo enumerado com itens de catálogo</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data Início Registro de Saída</td>
+<td style="text-align: left;">Campo com a data de início da saída</td>
+<td style="text-align: left;">data</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data Fim Registro de Saída</td>
+<td style="text-align: left;">Campo com a data de fim da saída</td>
+<td style="text-align: left;">data</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Itens</td>
+<td style="text-align: left;">Relação de itens selecionados</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-resultado-da-consulta">2.2. Resultado da consulta</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Tipo</th>
+<th style="text-align: left;">Detalhamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Nº da saída</td>
+<td style="text-align: left;">UUID da saída</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data da Saída</td>
+<td style="text-align: left;">Data em que a saída foi registrada</td>
+<td style="text-align: left;">data</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tipo de Saída</td>
+<td style="text-align: left;">Campo enumerado com tipos de saída</td>
+<td style="text-align: left;">enum</td>
+<td style="text-align: left;">CE01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tipo de Documento</td>
+<td style="text-align: left;">Campo enumerado com tipos de documentos</td>
+<td style="text-align: left;">enum</td>
+<td style="text-align: left;">CE02</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nº do documento</td>
+<td style="text-align: left;">Campo com o número de documento</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Destino</td>
+<td style="text-align: left;">Campo com destino da saída</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">CNPJ/CNES/Descrição</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nome Fantasia Destino</td>
+<td style="text-align: left;">Nome fantasia do estabelecimento/Pessoa Jurídica de destino</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Campo enumerado com status da saída</td>
+<td style="text-align: left;">enum</td>
+<td style="text-align: left;">CE03</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ações</td>
+<td style="text-align: left;">Campo enumerado com ações possíveis</td>
+<td style="text-align: left;">enum</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-criterios-de-aceitacao">3. Critérios de aceitação</h2>
+<ol>
+<li>O acesso à funcionalidade é dado através do menu Movimentações &gt; Saídas;</li>
+<li>O acesso à funcionalidade se dará no contexto do estabelecimento e poderá ser concedido para gestor, gestor de estabelecimento, farmacêutico e atendente;</li>
+<li>Quando o campo Produto for informado, o sistema deve:<br />
+3.1. Apresentar a lista de medicamentos e a lista de produtos ativos no sistema, com cadastro finalizado e que correspondam ao valor informado no campo autocomplete a partir da indicação do 3º caractere, consultando por nome ou CATMAT Raiz;<br />
+3.2. O sistema deve validar se o produto informado foi encontrado. Caso não, o sistema deve emitir uma mensagem de alerta ao usuário; MSG055</li>
+<li>O sistema deve retornar todas as saídas realizadas pelo estabelecimento selecionado e considerar os filtros quando informados;</li>
+<li>O sistema, não encontrando a(s) saída(s) na consulta, deve informar que o(s) registro(s) não foram encontrados;</li>
+<li>O sistema, encontrando a(s) saída(s), deve apresentar os dados de todo(s) registro(s) retornados na busca.</li>
+<li>O botão de ação "Excluir" deverá estar disponível apenas para saídas com o status "Em preenchimento".<br />
+7.1. Quando o usuário acionar a opção de “Excluir”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema exclui todos os registros de saída e seus descendentes. Caso a ação não seja confirmada, o sistema permanecerá na tela de consulta;</li>
+<li>O botão "estornar saída" deverá ser apresentado apenas para saídas com o status "Finalizado".<br />
+8.1. Quando o usuário acionar a opção de “Estornar Saída”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema grava a situação da saída como “Estornada” e o registro permanecerá ativo. Caso a ação não seja confirmada, o sistema permanecerá na tela de consulta;</li>
+<li>O Botão de ação "Editar Saída", deverá estar disponível apenas para saídas com o status "Em Preenchimento". Uma vez acionado, deverá levar o usuário a tela de editar saída.</li>
+<li>O Botão de ação "Detalhar Saída", deverá estar disponível apenas para saídas com o status "Finalizado" ou "Estornada". Um vez ativo, deverá direcionar o usuário para a tela de detalhes da saída.</li>
+</ol>
+<h2 id="4-campos-enumerados">4. Campos Enumerados</h2>
+<p><strong>CE01: TIPOS DE SAÍDA</strong>
+| ORDEM | ATRIBUTO |
+| :--- | :--- |
+| 1 | Ajuste de Estoque |
+| 2 | Amostra |
+| 3 | Exposição e Análise |
+| 4 | Apreensão Sanitária |
+| 5 | Perda |
+| 6 | Distribuição sem Requisição |
+| 7 | Roubo |
+| 8 | Transferência |
+| 9 | Usuário SUS Não Identificado |
+| 10 | Validade Vencida |
+| 11 | Saída para departamento |</p>
+<p><strong>CE02: TIPOS DE DOCUMENTOS</strong>
+| ORDEM | ATRIBUTO |
+| :--- | :--- |
+| 1 | Aviso |
+| 2 | Boletim |
+| 3 | Carta |
+| 4 | Certidão |
+| 5 | Circular |
+| 6 | Comprovante |
+| 7 | Contrato |
+| 8 | Convênio |
+| 9 | Decreto |
+| 10 | Despacho |
+| 11 | Requisição |
+| 12 | Edita |
+| 13 | Fax |
+| 14 | Guia |
+| 15 | Guia de remessa |
+| 16 | Instrução Normativa |
+| 17 | Memorando |
+| 18 | Mensagem |
+| 19 | Nota Fiscal |
+| 20 | Nota Fiscal Eletrônica |
+| 21 | Ofício |
+| 22 | Ordem de Serviço |
+| 23 | Parecer |
+| 24 | Protocolo |
+| 25 | Portaria |
+| 26 | Requerimento |</p>
+<p><strong>CE03: STATUS DE SAÍDA</strong>
+| ORDEM | ATRIBUTO |
+| :--- | :--- |
+| 1 | Em preenchimento |
+| 2 | Finalizada |
+| 3 | Estornada |</p>
+<p><strong>CE04: AÇÕES</strong>
+| ORDEM | ATRIBUTO |
+| :--- | :--- |
+| 1 | Excluir |
+| 2 | Estornar Saída |
+| 3 | Detalhar Saída |
+| 4 | Editar saída |</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../EspecificacoesTecnicas/ETE028/" class="btn btn-neutral float-left" title="ETE028 - Detalhar Relatório de Posição de Estoque"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ete024/" class="btn btn-neutral float-right" title="ETE024 - Cadastrar Saídas">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../EspecificacoesTecnicas/ETE028/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ete024/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

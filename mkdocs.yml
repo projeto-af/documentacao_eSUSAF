@@ -40,8 +40,8 @@ nav:
       - ETE023 - Consultar Saídas : validacao/ete023.md
       - ETE024 - Cadastrar Saídas : validacao/ete024.md
       - ETE025 - Editar Saídas : validacao/ete025.md
-      - ETE025 - Estornar Saída : validacao/ete029.md
       - ETE026 - Detalhar Saídas : validacao/ete026.md
+      - ETE029 - Estornar Saída : validacao/ete029.md
 
 
 #  - Histórias de Usuário:

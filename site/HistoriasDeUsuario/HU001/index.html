@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>HU001 - Cadastro e Login - e-SUS AF - Documentação Negocial</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "HU001 - Cadastro e Login";
+        var mkdocs_page_input_path = "HistoriasDeUsuario/HU001.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> e-SUS AF - Documentação Negocial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/">Documento de Mensagens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeRegrasv2/">Documento de Regras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Especificações</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE001/">ETE001 - Realizar Login</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE002/">ETE002 - Cadastrar Usuário do Sistema</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE003/">ETE003 - Recuperar Senha</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE004/">ETE004 - Consultar Permissões de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE005/">ETE005 - Atribuir Perfil de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE007/">ETE007 - Consultar Meus Perfis</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE008/">ETE008 - Solicitar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE009/">ETE009 - Detalhar Meu Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE010/">ETE010 - Consultar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE011/">ETE011 - Cadastrar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE012/">ETE012 - Detalhar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE013/">ETE013 - Consultar Entes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE014/">ETE014 - Cadastrar Ente</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE015/">ETE015 - Consultar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE016/">ETE016 - Cadastrar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE017/">ETE017 - Editar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE018/">ETE018 - Detalhar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE019/">ETE019 - Consultar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE020/">ETE020 - Cadastrar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE021/">ETE021 - Editar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE022/">ETE022 - Detalhar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE023/">ETE023 - Consultar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE024/">ETE024 - Cadastrar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE025/">ETE025 - Editar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE026/">ETE026 - Detalhar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Para Validação</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">e-SUS AF - Documentação Negocial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">HU001 - Cadastro e Login</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="hu001-cadastro-e-login">HU001 - Cadastro e Login</h1>
+<h2 id="descricao">Descrição</h2>
+<p>Como usuário, desejo realizar o cadastro / login na aplicação, de modo a ter acesso a recursos exclusivos.</p>
+<h2 id="regras">Regras</h2>
+<ul>
+<li>Ao tentar realizar o cadastro o sistema deverá verificar se o CPF já existe na base  </li>
+<li>Após preencher o campo CEP, o sistema deverá preencher os demais campos do formulário de endereço automaticaAo com base noa dados oriundos dos Correios </li>
+<li>Após finalizar o cadastro, o sistema deve enviar um e-mail de confirmação para o usuário; </li>
+<li>O usuário, após confirmar o cadastro por e-mail, deverá conseguir realizar login usando suas credenciais; </li>
+<li>A senha do usuário deverá ter: <ul>
+<li>Mínimo de 8 caracteres </li>
+<li>Máximo de 30 caracteres </li>
+<li>Letras maiúsculas: pelo menos uma </li>
+<li>Letras minúsculas: pelo menos uma </li>
+<li>Número: pelo menos um </li>
+<li>Caracteres especiais: pelo menos um </li>
+</ul>
+</li>
+</ul>
+<h2 id="criterios-de-aceite">Critérios de aceite</h2>
+<p><strong>Cenário: Realizar novo cadastro</strong><br />
+<strong>Dado</strong> que o usuário esteja na tela de realizar novo cadastro<br />
+<strong>Quando</strong> ele preencher o formulário de cadastro com seus dados<br />
+<strong>Então</strong> enviar um e-mail de validação de cadastro para ele  </p>
+<p><strong>Cenário: Tentativa de cadastro de usuário já existente</strong><br />
+<strong>Dado</strong> que o usuário preencha o formulário na tela de realizar cadastro<br />
+<strong>Quando</strong> ele clicar no botão de se cadastrar<br />
+<strong>E</strong> o usuário já existir na base<br />
+<strong>Então</strong> apresentar uma mensagem de erro</p>
+<p><strong>Cenário: Realizar login com credenciais válidas</strong><br />
+<strong>Dado</strong> que o usuário esteja na tela inicial<br />
+<strong>Quando</strong> ele preencher os campos<br />
+<strong>E</strong> suas credenciais forem válidas<br />
+<strong>Então</strong> realizar login do usuário  </p>
+<p><strong>Cenário: Realizar login com credenciais inválidas</strong><br />
+<strong>Dado</strong> que o usuário esteja na tela inicial<br />
+<strong>Quando</strong> ele preencher os campos<br />
+<strong>E</strong> suas credenciais forem inválidas<br />
+<strong>Então</strong> apresentar mensagem de erro de credenciais inválidas  </p>
+<p><strong>Cenário: Redefinir senha de usuário existente</strong><br />
+<strong>Dado</strong> que o usuário preencha o formulário de redefinir senha<br />
+<strong>E</strong> esteja cadastrado na base<br />
+<strong>Quando</strong> ele clicar no link de redefinir senha no e-mail enviado à ele<br />
+<strong>Então</strong> apresentar formulário para criação de nova senha respeitando as regras de senha da aplicação  </p>
+<p><strong>Cenário: Redefinir senha de usuário inexistente</strong><br />
+<strong>Dado</strong> que o usuário esteja na tela de redefinir senha<br />
+<strong>Quando</strong> ele preencher o formulário<br />
+<strong>E</strong> o usuário não estiver cadastrado na base<br />
+<strong>Então</strong> apresentar uma mensagem de usuario inexistente</p>
+<h2 id="definicao-de-pronto">Definição de pronto</h2>
+<ul>
+<li>A funcionalidade deve estar completa e funcional.  </li>
+<li>Todos os critérios de aceite devem ser atendidos.  </li>
+<li>A história deve ter sido testada e validada.  </li>
+<li>A documentação da história deve estar completa.  </li>
+</ul>
+<h2 id="modelo-de-dados">Modelo de dados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Nível</th>
+<th>Atributo</th>
+<th>Descrição</th>
+<th style="text-align: center;">Cardinalidade</th>
+<th style="text-align: center;">Tipo de Dados</th>
+<th style="text-align: center;">Tamanho</th>
+<th style="text-align: center;">Formato</th>
+<th style="text-align: center;">Obrigatoriedade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"></td>
+<td>Identificação do usuário</td>
+<td></td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td>Foto</td>
+<td>Foto de usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">não</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td>CNS</td>
+<td>Número do cartão nacional de saúde do usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">texto</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">XXXX XXXX XXXX XXX</td>
+<td style="text-align: center;">não</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td>CPF</td>
+<td>Número do CPF do usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">texto</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">XXX.XXX.XXX-XX</td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td>Nome</td>
+<td>Nome do usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">texto</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td>E-mail</td>
+<td>E-mail do usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">texto</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td>Celular</td>
+<td>Número de celular do usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">texto</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">(XX) XXXXX-XXXX</td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td>Senha</td>
+<td>Senha do usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">Texto</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td>Endereço</td>
+<td></td>
+<td style="text-align: center;">1..N</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>Tipo de endereço</td>
+<td>Tipo de endereço (Residencial, Comercial, Profissional, Outro)</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">texto</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>CEP</td>
+<td>CEP do endereço do usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">texto</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">XX.XXX-XXX</td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>UF</td>
+<td>UF do usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">texto</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">XX</td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>Município</td>
+<td>Município do usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">texto</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>Endereço/Logradouro</td>
+<td>Endereço do usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">texto</td>
+<td style="text-align: center;">250</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>Bairro</td>
+<td>Bairro do usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">texto</td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>Complemento</td>
+<td>Complemento do endereço do usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">texto</td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">sim</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>Número</td>
+<td>Número do endereço do usuário</td>
+<td style="text-align: center;">1..1</td>
+<td style="text-align: center;">texto</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">sim</td>
+</tr>
+</tbody>
+</table>
+<h2 id="design-conceitual">Design Conceitual</h2>
+<p><img alt="alt text" src="../imagens/01-tela-de-login.png" /></p>
+<p><img alt="alt text" src="../imagens/02-tela-de-cadastro.png" /></p>
+<p><img alt="alt text" src="../imagens/03-confirmacao-de-cadastro.png" /></p>
+<p><img alt="alt text" src="../imagens/04-dados-do-usuario-apos-cadastro.png" /></p>
+<p><img alt="alt text" src="../imagens/05-mensagem-email-redefinir-senha.png" /></p>
+<p><img alt="alt text" src="../imagens/06-tela-de-redefinir-senha.png" /></p>
+<p><img alt="alt text" src="../imagens/07-mensagem-de-confirmar-redefinir-senha.png" /></p>
+<p><img alt="alt text" src="../imagens/08-tela-esqueceu-senha.png" /></p>
+<p><img alt="alt text" src="../imagens/09-mensagem-de-confirmacao-redefinir-senha.png" /></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

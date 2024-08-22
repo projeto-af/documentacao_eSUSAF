@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>HU016 - Cadastrar Entrada - e-SUS AF - Documentação Negocial</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "HU016 - Cadastrar Entrada";
+        var mkdocs_page_input_path = "HistoriasDeUsuario/HU017.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> e-SUS AF - Documentação Negocial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/">Documento de Mensagens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeRegrasv2/">Documento de Regras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Especificações</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE001/">ETE001 - Realizar Login</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE002/">ETE002 - Cadastrar Usuário do Sistema</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE003/">ETE003 - Recuperar Senha</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE004/">ETE004 - Consultar Permissões de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE005/">ETE005 - Atribuir Perfil de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE007/">ETE007 - Consultar Meus Perfis</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE008/">ETE008 - Solicitar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE009/">ETE009 - Detalhar Meu Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE010/">ETE010 - Consultar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE011/">ETE011 - Cadastrar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE012/">ETE012 - Detalhar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE013/">ETE013 - Consultar Entes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE014/">ETE014 - Cadastrar Ente</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE015/">ETE015 - Consultar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE016/">ETE016 - Cadastrar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE017/">ETE017 - Editar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE018/">ETE018 - Detalhar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE019/">ETE019 - Consultar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE020/">ETE020 - Cadastrar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE021/">ETE021 - Editar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE022/">ETE022 - Detalhar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE023/">ETE023 - Consultar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE024/">ETE024 - Cadastrar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE025/">ETE025 - Editar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE026/">ETE026 - Detalhar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Para Validação</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">e-SUS AF - Documentação Negocial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">HU016 - Cadastrar Entrada</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="hu016-cadastrar-entrada">HU016 - Cadastrar Entrada</h1>
+<h2 id="descricao">Descrição</h2>
+<p>Como usuário, desejo cadastrar as entradas de produtos, de modo a disponibilizar produtos no estoque para uso.</p>
+<h2 id="regras">Regras</h2>
+<ul>
+<li>Ao selecionar "Saldo de Implantação” ou “Ajuste de Estoque” como Tipo de Movimentação, os campos a seguir não deverão ser considerados obrigatórios.<ul>
+<li>Modalidade de Licitação</li>
+<li>Tipo de Documento</li>
+<li>Número do Documento</li>
+<li>Data do Documento</li>
+<li>CNES/CNPJ (fornecedor)</li>
+<li>Razão Social (fornecedor)</li>
+</ul>
+</li>
+<li>Ao selecionar “Produção Própria”, os campos a seguir não deverão ser considerados obrigatórios.<ul>
+<li>Tipo de Documento</li>
+<li>Número do Documento</li>
+<li>Data do Documento</li>
+</ul>
+</li>
+<li>Ao selecionar "Nota Fiscal Eletrônica” no campo “Tipo de documento”, apresentar o campo NFe (XML) para o usuário.</li>
+<li>Ao inserir o arquivo NFe (XML) no sistema, preencher os campos abaixo automaticamente, com dados extraídos do XML<ul>
+<li>Nº Documento</li>
+<li>Data do documento</li>
+<li>Valor do documento</li>
+<li>Fornecedor</li>
+<li>Produto com Fabricante</li>
+<li>Lote</li>
+<li>Validade</li>
+</ul>
+</li>
+<li>Ao excluir o arquivo NFe (XML), apresentar uma mensagem de confirmação de exclusão e, caso seja confirmado, apagar os dados dos campos que foram preenchidos automaticamente.</li>
+<li>Em relação às datas:<ul>
+<li>Não permitir data anterior a 1 ano da data atual</li>
+<li>Não permitir data posterior à data atual</li>
+</ul>
+</li>
+<li>O campo "Valor do Documento" deverá ser calculado automaticamente com a somatória dos valores dos produtos adicionados à entrada, sendo apresentado da seguinte forma:<ul>
+<li>valor em reais (R$)</li>
+<li>com duas casas decimais</li>
+<li>seguindo a norma NBR 5891 da ABNT (que trata de arredondamento de números decimais)</li>
+</ul>
+</li>
+<li>CNES e CNPJ deverão ser validados e:<ul>
+<li>se forem existentes, preencher o campo Razão Social do fornecedor</li>
+<li>se forem inexistentes, apresentar mensagem de erro MSG0017</li>
+<li>se o dados for inválido, apresentar mensagem de erro MSG0015</li>
+</ul>
+</li>
+<li>O campo "Data do Recebimento" deverá ser preenchido </li>
+</ul>
+<h2 id="criterios-de-aceite">Critérios de aceite</h2>
+<p><strong>Cenário: Cadastrar nova entrada</strong><br />
+<strong>Dado</strong> que o usuário que possui permissão esteja na tela de cadastrar entrada<br />
+<strong>Quando</strong> ele preencher o formulário conforme obrigatoriedade dos campos<br />
+<strong>E</strong> clicar no botão armazenar<br />
+<strong>Então</strong> uma nova entrada será cadastrada</p>
+<p><strong>Cenário: Salvar rascunho de uma nova entrada</strong><br />
+<strong>Dado</strong> que o usuário que possui permissão esteja na tela de cadastrar entrada<br />
+<strong>Quando</strong> ele preencher o formulário conforme obrigatoriedade dos campos<br />
+<strong>E</strong> clicar no botão Salvar Parcial<br />
+<strong>Então</strong> um rascunho da nova entrada será salvo</p>
+<p><strong>Cenário: Excluir arquivo da Nota Fiscal Eletrônica (XML)</strong><br />
+<strong>Dado</strong> que um arquivo NFe (XML) foi importado para o sistema<br />
+<strong>Quando</strong> ele for excluído<br />
+<strong>Então</strong> apresentar uma mensagem de confirmação de exclusão ao usuário</p>
+<h2 id="modelo-de-dados">Modelo de dados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Nível</th>
+<th>Atributo</th>
+<th>Descrição</th>
+<th style="text-align: center;">Cardinalidade</th>
+<th style="text-align: center;">Tipo de Dados</th>
+<th style="text-align: center;">Tamanho</th>
+<th style="text-align: center;">Formato</th>
+<th style="text-align: center;">Obrigatoriedade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="design-conceitual">Design Conceitual</h2>
+<p><img alt="alt text" src="../imagens/10-cadastrar-entrada.png" /></p>
+<p><img alt="alt text" src="../imagens/11-estornar-entrada.png" /></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>ETE004 - Consultar Permissões de Acesso - e-SUS AF - Documentação Negocial</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "ETE004 - Consultar Permiss\u00f5es de Acesso";
+        var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE004.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> e-SUS AF - Documentação Negocial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeMensagensv2/">Documento de Mensagens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegrasv2/">Documento de Regras</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Especificações</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../ETE001/">ETE001 - Realizar Login</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE002/">ETE002 - Cadastrar Usuário do Sistema</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE003/">ETE003 - Recuperar Senha</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">ETE004 - Consultar Permissões de Acesso</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela:</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de aceite</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prototipo-002">Protótipo 002</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#elementos-de-tela_1">Elementos de tela</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite_1">Critérios de aceite</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prototipo-003">Protótipo 003</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#elementos-de-tela_2">Elementos de tela</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite_2">Critérios de aceite</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE005/">ETE005 - Atribuir Perfil de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE007/">ETE007 - Consultar Meus Perfis</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE008/">ETE008 - Solicitar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE009/">ETE009 - Detalhar Meu Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE010/">ETE010 - Consultar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE011/">ETE011 - Cadastrar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE012/">ETE012 - Detalhar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE013/">ETE013 - Consultar Entes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE014/">ETE014 - Cadastrar Ente</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE015/">ETE015 - Consultar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE016/">ETE016 - Cadastrar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE017/">ETE017 - Editar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE018/">ETE018 - Detalhar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE019/">ETE019 - Consultar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE020/">ETE020 - Cadastrar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE021/">ETE021 - Editar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE022/">ETE022 - Detalhar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Para Validação</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">e-SUS AF - Documentação Negocial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Especificações Técnicas</li>
+          <li class="breadcrumb-item">Especificações</li>
+      <li class="breadcrumb-item active">ETE004 - Consultar Permissões de Acesso</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="especificacao-tecnica-004-consultar-permissoes-de-acesso">Especificação Técnica 004 - Consultar Permissões de Acesso</h1>
+<h2 id="descricao">Descrição</h2>
+<p>Como usuário quero consultar as permissões de acesso para moderá-las. </p>
+<h2 id="prototipo-001">Protótipo 001</h2>
+<h3 id="elementos-de-tela">Elementos de Tela:</h3>
+<ul>
+<li>Bread Crumb – “Controle de Acesso / Moderar Acesso / Consulta” </li>
+<li>Título da página – “Consultar Permissões de Acesso” </li>
+<li>“Seta” – M - retorna para a Tela Inicial/Dashboard </li>
+<li>“Novo” – BT - direciona para a Tela de Atribuir Perfil de Acesso </li>
+<li>Buscar por – A / AC </li>
+<li>Lista de permissões de acesso <ul>
+<li>CPF – N (11) </li>
+<li>Nome – A (50) </li>
+<li>Perfil – A (50) </li>
+<li>Instância – A (50) </li>
+<li>Estabelecimento – A (50) </li>
+<li>Situação – A (50) </li>
+</ul>
+</li>
+<li>“Aprovar” – BT </li>
+<li>“Reprovar” – BT </li>
+<li>“Inativar” – BT </li>
+<li>“Detalhar” – BT </li>
+<li>Ordenação nas colunas  </li>
+<li>Paginação  </li>
+<li>Registro por página  </li>
+<li>Ir para página  </li>
+</ul>
+<p><strong>Legenda</strong><br />
+TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório. </p>
+<h3 id="criterios-de-aceite">Critérios de aceite</h3>
+<ol>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso”, quando acionar o subitem “Moderar Perfil”; </li>
+<li>O sistema deve recuperar e apresentar a relação das permissões de acesso por usuário ordenando os registros por status “Aguardando Aprovação” e data decrescente do registro. Caso algum campo retorne vazio, o sistema deve apresentar a descrição “-”; </li>
+<li>O sistema deve apresentar a relação das permissões de acesso por usuário com os dados: CPF, Nome Completo, Perfil, Instância, Estabelecimento, Situação e as ações desejáveis para cada registro; </li>
+<li>As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta. <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a></li>
+<li>O sistema deve apresentar as ações observando o perfil solicitado e a situação do registro conforme: <ul>
+<li>Para perfil “Instalador” a opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados; </li>
+<li>Para perfil “Administrador”: <ul>
+<li>A opção “Inativar” para permissões de acesso com perfil “Administrador” e “Gestor” atribuídos por ele; </li>
+<li>A opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados. </li>
+</ul>
+</li>
+<li>Para perfil “Gestor”: <ul>
+<li>As opções “Aprovar”, “Reprovar” e “Inativar” para todas as permissões de acesso exceto do perfil de “Administrador”; </li>
+<li>A opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados. </li>
+</ul>
+</li>
+<li>Para perfil “Gestor Estabelecimento”: <ul>
+<li>As opções “Aprovar”, “Reprovar” e “Inativar” para todas as permissões de acesso relacionadas ao seu estabelecimento; </li>
+<li>A opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados. </li>
+</ul>
+</li>
+<li>Para registro com situação “Aguardando Aprovação”, as opções “Aprovar”, “Reprovar” e “Detalhar”;  </li>
+<li>Para registro com situação “Aprovado”, as opções “Inativar” e “Detalhar”; </li>
+<li>Para registro com situação “Reprovado” ou “Inativo”, a opção “Detalhar”. <a href="../DocumentoDeRegrasv2/#rgn052">RGN052</a></li>
+</ul>
+</li>
+<li>Quando o usuário acionar a opção “Novo”, o sistema deve direcionar para a tela de atribuição de um perfil para um usuário específico; <a href="../ETE005/">ETE005</a></li>
+<li>Quando o usuário acionar a opção “Aprovar”, o sistema deve apresentar mensagem de confirmação ao usuário. Caso confirme a ação, o sistema aprova o acesso ao sistema, grava o estado do registro como “Ativo” e a situação como “Aprovado”, envia um e-mail informativo ao solicitante, apresenta a mensagem de sucesso e permanece na tela de consultar permissões de acesso. Caso a ação não seja confirmada, permanece na tela de consultar permissões de acesso; <a href="../DocumentoDeMensagensv2/#msg080">MSG080</a> <a href="../DocumentoDeMensagensv2/#msg081">MSG081</a> <a href="../DocumentoDeMensagensv2/#msg082">MSG082</a></li>
+<li>Quando o usuário acionar a opção “Reprovar”, o sistema apresenta a tela de inclusão de justificativa para reprovação; <a href="./#prototipo-002">Protótipo 002</a> </li>
+<li>Quando o usuário acionar a opção “Inativar”, o sistema apresenta a tela de inclusão de justificativa para inativação; <a href="./#prototipo-003">Protótipo 003</a> </li>
+<li>Para permissões de acesso com situação: <ul>
+<li>“Solicitado” o sistema deve permitir aprovar ou reprovar; </li>
+<li>“Aprovado” o sistema deve permitir inativar; </li>
+<li>“Reprovado” ou “Inativo” o sistema não deve permitir aprovar ou reativar, sendo necessário realizar uma nova solicitação. <a href="../DocumentoDeRegrasv2/#rgn013">RGN013</a></li>
+</ul>
+</li>
+<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
+</ol>
+<h2 id="prototipo-002">Protótipo 002</h2>
+<h3 id="elementos-de-tela_1">Elementos de tela</h3>
+<ul>
+<li>Título da página – “Informações sobre a solicitação” </li>
+<li>“Solicitante” – A (50) </li>
+<li>“Solicitado em” – D (DD/MM/AAAA) </li>
+<li>“Perfil” – A (50) </li>
+<li>“Instância” – A (50) </li>
+<li>“Estabelecimento” – A (50) </li>
+<li>“Justificativa*” – A (250) </li>
+<li>“Reprovar” – BT </li>
+<li>“Sair” – BT </li>
+</ul>
+<p><strong>Legenda</strong><br />
+TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório. </p>
+<h3 id="criterios-de-aceite_1">Critérios de aceite</h3>
+<ol>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso”, subitem “Moderar Perfil”, na tela “Consultar Permissões de Acesso” quando acionar a opção “Reprovar”; </li>
+<li>O sistema deve recuperar e apresentar os dados da solicitação de permissão de acesso. Caso algum campo retorne vazio, o sistema deve apresentar a descrição “-”; </li>
+<li>O sistema deve apresentar a solicitação de permissão de acesso com os dados: Solicitante, Solicitado em, Perfil, Instância, Estabelecimento e o campo para inclusão da justificativa; </li>
+<li>O usuário ao reprovar uma solicitação de permissão de acesso ao sistema, deve informar uma justificativa; <a href="../DocumentoDeRegrasv2/#rgn053">RGN053</a></li>
+<li>Quando o usuário acionar a opção “Reprovar”, o sistema deve reprovar a solicitação de permissão de acesso, alterar o estado do registro para “Inativo” e a situação para “Reprovado”, enviar um e-mail informativo ao solicitante, apresentar a mensagem de sucesso e permanecer na tela de consultar permissões de acesso; <a href="../DocumentoDeMensagensv2/#msg082">MSG082</a> <a href="../DocumentoDeMensagensv2/#msg083">MSG083</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
+<li>Quando o usuário acionar a opção “Sair”, o sistema retorna para a tela de consultar permissões de acesso; </li>
+<li>sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
+</ol>
+<h2 id="prototipo-003">Protótipo 003</h2>
+<h3 id="elementos-de-tela_2">Elementos de tela</h3>
+<ul>
+<li>“Solicitante” – A (50) </li>
+<li>“Solicitado em” – D (DD/MM/AAAA) </li>
+<li>“Aprovado em” – D (DD/MM/AAAA) </li>
+<li>“Aprovado por” – A (50) </li>
+<li>“Perfil” – A (50) </li>
+<li>“Instância” – A (50) </li>
+<li>“Estabelecimento” – A (50) </li>
+<li>“Justificativa*” – A (250) </li>
+<li>“Inativar” – BT </li>
+<li>“Sair” – BT </li>
+</ul>
+<p><strong>Legenda</strong><br />
+TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório. </p>
+<h3 id="criterios-de-aceite_2">Critérios de aceite</h3>
+<ol>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso”, subitem “Moderar Perfil”, na tela “Consultar Permissões de Acesso” quando acionar a opção “Inativar”; </li>
+<li>O sistema deve recuperar e apresentar os dados da solicitação de permissão de acesso. Caso algum campo retorne vazio, o sistema deve apresentar a descrição “-”; </li>
+<li>O sistema deve apresentar a solicitação de permissão de acesso com os dados: Solicitante, Solicitado em, Aprovado em, Aprovado por, Perfil, Instância, Estabelecimento e o campo para inclusão da justificativa; </li>
+<li>O usuário ao inativar uma solicitação de permissão de acesso ao sistema, deve informar uma justificativa; <a href="../DocumentoDeRegrasv2/#rgn053">RGN053</a></li>
+<li>Quando o usuário acionar a opção “Inativar”, o sistema deve inativar a solicitação de permissão de acesso, alterar o estado do registro para “Inativo” e a situação para “Inativado”, enviar um e-mail informativo ao solicitante, apresentar a mensagem de sucesso e permanecer na tela de consultar permissões de acesso; <a href="../DocumentoDeMensagensv2/#msg082">MSG082</a> MSG084 <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
+<li>Quando o usuário acionar a opção “Sair”, o sistema retorna para a tela de consultar permissões de acesso; </li>
+<li>sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ETE003/" class="btn btn-neutral float-left" title="ETE003 - Recuperar Senha"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ETE005/" class="btn btn-neutral float-right" title="ETE005 - Atribuir Perfil de Acesso">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ETE003/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ETE005/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

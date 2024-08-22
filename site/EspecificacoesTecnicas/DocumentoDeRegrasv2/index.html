@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Documento de Regras - e-SUS AF - Documentação Negocial</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Documento de Regras";
+        var mkdocs_page_input_path = "EspecificacoesTecnicas/DocumentoDeRegrasv2.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> e-SUS AF - Documentação Negocial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeMensagensv2/">Documento de Mensagens</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Documento de Regras</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Especificações</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE001/">ETE001 - Realizar Login</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE002/">ETE002 - Cadastrar Usuário do Sistema</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE003/">ETE003 - Recuperar Senha</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE004/">ETE004 - Consultar Permissões de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE005/">ETE005 - Atribuir Perfil de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE007/">ETE007 - Consultar Meus Perfis</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE008/">ETE008 - Solicitar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE009/">ETE009 - Detalhar Meu Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE010/">ETE010 - Consultar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE011/">ETE011 - Cadastrar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE012/">ETE012 - Detalhar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE013/">ETE013 - Consultar Entes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE014/">ETE014 - Cadastrar Ente</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE015/">ETE015 - Consultar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE016/">ETE016 - Cadastrar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE017/">ETE017 - Editar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE018/">ETE018 - Detalhar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE019/">ETE019 - Consultar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE020/">ETE020 - Cadastrar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE021/">ETE021 - Editar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE022/">ETE022 - Detalhar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída Diversa</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Para Validação</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">e-SUS AF - Documentação Negocial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Especificações Técnicas</li>
+      <li class="breadcrumb-item active">Documento de Regras</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="documento-de-regras">Documento de Regras</h1>
+<h1 id="rgn001">RGN001</h1>
+<h2 id="permissao-de-acesso-por-funcionalidade">Permissão de acesso por funcionalidade</h2>
+<table>
+<thead>
+<tr>
+<th>Funcionalidade</th>
+<th style="text-align: center;">Instalador</th>
+<th style="text-align: center;">Administrador (ADM)</th>
+<th style="text-align: center;">Gestor (GST)</th>
+<th style="text-align: center;">Gestor Estabelecimento (GEST)</th>
+<th style="text-align: center;">Farmacêutico (FAR)</th>
+<th style="text-align: center;">Atendente (ATD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CONTROLE DE ACESSO</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><strong>MODERAR ACESSO</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Consultar Permissões Acesso</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Atribuir Perfil</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Detalhar Permissões Acesso</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><strong>SOLICITAR PERFIL</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Consultar Meu Perfil</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Solicitar Perfil</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Detalhar Meu Perfil</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td><strong>GERENCIAR PERFIL</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Consultar Perfil</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Cadastrar Perfil</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Detalhar Perfil</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><strong>CONFIGURAÇÃO</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><strong>Cadastro de Entes</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Consultar Ente</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Cadastrar Ente</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><strong>CADASTRO</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><strong>Estabelecimento</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Consultar Estabelecimento</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Cadastrar Estabelecimento</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Editar Estabelecimento</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Detalhar Estabelecimento</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td><strong>MOVIMENTAÇÃO</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><strong>Entrada</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Consultar Entrada</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Cadastrar Entrada</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Editar Entrada</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Detalhar Entrada</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td><strong>Saída Diversa</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Consultar Saída Diversa</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Cadastrar Saída Diversa</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Editar Saída Diversa</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Detalhar Saída Diversa</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td><strong>Relatórios</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Posição de Estoque</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>OBSERVAÇÃO:</strong><br />
+As açoes realizadas pelos perfis de acordo com os proviégios afetam:</p>
+<ul>
+<li>Perfil Instalador e Administrador: Instância; </li>
+<li>Perfil Gestor: Instância e Estabelecimento (se vinculado a um estabelecimento); </li>
+<li>Perfil Gestor Estabelecimento, Farmacêutico e Atendente: Estabelecimento. </li>
+</ul>
+<hr />
+<h1 id="rgn002">RGN002</h1>
+<h2 id="recuperacao-de-estabelecimento-de-saude-vinculados-aos-participantes-da-instancia">Recuperação de Estabelecimento de Saúde vinculados aos participantes da instância:</h2>
+<p>O sistema deve recuperar como resultado da consulta os estabelecimentos de saúde dentre os cadastrados e vinculados aos participantes da instância, configuração prévia deste.   </p>
+<hr />
+<h1 id="rgn003">RGN003</h1>
+<h2 id="cadastro-de-estabelecimento-de-saudecnes">Cadastro de Estabelecimento de Saúde/CNES</h2>
+<p>Não é permitido o cadastro de mais de um Estabelecimento de Saúde com o mesmo CNES para a mesma instância.  </p>
+<hr />
+<h1 id="rgn004">RGN004</h1>
+<h2 id="resultado-de-consultas">Resultado de consultas</h2>
+<p>A grid com resultados de consultas deve ser apresentada somente após ser acidonada a opção "Consultar" e permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta.   </p>
+<hr />
+<h1 id="rgn005">RGN005</h1>
+<h2 id="gravacao-do-responsavel-pela-operacao">Gravação do Responsável pela Operação</h2>
+<p>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no registro (inclusão, edição, exclusão, armazenamento, estorno, saída, análise, devolução, em preenchimento, atendimento, atendimento automático, recusa, autorização, não autorização, dispensação). </p>
+<hr />
+<h1 id="rgn006">RGN006</h1>
+<h2 id="hierarquia-de-enderecamento">Hierarquia de Endereçamento</h2>
+<p>Somente será permitido a exclusão de um endereçamento quando este não possuir endereçamentos hierarquicamente abaixo dele, sendo necessário a exclusão destes subníveis. </p>
+<hr />
+<h1 id="rgn007">RGN007</h1>
+<h2 id="excluir-de-enderecamento">Excluir de Endereçamento</h2>
+<p>Não será permitido a exclusão de um endereçamento físico caso este possua, vinculado a ele, produto(s) no estoque do estabelecimento. </p>
+<hr />
+<h1 id="rgn008">RGN008</h1>
+<h2 id="inativar-estabelecimento-de-saude">Inativar Estabelecimento de Saúde</h2>
+<p>Somente será possível inativar estabelecimentos de saúde que não possuem itens em estoque. </p>
+<hr />
+<h1 id="rgn009-removido">RGN009 (removido)</h1>
+<h2 id="recuperacao-de-dados-do-estabelecimento-do-usuario-logado">Recuperação de dados do estabelecimento do usuário logado</h2>
+<hr />
+<h1 id="rgn010-removido">RGN010 (removido)</h1>
+<h2 id="recuperacao-de-perfil-vinculados-ao-entemantenedor">Recuperação de perfil vinculados ao Ente/Mantenedor:</h2>
+<hr />
+<h1 id="rgn011-removido">RGN011 (removido)</h1>
+<h2 id="busca-textual-do-estabelecimento">Busca Textual do Estabelecimento</h2>
+<hr />
+<h1 id="rgn012">RGN012</h1>
+<h2 id="solicitacao-de-perfil-acesso">Solicitação de perfil acesso.</h2>
+<p>O sistema deve permitir solicitar: </p>
+<ul>
+<li>Perfis de acesso iguais em estabelecimentos diferentes;  </li>
+<li>Perfis de acesso para uma UF e/ou a um Município e/ou a um Estabelecimento;  </li>
+<li>Perfis de acesso para UF a qual já possui permissão de acesso no Município e/ou Estabelecimento desta UF; </li>
+<li>Perfis de acesso para municípios distintos na mesma UF. </li>
+</ul>
+<p>O sistema não deve permitir solicitar mais de um perfil de acesso por estabelecimento. </p>
+<hr />
+<h1 id="rgn013">RGN013</h1>
+<h2 id="aprovacao-e-reativacao-de-permissoes-de-acesso">Aprovação e reativação de permissões de acesso.</h2>
+<p>Para permissões de acesso com situação: </p>
+<ul>
+<li>“Solicitado” o sistema deve permitir aprovar ou reprovar; </li>
+<li>“Aprovado” o sistema deve permitir inativar; </li>
+<li>“Reprovado” ou “Inativo” o sistema não deve permitir aprovar ou reativar, sendo necessário realizar uma nova solicitação. </li>
+</ul>
+<hr />
+<h1 id="rgn014">RGN014</h1>
+<h2 id="recuperacao-de-dados-do-cabecalho">Recuperação de dados do cabeçalho</h2>
+<p>Os dados do CNES, Nome, Município e UF, do cabeçalho (Emitido por:), devem ser recuperados do cadastro do estabelecimento do usuário logado. Já o Nome e CPF do usuário responsável pela última alteração no registro do cadastro e a data dessa ação devem ser recuperados do histórico do registro da funcionalidade em questão. </p>
+<hr />
+<h1 id="rgn015">RGN015</h1>
+<h2 id="recuperacao-do-produto">Recuperação do Produto</h2>
+<p>Os campos de Produto apresentarão a lista de produtos ativos no sistema a partir da indicação do 3º caractere ou código de barras ou CATMAT Raiz, conforme as máscaras: </p>
+<ul>
+<li>Para Medicamentos:<ul>
+<li>(Código de Barras)</li>
+<li>Princípios ativos cadastrados para o medicamento no formato: {[(Princípio Ativo 1) (Concentração 1) (Sigla da Unidade de Medida 1)] + [(Princípio Ativo 2) (Concentração 2) (Sigla da Unidade de Medida 2)]  + ....}</li>
+<li>CATMAT: (CATMAT Raiz)</li>
+<li>Forma Farmacêutica: (Forma Farmacêutica)</li>
+<li>Fabricante: [(CNPJ) - (Razão Social)]
+ </li>
+</ul>
+</li>
+<li>Para Produtos para Saúde e Equipamentos:<ul>
+<li>(Descrição do produto CATMAT)</li>
+<li>CATMAT: (CATMAT Raiz)</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="rgn016">RGN016</h1>
+<h2 id="exclusao-de-um-registro">Exclusão de um registro</h2>
+<p>As exclusões permitidas no sistema sempre serão lógicas, sendo necessário manter o histórico temporal da existência do registro. Exceto para registro(s) na situação “Em preenchimento” a qual deve ser física.  </p>
+<hr />
+<h1 id="rgn017">RGN017</h1>
+<h2 id="estorno-de-entrada-de-produtos">Estorno de entrada de produto(s)</h2>
+<p>O sistema não deve permitir estornar uma entrada se ao menos um do(s) produto(s) vinculado(s) a ela foi movimentado, ou seja, distribuído, dispensado ou uma saída diversa foi registrada no estoque. </p>
+<hr />
+<h1 id="rgn018">RGN018</h1>
+<h2 id="registro-de-saida-por-estorno-de-entrada-de-produtos">Registro de Saída por Estorno de entrada de produto(s)</h2>
+<p>A realizar o estorno da entrada do(s) produto(s), o sistema deve: </p>
+<ul>
+<li>Debitar o(s) produto(s) do estoque do estabelecimento da entrada estornada, através da criação de um registro de saída, gravando as seguintes informações: <ul>
+<li>Tipo de Saída = “Saída por Estorno de Entrada”;  </li>
+<li>Fornecedor = CNES ou CNPJ do estabelecimento que realizou entrada; </li>
+<li>Tipo de Documento = “Estorno de Entrada”; </li>
+<li>Número do Documento = Número da entrada que foi estornada; </li>
+<li>Produto, recupera os dados conforme gravado na entrada contendo: <ul>
+<li>Princípio ativo </li>
+<li>Forma farmacêutica </li>
+<li>Fabricante </li>
+<li>Lote </li>
+<li>Validade </li>
+<li>Valor Unitário </li>
+<li>Quantidade  </li>
+</ul>
+</li>
+<li>Situação do registro de saída como “Registrada”; </li>
+</ul>
+</li>
+<li>Alterar a situação do registro da entrada para “Estornada”.</li>
+</ul>
+<hr />
+<h1 id="rgn019">RGN019</h1>
+<h2 id="atualizacao-de-estoque-apos-estorno-de-entrada">Atualização de estoque após estorno de entrada</h2>
+<p>O sistema, identificando que uma entrada de produto(s) foi estornada, deve debitar a quantidade do saldo deste(s), considerando o lote e validade e atualizar a posição de estoque do estabelecimento que realizou o estorno da entrada. </p>
+<hr />
+<h1 id="rgn020">RGN020</h1>
+<h2 id="consultar-razao-social-no-cnes-ou-receita-federal-do-brasil-rfb">Consultar Razão Social no CNES ou Receita Federal do Brasil (RFB)</h2>
+<p>O sistema deve consultar: </p>
+<ul>
+<li>A razão social no cadastro de estabelecimentos a partir da indicação do número do CNES. </li>
+<li>A razão social na RFB a partir da indicação do número do CNPJ. </li>
+</ul>
+<hr />
+<h1 id="rgn021">RGN021</h1>
+<h2 id="retorno-do-nome-do-estabelecimento">Retorno do Nome do Estabelecimento</h2>
+<ul>
+<li>Ao consultar o nome através do CNES, o sistema deve retornar o nome do estabelecimento cadastrado na base de dados do CNES. Caso a consulta retorne vazia, considerar o campo “Nome Empresarial”. </li>
+<li>Ao consultar o nome através do CNPJ, o sistema deve retornar a razão social da pessoa jurídica através da consulta à base da RFB.</li>
+</ul>
+<hr />
+<h1 id="rgn022-removido">RGN022 (removido)</h1>
+<h2 id="verificacao-de-codigo-de-barras">Verificação de Código de Barras</h2>
+<hr />
+<h1 id="rgn023">RGN023</h1>
+<h2 id="apresentacao-e-validacao-do-produto">Apresentação e validação do Produto</h2>
+<p>Para a apresentação e/ou validação de produtos, o sistema deverá seguir as máscaras abaixo: </p>
+<ul>
+<li>Para Medicamentos com forma farmacêutica em estado “Semissólidas” ou “Gasosa” ou “Líquida” (no cadastro de medicamentos): <ul>
+<li>(Código de Barras)</li>
+<li>Princípios ativos cadastrados para o medicamento no formato: {[(Princípio Ativo 1) (Concentração 1) (Sigla da Unidade de Medida 1)] + [(Princípio Ativo 2) (Concentração 2) (Sigla da Unidade de Medida 2)]  + ....}</li>
+<li>CATMAT: (CATMAT Raiz + Unidade CATMAT)</li>
+<li>Forma Farmacêutica: (Forma Farmacêutica) - (Volume) (Unidade de Medida)</li>
+<li>Fabricante: (CNPJ) - (Razão Social)
+ </li>
+</ul>
+</li>
+<li>Para Medicamentos com forma farmacêutica em estado “Sólidas” (no cadastro de medicamentos):<ul>
+<li>(Código de Barras)</li>
+<li>Princípios ativos cadastrados para o medicamento no formato: {[(Princípio Ativo 1) (Concentração 1) (Sigla da Unidade de Medida 1)] + [(Princípio Ativo 2) (Concentração 2) (Sigla da Unidade de Medida 2)]  + ....}</li>
+<li>CATMAT: (CATMAT Raiz + Unidade CATMAT)</li>
+<li>Forma Farmacêutica: (Forma Farmacêutica) - (Volume) (Unidade de Medida)</li>
+<li>Fabricante: (CNPJ) - (Razão Social)
+ </li>
+</ul>
+</li>
+<li>Para Produtos para Saúde (no cadastro de produtos): <ul>
+<li>(Descrição CATMAT)</li>
+<li>CATMAT: (CATMAT)</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="rgn024">RGN024</h1>
+<h2 id="restringir-campos-da-entrada-de-produto-para-tipo-de-movimentacao">Restringir Campos da Entrada de Produto para Tipo de Movimentação</h2>
+<ul>
+<li>No campo “Tipo de Movimentação”, caso o usuário selecione:<ul>
+<li>“Saldo de Implantação” ou “Ajuste de Estoque”, os campos abaixo deixam de ser obrigatórios:<ul>
+<li>“Modalidade de Licitação”</li>
+<li>“CNES/CNPJ” (fornecedor)</li>
+<li>“Razão Social” (fornecedor)</li>
+<li>“Tipo de Documento”</li>
+<li>“Número do Documento”</li>
+<li>“Data do Documento”</li>
+</ul>
+</li>
+<li>“Produção Própria”, os campos abaixo deixam de ser obrigatórios:<ul>
+<li>“Tipo de Documento”</li>
+<li>“Número do Documento”</li>
+<li>“Data do Documento” </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="rgn025">RGN025</h1>
+<h2 id="exclusao-de-produto-na-entrada">Exclusão de produto na entrada</h2>
+<p>Somente será permitida a exclusão de um produto adicionado à entrada se não houver nenhum detalhamento vinculado a ele. </p>
+<hr />
+<h1 id="rgn026">RGN026</h1>
+<h2 id="calculo-do-valor-do-documento-na-entrada-do-produto">Cálculo do Valor do Documento na Entrada do Produto</h2>
+<p>O sistema deve calcular o Valor do Documento, somando todos os valores totais dos produtos adicionados à entrada. </p>
+<hr />
+<h1 id="rgn027">RGN027</h1>
+<h2 id="calculo-do-valor-total-da-entrada-para-o-produto">Cálculo do Valor Total da Entrada para o Produto</h2>
+<p>O sistema deve calcular o Valor Total da Entrada, pela fórmula:  Qtd Total Recebida X Valor Unitário do produto. </p>
+<hr />
+<h1 id="rgn028">RGN028</h1>
+<h2 id="arredondamento-de-valores">Arredondamento de Valores</h2>
+<p>Para fins de arredondamento de valores, o sistema deve:    </p>
+<ul>
+<li>Quando o algarismo a ser conservado for seguido de algarismo inferior a 5, o algarismo a ser conservado permanece sem alteração. Exemplo: 4,303 arredondado em duas casas decimais torna-se 4,30; </li>
+<li>Quando o algarismo a ser conservado for seguido de algarismo superior ou igual a 5 seguido de um algarismo diferente de zero, soma-se uma unidade ao algarismo a ser conservado. Exemplo: 15,4875 arredondado em duas casas decimais torna-se 15,49; </li>
+<li>Quando o algarismo a ser conservado for ímpar, seguido de 5 e posteriormente de zeros, soma-se uma unidade ao algarismo a ser conservado. Exemplo: 25,7750 arredondado em duas casas decimais fica 25,78; </li>
+<li>Quando o algarismo a ser conservado for par, seguido de 5 e posteriormente de zeros, o algarismo a ser conservado permanece sem alteração. Exemplo: 31,7250 arredondado em duas casas decimais fica 31,72.  </li>
+</ul>
+<hr />
+<h1 id="rgn029">RGN029</h1>
+<h2 id="validar-entrada-do-produto">Validar Entrada do Produto</h2>
+<p>O sistema deve validar se já existe uma entrada com o mesmo tipo, número de documento e fornecedor de uma entrada armazenada ou em preenchimento para o estabelecimento.  </p>
+<hr />
+<h1 id="rgn030">RGN030</h1>
+<h2 id="numero-de-registro-da-entrada">Número de Registro da Entrada</h2>
+<p>Ao salvar uma entrada de produtos, caso ainda não exista, o sistema deve gerar um número identificador único para a entrada e apresentá-lo ao usuário.  </p>
+<hr />
+<h1 id="rgn031">RGN031</h1>
+<h2 id="atualizacao-de-estoque-apos-armazenar-uma-entrada">Atualização de estoque após armazenar uma entrada</h2>
+<p>O sistema, identificando que uma entrada de produto(s) foi armazenada, deve creditar a quantidade no saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou a entrada. </p>
+<hr />
+<h1 id="rgn032">RGN032</h1>
+<h2 id="registro-de-entrada-por-estorno-de-saida-diversa-de-produtos">Registro de Entrada por Estorno de Saída Diversa de produto(s)</h2>
+<p>Ao realizar o estorno da saída diversa do(s) produto(s), o sistema deve:</p>
+<ul>
+<li>Creditar o(s) produto(s) no estoque do estabelecimento da saída estornada, através da criação de um registro de entrada, gravando as seguintes informações: <ul>
+<li>Modalidade de Licitação = “Saída Diversa”;</li>
+<li>Tipo de Movimentação = “Entrada por Estorno de Saída Diversa”;  </li>
+<li>Fornecedor = CNES ou CNPJ do estabelecimento que realizou saída;  </li>
+<li>Tipo de Documento = “Estorno de Saída Diversa”;  </li>
+<li>Número do Documento = Número da saída que foi estornada; </li>
+<li>No detalhamento do produto:  <ul>
+<li>Princípio ativo ou Descrição do produto </li>
+<li>Concentração + Forma farmacêutica (se for medicamento) </li>
+<li>CATMAT </li>
+<li>Fabricante </li>
+<li>Lote </li>
+<li>Validade </li>
+<li>Valor Unitário </li>
+<li>Quantidade  </li>
+</ul>
+</li>
+<li>Situação do registro de entrada como “Armazenada”; </li>
+</ul>
+</li>
+<li>Alterar a situação do cadastro da saída diversa para “Estornada”</li>
+</ul>
+<hr />
+<h1 id="rgn033">RGN033</h1>
+<h2 id="atualizacao-de-estoque-apos-estorno-de-saida-diversa">Atualização de estoque após estorno de saída diversa</h2>
+<p>O sistema, identificando que uma saída diversa de produto(s) foi estornada, deve creditar a quantidade no saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou o estorno da saída diversa.  </p>
+<hr />
+<h1 id="rgn034">RGN034</h1>
+<h2 id="apresentacao-de-lotesvalidades-do-produto">Apresentação de Lotes/Validades do produto</h2>
+<ul>
+<li>Quando o tipo de saída for “Validade Vencida”, somente serão considerados e/ou apresentados os lotes/validades que estejam com a data de validade inferior a data atual. </li>
+<li>Quando o tipo de saída for “Ajuste de Estoque”, “Usuário SUS”, “Apreensão Sanitária”, “Empréstimo” ou “Transferência”, somente serão considerados e/ou apresentados os lotes/validades que estejam válidos, com a data de validade igual ou superior a data atual. </li>
+<li>Quando o tipo de saída for “Perda” ou “Roubo”, serão considerados e/ou apresentados todos os lotes/validades. independente da data de validade.</li>
+</ul>
+<hr />
+<h1 id="rgn035">RGN035</h1>
+<h2 id="exclusao-de-produto-na-saida-diversa">Exclusão de produto na saída diversa</h2>
+<p>Somente será permitida a exclusão de um produto adicionado à saída se não tiver nenhum detalhamento vinculado a ele.  </p>
+<hr />
+<h1 id="rgn036">RGN036</h1>
+<h2 id="saldo-estoque-atual">Saldo Estoque Atual</h2>
+<p>O sistema deve carregar e apresentar o saldo do produto em estoque, no momento, do estabelecimento logado, independente de lote/validade/programa de saúde.  </p>
+<hr />
+<h1 id="rgn037">RGN037</h1>
+<h2 id="calculo-da-quantidade-total-recebida-na-entrada-do-produto">Cálculo da Quantidade Total Recebida na Entrada do Produto</h2>
+<p>O sistema deve calcular a Quantidade Total Recebida somando todas as quantidades informadas nos detalhamentos adicionados ao produto.  </p>
+<hr />
+<h1 id="rgn038">RGN038</h1>
+<h2 id="calculo-do-valor-total-da-saida-diversa">Cálculo do Valor Total da Saída Diversa</h2>
+<p>O sistema deve calcular o Valor Total da Saída Diversa somado todos os valores totais dos produtos adicionados à saída diversa.  </p>
+<hr />
+<h1 id="rgn039">RGN039</h1>
+<h2 id="calculo-da-quantidade-total-da-saida-por-produto">Cálculo da Quantidade Total da Saída por Produto</h2>
+<p>O sistema deve calcular a Quantidade Total da Saída somando todas as quantidades informadas nos detalhamentos adicionados ao produto.  </p>
+<hr />
+<h1 id="rgn040">RGN040</h1>
+<h2 id="calculo-da-media-do-valor-unitario-do-produto">Cálculo da Média do Valor Unitário do Produto</h2>
+<p>O sistema deve calcular o Valor Unitário do Produto através da média simples dos valores unitários do produto informados na(s) entrada(s), independente de Nº do Lote, Validade, Fabricante, Programa de Saúde e Endereçamento Físico, ou seja, realiza-se o somatório de todos os elementos do rol e divide-se essa soma pela quantidade de elementos. </p>
+<hr />
+<h1 id="rgn041">RGN041</h1>
+<h2 id="calculo-do-valor-total-da-saida-para-o-produto">Cálculo do Valor Total da Saída para o Produto</h2>
+<p>O sistema deve calcular o Valor Total da Saída pela fórmula:  Quantidade Total da Saída X Valor Unitário do produto (média simples dos valores unitários informados na entrada do referido produto).  </p>
+<hr />
+<h1 id="rgn042">RGN042</h1>
+<h2 id="produto-da-saida">Produto da Saída</h2>
+<p>O sistema deve permitir apenas saída de produtos que possuem estoque no estabelecimento logado.  </p>
+<hr />
+<h1 id="rgn043">RGN043</h1>
+<h2 id="quantidade-de-saida-do-produto">Quantidade de Saída do Produto</h2>
+<p>O sistema somente deve permitir informar uma quantidade de saída menor ou igual ao estoque disponível do produto, lote, validade e programa de saúde no estabelecimento logado.  </p>
+<hr />
+<h1 id="rgn044">RGN044</h1>
+<h2 id="validar-saida-diversa-do-produto">Validar Saída Diversa do Produto</h2>
+<p>O sistema deve validar se já existe uma saída diversa com o mesmo tipo de saída diversa, tipo e número de documento e justificativa de uma saída diversa registrada ou em preenchimento para o estabelecimento.  </p>
+<hr />
+<h1 id="rgn045">RGN045</h1>
+<h2 id="numero-de-registro-da-saida-diversa">Número de Registro da Saída Diversa</h2>
+<p>Ao salvar uma saída diversa de produtos, caso ainda não exista, o sistema deve gerar um número identificador único para a saída diversa e apresentá-lo ao usuário. </p>
+<hr />
+<h1 id="rgn046">RGN046</h1>
+<h2 id="atualizacao-de-estoque-apos-registrar-uma-saida-diversa">Atualização de estoque após registrar uma saída diversa</h2>
+<p>O sistema, identificando que uma saída diversa de produto(s) foi registrada, deve debitar a quantidade no saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou a saída diversa.</p>
+<hr />
+<h1 id="rgn047">RGN047</h1>
+<h2 id="validade-do-token-de-recuperacao-de-senha">Validade do token de recuperação de senha</h2>
+<p>O tempo de validade do token gerado para recuperação de senha é de 20 minutos.</p>
+<hr />
+<h1 id="rgn048">RGN048</h1>
+<h2 id="recuperacao-de-dados-do-estabelecimento-do-usuario-logado_1">Recuperação de dados do estabelecimento do usuário logado</h2>
+<p>Os dados de UF, Município e Estabelecimentos devem ser recuperados do cadastro do estabelecimento vinculado ao perfil do usuário logado.</p>
+<hr />
+<h1 id="rgn049">RGN049</h1>
+<h2 id="cadastro-de-ente">Cadastro de Ente</h2>
+<p>O sistema não deve permitir o cadastro de um ente com mesma UF e/ou Município e CNES. </p>
+<hr />
+<h1 id="rgn050">RGN050</h1>
+<h2 id="gerenciar-perfil">Gerenciar perfil</h2>
+<p>O sistema não deve permitir editar e inativar perfis do tipo “Padrão” e do tipo “Personalizado” que estão atribuídos ao cadastrado de ao menos um usuário do sistema. </p>
+<hr />
+<h1 id="rgn051">RGN051</h1>
+<h2 id="cadastro-de-perfil">Cadastro de Perfil</h2>
+<p>O sistema não deve permitir o cadastro de um perfil com a mesma descrição de um perfil já cadastrado para a instância. </p>
+<hr />
+<h1 id="rgn052">RGN052</h1>
+<h2 id="recuperacao-e-apresentacao-das-permissoes-de-acesso">Recuperação e apresentação das permissões de acesso</h2>
+<p>O sistema deve apresentar as ações observando o perfil solicitado e a situação do registro conforme: </p>
+<ul>
+<li>Para perfil “Instalador” a opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados; </li>
+<li>Para perfil “Administrador”: <ul>
+<li>A opção “Inativar” para permissões de acesso com perfil “Administrador” e “Gestor” atribuídos por ele; </li>
+<li>A opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados. </li>
+</ul>
+</li>
+<li>Para perfil “Gestor”: <ul>
+<li>As opções “Aprovar”, “Reprovar” e “Inativar” para todas as permissões de acesso exceto do perfil de “Administrador”; </li>
+<li>A opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados. </li>
+</ul>
+</li>
+<li>Para perfil “Gestor Estabelecimento”: <ul>
+<li>As opções “Aprovar”, “Reprovar” e “Inativar” para todas as permissões de acesso relacionadas ao seu estabelecimento; </li>
+<li>A opção “Detalhar” para todas as permissões de acesso, inclusive as dos perfis personalizados. </li>
+</ul>
+</li>
+<li>Para registro com situação “Aguardando Aprovação”, as opções “Aprovar”, “Reprovar” e “Detalhar”;  </li>
+<li>Para registro com situação “Aprovado”, as opções “Inativar” e “Detalhar”; </li>
+<li>Para registro com situação “Reprovado” ou “Inativo”, a opção “Detalhar”.  </li>
+</ul>
+<hr />
+<h1 id="rgn053">RGN053</h1>
+<h2 id="inclusao-justificativa">Inclusão justificativa</h2>
+<p>Ao solicitar ou reprovar ou inativar uma solicitação de permissão de acesso ao sistema, o usuário deve informar obrigatoriamente uma justificativa. </p>
+<hr />
+<h1 id="rgn054">RGN054</h1>
+<h2 id="atribuicao-de-perfil-de-acesso">Atribuição de perfil de acesso</h2>
+<p>O sistema deve permitir a atribuição de perfis conforme: </p>
+<ul>
+<li>Usuário com perfil de “Instalador” atribui somente perfil de “Administrador”; </li>
+<li>Usuário com perfil de “Administrador” atribui perfil de “Administrador” e “Gestor”; </li>
+<li>Usuário com perfil de “Gestor” atribui qualquer perfil cadastrado e ativo, exceto perfil de “Administrador; </li>
+<li>Usuário com perfil de “Gestor Estabelecimento” atribui qualquer perfil de acesso para seu estabelecimento; </li>
+<li>Perfis de acesso iguais para o mesmo usuário em estabelecimentos diferentes;  </li>
+<li>Vincular perfis de acesso a uma UF e/ou a um Município e/ou a um Estabelecimento;  </li>
+<li>Para UF as quais o usuário já possua perfil de acesso no Município ou Estabelecimento desta UF; </li>
+<li>Para municípios distintos na mesma UF para o mesmo usuário; </li>
+<li>À um usuário que ainda não possui cadastro para acesso ao sistema.  </li>
+</ul>
+<p>O sistema não deve permitir atribuir mais de um perfil de acesso por estabelecimento. </p>
+<hr />
+<h1 id="rgn055">RGN055</h1>
+<h2 id="indicacao-de-estabelecimento-na-atribuicao-de-perfil-de-acesso">Indicação de estabelecimento na atribuição de perfil de acesso</h2>
+<p>Para atribuição de perfil de acesso é obrigatória a indicação de um estabelecimento exceto para os perfis de “Administrador” e “Gestor”. </p>
+<hr />
+<h1 id="rgn056">RGN056</h1>
+<h2 id="indicacao-de-estabelecimento-na-solicitacao-de-perfil-de-acesso">Indicação de estabelecimento na solicitação de perfil de acesso</h2>
+<p>Para solicitações de acesso é obrigatória a indicação de um estabelecimento exceto para os perfis de “Gestor”. </p>
+<hr />
+<h1 id="rgn057">RGN057</h1>
+<h2 id="periodo-para-a-emissao-do-relatorio-de-posicao-de-estoque">Período para a Emissão do Relatório de Posição de Estoque</h2>
+<p>O sistema deve possibilitar a emissão do relatório de posição do estoque de apenas 01 (um) dia.<br />
+Para datas anteriores a data atual o sistema deve considerar a posição de estoque às 23:59 horas do dia selecionado.<br />
+Para data atual o sistema deve considerar a data e hora do momento da emissão do relatório.  </p>
+<hr />
+<h1 id="rgn058">RGN058</h1>
+<h2 id="emissao-do-relatorio-de-posicao-de-estoque">Emissão do Relatório de Posição de Estoque</h2>
+<p>Caso o usuário não informe nenhum filtro de pesquisa, o sistema deve considerar todas as opções ao gerar o relatório. Exceto para usuários com perfil de “Gestor” que desejam emitir a posição de estoque de todos os estabelecimentos de sua instância, que deve indicar ao menos um produto.</p>
+<hr />
+<h1 id="rgn059">RGN059</h1>
+<h2 id="calculo-do-valor-total-do-produto-em-estoque">Cálculo do Valor Total do Produto em estoque</h2>
+<p>O sistema deve calcular o Valor Total do Produto em estoque somando os valores totais de cada detalhamento do produto. </p>
+<hr />
+<h1 id="rgn060">RGN060</h1>
+<h2 id="calculo-da-quantidade-total-do-produto-em-estoque">Cálculo da Quantidade Total do Produto em estoque</h2>
+<p>O sistema deve calcular a Quantidade Total do Produto em estoque somando as quantidades em estoque no detalhamento de cada produto.</p>
+<hr />
+<h1 id="rgn061">RGN061</h1>
+<h2 id="calculo-do-valor-total-de-cada-detalhamento-do-produto-em-estoque">Cálculo do Valor Total de cada detalhamento do Produto em estoque</h2>
+<p>O sistema deve calcular o Valor Total de cada detalhamento do Produto em estoque pela fórmula: Qtd Estoque X Valor Unitário do produto (média simples dos valores unitários informados na entrada do produto). </p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../DocumentoDeMensagensv2/" class="btn btn-neutral float-left" title="Documento de Mensagens"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ETE001/" class="btn btn-neutral float-right" title="ETE001 - Realizar Login">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../DocumentoDeMensagensv2/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ETE001/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

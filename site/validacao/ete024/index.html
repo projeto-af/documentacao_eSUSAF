@@ -258,6 +258,24 @@
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Justificativa</td>
+<td style="text-align: left;">Campo tipo texto com justificativa da saída</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Status Saída</td>
+<td style="text-align: left;">Status da saída</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">enum</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">CE03</td>
+</tr>
+<tr>
 <td style="text-align: left;">2</td>
 <td style="text-align: left;"><strong>Produto</strong></td>
 <td style="text-align: left;"><strong>Produtos ou medicamentos a serem incluídos na saída</strong></td>
@@ -533,24 +551,43 @@
 <ol>
 <li>O acesso à funcionalidade é dado através do menu Movimentações &gt; Saídas &gt; Novo;</li>
 <li>O acesso à funcionalidade se dará no contexto do estabelecimento e poderá ser concedido para gestor, gestor de estabelecimento, farmacêutico e atendente;</li>
-<li>Os atributos "CNES/CNPJ do Estabelecimento de Destino", "Estabelecimento de destino", "Departamento de destino", "Tipo de Documento", "Nº do Documento", "Data do documento" não deverão estar presentes em tela à menos que:<br />
-3.1. O atributo "Departamento" deverá estar visível uma vez selecionado o tipo de saída "Saída para Departamento";<br />
-3.1.1. O combo de Departamentos deverá ser populado com a relação de departamentos previamento cadastrados pelo estabelecimento;<br />
-3.1.2. O cnes de destino deverá ser preenchido com o cnes do estabelecimento que está realizando a movimentação;  <br />
-3.2. Uma vez selecionado o tipo de saída "Distribuição sem Requisição" ou "Transferência", o usuário deverá preencher o atributo CNES/CNPJ de destino;<br />
-3.2.1. O CNES de destino informado deverá ser diferente do CNES do estabelecimento atendente.<br />
-3.3. Para os tipos de saída "Validade Vencida", "Ajuste de estoque", "Amostra", "Exposição e Análise", "Apreensão Sanitária", "Perda", "Roubo" e "Validade Vencida", deverão ser preenchidos os atributos "CNES/CNPJ do Estabelecimento de Destino", "Tipo de documento", "Nº do documento" e "Data do documento";<br />
-3.3.1. Para quaisquer dos tipos de saída citados no item 3.3, a saída poderá ter como destino o próprio estabelecimento que realiza a saída.<br />
-3.4. Para o tipo de saída "Usuário SUS", nenhum dos campos adicionais será necessário.<br />
-3.5. Quando o tipo de saída for "Validade Vencida", apenas produtos com até 90 dias a expirar poderão ser utilizados para expedir a saída.  </li>
+<li>Os atributos "CNES/CNPJ do Estabelecimento de Destino", "Estabelecimento de destino", "Departamento de destino", "Tipo de Documento", "Nº do Documento", "Data do documento" não deverão estar presentes em tela à menos que:  <ul>
+<li>O atributo "Departamento" deverá estar visível uma vez selecionado o tipo de saída "Saída para Departamento";  <ul>
+<li>O combo de Departamentos deverá ser populado com a relação de departamentos previamento cadastrados pelo estabelecimento;  </li>
+<li>O cnes de destino deverá ser preenchido com o cnes do estabelecimento que está realizando a movimentação;    </li>
+</ul>
+</li>
+<li>Uma vez selecionado o tipo de saída "Distribuição sem Requisição" ou "Transferência", o usuário deverá preencher o atributo CNES/CNPJ de destino;  <ul>
+<li>O CNES de destino informado deverá ser diferente do CNES do estabelecimento atendente.  </li>
+</ul>
+</li>
+<li>Para os tipos de saída "Validade Vencida", "Ajuste de estoque", "Amostra", "Exposição e Análise", "Apreensão Sanitária", "Perda", "Roubo" e "Validade Vencida", deverão ser preenchidos os atributos "CNES/CNPJ do Estabelecimento de Destino", "Tipo de documento", "Nº do documento" e "Data do documento";  <ul>
+<li>Para quaisquer dos tipos de saída citados no item 3.3, a saída poderá ter como destino o próprio estabelecimento que realiza a saída.  </li>
+</ul>
+</li>
+<li>Para o tipo de saída "Usuário SUS", nenhum dos campos adicionais será necessário.  </li>
+<li>Quando o tipo de saída selecionado corresponder ao atributo "Validade Vencida":<ul>
+<li>Apenas produtos com até 90 dias a expirar poderão ser utilizados para expedir a saída.  </li>
+<li>O cnes de destino deverá ser preenchido com o cnes do estabelecimento que está realizando a movimentação.  </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Para os tipos de saída "Distribuição sem Requisição" e "Usuário SUS não Identificado", poderão ser selecionados itens que não constam em estoque (catálogo) ou cujo estoque seja igual a 0.</li>
+<li>Para os tipos de saída não citados no item 5, a consulta de itens se limitará à itens cuja posição de estoque seja maior que 0.</li>
 <li>Não será permitido o relacionamento de um produto já relacionado à saída;</li>
 <li>Deve existir ao menos um produto relacionado à saída;</li>
 <li>A saída e seus itens poderão ser excluídos enquanto a saída estiver em status "Em preenchimento".</li>
 <li>O sistema deve apresentar a lista de produtos adicionados à saída por ordem alfabética. A lista será expansiva, permitindo o preenchimento dos campos de detalhamento do produto;</li>
-<li>Quando o usuário acionar a opção de “Finalizar Saída”, o sistema deve verificar se:
-8.1. O detalhamento de todos os produtos adicionados foi incluído. Caso não, o sistema deve apresentar uma mensagem de erro ao usuário;<br />
-8.2. Verificar se para todos os itens solicitados há estoque disponível, caso não, deverá retornar mensagem ao usuário informando de que não há estoque suficiente para um dado item.<br />
-8.3. Após realizar a baixa dos itens em estoque, deverá retornar mensagem de sucesso, alterar o status da saída para finalizado e incluir a data da saída. </li>
+<li>Quando o usuário acionar a opção de “Finalizar Saída”, o sistema deve verificar se:<ul>
+<li>O detalhamento de todos os produtos adicionados foi incluído. Caso não, o sistema deve apresentar uma mensagem de erro ao usuário;  </li>
+<li>Verificar se para todos os itens solicitados há estoque disponível, caso não, deverá retornar mensagem ao usuário informando de que não há estoque suficiente para um dado item.  </li>
+<li>Após realizar a baixa dos itens em estoque, deverá retornar mensagem de sucesso, alterar o status da saída para finalizado e incluir a data da saída. </li>
+<li>O detalhamento de todos os produtos adicionados foi incluído. Caso não, o sistema deve apresentar uma mensagem de erro ao usuário;  </li>
+<li>Verificar se para todos os itens solicitados há estoque disponível, caso não, deverá retornar mensagem ao usuário informando de que não há estoque suficiente para um dado item.  </li>
+<li>Após realizar a baixa dos itens em estoque, deverá retornar mensagem de sucesso, alterar o status da saída para finalizado e incluir a data da saída. </li>
+</ul>
+</li>
 <li>O usuário poderá imprimir a saída conforme modelo apresentado.</li>
 <li>O Usuário poderá exportar a saída em formato CSV. </li>
 </ol>
@@ -725,6 +762,12 @@
 </tr>
 </tbody>
 </table>
+<p><strong>CE03: STATUS DE SAÍDA</strong>
+| ORDEM | ATRIBUTO |
+| :--- | :--- |
+| 1 | Em preenchimento |
+| 2 | Finalizada |
+| 3 | Estornada |</p>
               
             </div>
           </div><footer>

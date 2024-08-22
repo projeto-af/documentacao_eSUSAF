@@ -165,17 +165,21 @@
 Apenas saídas com o status "Finalizado" poderão ser estornadas;</li>
 <li>Uma saída oriunda de um estorno de entrada não poderá ser estornada;</li>
 <li>O usuário deverá informar uma justificativa para o estorno realizado;</li>
-<li>Ao estornar a saída dos produtos e medicamentos, o sistema deve:<br />
-5.1. Retornar os produtos e medicamentos ao estoque do estabelecimento da saída estornada, através da criação de um registro de entrada, gravando as seguintes informações:  <ul>
+<li>Ao estornar a saída dos produtos e medicamentos, o sistema deve:  <ul>
+<li>Retornar os produtos e medicamentos ao estoque do estabelecimento da saída estornada, através da criação de um registro de entrada, gravando as seguintes informações:  <ul>
 <li>Tipo de Movimentação: "Entrada por estorno de saída";</li>
 <li>Fornecedor: CNES ou CNPJ do estabelecimento que realizou saída;</li>
 <li>Tipo de Documento: "Estorno de Saída"</li>
 <li>Nº do Documento: "UUID da saída estornada"</li>
 <li>Justificativa: Justificativa informada pelo usuário.</li>
-<li>Relação de itens, lotes, validades, programas de saúde e localizações físicas conforme informado na saída.<br />
-5.2. Ao incluir os itens em estoque, a aplicação deve:</li>
+<li>Relação de itens, lotes, validades, programas de saúde e localizações físicas conforme informado na saída.  </li>
+</ul>
+</li>
+<li>Ao incluir os itens em estoque, a aplicação deve:<ul>
 <li>Alterar o status da saída para "Estornado";</li>
 <li>Alterar o status da entrada para "Finalizado";</li>
+</ul>
+</li>
 </ul>
 </li>
 </ol>

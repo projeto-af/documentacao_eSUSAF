@@ -313,16 +313,22 @@
 <ol>
 <li>O acesso à funcionalidade é dado através do menu Movimentações &gt; Saídas;</li>
 <li>O acesso à funcionalidade se dará no contexto do estabelecimento e poderá ser concedido para gestor, gestor de estabelecimento, farmacêutico e atendente;</li>
-<li>Quando o campo Produto for informado, o sistema deve:<br />
-3.1. Apresentar a lista de medicamentos e a lista de produtos ativos no sistema, com cadastro finalizado e que correspondam ao valor informado no campo autocomplete a partir da indicação do 3º caractere, consultando por nome ou CATMAT Raiz;<br />
-3.2. O sistema deve validar se o produto informado foi encontrado. Caso não, o sistema deve emitir uma mensagem de alerta ao usuário; MSG055</li>
+<li>Quando o campo Produto for informado, o sistema deve:  <ul>
+<li>Apresentar a lista de medicamentos e a lista de produtos ativos no sistema, com cadastro finalizado e que correspondam ao valor informado no campo autocomplete a partir da indicação do 3º caractere, consultando por nome ou CATMAT Raiz;  </li>
+<li>O sistema deve validar se o produto informado foi encontrado. Caso não, o sistema deve emitir uma mensagem de alerta ao usuário; <a href="DocumentoDeMensagensv2.md#msg055">MSG055</a></li>
+</ul>
+</li>
 <li>O sistema deve retornar todas as saídas realizadas pelo estabelecimento selecionado e considerar os filtros quando informados;</li>
 <li>O sistema, não encontrando a(s) saída(s) na consulta, deve informar que o(s) registro(s) não foram encontrados;</li>
 <li>O sistema, encontrando a(s) saída(s), deve apresentar os dados de todo(s) registro(s) retornados na busca.</li>
-<li>O botão de ação "Excluir" deverá estar disponível apenas para saídas com o status "Em preenchimento".<br />
-7.1. Quando o usuário acionar a opção de “Excluir”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema exclui todos os registros de saída e seus descendentes. Caso a ação não seja confirmada, o sistema permanecerá na tela de consulta;</li>
-<li>O botão "estornar saída" deverá ser apresentado apenas para saídas com o status "Finalizado".<br />
-8.1. Quando o usuário acionar a opção de “Estornar Saída”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema grava a situação da saída como “Estornada” e o registro permanecerá ativo. Caso a ação não seja confirmada, o sistema permanecerá na tela de consulta;</li>
+<li>O botão de ação "Excluir" deverá estar disponível apenas para saídas com o status "Em preenchimento".  <ul>
+<li>Quando o usuário acionar a opção de “Excluir”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema exclui todos os registros de saída e seus descendentes. Caso a ação não seja confirmada, o sistema permanecerá na tela de consulta;</li>
+</ul>
+</li>
+<li>O botão "estornar saída" deverá ser apresentado apenas para saídas com o status "Finalizado".  <ul>
+<li>Quando o usuário acionar a opção de “Estornar Saída”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema grava a situação da saída como “Estornada” e o registro permanecerá ativo. Caso a ação não seja confirmada, o sistema permanecerá na tela de consulta;</li>
+</ul>
+</li>
 <li>O Botão de ação "Editar Saída", deverá estar disponível apenas para saídas com o status "Em Preenchimento". Uma vez acionado, deverá levar o usuário a tela de editar saída.</li>
 <li>O Botão de ação "Detalhar Saída", deverá estar disponível apenas para saídas com o status "Finalizado" ou "Estornada". Um vez ativo, deverá direcionar o usuário para a tela de detalhes da saída.</li>
 </ol>

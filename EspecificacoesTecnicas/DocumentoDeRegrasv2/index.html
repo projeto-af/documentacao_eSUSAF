@@ -97,17 +97,25 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE022/">ETE022 - Detalhar Entrada</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE029/">ETE029 - Consultar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE030/">ETE030 - Cadastrar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE031/">ETE031 - Editar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE032/">ETE032 - Detalhar Usuário SUS</a>
                 </li>
     </ul>
                   </li>
@@ -366,6 +374,51 @@
 </tr>
 <tr>
 <td>Detalhar Estabelecimento</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td><strong>Usuário SUS</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Consultar Usuário SUS</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Cadastrar Usuário SUS</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Editar Usuário SUS</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td>Detalhar Usuário SUS</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">X</td>
@@ -882,11 +935,7 @@ As açoes realizadas pelos perfis de acordo com os proviégios afetam:</p>
 <h2 id="indicacao-de-estabelecimento-na-solicitacao-de-perfil-de-acesso">Indicação de estabelecimento na solicitação de perfil de acesso</h2>
 <p>Para solicitações de acesso é obrigatória a indicação de um estabelecimento exceto para os perfis de “Gestor”. </p>
 <hr />
-<h1 id="rgn057">RGN057</h1>
-<h2 id="periodo-para-a-emissao-do-relatorio-de-posicao-de-estoque">Período para a Emissão do Relatório de Posição de Estoque</h2>
-<p>O sistema deve possibilitar a emissão do relatório de posição do estoque de apenas 01 (um) dia.<br />
-Para datas anteriores a data atual o sistema deve considerar a posição de estoque às 23:59 horas do dia selecionado.<br />
-Para data atual o sistema deve considerar a data e hora do momento da emissão do relatório.  </p>
+<h1 id="rgn057-removida">RGN057 - REMOVIDA</h1>
 <hr />
 <h1 id="rgn058">RGN058</h1>
 <h2 id="emissao-do-relatorio-de-posicao-de-estoque">Emissão do Relatório de Posição de Estoque</h2>
@@ -903,6 +952,14 @@ Para data atual o sistema deve considerar a data e hora do momento da emissão d
 <h1 id="rgn061">RGN061</h1>
 <h2 id="calculo-do-valor-total-de-cada-detalhamento-do-produto-em-estoque">Cálculo do Valor Total de cada detalhamento do Produto em estoque</h2>
 <p>O sistema deve calcular o Valor Total de cada detalhamento do Produto em estoque pela fórmula: Qtd Estoque X Valor Unitário do produto (média simples dos valores unitários informados na entrada do produto). </p>
+<hr />
+<h1 id="rgn062">RGN062</h1>
+<h2 id="recuperacao-de-usuarios-sus-vinculados-a-instancia">Recuperação de Usuários SUS vinculados à instância</h2>
+<p>O sistema deve recuperar como resultado da consulta o(s) Usuário(s) SUS dentre os cadastrados e vinculados à instância. </p>
+<hr />
+<h1 id="rgn063">RGN063</h1>
+<h2 id="cadastro-de-usuario-sus">Cadastro de Usuário SUS</h2>
+<p>Não será permitido o cadastro de mais de um usuário SUS com o mesmo CPF. </p>
               
             </div>
           </div><footer>

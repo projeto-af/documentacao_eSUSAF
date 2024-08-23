@@ -28,6 +28,11 @@
 | Cadastrar Estabelecimento | | | X |
 | Editar Estabelecimento | | | X | X | X |
 | Detalhar Estabelecimento | | | X | X | X | X |
+| **Usuário SUS** | 
+| Consultar Usuário SUS | | | X | X | X | X |
+| Cadastrar Usuário SUS | | | X | X | X | X |
+| Editar Usuário SUS | | | X | X | X | X |
+| Detalhar Usuário SUS | | | X | X | X | X |
 | **MOVIMENTAÇÃO** | 
 | **Entrada** | 
 | Consultar Entrada | | | X | X | X | X |
@@ -446,11 +451,7 @@ Para atribuição de perfil de acesso é obrigatória a indicação de um estabe
 Para solicitações de acesso é obrigatória a indicação de um estabelecimento exceto para os perfis de “Gestor”. 
 
 ---
-# RGN057
-## Período para a Emissão do Relatório de Posição de Estoque 
-O sistema deve possibilitar a emissão do relatório de posição do estoque de apenas 01 (um) dia.  
-Para datas anteriores a data atual o sistema deve considerar a posição de estoque às 23:59 horas do dia selecionado.  
-Para data atual o sistema deve considerar a data e hora do momento da emissão do relatório.  
+# RGN057 - REMOVIDA
 
 ---
 # RGN058
@@ -471,4 +472,14 @@ O sistema deve calcular a Quantidade Total do Produto em estoque somando as quan
 # RGN061
 ## Cálculo do Valor Total de cada detalhamento do Produto em estoque 
 O sistema deve calcular o Valor Total de cada detalhamento do Produto em estoque pela fórmula: Qtd Estoque X Valor Unitário do produto (média simples dos valores unitários informados na entrada do produto). 
+
+---
+# RGN062
+## Recuperação de Usuários SUS vinculados à instância 
+O sistema deve recuperar como resultado da consulta o(s) Usuário(s) SUS dentre os cadastrados e vinculados à instância. 
+
+---
+# RGN063
+## Cadastro de Usuário SUS 
+Não será permitido o cadastro de mais de um usuário SUS com o mesmo CPF. 
 

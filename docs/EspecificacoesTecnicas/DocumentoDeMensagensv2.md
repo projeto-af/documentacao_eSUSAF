@@ -354,7 +354,7 @@ Tem certeza que deseja aprovar a solicitação?
 A solicitação foi aprovada!
 
 ---
-# MSG082
+# MSG082 - Email de moderação acesso e-SUS AF
 **Título:** s-SUS AF - Solicitação de Acesso Moderada  
 **Mensagem:**  
 **Solicitação de Acesso e-SUS AF**  
@@ -395,3 +395,27 @@ A solicitação foi realizada!
 ---
 # MSG089
 Este produto já foi adicionado para consulta à posição de estoque. 
+
+---
+# MSG090
+Usuário SUS não encontrado para o CPF informado. Acesse o Portal do CADSUS para consulta. (Incluir link do “Portal do CADSUS”, ao ser acionado, direcionará o usuário ao Cadastro Nacional de Usuários do Sistema Único de Saúde)
+
+---
+# MSG091
+O Usuário SUS informado já está cadastrado no sistema para esta instância, deseja editá-lo?
+
+---
+# MSG092
+O usuário SUS foi cadastrado!
+
+---
+# MSG093
+O cadastro do usuário SUS foi atualizado!
+
+---
+# MSG094
+Usuário SUS com registro de óbito.
+
+---
+# MSG095
+A Dispensação foi excluída!

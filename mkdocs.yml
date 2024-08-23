@@ -30,12 +30,16 @@ nav:
       - ETE020 - Cadastrar Entrada: EspecificacoesTecnicas/ETE020.md
       - ETE021 - Editar Entrada: EspecificacoesTecnicas/ETE021.md
       - ETE022 - Detalhar Entrada: EspecificacoesTecnicas/ETE022.md
-      - ETE023 - Consultar Saída Diversa: EspecificacoesTecnicas/ETE023.md
-      - ETE024 - Cadastrar Saída Diversa: EspecificacoesTecnicas/ETE024.md
-      - ETE025 - Editar Saída Diversa: EspecificacoesTecnicas/ETE025.md
-      - ETE026 - Detalhar Saída Diversa: EspecificacoesTecnicas/ETE026.md
+      - ETE023 - Consultar Saída: EspecificacoesTecnicas/ETE023.md
+      - ETE024 - Cadastrar Saída: EspecificacoesTecnicas/ETE024.md
+      - ETE025 - Editar Saída: EspecificacoesTecnicas/ETE025.md
+      - ETE026 - Detalhar Saída: EspecificacoesTecnicas/ETE026.md
       - ETE027 - Emitir Relatório de Posição de Estoque: EspecificacoesTecnicas/ETE027.md
       - ETE028 - Detalhar Relatório de Posição de Estoque : EspecificacoesTecnicas/ETE028.md
+      - ETE029 - Consultar Usuário SUS: EspecificacoesTecnicas/ETE029.md
+      - ETE030 - Cadastrar Usuário SUS: EspecificacoesTecnicas/ETE030.md
+      - ETE031 - Editar Usuário SUS: EspecificacoesTecnicas/ETE031.md
+      - ETE032 - Detalhar Usuário SUS: EspecificacoesTecnicas/ETE032.md
     - Para Validação:
       - ETE023 - Consultar Saídas : validacao/ete023.md
       - ETE024 - Cadastrar Saídas : validacao/ete024.md

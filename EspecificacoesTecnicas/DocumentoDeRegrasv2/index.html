@@ -481,7 +481,7 @@
 <td style="text-align: center;">X</td>
 </tr>
 <tr>
-<td><strong>Saída Diversa</strong></td>
+<td><strong>Saída</strong></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
@@ -490,7 +490,7 @@
 <td style="text-align: center;"></td>
 </tr>
 <tr>
-<td>Consultar Saída Diversa</td>
+<td>Consultar Saída</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">X</td>
@@ -499,7 +499,7 @@
 <td style="text-align: center;">X</td>
 </tr>
 <tr>
-<td>Cadastrar Saída Diversa</td>
+<td>Cadastrar Saída</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">X</td>
@@ -508,7 +508,7 @@
 <td style="text-align: center;">X</td>
 </tr>
 <tr>
-<td>Editar Saída Diversa</td>
+<td>Editar Saída</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">X</td>
@@ -517,7 +517,7 @@
 <td style="text-align: center;">X</td>
 </tr>
 <tr>
-<td>Detalhar Saída Diversa</td>
+<td>Detalhar Saída</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">X</td>
@@ -636,7 +636,7 @@ As açoes realizadas pelos perfis de acordo com os proviégios afetam:</p>
 <hr />
 <h1 id="rgn016">RGN016</h1>
 <h2 id="exclusao-de-um-registro">Exclusão de um registro</h2>
-<p>As exclusões permitidas no sistema sempre serão lógicas, sendo necessário manter o histórico temporal da existência do registro. Exceto para registro(s) na situação “Em preenchimento” a qual deve ser física.  </p>
+<p>As exclusões permitidas no sistema sempre serão lógicas, sendo necessário manter o histórico temporal da existência do registro. Exceto para registro(s) na situação “Em preenchimento” a qual deve ser física e para todos os seus descendentes.   </p>
 <hr />
 <h1 id="rgn017">RGN017</h1>
 <h2 id="estorno-de-entrada-de-produtos">Estorno de entrada de produto(s)</h2>
@@ -776,14 +776,14 @@ As açoes realizadas pelos perfis de acordo com os proviégios afetam:</p>
 <p>O sistema, identificando que uma entrada de produto(s) foi armazenada, deve creditar a quantidade no saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou a entrada. </p>
 <hr />
 <h1 id="rgn032">RGN032</h1>
-<h2 id="registro-de-entrada-por-estorno-de-saida-diversa-de-produtos">Registro de Entrada por Estorno de Saída Diversa de produto(s)</h2>
-<p>Ao realizar o estorno da saída diversa do(s) produto(s), o sistema deve:</p>
+<h2 id="registro-de-entrada-por-estorno-de-saida-de-produtos">Registro de Entrada por Estorno de Saída de produto(s)</h2>
+<p>Ao realizar o estorno da saída do(s) produto(s), o sistema deve:</p>
 <ul>
 <li>Creditar o(s) produto(s) no estoque do estabelecimento da saída estornada, através da criação de um registro de entrada, gravando as seguintes informações: <ul>
-<li>Modalidade de Licitação = “Saída Diversa”;</li>
-<li>Tipo de Movimentação = “Entrada por Estorno de Saída Diversa”;  </li>
+<li>Modalidade de Licitação = “Saída ”;</li>
+<li>Tipo de Movimentação = “Entrada por Estorno de Saída";  </li>
 <li>Fornecedor = CNES ou CNPJ do estabelecimento que realizou saída;  </li>
-<li>Tipo de Documento = “Estorno de Saída Diversa”;  </li>
+<li>Tipo de Documento = “Estorno de Saída ”;  </li>
 <li>Número do Documento = Número da saída que foi estornada; </li>
 <li>No detalhamento do produto:  <ul>
 <li>Princípio ativo ou Descrição do produto </li>
@@ -796,43 +796,46 @@ As açoes realizadas pelos perfis de acordo com os proviégios afetam:</p>
 <li>Quantidade  </li>
 </ul>
 </li>
+<li>Estado do registro de entrada como “Ativo”; </li>
 <li>Situação do registro de entrada como “Armazenada”; </li>
 </ul>
 </li>
-<li>Alterar a situação do cadastro da saída diversa para “Estornada”</li>
+<li>Manter o estado do registro da Saída como “Ativo”; </li>
+<li>Alterar a situação do cadastro da saída para “Estornada”</li>
 </ul>
 <hr />
 <h1 id="rgn033">RGN033</h1>
-<h2 id="atualizacao-de-estoque-apos-estorno-de-saida-diversa">Atualização de estoque após estorno de saída diversa</h2>
-<p>O sistema, identificando que uma saída diversa de produto(s) foi estornada, deve creditar a quantidade no saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou o estorno da saída diversa.  </p>
+<h2 id="atualizacao-de-estoque-apos-estorno-de-saida">Atualização de estoque após estorno de saída</h2>
+<p>O sistema, identificando que uma saída de produto(s) foi estornada, deve creditar a quantidade no saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou o estorno da saída.  </p>
 <hr />
 <h1 id="rgn034">RGN034</h1>
 <h2 id="apresentacao-de-lotesvalidades-do-produto">Apresentação de Lotes/Validades do produto</h2>
 <ul>
-<li>Quando o tipo de saída for “Validade Vencida”, somente serão considerados e/ou apresentados os lotes/validades que estejam com a data de validade inferior a data atual. </li>
-<li>Quando o tipo de saída for “Ajuste de Estoque”, “Usuário SUS”, “Apreensão Sanitária”, “Empréstimo” ou “Transferência”, somente serão considerados e/ou apresentados os lotes/validades que estejam válidos, com a data de validade igual ou superior a data atual. </li>
-<li>Quando o tipo de saída for “Perda” ou “Roubo”, serão considerados e/ou apresentados todos os lotes/validades. independente da data de validade.</li>
+<li>Quando o tipo de saída for "Distribuição sem Requisição", “Requisição”, "Usuário SUS não Identificado", o sistema deve permitir incluir produtos com estoque igual a O (zero).</li>
+<li>Quando o tipo de saída for “Validade Vencida”, somente serão considerados os lotes com a data de validade inferior a data atual ou com vencimento nos próximos 90 dias.</li>
+<li>Quando o tipo de saída for “Ajuste de Estoque”, ““Apreensão Sanitária”, “Distribuição sem Requisição”, “Empréstimo”, “Requisição”, “Saída para Departamento”, “Transferência” ou “Usuário SUS Não Identificado”, somente serão considerados os lotes com a data de validade igual ou superior a data atual. </li>
+<li>Quando o tipo de saída for “Amostra”, “Exposição e Análise”, “Perda” ou “Roubo”, serão considerados todos os lotes, independente da data de validade.</li>
 </ul>
 <hr />
 <h1 id="rgn035">RGN035</h1>
-<h2 id="exclusao-de-produto-na-saida-diversa">Exclusão de produto na saída diversa</h2>
+<h2 id="exclusao-de-produto-na-saida">Exclusão de produto na saída</h2>
 <p>Somente será permitida a exclusão de um produto adicionado à saída se não tiver nenhum detalhamento vinculado a ele.  </p>
 <hr />
 <h1 id="rgn036">RGN036</h1>
 <h2 id="saldo-estoque-atual">Saldo Estoque Atual</h2>
-<p>O sistema deve carregar e apresentar o saldo do produto em estoque, no momento, do estabelecimento logado, independente de lote/validade/programa de saúde.  </p>
+<p>O sistema deve carregar e apresentar o saldo do produto em estoque, no momento, do estabelecimento logado, independente de lote, /validade, /programa de saúde e endereçamento físico. </p>
 <hr />
 <h1 id="rgn037">RGN037</h1>
 <h2 id="calculo-da-quantidade-total-recebida-na-entrada-do-produto">Cálculo da Quantidade Total Recebida na Entrada do Produto</h2>
 <p>O sistema deve calcular a Quantidade Total Recebida somando todas as quantidades informadas nos detalhamentos adicionados ao produto.  </p>
 <hr />
 <h1 id="rgn038">RGN038</h1>
-<h2 id="calculo-do-valor-total-da-saida-diversa">Cálculo do Valor Total da Saída Diversa</h2>
-<p>O sistema deve calcular o Valor Total da Saída Diversa somado todos os valores totais dos produtos adicionados à saída diversa.  </p>
+<h2 id="calculo-do-valor-total-da-saida">Cálculo do Valor Total da Saída</h2>
+<p>O sistema deve calcular o Valor Total da Saída somado todos os valores totais dos produtos adicionados à saída.  </p>
 <hr />
 <h1 id="rgn039">RGN039</h1>
-<h2 id="calculo-da-quantidade-total-da-saida-por-produto">Cálculo da Quantidade Total da Saída por Produto</h2>
-<p>O sistema deve calcular a Quantidade Total da Saída somando todas as quantidades informadas nos detalhamentos adicionados ao produto.  </p>
+<h2 id="calculo-da-quantidade-total-a-expedir-da-saida-por-produto">Cálculo da Quantidade Total a Expedir da Saída por Produto</h2>
+<p>O sistema deve calcular a Quantidade a Expedir da Saída somando todas as quantidades a expedir informadas nos detalhamentos adicionados ao produto. </p>
 <hr />
 <h1 id="rgn040">RGN040</h1>
 <h2 id="calculo-da-media-do-valor-unitario-do-produto">Cálculo da Média do Valor Unitário do Produto</h2>
@@ -840,27 +843,27 @@ As açoes realizadas pelos perfis de acordo com os proviégios afetam:</p>
 <hr />
 <h1 id="rgn041">RGN041</h1>
 <h2 id="calculo-do-valor-total-da-saida-para-o-produto">Cálculo do Valor Total da Saída para o Produto</h2>
-<p>O sistema deve calcular o Valor Total da Saída pela fórmula:  Quantidade Total da Saída X Valor Unitário do produto (média simples dos valores unitários informados na entrada do referido produto).  </p>
+<p>O sistema deve calcular o Valor Total da Saída pela fórmula:  Quantidade Expedida da Saída X Valor Unitário do produto (média simples dos valores unitários informados na entrada do referido produto).</p>
 <hr />
 <h1 id="rgn042">RGN042</h1>
 <h2 id="produto-da-saida">Produto da Saída</h2>
-<p>O sistema deve permitir apenas saída de produtos que possuem estoque no estabelecimento logado.  </p>
+<p>O sistema deve permitir apenas saída de produtos que possuem estoque no estabelecimento logado, exceto se no campo “Tipo de Saída” for selecionada a opção: "Distribuição sem Requisição" ou “Requisição” ou "Usuário SUS não Identificado". </p>
 <hr />
 <h1 id="rgn043">RGN043</h1>
-<h2 id="quantidade-de-saida-do-produto">Quantidade de Saída do Produto</h2>
-<p>O sistema somente deve permitir informar uma quantidade de saída menor ou igual ao estoque disponível do produto, lote, validade e programa de saúde no estabelecimento logado.  </p>
+<h2 id="quantidade-expedida-do-produto">Quantidade Expedida do Produto</h2>
+<p>O sistema somente deve permitir informar uma quantidade expedida menor ou igual ao estoque disponível do produto, lote, validade, programa de saúde e endereçamento físico no estabelecimento logado. </p>
 <hr />
 <h1 id="rgn044">RGN044</h1>
-<h2 id="validar-saida-diversa-do-produto">Validar Saída Diversa do Produto</h2>
-<p>O sistema deve validar se já existe uma saída diversa com o mesmo tipo de saída diversa, tipo e número de documento e justificativa de uma saída diversa registrada ou em preenchimento para o estabelecimento.  </p>
+<h2 id="validar-saida-do-produto">Validar Saída do Produto</h2>
+<p>O sistema deve validar se já existe uma Saída com o mesmo tipo de Saída, tipo e número de documento e justificativa de uma Saída registrada ou em preenchimento para o estabelecimento. </p>
 <hr />
 <h1 id="rgn045">RGN045</h1>
-<h2 id="numero-de-registro-da-saida-diversa">Número de Registro da Saída Diversa</h2>
-<p>Ao salvar uma saída diversa de produtos, caso ainda não exista, o sistema deve gerar um número identificador único para a saída diversa e apresentá-lo ao usuário. </p>
+<h2 id="numero-de-registro-da-saida">Número de Registro da Saída</h2>
+<p>Ao salvar uma Saída de produtos, caso ainda não exista, o sistema deve gerar um número identificador único para a Saída e apresentá-lo ao usuário. </p>
 <hr />
 <h1 id="rgn046">RGN046</h1>
-<h2 id="atualizacao-de-estoque-apos-registrar-uma-saida-diversa">Atualização de estoque após registrar uma saída diversa</h2>
-<p>O sistema, identificando que uma saída diversa de produto(s) foi registrada, deve debitar a quantidade no saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou a saída diversa.</p>
+<h2 id="atualizacao-de-estoque-apos-registrar-uma-saida">Atualização de estoque após registrar uma Saída</h2>
+<p>O sistema, identificando que uma Saída de produto(s) foi registrada, deve debitar a quantidade no saldo deste(s), considerando o lote, validade, programa de saúde e endereçamento físico e atualizar a posição de estoque do estabelecimento que realizou a Saída.</p>
 <hr />
 <h1 id="rgn047">RGN047</h1>
 <h2 id="validade-do-token-de-recuperacao-de-senha">Validade do token de recuperação de senha</h2>
@@ -960,6 +963,26 @@ As açoes realizadas pelos perfis de acordo com os proviégios afetam:</p>
 <h1 id="rgn063">RGN063</h1>
 <h2 id="cadastro-de-usuario-sus">Cadastro de Usuário SUS</h2>
 <p>Não será permitido o cadastro de mais de um usuário SUS com o mesmo CPF. </p>
+<hr />
+<h1 id="rgn064">RGN064</h1>
+<h2 id="validacao-do-estabelecimento-de-destino">Validação do Estabelecimento de Destino</h2>
+<p>O CNES/CNPJ do Estabelecimento de Destino informado no registro da saída deve ser diferente do CNES/CNPJ do Estabelecimento logado. </p>
+<hr />
+<h1 id="rgn065">RGN065</h1>
+<h2 id="preenchimento-e-habilitacao-dos-campos-na-saida-conforme-tipo-de-saida">Preenchimento e habilitação dos campos na Saída conforme Tipo de Saída</h2>
+<ul>
+<li>Quando o usuário selecionar no campo “Tipo de Saida” a opção: Ajuste de Estoque, Amostra, Exposição e Análise, Apreensão Sanitária, Perda, Usuário SUS Não Identificado, Validade Vencida, o sistema deve preencher os campos “CNES/CNPJ do Estabelecimento de Destino" e "Estabelecimento de Destino” com os dados do estabelecimento logado e mantendo-os desabilitados para edição e desabilitar para edição o campo: “Departamento de Destino”;  </li>
+<li>Quando o usuário selecionar no campo “Tipo de Saida” a opção: "Distribuição sem Requisição" ou “Empréstimo” ou “Requisição” ou "Transferência", o sistema deve habilitar e tornar obrigatório o preenchimento dos campos "CNES/CNPJ do Estabelecimento de Destino" e "Estabelecimento de Destino” e manter desabilitado para edição o campo “Departamento de Destino”;  </li>
+<li>Quando o usuário selecionar no campo “Tipo de Saida” a opção: "Saída para Departamento", o sistema deve preencher os campos “CNES/CNPJ do Estabelecimento de Destino" e "Estabelecimento de Destino” com os dados do estabelecimento logado e mantendo-os desabilitados para edição e habilitar e tornar obrigatório a seleção de um item no campo "Departamento de Destino"; </li>
+</ul>
+<hr />
+<h1 id="rgn066">RGN066</h1>
+<h2 id="calculo-da-quantidade-expedida-da-saida-por-produto">Cálculo da Quantidade Expedida da Saída por Produto</h2>
+<p>O sistema deve calcular a Quantidade Expedida da Saída somando todas as quantidades expedidas informadas nos detalhamentos adicionados ao produto. </p>
+<hr />
+<h1 id="rgn067">RGN067</h1>
+<h2 id="quantidade-a-expedir">Quantidade a Expedir</h2>
+<p>O sistema deve permitir informar um valor independente do saldo em estoque do produto </p>
               
             </div>
           </div><footer>

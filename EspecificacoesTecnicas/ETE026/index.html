@@ -173,13 +173,15 @@
 <h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
 <p>Como usuário quero detalhar os dados de uma saída diversa de produto.</p>
 <h2 id="prototipo-001">Protótipo 001</h2>
+<p><img alt="alt text" src="../../imagens/ete-026-prot-001.png" /></p>
 <h3 id="elementos-de-tela">Elementos de Tela</h3>
 <ul>
-<li>Bread Crumbs – “Movimentação / Saída Diversa / Dados da Saída Diversa” </li>
-<li>Título da página – “Detalhar Saída Diversa” </li>
-<li>“Seta” – M - retorna para a Tela de Consultar Entrada (ETE016) </li>
+<li>Bread Crumb – “Movimentação / Saída / Dados da Saída” </li>
+<li>Título da página – “Detalhar Saída” </li>
+<li>“Seta” – M - retorna para a Tela de Consultar Saída  </li>
 <li>“Imprimir” – BT </li>
-<li>“Consultar” – BT </li>
+<li>“Exportar” - BT </li>
+<li>“Consultar” – BT - retorna para a Tela de Consultar Saída </li>
 <li>Logotipo e-SUS AF - M </li>
 <li>Cabeçalho:  <ul>
 <li>Estabelecimento: <ul>
@@ -193,42 +195,51 @@
 <li>Data e Hora da última alteração: </li>
 </ul>
 </li>
-<li>Nº da Saída Diversa </li>
-<li>Tipo de Saída Diversa  </li>
-<li>Data da Saída Diversa </li>
-<li>Valor da Saída Diversa </li>
-<li>Nº do Documento  </li>
+<li>Nº da Saída </li>
+<li>Tipo de Saída  </li>
+<li>Data da Saída </li>
+<li>Valor da Saída </li>
+<li>CNES/CNPJ do Estabelecimento de Destino  </li>
+<li>Estabelecimento de Destino  </li>
+<li>Departamento de Destino  </li>
 <li>Tipo de Documento  </li>
+<li>Nº do Documento  </li>
+<li>Data do Documento  </li>
 <li>Justificativa </li>
-<li>Detalhe da Justificativa </li>
-<li>Produto(s) – lista produtos adicionados à saída <ul>
-<li>Código de Barras: </li>
+<li>Detalhes da Justificativa </li>
+<li>Produtos  <ul>
+<li>Código de Barras </li>
 <li>Princípio Ativo + Concentração ou Descrição CATMAT </li>
-<li>CATMAT: </li>
+<li>CATMAT </li>
 <li>Forma Farmacêutica: (se medicamento) </li>
 <li>Fabricante: CNPJ-Razão Social (se medicamento) </li>
-<li>Quantidade Total </li>
+<li>Qtd a Expedir </li>
+<li>Qtd Expedida </li>
 <li>Valor Unitário  </li>
 <li>Valor Total  </li>
 <li>Detalhe Produto <ul>
 <li>Nº do Lote </li>
 <li>Data de Validade </li>
-<li>Quantidade Saída </li>
+<li>Programa de Saúde </li>
+<li>Endereçamento Físico </li>
+<li>Quantidade a Expedir </li>
+<li>Quantidade Expedida </li>
 <li>Valor Unitário  </li>
 <li>Valor Total  </li>
-<li>Programa de Saúde </li>
-<li>Fabricante CNES ou CNPJ-Nome Razão Social (se produto para saúde) </li>
-</ul>
-</li>
-</ul>
-</li>
 <li>Situação </li>
-<li>Responsável pelo Registro:  <ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>Responsável pelo Registro  <ul>
 <li>CPF / Nome Completo  </li>
 </ul>
 </li>
-<li>Data Estorno: (se houver) </li>
-<li>Responsável pelo Estorno: (se houver) <ul>
+<li>Data Estorno (se houver) <ul>
+<li>DD/MM/AAAA </li>
+</ul>
+</li>
+<li>Responsável pelo Estorno (se houver) <ul>
 <li>CPF / Nome Completo </li>
 </ul>
 </li>
@@ -246,6 +257,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>O campo “Responsável pelo Registro” somente é apresentado quando o registro da saída diversa estiver com a situação “Registrada” ou “Estornada”; </li>
 <li>Os campos “Data do Estorno” e “Responsável pelo Estorno” somente serão apresentados quando o registro da entrada estiver com a situação “Estornada”; </li>
 <li>Quando o usuário acionar a opção de “Imprimir”, o sistema deve permitir imprimir as informações da tela ou salvá-las em um arquivo no formato desejado (padrão Windows); </li>
+<li>Quando o usuário acionar a opção “Exportar”, o sistema deve exportar todas as informações da tela para arquivo em formato .CSV (apenas colunas e linhas); </li>
 <li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema finaliza o detalhamento e retorna à tela de consulta às saídas diversas de produtos. <a href="../ETE023/">ETE023</a></li>
 </ol>
               

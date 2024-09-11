@@ -195,25 +195,34 @@
               
                 <h1 id="ete025-editar-saida">ETE025 - Editar Saída</h1>
 <h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
-<p>Como usuário quero editar uma saída diversa de produto(s) para retirá-lo(s) do estoque do estabelecimento de saúde logado. </p>
+<p>Como usuário quero editar uma saída de produto(s) para retirá-lo(s) do estoque do estabelecimento de saúde logado. </p>
 <h2 id="prototipo-001">Protótipo 001</h2>
 <p><img alt="alt text" src="../../imagens/ete-025-prot-001.png" /></p>
 <h3 id="elementos-de-tela">Elementos de Tela</h3>
 <ul>
-<li>Bread Crumb – “Movimentação / Saída Diversa / Edição” </li>
-<li>Título da página – “Editar Saída Diversa” </li>
-<li>“Seta” – M - retorna para a Tela de Consultar Saída Diversa  </li>
-<li>“Consultar” – BT </li>
-<li>Nº da Saída Diversa* – N (11) – Desabilitado para edição </li>
-<li>Tipo de Saída Diversa* – SU / AC </li>
-<li>Data da Saída Diversa* – D (dd/mm/aaaa </li>
-<li>Valor Total Saída Diversa* – N (13,9) (R$ 99999999999999,999999999) - Desabilitado para edição </li>
-<li>Nº do Documento* – A (20) </li>
+<li>Bread Crumb – “Movimentação / Saída / Edição” </li>
+<li>Título da página – “Editar Saída” </li>
+<li>“Seta” – M - retorna para a Tela de Consultar Saída  </li>
+<li>“Consultar” – BT- retorna para a Tela de Consultar Saída </li>
+<li>Título da sessão 1 – “Dados da Saída” </li>
+<li>Nº da Saída* – N (36) – Desabilitado para edição </li>
+<li>Tipo de Saída* – SU / AC </li>
+<li>Data da Saída* – D (DD/MM/AAAA) </li>
+<li>Valor Total Saída* – N (13,9) (R$ 99999999999999,999999999) - Desabilitado para edição </li>
+<li>CNES/CNPJ do Estabelecimento de Destino* – N (7/14) </li>
+<li>Lupa – M  </li>
+<li>Nome Estabelecimento Destino* – A (20) </li>
+<li>Departamento de Destino – SU /AC </li>
 <li>Tipo de Documento* – SU / AC  </li>
+<li>Nº do Documento* – A (20) </li>
+<li>Data do Documento* – D (DD/MM/AAAA)  </li>
 <li>Justificativa* – SU / AC </li>
-<li>Detalhar Justificativa – A (4000) - contador regressivo </li>
+<li>Detalhes Justificativa – A (4000) - contador regressivo </li>
 <li>“Salvar” – BT </li>
 <li>“Limpar” – BT </li>
+<li>Título da sessão 2 – “Produtos” - desabilitado </li>
+<li>“Registrar” – BT - desabilitado </li>
+<li>“Salvar Parcial” – BT - desabilitado </li>
 </ul>
 <p><strong>Legenda</strong><br />
 TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.
@@ -221,32 +230,49 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
 <li>O usuário somente pode acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Movimentação”, subitem “Saída Diversa”, na tela “Consultar Saída Diversa” quando for acionada a opção “Editar Saída Diversa”; </li>
-<li>O sistema deve recuperar e apresentar os dados da saída diversa cadastrada previamente, permitindo a edição de todos os campos; </li>
-<li>No campo “Tipo de Saída Diversa” o sistema deve apresentar as opções: Ajuste de Estoque, Amostra, Exposição e Análise, Apreensão Sanitária, Empréstimo, Perda, Requisição, Roubo, Transferência, Usuário SUS, Validade Vencida. Exceto os tipos criados para saídas geradas automaticamente pelo sistema: “Saída por Estorno de Entrada”, “Saída por Dispensação” e “Saída por Estorno de Distribuição”; </li>
-<li>O campo “Data da Saída Diversa” dever ser preenchido automaticamente com a data atual e desabilitado para edição; </li>
-<li>O campo “Valor Total da Saída Diversa” deve ser desabilitado para edição, calculado automaticamente somando todos os valores totais dos produtos adicionados à saída diversa e apresentado em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; <a href="../DocumentoDeRegrasv2/#rgn038">RGN038</a> <a href="../DocumentoDeRegrasv2/#rgn028">RGN028</a></li>
-<li>No campo “Tipo de Documento” o sistema deve apresentar as opções: Aviso, Boletim, Carta, Certidão, Circular, Comprovante, Contrato, Convênio, Decreto, Despacho, Edital, Fax, Guia, Guia De Remessa, Instrução Normativa, Memorando, Mensagem, Nota Fiscal, Nota Fiscal Eletrônica, Ofício, Ordem De Serviço, Parecer, Portaria, Requerimento, Requisição, Resolução; </li>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Movimentação”, subitem “Saída”, na tela “Consultar Saída” quando for acionada a opção “Editar Saída”; </li>
+<li>O sistema deve recuperar e apresentar os dados da Saída cadastrada previamente nos campos: Nº da Saída, Tipo de Saída, Data da Saída, Valor Total Saída, CNES/CNPJ do Estabelecimento de Destino, opção Lupa Estabelecimento de Destino, Departamento de Destino, Tipo de Documento, Nº do Documento, Justificativa, Detalhes da Justificativa, permitindo a edição de todos os campos e as opções “Salvar” e “Limpar; </li>
+<li>No campo “Tipo de Saída” o sistema deve apresentar as opções: Ajuste de Estoque, Amostra, Exposição e Análise, Apreensão Sanitária, Distribuição sem Requisição Empréstimo, Perda, Requisição, Roubo, Saída para Departamento, Transferência, Usuário SUS não Identificado, Validade Vencida. Exceto os tipos criados para saídas geradas automaticamente pelo sistema: “Saída por Estorno de Entrada” e “Saída por Dispensação”; </li>
+<li>Quando o usuário selecionar no campo “Tipo de Saida” a opção: Ajuste de Estoque, Amostra, Exposição e Análise, Apreensão Sanitária, Perda, Usuário SUS não Identificado, Validade Vencida, o sistema deve preencher os campos “CNES/CNPJ do Estabelecimento de Destino" e "Estabelecimento de Destino” com os dados do estabelecimento logado e mantendo-os desabilitados para edição e desabilitar para edição o campo: “Departamento de Destino”; RGN065 </li>
+<li>Quando o usuário selecionar no campo “Tipo de Saida” a opção: "Distribuição sem Requisição" ou “Empréstimo” ou “Requisição” ou "Transferência", o sistema deve habilitar e tornar obrigatório o preenchimento dos campos "CNES/CNPJ do Estabelecimento de Destino" e "Estabelecimento de Destino” e manter desabilitado para edição o campo “Departamento de Destino”; RGN065 <ul>
+<li>O sistema deve verificar se CNES/CNPJ do Estabelecimento de Destino informado é igual ao do CNES/CNPJ do Estabelecimento logado. Caso sim, deve emitir mensagem de alerta ao usuário; RGN064 MSG095 </li>
+<li>Quando o usuário acionar a opção “Lupa” após informar o CNES/CNPJ do Estabelecimento de Destino, o sistema deve recuperar e apresentar o nome fantasia do estabelecimento dentre os cadastrados na instância. </li>
+</ul>
+</li>
+<li>Quando o usuário selecionar no campo “Tipo de Saida” a opção: "Saída para Departamento", o sistema deve preencher os campos “CNES/CNPJ do Estabelecimento de Destino" e "Estabelecimento de Destino” com os dados do estabelecimento logado e mantendo-os desabilitados para edição e habilitar e tornar obrigatório a seleção de um item no campo "Departamento de Destino"; RGN065 <ul>
+<li>No campo "Departamento de Destino", o sistema deve recuperar e apresentar para seleção a relação dos departamentos cadastrados para o estabelecimento logado. </li>
+</ul>
+</li>
+<li>O campo “Data da Saída” dever ser preenchido automaticamente com a data atual e desabilitado para edição; </li>
+<li>O campo “Valor Total da Saída” deve ser desabilitado para edição, calculado automaticamente somando todos os valores totais dos produtos adicionados à saída e apresentado em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; <a href="../DocumentoDeRegrasv2/#rgn038">RGN038</a> <a href="../DocumentoDeRegrasv2/#rgn028">RGN028</a></li>
+<li>No campo “Tipo de Documento” o sistema deve apresentar as opções: Aviso, Boletim, Carta, Certidão, Circular, Comprovante, Contrato, Convênio, Decreto, Despacho, Edital, Fax, Guia, Guia De Remessa, Instrução Normativa, Memorando, Mensagem, Nota Fiscal, Nota Fiscal Eletrônica, Ofício, Ordem De Serviço, Parecer, Portaria, Prescrição Médica, Requerimento, Requisição, Resolução;  </li>
 <li>No campo “Justificativa” o sistema deve apresentar as opções: Diferença de Estoque, Quebra do produto/medicamento, Recebimento maior que a demanda, Recebimento próximo da validade, Roubo, Sistema Inoperante, Outros; </li>
 <li>
 <p>Quando o usuário acionar a opção de “Salvar”, o sistema deve verificar se: </p>
 <ul>
-<li>Existe uma saída diversa com o mesmo tipo de saída diversa, tipo e número de documento e justificativa de uma saída diversa registrada ou em preenchimento para o estabelecimento. Caso sim, o sistema deve apresentar uma mensagem de alerta ao usuário. <a href="../DocumentoDeRegrasv2/#rgn044">RGN044</a> <a href="../DocumentoDeMensagensv2/#msg038">MSG038</a></li>
+<li>Existe uma saída com o mesmo tipo de saída, tipo e número de documento e justificativa de uma saída registrada ou em preenchimento para o estabelecimento. Caso sim, o sistema deve apresentar uma mensagem de alerta ao usuário. <a href="../DocumentoDeRegrasv2/#rgn044">RGN044</a> <a href="../DocumentoDeMensagensv2/#msg038">MSG038</a></li>
 </ul>
-<p>Atendendo a validações, o sistema mantém o registro da saída diversa com estado “Ativo”, a situação “Em preenchimento” e os campos habilitados para edição, permanece na tela de cadastro da saída diversa e apresenta ou carrega o campo “Produto(s)”; <a href="../DocumentoDeMensagensv2/#msg031">MSG031</a> <a href="../DocumentoDeRegrasv2/#rgn045">RGN045</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </p>
+<p>Atendendo a validações, o sistema mantém o registro da saída com estado “Ativo”, a situação “Em preenchimento” e os campos habilitados para edição, permanece na tela de cadastro da saída e apresenta ou carrega o campo “Produto(s)”; <a href="../DocumentoDeMensagensv2/#msg031">MSG031</a> <a href="../DocumentoDeRegrasv2/#rgn045">RGN045</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </p>
 </li>
 <li>
-<p>Quando o usuário acionar a opção “Limpar”, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, limpar os campos preenchidos e permanecer na tela de cadastro da saída diversa. Caso a ação não seja confirmada, não limpar os dados informados e permanecer na tela de cadastro da saída diversa; MSG065 </p>
+<p>Quando o usuário acionar a opção “Limpar”, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, limpar os campos preenchidos e permanecer na tela de cadastro da saída. Caso a ação não seja confirmada, não limpar os dados informados e permanecer na tela de cadastro da saída; MSG065 </p>
 </li>
-<li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, retornar à tela de consulta as saídas diversas e não salvar as edições realizadas. Caso a ação não seja confirmada, permanece na tela de cadastro da saída diversa; <a href="../DocumentoDeMensagensv2/#msg006">MSG006</a> </li>
+<li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, retornar à tela de consulta as saídass e não salvar as edições realizadas. Caso a ação não seja confirmada, permanece na tela de cadastro da saída; <a href="../DocumentoDeMensagensv2/#msg006">MSG006</a> </li>
 <li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
 </ol>
 <h2 id="prototipo-002">Protótipo 002</h2>
 <p><img alt="alt text" src="../../imagens/ete-025-prot-002.png" /></p>
 <h3 id="elementos-de-tela_1">Elementos de tela</h3>
 <ul>
-<li>Título da sessão – “Produtos” </li>
-<li>Produto* – A (500) / AC </li>
+<li>Bread Crumb – “Movimentação / Saída / Edição” </li>
+<li>Título da página – “Editar Saída” </li>
+<li>“Seta” – M - retorna para a Tela de Consultar Saída  </li>
+<li>“Consultar” – BT - retorna para a Tela de Consultar Saída </li>
+<li>Título da sessão 1 – “Dados da Saída” </li>
+<li>Título da sessão 2 – “Produtos” </li>
+<li>Produto* – A (500) / AC </li>
+<li>“Registrar” – BT - desabilitado </li>
+<li>“Salvar Parcial” – BT -  – desabilitado</li>
 </ul>
 <p><strong>Legenda</strong><br />
 TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.</p>
@@ -267,31 +293,42 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </ul>
 </li>
 <li>O usuário deve selecionar o produto que deseja adicionar na lista produtos ativos no sistema; </li>
-<li>O sistema não deve permitir adicionar um produto já relacionado à saída diversa. <a href="../DocumentoDeMensagensv2/#msg034">MSG034</a> </li>
+<li>O sistema não deve permitir adicionar um produto já relacionado à saída. <a href="../DocumentoDeMensagensv2/#msg034">MSG034</a> </li>
 </ol>
 <h2 id="prototipo-003">Protótipo 003</h2>
 <p><img alt="alt text" src="../../imagens/ete-025-prot-003.png" /></p>
 <h3 id="elementos-de-tela_2">Elementos de tela</h3>
 <ul>
+<li>Bread Crumb – “Movimentação / Saída / Edição” </li>
+<li>Título da página – “Editar Saída” </li>
+<li>“Seta” – M - retorna para a Tela de Consultar Saída  </li>
+<li>“Consultar” – BT - retorna para a Tela de Consultar Saída </li>
+<li>Título da sessão 1 – “Dados da Saída” </li>
+<li>Título da sessão 2 – “Produtos” </li>
+<li>Produto* – A (500) / AC </li>
 <li>Lista de produtos da saída - desabilitados para edição: <ul>
 <li>Código de Barras – N (13) </li>
 <li>Descrição do Produto – A (500) </li>
 <li>CATMAT – N (6) </li>
 <li>Forma Farmacêutica – A (20) </li>
-<li>Fabricante – A (80) (9999999) / (99.999.999/9999-99)-(Razão Social)</li>
+<li>Fabricante – A (80) &lt;9999999&gt; / &lt;99.999.999/9999-99&gt;-<Razão Social> </li>
 <li>Qtd Estoque Atual – N  </li>
-<li>Quantidade Total – N  </li>
+<li>Qtd a expedir – N  </li>
+<li>Qtd expedida – N  </li>
 <li>Valor Unitário – N (6,9) (R$ 999999,999999999) </li>
 <li>Valor Total – N (13,2) (R$ 99999999999999,99) </li>
 <li>“Excluir” – BT </li>
 <li>“Expandir/Retrair” – M </li>
 <li>Detalhe Produto <ul>
 <li>Nº do Lote* – A (20) </li>
-<li>Data de Validade* – D (dd/mm/aaaa) </li>
-<li>Quantidade Estoque* – N - desabilitado para edição </li>
-<li>Quantidade Saída* – N   </li>
-<li>Valor Unitário* – N (6,9) (R$ 999999,999999999)  </li>
+<li>Data de Validade* – D (DD/MM/AAAA) </li>
 <li>Programa de Saúde* – SU / AC / A </li>
+<li>Endereçamento Físico* – SU / AC / A </li>
+<li>Quantidade Estoque* – N - desabilitado para edição </li>
+<li>Quantidade a Expedir* – N   </li>
+<li>Quantidade Expedida* – N  </li>
+<li>Valor Unitário* – N (6,9) (R$ 999999,999999999) </li>
+<li>Valor Total – N (13,2) (R$ 99999999999999,99) </li>
 <li>“Incluir” – BT </li>
 <li>“Limpar” – BT </li>
 <li>Lista detalhe produto <ul>
@@ -299,7 +336,8 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>Data de Validade </li>
 <li>Programa de Saúde </li>
 <li>Qtd Estoque </li>
-<li>Qtd Saída </li>
+<li>Qtd a Expedir </li>
+<li>Qtd Expedida </li>
 <li>“Editar” – BT </li>
 <li>“Excluir” – BT </li>
 <li>“Detalhar – BT - direciona para tela com os dados do detalhe do produto </li>
@@ -316,66 +354,75 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.</p>
 <h3 id="criterios-de-aceite_2">Critérios de Aceite</h3>
 <ol>
-<li>O sistema deve recuperar e apresentar os dados da saída diversa cadastrada previamente, permitindo a edição de todos os campos; </li>
+<li>O sistema deve recuperar e apresentar os dados da Saída cadastrada previamente, permitindo a edição de todos os campos; </li>
 <li>Quando o usuário adicionar o produto, o sistema deve: <ul>
-<li>Verificar se existe estoque para o produto informado no estabelecimento logado. Caso não, o sistema emite um alerta ao usuário e não permite adicioná-lo na lista dos produtos; <a href="../DocumentoDeRegrasv2/#rgn042">RGN042</a> <a href="../DocumentoDeMensagensv2/#msg035">MSG035</a> </li>
-<li>Verificar a opção informada no campo “Tipo de Saída”, se: </li>
-<li>“Validade Vencida”, o sistema verifica se existem lotes/validades do produto vencidos em estoque. Caso não exista, emite um alerta ao usuário e limpa os campos preenchidos; <a href="../DocumentoDeRegrasv2/#rgn034">RGN034</a> <a href="../DocumentoDeMensagensv2/#msg033">MSG033</a> </li>
-<li>“Ajuste de Estoque”, “Usuário SUS”, “Apreensão Sanitária”, “Empréstimo” ou “Transferência”, o sistema considera e/ou apresenta os lotes/validades que estejam válidos, com a data de validade igual ou superior a data atual; RGN034 </li>
-<li>“Perda” ou “Roubo”, o sistema considera e/ou apresenta todos os lotes/validades independente da data de validade. <a href="../DocumentoDeRegrasv2/#rgn034">RGN034</a> </li>
-</ul>
-</li>
-<li>O sistema deve apresentar a lista de produtos adicionados à saída diversa por ordem alfabética. A lista será expansiva, permitindo o preenchimento dos campos de detalhamento do produto; <a href="../DocumentoDeRegrasv2/#rgn023">RGN023</a> </li>
-<li>O(s) produto(s) adicionado(s) à saída diversa pode(m) ser excluído(s) desde que não tenha(m) detalhamento(s) vinculado(s) a ele; <a href="../DocumentoDeRegrasv2/#rgn035">RGN035</a> </li>
-<li>O campo “Qtd Estoque Atual” deve ser desabilitado para edição e carregado automaticamente com o saldo do produto em estoque do estabelecimento logado, no momento, independente de lote, validade, fabricante e programa de saúde; <a href="../DocumentoDeRegrasv2/#rgn036">RGN036</a> </li>
-<li>O campo “Quantidade Total” deve ser desabilitado para edição e o sistema deve: <ul>
-<li>Recuperar automaticamente a quantidade informada no campo “Quantidade Saída” quando apenas um detalhamento do produto for adicionado; </li>
-<li>Calcular automaticamente somando todas as quantidades informadas nos detalhamentos adicionados ao produto; <a href="../DocumentoDeRegrasv2/#rgn039">RGN039</a></li>
-</ul>
-</li>
-<li>O campo “Valor Unitário” deve ser desabilitado para edição, calculado automaticamente através de uma média simples dos valores unitários informados na(s) entrada(s) deste produto, independente de lote, validade, fabricante e programa de saúde, e apresentado em reais (R$) com até 9 dígitos após a virgula; <a href="../DocumentoDeRegrasv2/#rgn040">RGN040</a> </li>
-<li>O campo “Valor Total” deve ser desabilitado para edição, calculado automaticamente através da fórmula: Quantidade Total da Saída X Valor Unitário do produto e apresentado em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; <a href="../DocumentoDeRegrasv2/#rgn041">RGN041</a> <a href="../DocumentoDeRegrasv2/#rgn028">RGN028</a> </li>
-<li>Após adicionar o produto à saída diversa, no detalhamento deste, o sistema deve: <ul>
-<li>Apresentar os campos “Nº do Lote” e “Programa de Saúde” habilitados para seleção e no campo “Quantidade Estoque” o valor “0” e desabilitado para edição; </li>
-<li>Quando existir apenas um lote/validade, recuperar e apresentar automaticamente os campos “Nº do Lote”, ‘Data de Validade”, “Programa de Saúde” e “Quantidade Estoque” do referido lote/validade e programa de saúde e desabilitar o campo para edição; </li>
-<li>Quando existir mais de um lote/validade, recuperar e apresentar a lista de lote(s)/validade(s) com respectivo(s) programa(s) de saúde para seleção; </li>
-<li>Quando o usuário selecionar um lote/validade: <ul>
-<li>E existir apenas um programa de saúde vinculado a ele, o sistema recupera e apresenta automaticamente este programa com respectiva quantidade em estoque no estabelecimento logado e desabilita os campos para edição; </li>
-<li>E existir mais de um programa de saúde, o sistema recupera e apresenta a lista dos programas de saúde vinculados a ele para seleção e no campo “Quantidade Estoque” recupera e apresenta o saldo em estoque do referido produto, lote e validade no estabelecimento logado; </li>
-<li>Ao selecionar um programa de saúde, o sistema apresenta saldo em estoque do referido produto, lote/validade e programa de saúde no estabelecimento logado; </li>
+<li>Verificar se existe estoque para o produto informado no estabelecimento logado. Caso não, o sistema emite um alerta ao usuário e não permite adicioná-lo na lista dos produtos, exceto se no campo “Tipo de Saída” for selecionada a opção: "Distribuição sem Requisição" ou “Requisição” ou "Usuário SUS não Identificado"; <a href="../DocumentoDeRegrasv2/#rgn042">RGN042</a> <a href="../DocumentoDeMensagensv2/#msg035">MSG035</a> </li>
+<li>Verificar a opção informada no campo “Tipo de Saída”, se: <ul>
+<li>"Distribuição sem Requisição", “Requisição”, "Usuário SUS não Identificado", o sistema deve permitir incluir produtos com estoque igual a O (zero);<a href="../DocumentoDeRegrasv2/#rgn034">RGN034</a> </li>
+<li>“Validade Vencida”, o sistema verifica se existem lotes do produto vencidos ou a vencer nos próximos 90 dias em estoque. Caso não exista, emite um alerta ao usuário e limpa os campos preenchidos;<a href="../DocumentoDeRegrasv2/#rgn034">RGN034</a> <a href="../DocumentoDeMensagensv2/#msg033">MSG033</a> </li>
+<li>“Ajuste de Estoque”, “Apreensão Sanitária”, “Distribuição sem Requisição”, “Empréstimo”,  “Requisição”, “Saída para Departamento”, “Transferência” ou “Usuário SUS Não Identificado”, o sistema considera os lotes com a data de validade igual ou superior a data atual; <a href="../DocumentoDeRegrasv2/#rgn034">RGN034</a> </li>
+<li>“Amostra”, “Exposição e Análise”, “Perda” ou “Roubo”, o sistema considera todos os lotes independente da data de validade. <a href="../DocumentoDeRegrasv2/#rgn034">RGN034</a> </li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Quando o usuário adicionar um detalhamento do produto à saída diversa, o sistema deve verificar se: <ul>
-<li>Já existe um detalhamento com o mesmo Lote, Validade e Programa de Saúde adicionado ao produto. Caso sim, o sistema deve emitir um alerta ao usuário e não permitir adicioná-lo na lista de detalhamentos; <a href="../DocumentoDeMensagensv2/#msg036">MSG036</a> </li>
-<li>A quantidade de saída informada é inferior a 1. Caso sim, o sistema deve emitir um alerta ao usuário e limpar o valor informado no campo; <a href="../DocumentoDeMensagensv2/#msg025">MSG025</a> </li>
-<li>A quantidade de saída informada para o produto, lote, validade e programa de saúde é superior a quantidade disponível no estoque do estabelecimento, o sistema deve emitir um alerta ao usuário e limpar o valor informado no campo. <a href="../DocumentoDeMensagensv2/#msg037">MSG037</a> <a href="../DocumentoDeRegrasv2/#rgn043">RGN043</a> </li>
+<li>O sistema deve apresentar a lista de produtos adicionados à saída por ordem alfabética. A lista será expansiva, permitindo o preenchimento dos campos de detalhamento do produto; <a href="../DocumentoDeRegrasv2/#rgn023">RGN023</a> </li>
+<li>O(s) produto(s) adicionado(s) à saída pode(m) ser excluído(s) desde que não tenha(m) detalhamento(s) vinculado(s) a ele; <a href="../DocumentoDeRegrasv2/#rgn035">RGN035</a> </li>
+<li>O campo “Qtd Estoque Atual” deve ser desabilitado para edição e carregado automaticamente com o saldo do produto em estoque do estabelecimento logado, no momento, independente de lote, validade, fabricante, programa de saúde e endereçamento físico; <a href="../DocumentoDeRegrasv2/#rgn036">RGN036</a> </li>
+<li>O campo “Qtd a Expedir” deve ser desabilitado para edição e o sistema deve: <ul>
+<li>Recuperar automaticamente a quantidade informada no campo “Qtd a Expedir” quando apenas um detalhamento do produto for adicionado; </li>
+<li>Calcular automaticamente somando todas as quantidades a expedir informadas nos detalhamentos adicionados ao produto; <a href="../DocumentoDeRegrasv2/#rgn039">RGN039</a> </li>
 </ul>
 </li>
-<li>O sistema deve permitir adicionar mais de um detalhamento ao produto, permitindo a saída do mesmo produto com lotes, validades e programas de saúdes diferentes; </li>
-<li>O(s) detalhamento(s) vinculado(s) ao produto pode(m) ser excluído(s); </li>
+<li>O campo “Qtd Expedida” deve ser desabilitado para edição e o sistema deve: <ul>
+<li>Recuperar automaticamente a quantidade informada no campo “Qtd Expedida” quando apenas um detalhamento do produto for adicionado; </li>
+<li>Calcular automaticamente somando todas as quantidades expedidas informadas nos detalhamentos adicionados ao produto;<a href="../DocumentoDeRegrasv2/#rgn066">RGN066</a> </li>
+</ul>
+</li>
+<li>O campo “Valor Unitário” deve ser desabilitado para edição, calculado automaticamente através de uma média simples dos valores unitários informados na(s) entrada(s) deste produto, independente de lote, validade, fabricante, programa de saúde, endereçamento físico e apresentado em reais (R$) com até 9 dígitos após a virgula; <a href="../DocumentoDeRegrasv2/#rgn040">RGN040</a> </li>
+<li>O campo “Valor Total” deve ser desabilitado para edição, calculado automaticamente através da fórmula: Quantidade Expedida X Valor Unitário do produto e apresentado em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; <a href="../DocumentoDeRegrasv2/#rgn041">RGN041</a> <a href="../DocumentoDeRegrasv2/#rgn028">RGN028</a></li>
+<li>Após adicionar o produto à Saída, no detalhamento, o sistema deve: <ul>
+<li>Apresentar os campos: Nº do Lote, Data de Validade, Programa de Saúde, Endereçamento Físico, Qtd a expedir e Qtd Expedida habilitados para edição e os campos: Qtd Estoque, Valor Unitário e Valor Total desabilitados para edição; </li>
+<li>No campo “Valor Unitário”, calcular automaticamente através de uma média simples dos valores unitários informados na(s) entrada(s) deste produto, independente de lote, validade, fabricante, programa de saúde, endereçamento físico e apresentá-lo em reais (R$) com até 9 dígitos após a virgula; <a href="../DocumentoDeRegrasv2/#rgn040">RGN040</a></li>
+<li>No campo “Valor Total”, calcular automaticamente através da fórmula: Quantidade Expedida X Valor Unitário do produto e apresentá-lo em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; <a href="../DocumentoDeRegrasv2/#rgn041">RGN041</a><a href="../DocumentoDeRegrasv2/#rgn028">RGN028</a></li>
+<li>No campo “Qtd Estoque”, recuperar e apresentar o saldo em estoque do produto à medida que for selecionado os campos “Lote”, ‘Data de Validade”, “Programa de Saúde” e “Endereçamento Físico”; </li>
+<li>No campo “Qtd a Expedir”, permitir informar um valor independente do saldo em estoque do produto; <a href="../DocumentoDeRegrasv2/#rgn067">RGN067</a></li>
+<li>Quando o usuário selecionar um lote, o sistema deve recuperar e apresentar as respectivas datas de validades, programas de saúde e endereçamentos físicos para seleção; <ul>
+<li>Quando o usuário adicionar um detalhamento do produto à Saída, o sistema deve verificar se: </li>
+</ul>
+</li>
+<li>Já existe um detalhamento com o mesmo Lote, Data de Validade, Programa de Saúde e Endereçamento Físico adicionado ao produto. Caso sim, o sistema deve emitir um alerta ao usuário e não permitir adicioná-lo na lista de detalhamentos; <a href="../DocumentoDeMensagensv2/#msg036">MSG036</a></li>
+<li>A quantidade expedida é inferior a 1. Caso sim, o sistema deve emitir um alerta ao usuário e limpar o valor informado no campo, exceto se no campo “Tipo de Saída” for selecionada a opção: "Distribuição sem Requisição" ou “Requisição” ou "Usuário SUS não Identificado"; <a href="../DocumentoDeMensagensv2/#msg025">MSG025</a></li>
+<li>A quantidade expedida para o produto, lote, data de validade, programa de saúde e endereçamento físico é superior a quantidade disponível no estoque do estabelecimento, o sistema deve emitir um alerta ao usuário e limpar o valor informado no campo. MSG037 RGN043 </li>
+</ul>
+</li>
+<li>O sistema deve permitir adicionar: <ul>
+<li>Mais de um detalhamento ao produto, permitindo a saída do mesmo produto com lotes, datas de validade, programas de saúde e endereçamentos físicos diferentes; </li>
+<li>Um detalhamento de produto com estoque igual a O (zero) se no campo “Tipo de Saída” for selecionada a opção: "Distribuição sem Requisição" ou “Requisição” ou "Usuário SUS não Identificado"; </li>
+</ul>
+</li>
+<li>O(s) detalhamento(s) vinculado(s) ao produto pode(m) ser excluído(s); </li>
 <li>
-<p>Quando o usuário acionar a opção “Registrar”, o sistema deve verificar se: </p>
+<p>Quando o usuário acionar a opção “Registrar”, o sistema deve verificar se:  </p>
 <ul>
-<li>Existe ao menos um produto relacionado à saída diversa. Caso não, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg040">MSG040</a> </li>
-<li>O detalhamento de todos os produtos da saída diversa foi incluído. Caso não, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg029">MSG029</a>  </li>
+<li>Existe ao menos um produto relacionado à Saída. Caso não, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg040">MSG040</a> </li>
+<li>O detalhamento de todos os produtos da Saída foi incluído. Caso não, o sistema deve apresentar uma mensagem de alerta ao usuário;<a href="../DocumentoDeMensagensv2/#msg029">MSG029</a> </li>
 </ul>
-<p>Atendendo as validações, o sistema efetiva o cadastro da saída diversa, grava o estado do registro como “Ativo” e a situação como “Registrada”, debita os produtos do estoque do estabelecimento, considerando lote, validade e programa de saúde, apresenta a mensagem de sucesso e retorna à tela de consulta às saídas diversas apresentando este registro como o primeiro da relação das saídas diversas cadastradas para o estabelecimento; <a href="../DocumentoDeMensagensv2/#msg039">MSG039</a> <a href="../DocumentoDeRegrasv2/#rgn045">RGN045</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </p>
+<p>Atendendo as validações, o sistema efetiva o cadastro da saída, grava o estado do registro como “Ativo” e a situação como “Registrada”, debita os produtos do estoque do estabelecimento, considerando lote, validade e programa de saúde, apresenta a mensagem de sucesso e retorna à tela de consulta às saídas apresentando este registro como o primeiro da relação das saídas cadastradas para o estabelecimento; <a href="../DocumentoDeMensagensv2/#msg039">MSG039</a> <a href="../DocumentoDeRegrasv2/#rgn045">RGN045</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </p>
 </li>
 <li>
-<p>O sistema, identificando que uma saída diversa de produto(s) foi registrada, deve debitar a quantidade no saldo deste(s), considerando lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou a saída diversa; <a href="../DocumentoDeRegrasv2/#rgn046">RGN046</a> </p>
+<p>O sistema, identificando que uma Saída de produto(s) foi registrada, deve debitar a quantidade no saldo deste(s), considerando lote, data de validade, programa de saúde e endereçamento físico e atualizar a posição de estoque do estabelecimento que realizou a Saída; <a href="../DocumentoDeRegrasv2/#rgn046">RGN046</a></p>
 </li>
 <li>
 <p>Quando o usuário acionar a opção de “Salvar Parcial”, o sistema deve verificar se: </p>
 <ul>
-<li>Existe ao menos um produto relacionado à saída diversa. Caso não, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg040">MSG040</a> </li>
-<li>Existe ao menos um detalhamento vinculado ao(s) produto(s) da saída diversa. Caso não, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg029">MSG029</a>  </li>
+<li>Existe ao menos um produto relacionado à Saída. Caso não, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg040">MSG040</a> </li>
+<li>Existe ao menos um detalhamento vinculado ao(s) produto(s) da Saída. Caso não, o sistema deve apresentar uma mensagem de alerta ao usuário; <a href="../DocumentoDeMensagensv2/#msg029">MSG029</a> </li>
 </ul>
-<p>Atendendo as validações, o sistema mantém o registro da saída diversa com estado “Ativo” e a situação “Em preenchimento” e permanece na tela de cadastro da saída diversa; <a href="../DocumentoDeMensagensv2/#msg031">MSG031</a> <a href="../DocumentoDeRegrasv2/#rgn045">RGN045</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </p>
+<p>Atendendo as validações, o sistema grava o registro da saída com estado “Ativo” e a situação “Em preenchimento” e permanece na tela de cadastro da saída; <a href="../DocumentoDeMensagensv2/#msg031">MSG031</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </p>
 </li>
 <li>
-<p>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, retorna à tela de consulta às saídas diversas e não salva as edições realizadas. Caso a ação não seja confirmada, permanece na tela de cadastro da entrada; <a href="../DocumentoDeMensagensv2/#msg006">MSG006</a> </p>
+<p>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, retorna à tela de consulta às saídas e não salva as edições realizadas. Caso a ação não seja confirmada, permanece na tela de cadastro da saída; <a href="../DocumentoDeMensagensv2/#msg006">MSG006</a> </p>
 </li>
 <li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </li>
 </ol>
@@ -383,29 +430,30 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <p><img alt="alt text" src="../../imagens/ete-025-prot-004.png" /></p>
 <h3 id="elementos-de-tela_3">Elementos de tela</h3>
 <ul>
-<li>Título – “Detalhamento do Produto da Saída Diversa” </li>
+<li>Título – “Detalhamento do Produto da Saída” </li>
 <li>Código de Barras </li>
 <li>Descrição do Produto </li>
 <li>CATMAT </li>
 <li>Forma Farmacêutica </li>
 <li>Nº do Lote </li>
 <li>Data de Validade </li>
-<li>Qtd Estoque </li>
-<li>Qtd Saída </li>
+<li>Programa de Saúde </li>
+<li>Endereçamento Físico </li>
+<li>Quantidade Estoque </li>
+<li>Quantidade a Expedir </li>
+<li>Quantidade Expedida </li>
 <li>Valor Unitário </li>
 <li>Valor Total </li>
-<li>Programa de Saúde </li>
-<li>Fabricante – (9999999) / (99.999.999/9999-99)-(Razão Social)</li>
 <li>“Sair” – BT </li>
 </ul>
 <p><strong>Legenda</strong><br />
 TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.</p>
 <h3 id="criterios-de-aceite_3">Critérios de Aceite</h3>
 <ol>
-<li>O acesso aos dados de um detalhamento do produto da entrada é realizado quando o usuário acionar a opção “Detalhar” no cadastro da saída diversa; </li>
-<li>O sistema deve recuperar e apresentar os dados relacionados ao detalhamento do produto da saída diversa que o usuário deseja detalhar; </li>
+<li>O acesso aos dados de um detalhamento do produto da entrada é realizado quando o usuário acionar a opção “Detalhar” no cadastro da saída; </li>
+<li>O sistema deve recuperar e apresentar os dados relacionados ao detalhamento do produto da saída que o usuário deseja detalhar; </li>
 <li>Caso algum campo retornar vazio, o sistema deve apresentar a descrição “Sem informação”;  </li>
-<li>Quando o usuário acionar a opção “Sair”, o sistema deve retornar à tela de “Cadastro da Saída Diversa”.  </li>
+<li>Quando o usuário acionar a opção “Sair”, o sistema deve retornar à tela de “Cadastro da Saída”.  </li>
 </ol>
               
             </div>

@@ -126,11 +126,11 @@ Dados salvos parcialmente! 
 
 ---
 # MSG033:
-Não há lotes vencidos para este produto.  
+Não há lotes vencidos ou a vencer nos próximos 90 dias para este produto.
 
 ---
 # MSG034:
-Este produto já foi adicionado à saída diversa.  
+Este produto já foi adicionado à Saída.
 
 ---
 # MSG035:
@@ -142,19 +142,19 @@ Já existe um detalhamento com os dados informados para o produto. 
 
 ---
 # MSG037:
-Quantidade de saída informada superior ao estoque disponível do produto.  
+Quantidade expedida informada superior ao estoque disponível do produto. 
 
 ---
 # MSG038:
-Já existe uma saída diversa registrada ou em preenchimento com o mesmo tipo de saída diversa, tipo e número de documento e justificativa neste estabelecimento.  
+Já existe uma Saída registrada ou em preenchimento com o mesmo tipo de Saída, tipo e número de documento e justificativa neste estabelecimento.
 
 ---
 # MSG039:
-A Saída Diversa foi registrada!  
+A Saída foi registrada! 
 
 ---
 # MSG040:
-Ao menos um produto deve ser relacionado à saída diversa.  
+Ao menos um produto deve ser relacionado à Saída.
 
 ---
 # MSG041:
@@ -178,11 +178,11 @@ Nenhum Fabricante encontrado para o CNES/CNPJ informado. 
 
 ---
 # MSG046:
-A Saída Diversa foi excluída!  
+A Saída foi excluída!
 
 ---
 # MSG047:
-A Saída Diversa foi estornada!  
+A Saída foi estornada!
 
 ---
 # MSG048: (removido)
@@ -418,4 +418,4 @@ Usuário SUS com registro de óbito.
 
 ---
 # MSG095
-A Dispensação foi excluída!
+O Estabelecimento de Destino deve ser diferente do seu estabelecimento.

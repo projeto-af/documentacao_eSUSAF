@@ -39,11 +39,11 @@
 | Cadastrar Entrada | | | X | X | X | X |
 | Editar Entrada | | | X | X | X | X |
 | Detalhar Entrada | | | X | X | X | X |
-| **Saída Diversa** | 
-| Consultar Saída Diversa | | | X | X | X | X |  
-| Cadastrar Saída Diversa | | | X | X | X | X |
-| Editar Saída Diversa | | | X | X | X | X |
-| Detalhar Saída Diversa | | | X | X | X | X |
+| **Saída** | 
+| Consultar Saída | | | X | X | X | X |  
+| Cadastrar Saída | | | X | X | X | X |
+| Editar Saída | | | X | X | X | X |
+| Detalhar Saída | | | X | X | X | X |
 | **Relatórios** | 
 | Posição de Estoque | | | X | X | X |
 
@@ -146,7 +146,7 @@ Os campos de Produto apresentarão a lista de produtos ativos no sistema a parti
 ---
 # RGN016
 ## Exclusão de um registro 
-As exclusões permitidas no sistema sempre serão lógicas, sendo necessário manter o histórico temporal da existência do registro. Exceto para registro(s) na situação “Em preenchimento” a qual deve ser física.  
+As exclusões permitidas no sistema sempre serão lógicas, sendo necessário manter o histórico temporal da existência do registro. Exceto para registro(s) na situação “Em preenchimento” a qual deve ser física e para todos os seus descendentes.   
 
 ---
 # RGN017
@@ -280,14 +280,14 @@ O sistema, identificando que uma entrada de produto(s) foi armazenada, deve cred
 
 ---
 # RGN032
-## Registro de Entrada por Estorno de Saída Diversa de produto(s)
-Ao realizar o estorno da saída diversa do(s) produto(s), o sistema deve:
+## Registro de Entrada por Estorno de Saída de produto(s)
+Ao realizar o estorno da saída do(s) produto(s), o sistema deve:
 
 * Creditar o(s) produto(s) no estoque do estabelecimento da saída estornada, através da criação de um registro de entrada, gravando as seguintes informações: 
-    * Modalidade de Licitação = “Saída Diversa”;
-    * Tipo de Movimentação = “Entrada por Estorno de Saída Diversa”;  
+    * Modalidade de Licitação = “Saída ”;
+    * Tipo de Movimentação = “Entrada por Estorno de Saída";  
     * Fornecedor = CNES ou CNPJ do estabelecimento que realizou saída;  
-    * Tipo de Documento = “Estorno de Saída Diversa”;  
+    * Tipo de Documento = “Estorno de Saída ”;  
     * Número do Documento = Número da saída que foi estornada; 
     * No detalhamento do produto:  
         * Princípio ativo ou Descrição do produto 
@@ -298,31 +298,34 @@ Ao realizar o estorno da saída diversa do(s) produto(s), o sistema deve:
         * Validade 
         * Valor Unitário 
         * Quantidade  
+    * Estado do registro de entrada como “Ativo”; 
     * Situação do registro de entrada como “Armazenada”; 
-* Alterar a situação do cadastro da saída diversa para “Estornada”
+* Manter o estado do registro da Saída como “Ativo”; 
+* Alterar a situação do cadastro da saída para “Estornada”
 
 ---
 # RGN033
-## Atualização de estoque após estorno de saída diversa
-O sistema, identificando que uma saída diversa de produto(s) foi estornada, deve creditar a quantidade no saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou o estorno da saída diversa.  
+## Atualização de estoque após estorno de saída
+O sistema, identificando que uma saída de produto(s) foi estornada, deve creditar a quantidade no saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou o estorno da saída.  
 
 ---
 # RGN034
 ## Apresentação de Lotes/Validades do produto
 
-* Quando o tipo de saída for “Validade Vencida”, somente serão considerados e/ou apresentados os lotes/validades que estejam com a data de validade inferior a data atual. 
-* Quando o tipo de saída for “Ajuste de Estoque”, “Usuário SUS”, “Apreensão Sanitária”, “Empréstimo” ou “Transferência”, somente serão considerados e/ou apresentados os lotes/validades que estejam válidos, com a data de validade igual ou superior a data atual. 
-* Quando o tipo de saída for “Perda” ou “Roubo”, serão considerados e/ou apresentados todos os lotes/validades. independente da data de validade.
+* Quando o tipo de saída for "Distribuição sem Requisição", “Requisição”, "Usuário SUS não Identificado", o sistema deve permitir incluir produtos com estoque igual a O (zero).
+* Quando o tipo de saída for “Validade Vencida”, somente serão considerados os lotes com a data de validade inferior a data atual ou com vencimento nos próximos 90 dias.
+* Quando o tipo de saída for “Ajuste de Estoque”, ““Apreensão Sanitária”, “Distribuição sem Requisição”, “Empréstimo”, “Requisição”, “Saída para Departamento”, “Transferência” ou “Usuário SUS Não Identificado”, somente serão considerados os lotes com a data de validade igual ou superior a data atual. 
+* Quando o tipo de saída for “Amostra”, “Exposição e Análise”, “Perda” ou “Roubo”, serão considerados todos os lotes, independente da data de validade.
 
 ---
 # RGN035
-## Exclusão de produto na saída diversa
+## Exclusão de produto na saída
 Somente será permitida a exclusão de um produto adicionado à saída se não tiver nenhum detalhamento vinculado a ele.  
 
 ---
 # RGN036
 ## Saldo Estoque Atual
-O sistema deve carregar e apresentar o saldo do produto em estoque, no momento, do estabelecimento logado, independente de lote/validade/programa de saúde.  
+O sistema deve carregar e apresentar o saldo do produto em estoque, no momento, do estabelecimento logado, independente de lote, /validade, /programa de saúde e endereçamento físico. 
 
 ---
 # RGN037
@@ -331,13 +334,13 @@ O sistema deve calcular a Quantidade Total Recebida somando todas as quantidades
 
 ---
 # RGN038
-## Cálculo do Valor Total da Saída Diversa
-O sistema deve calcular o Valor Total da Saída Diversa somado todos os valores totais dos produtos adicionados à saída diversa.  
+## Cálculo do Valor Total da Saída
+O sistema deve calcular o Valor Total da Saída somado todos os valores totais dos produtos adicionados à saída.  
 
 ---
 # RGN039
-## Cálculo da Quantidade Total da Saída por Produto
-O sistema deve calcular a Quantidade Total da Saída somando todas as quantidades informadas nos detalhamentos adicionados ao produto.  
+## Cálculo da Quantidade Total a Expedir da Saída por Produto
+O sistema deve calcular a Quantidade a Expedir da Saída somando todas as quantidades a expedir informadas nos detalhamentos adicionados ao produto. 
 
 ---
 # RGN040
@@ -347,32 +350,32 @@ O sistema deve calcular o Valor Unitário do Produto através da média simples 
 ---
 # RGN041
 ## Cálculo do Valor Total da Saída para o Produto
-O sistema deve calcular o Valor Total da Saída pela fórmula:  Quantidade Total da Saída X Valor Unitário do produto (média simples dos valores unitários informados na entrada do referido produto).  
+O sistema deve calcular o Valor Total da Saída pela fórmula:  Quantidade Expedida da Saída X Valor Unitário do produto (média simples dos valores unitários informados na entrada do referido produto).
 
 ---
 # RGN042
 ## Produto da Saída
-O sistema deve permitir apenas saída de produtos que possuem estoque no estabelecimento logado.  
+O sistema deve permitir apenas saída de produtos que possuem estoque no estabelecimento logado, exceto se no campo “Tipo de Saída” for selecionada a opção: "Distribuição sem Requisição" ou “Requisição” ou "Usuário SUS não Identificado". 
 
 ---
 # RGN043
-## Quantidade de Saída do Produto
-O sistema somente deve permitir informar uma quantidade de saída menor ou igual ao estoque disponível do produto, lote, validade e programa de saúde no estabelecimento logado.  
+## Quantidade Expedida do Produto
+O sistema somente deve permitir informar uma quantidade expedida menor ou igual ao estoque disponível do produto, lote, validade, programa de saúde e endereçamento físico no estabelecimento logado. 
 
 ---
 # RGN044
-## Validar Saída Diversa do Produto
-O sistema deve validar se já existe uma saída diversa com o mesmo tipo de saída diversa, tipo e número de documento e justificativa de uma saída diversa registrada ou em preenchimento para o estabelecimento.  
+## Validar Saída do Produto
+O sistema deve validar se já existe uma Saída com o mesmo tipo de Saída, tipo e número de documento e justificativa de uma Saída registrada ou em preenchimento para o estabelecimento. 
 
 ---
 # RGN045
-## Número de Registro da Saída Diversa
-Ao salvar uma saída diversa de produtos, caso ainda não exista, o sistema deve gerar um número identificador único para a saída diversa e apresentá-lo ao usuário. 
+## Número de Registro da Saída
+Ao salvar uma Saída de produtos, caso ainda não exista, o sistema deve gerar um número identificador único para a Saída e apresentá-lo ao usuário. 
 
 ---
 # RGN046
-## Atualização de estoque após registrar uma saída diversa
-O sistema, identificando que uma saída diversa de produto(s) foi registrada, deve debitar a quantidade no saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou a saída diversa.
+## Atualização de estoque após registrar uma Saída
+O sistema, identificando que uma Saída de produto(s) foi registrada, deve debitar a quantidade no saldo deste(s), considerando o lote, validade, programa de saúde e endereçamento físico e atualizar a posição de estoque do estabelecimento que realizou a Saída.
 
 ---
 # RGN047
@@ -482,4 +485,26 @@ O sistema deve recuperar como resultado da consulta o(s) Usuário(s) SUS dentre 
 # RGN063
 ## Cadastro de Usuário SUS 
 Não será permitido o cadastro de mais de um usuário SUS com o mesmo CPF. 
+
+---
+# RGN064
+## Validação do Estabelecimento de Destino 
+O CNES/CNPJ do Estabelecimento de Destino informado no registro da saída deve ser diferente do CNES/CNPJ do Estabelecimento logado. 
+
+---
+# RGN065
+## Preenchimento e habilitação dos campos na Saída conforme Tipo de Saída  
+* Quando o usuário selecionar no campo “Tipo de Saida” a opção: Ajuste de Estoque, Amostra, Exposição e Análise, Apreensão Sanitária, Perda, Usuário SUS Não Identificado, Validade Vencida, o sistema deve preencher os campos “CNES/CNPJ do Estabelecimento de Destino" e "Estabelecimento de Destino” com os dados do estabelecimento logado e mantendo-os desabilitados para edição e desabilitar para edição o campo: “Departamento de Destino”;  
+* Quando o usuário selecionar no campo “Tipo de Saida” a opção: "Distribuição sem Requisição" ou “Empréstimo” ou “Requisição” ou "Transferência", o sistema deve habilitar e tornar obrigatório o preenchimento dos campos "CNES/CNPJ do Estabelecimento de Destino" e "Estabelecimento de Destino” e manter desabilitado para edição o campo “Departamento de Destino”;  
+* Quando o usuário selecionar no campo “Tipo de Saida” a opção: "Saída para Departamento", o sistema deve preencher os campos “CNES/CNPJ do Estabelecimento de Destino" e "Estabelecimento de Destino” com os dados do estabelecimento logado e mantendo-os desabilitados para edição e habilitar e tornar obrigatório a seleção de um item no campo "Departamento de Destino"; 
+
+---
+# RGN066
+## Cálculo da Quantidade Expedida da Saída por Produto
+O sistema deve calcular a Quantidade Expedida da Saída somando todas as quantidades expedidas informadas nos detalhamentos adicionados ao produto. 
+
+---
+# RGN067
+## Quantidade a Expedir
+O sistema deve permitir informar um valor independente do saldo em estoque do produto 
 

@@ -46,6 +46,10 @@ nav:
       - ETE025 - Editar Saídas : validacao/ete025.md
       - ETE026 - Detalhar Saídas : validacao/ete026.md
       - ETE029 - Estornar Saída : validacao/ete029.md
+      - ETE033 - Gestão de Integrações : validacao/ETE033.md
+      - ETE034 - Configurar Integração Barramento AF : validacao/ETE034.md
+      - ETE035 - Detalhar Integração Barramento AF : validacao/ETE035.md
+      - ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF : validacao/ETE036.md
 
 
 #  - Histórias de Usuário:

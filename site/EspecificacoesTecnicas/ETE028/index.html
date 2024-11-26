@@ -95,13 +95,13 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE022/">ETE022 - Detalhar Entrada</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
                 </li>
@@ -119,6 +119,14 @@
     </li>
     </ul>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE029/">ETE029 - Consultar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE030/">ETE030 - Cadastrar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE031/">ETE031 - Editar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE032/">ETE032 - Detalhar Usuário SUS</a>
+                </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="#">Para Validação</a>
@@ -132,6 +140,14 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE033/">ETE033 - Gestão de Integrações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE034/">ETE034 - Configurar Integração Barramento AF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE035/">ETE035 - Detalhar Integração Barramento AF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE036/">ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF</a>
                 </li>
     </ul>
                   </li>
@@ -165,8 +181,7 @@
 <h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
 <p>Como usuário quero detalhar o relatório de posição de estoque de produtos no estabelecimento de saúde para visualizar as informações que serão apresentadas no relatório. </p>
 <h2 id="prototipo-001">Protótipo 001</h2>
-<p>[Inserir imagem do protótipo aqui]<br />
-<a href="https://xd.adobe.com/view/153e76da-8687-401d-a008-4ba101ed6f9b-406d/">Link para protótipo no Adobe XD</a></p>
+<p><img alt="alt text" src="../../imagens/ete-028-prot-001.png" /></p>
 <h3 id="elementos-de-tela">Elementos de Tela</h3>
 <ul>
 <li>Bread Crumb – “Relatórios / Posição de Estoque / Dados do Estoque” </li>
@@ -220,7 +235,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>No campo “Qtd Estoque” o sistema deve recuperar e apresentar a quantidade do produto no estoque, relativa ao Nº do Lote, Fabricante, Programa de Saúde e Endereçamento Físico; </li>
 <li>No campo “Valor Unitário” o sistema deve calcular automaticamente através de uma média simples dos valores unitários informados na(s) entrada(s) deste produto, independente de Nº do Lote, Validade, Fabricante, Programa de Saúde e Endereçamento Físico e apresentado em reais (R$) com até 9 dígitos após a virgula; <a href="../DocumentoDeRegrasv2/#rgn040">RGN040</a> </li>
 <li>No campo “Valor Total” o sistema deve calcular automaticamente através da fórmula: Qtd Estoque x Valor Unitário de cada detalhamento do produto e apresentado em reais (R$) com até 2 dígitos após a virgula, realizando o arredondamento do valor se necessário; <a href="../DocumentoDeRegrasv2/#rgn061">RGN061</a> <a href="../DocumentoDeRegrasv2/#rgn028">RGN028</a>  </li>
-<li>Quando o usuário acionar a opção de “Imprimir”, o sistema deve permitir imprimir as informações da tela ou salvá-las em um arquivo no formato desejado (padrão Windows); </li>
+<li>Quando o usuário acionar a opção de “Imprimir”, o sistema deve permitir imprimir as informações da tela ou salvá-las em um arquivo no formato desejado; </li>
 <li>Quando o usuário acionar a opção “Exportar”, o sistema deve exportar todas as informações da tela para arquivo em formato .CSV (apenas colunas e linhas) com os dados ordenados por estabelecimento de saúde e produto; </li>
 <li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema finaliza o detalhamento e retorna à tela de consulta aos dados de posição de estoque.  </li>
 </ol>
@@ -229,7 +244,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../ETE027/" class="btn btn-neutral float-left" title="ETE027 - Emitir Relatório de Posição de Estoque"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../validacao/ete023/" class="btn btn-neutral float-right" title="ETE023 - Consultar Saídas">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ETE029/" class="btn btn-neutral float-right" title="ETE029 - Consultar Usuário SUS">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -255,7 +270,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
       <span><a href="../ETE027/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../validacao/ete023/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../ETE029/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

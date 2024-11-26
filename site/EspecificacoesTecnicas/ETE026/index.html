@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>ETE026 - Detalhar Saída Diversa - e-SUS AF - Documentação Negocial</title>
+    <title>ETE026 - Detalhar Saída - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "ETE026 - Detalhar Sa\u00edda Diversa";
+        var mkdocs_page_name = "ETE026 - Detalhar Sa\u00edda";
         var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE026.md";
         var mkdocs_page_url = null;
       </script>
@@ -95,13 +95,13 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE022/">ETE022 - Detalhar Entrada</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">ETE026 - Detalhar Saída Diversa</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">ETE026 - Detalhar Saída</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
     </li>
@@ -119,6 +119,14 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE029/">ETE029 - Consultar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE030/">ETE030 - Cadastrar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE031/">ETE031 - Editar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE032/">ETE032 - Detalhar Usuário SUS</a>
+                </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="#">Para Validação</a>
@@ -132,6 +140,14 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE033/">ETE033 - Gestão de Integrações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE034/">ETE034 - Configurar Integração Barramento AF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE035/">ETE035 - Detalhar Integração Barramento AF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE036/">ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF</a>
                 </li>
     </ul>
                   </li>
@@ -152,7 +168,7 @@
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Especificações Técnicas</li>
           <li class="breadcrumb-item">Especificações</li>
-      <li class="breadcrumb-item active">ETE026 - Detalhar Saída Diversa</li>
+      <li class="breadcrumb-item active">ETE026 - Detalhar Saída</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -161,17 +177,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="ete026-detalhar-saida-diversa">ETE026 - Detalhar Saída Diversa</h1>
+                <h1 id="ete026-detalhar-saida">ETE026 - Detalhar Saída</h1>
 <h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
 <p>Como usuário quero detalhar os dados de uma saída diversa de produto.</p>
 <h2 id="prototipo-001">Protótipo 001</h2>
+<p><img alt="alt text" src="../../imagens/ete-026-prot-001.png" /></p>
 <h3 id="elementos-de-tela">Elementos de Tela</h3>
 <ul>
-<li>Bread Crumbs – “Movimentação / Saída Diversa / Dados da Saída Diversa” </li>
-<li>Título da página – “Detalhar Saída Diversa” </li>
-<li>“Seta” – M - retorna para a Tela de Consultar Entrada (ETE016) </li>
+<li>Bread Crumb – “Movimentação / Saída / Dados da Saída” </li>
+<li>Título da página – “Detalhar Saída” </li>
+<li>“Seta” – M - retorna para a Tela de Consultar Saída  </li>
 <li>“Imprimir” – BT </li>
-<li>“Consultar” – BT </li>
+<li>“Exportar” - BT </li>
+<li>“Consultar” – BT - retorna para a Tela de Consultar Saída </li>
 <li>Logotipo e-SUS AF - M </li>
 <li>Cabeçalho:  <ul>
 <li>Estabelecimento: <ul>
@@ -185,42 +203,51 @@
 <li>Data e Hora da última alteração: </li>
 </ul>
 </li>
-<li>Nº da Saída Diversa </li>
-<li>Tipo de Saída Diversa  </li>
-<li>Data da Saída Diversa </li>
-<li>Valor da Saída Diversa </li>
-<li>Nº do Documento  </li>
+<li>Nº da Saída </li>
+<li>Tipo de Saída  </li>
+<li>Data da Saída </li>
+<li>Valor da Saída </li>
+<li>CNES/CNPJ do Estabelecimento de Destino  </li>
+<li>Estabelecimento de Destino  </li>
+<li>Departamento de Destino  </li>
 <li>Tipo de Documento  </li>
+<li>Nº do Documento  </li>
+<li>Data do Documento  </li>
 <li>Justificativa </li>
-<li>Detalhe da Justificativa </li>
-<li>Produto(s) – lista produtos adicionados à saída <ul>
-<li>Código de Barras: </li>
+<li>Detalhes da Justificativa </li>
+<li>Produtos  <ul>
+<li>Código de Barras </li>
 <li>Princípio Ativo + Concentração ou Descrição CATMAT </li>
-<li>CATMAT: </li>
+<li>CATMAT </li>
 <li>Forma Farmacêutica: (se medicamento) </li>
 <li>Fabricante: CNPJ-Razão Social (se medicamento) </li>
-<li>Quantidade Total </li>
+<li>Qtd a Expedir </li>
+<li>Qtd Expedida </li>
 <li>Valor Unitário  </li>
 <li>Valor Total  </li>
 <li>Detalhe Produto <ul>
 <li>Nº do Lote </li>
 <li>Data de Validade </li>
-<li>Quantidade Saída </li>
+<li>Programa de Saúde </li>
+<li>Endereçamento Físico </li>
+<li>Quantidade a Expedir </li>
+<li>Quantidade Expedida </li>
 <li>Valor Unitário  </li>
 <li>Valor Total  </li>
-<li>Programa de Saúde </li>
-<li>Fabricante CNES ou CNPJ-Nome Razão Social (se produto para saúde) </li>
-</ul>
-</li>
-</ul>
-</li>
 <li>Situação </li>
-<li>Responsável pelo Registro:  <ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>Responsável pelo Registro  <ul>
 <li>CPF / Nome Completo  </li>
 </ul>
 </li>
-<li>Data Estorno: (se houver) </li>
-<li>Responsável pelo Estorno: (se houver) <ul>
+<li>Data Estorno (se houver) <ul>
+<li>DD/MM/AAAA </li>
+</ul>
+</li>
+<li>Responsável pelo Estorno (se houver) <ul>
 <li>CPF / Nome Completo </li>
 </ul>
 </li>
@@ -238,13 +265,14 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>O campo “Responsável pelo Registro” somente é apresentado quando o registro da saída diversa estiver com a situação “Registrada” ou “Estornada”; </li>
 <li>Os campos “Data do Estorno” e “Responsável pelo Estorno” somente serão apresentados quando o registro da entrada estiver com a situação “Estornada”; </li>
 <li>Quando o usuário acionar a opção de “Imprimir”, o sistema deve permitir imprimir as informações da tela ou salvá-las em um arquivo no formato desejado (padrão Windows); </li>
+<li>Quando o usuário acionar a opção “Exportar”, o sistema deve exportar todas as informações da tela para arquivo em formato .CSV (apenas colunas e linhas); </li>
 <li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema finaliza o detalhamento e retorna à tela de consulta às saídas diversas de produtos. <a href="../ETE023/">ETE023</a></li>
 </ol>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../ETE025/" class="btn btn-neutral float-left" title="ETE025 - Editar Saída Diversa"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ETE025/" class="btn btn-neutral float-left" title="ETE025 - Editar Saída"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../ETE027/" class="btn btn-neutral float-right" title="ETE027 - Emitir Relatório de Posição de Estoque">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 

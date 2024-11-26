@@ -97,17 +97,25 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE022/">ETE022 - Detalhar Entrada</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída Diversa</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE029/">ETE029 - Consultar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE030/">ETE030 - Cadastrar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE031/">ETE031 - Editar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE032/">ETE032 - Detalhar Usuário SUS</a>
                 </li>
     </ul>
                   </li>
@@ -122,6 +130,14 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE033/">ETE033 - Gestão de Integrações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE034/">ETE034 - Configurar Integração Barramento AF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE035/">ETE035 - Detalhar Integração Barramento AF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE036/">ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF</a>
                 </li>
     </ul>
                   </li>
@@ -245,10 +261,10 @@
 <h1 id="msg032-removido">MSG032: (removido)</h1>
 <hr />
 <h1 id="msg033">MSG033:</h1>
-<p>Não há lotes vencidos para este produto.  </p>
+<p>Não há lotes vencidos ou a vencer nos próximos 90 dias para este produto.</p>
 <hr />
 <h1 id="msg034">MSG034:</h1>
-<p>Este produto já foi adicionado à saída diversa.  </p>
+<p>Este produto já foi adicionado à Saída.</p>
 <hr />
 <h1 id="msg035">MSG035:</h1>
 <p>Não há estoque para o produto informado.  </p>
@@ -257,16 +273,16 @@
 <p>Já existe um detalhamento com os dados informados para o produto.  </p>
 <hr />
 <h1 id="msg037">MSG037:</h1>
-<p>Quantidade de saída informada superior ao estoque disponível do produto.  </p>
+<p>Quantidade expedida informada superior ao estoque disponível do produto. </p>
 <hr />
 <h1 id="msg038">MSG038:</h1>
-<p>Já existe uma saída diversa registrada ou em preenchimento com o mesmo tipo de saída diversa, tipo e número de documento e justificativa neste estabelecimento.  </p>
+<p>Já existe uma Saída registrada ou em preenchimento com o mesmo tipo de Saída, tipo e número de documento e justificativa neste estabelecimento.</p>
 <hr />
 <h1 id="msg039">MSG039:</h1>
-<p>A Saída Diversa foi registrada!  </p>
+<p>A Saída foi registrada! </p>
 <hr />
 <h1 id="msg040">MSG040:</h1>
-<p>Ao menos um produto deve ser relacionado à saída diversa.  </p>
+<p>Ao menos um produto deve ser relacionado à Saída.</p>
 <hr />
 <h1 id="msg041">MSG041:</h1>
 <p>Nenhum registro encontrado para o(s) filtro(s) informado(s).  </p>
@@ -284,10 +300,10 @@
 <p>Nenhum Fabricante encontrado para o CNES/CNPJ informado.  </p>
 <hr />
 <h1 id="msg046">MSG046:</h1>
-<p>A Saída Diversa foi excluída!  </p>
+<p>A Saída foi excluída!</p>
 <hr />
 <h1 id="msg047">MSG047:</h1>
-<p>A Saída Diversa foi estornada!  </p>
+<p>A Saída foi estornada!</p>
 <hr />
 <h1 id="msg048-removido">MSG048: (removido)</h1>
 <hr />
@@ -458,7 +474,7 @@ Atenção! Esse link expira em 20 minutos, após esse prazo, uma nova solicitaç
 <h1 id="msg081">MSG081</h1>
 <p>A solicitação foi aprovada!</p>
 <hr />
-<h1 id="msg082">MSG082</h1>
+<h1 id="msg082-email-de-moderacao-acesso-e-sus-af">MSG082 - Email de moderação acesso e-SUS AF</h1>
 <p><strong>Título:</strong> s-SUS AF - Solicitação de Acesso Moderada<br />
 <strong>Mensagem:</strong><br />
 <strong>Solicitação de Acesso e-SUS AF</strong><br />
@@ -514,6 +530,24 @@ Detalhes sobre a sua solicitação de perfil:  </p>
 <hr />
 <h1 id="msg089">MSG089</h1>
 <p>Este produto já foi adicionado para consulta à posição de estoque. </p>
+<hr />
+<h1 id="msg090">MSG090</h1>
+<p>Usuário SUS não encontrado para o CPF informado. Acesse o Portal do CADSUS para consulta. (Incluir link do “Portal do CADSUS”, ao ser acionado, direcionará o usuário ao Cadastro Nacional de Usuários do Sistema Único de Saúde)</p>
+<hr />
+<h1 id="msg091">MSG091</h1>
+<p>O Usuário SUS informado já está cadastrado no sistema para esta instância, deseja editá-lo?</p>
+<hr />
+<h1 id="msg092">MSG092</h1>
+<p>O usuário SUS foi cadastrado!</p>
+<hr />
+<h1 id="msg093">MSG093</h1>
+<p>O cadastro do usuário SUS foi atualizado!</p>
+<hr />
+<h1 id="msg094">MSG094</h1>
+<p>Usuário SUS com registro de óbito.</p>
+<hr />
+<h1 id="msg095">MSG095</h1>
+<p>O Estabelecimento de Destino deve ser diferente do seu estabelecimento.</p>
               
             </div>
           </div><footer>

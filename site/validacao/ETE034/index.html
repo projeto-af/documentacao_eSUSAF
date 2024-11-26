@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>ETE034 - Configurar Integração Barramento AF - e-SUS AF - Documentação Negocial</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "ETE034 - Configurar Integra\u00e7\u00e3o Barramento AF";
+        var mkdocs_page_input_path = "validacao/ETE034.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> e-SUS AF - Documentação Negocial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/">Documento de Mensagens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeRegrasv2/">Documento de Regras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Especificações</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE001/">ETE001 - Realizar Login</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE002/">ETE002 - Cadastrar Usuário do Sistema</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE003/">ETE003 - Recuperar Senha</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE004/">ETE004 - Consultar Permissões de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE005/">ETE005 - Atribuir Perfil de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE007/">ETE007 - Consultar Meus Perfis</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE008/">ETE008 - Solicitar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE009/">ETE009 - Detalhar Meu Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE010/">ETE010 - Consultar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE011/">ETE011 - Cadastrar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE012/">ETE012 - Detalhar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE013/">ETE013 - Consultar Entes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE014/">ETE014 - Cadastrar Ente</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE015/">ETE015 - Consultar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE016/">ETE016 - Cadastrar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE017/">ETE017 - Editar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE018/">ETE018 - Detalhar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE019/">ETE019 - Consultar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE020/">ETE020 - Cadastrar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE021/">ETE021 - Editar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE022/">ETE022 - Detalhar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE023/">ETE023 - Consultar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE024/">ETE024 - Cadastrar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE025/">ETE025 - Editar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE026/">ETE026 - Detalhar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE029/">ETE029 - Consultar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE030/">ETE030 - Cadastrar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE031/">ETE031 - Editar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE032/">ETE032 - Detalhar Usuário SUS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Para Validação</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../ete023/">ETE023 - Consultar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ete024/">ETE024 - Cadastrar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ete025/">ETE025 - Editar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ete026/">ETE026 - Detalhar Saídas</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ete029/">ETE029 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE033/">ETE033 - Gestão de Integrações</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">ETE034 - Configurar Integração Barramento AF</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE035/">ETE035 - Detalhar Integração Barramento AF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE036/">ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">e-SUS AF - Documentação Negocial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Especificações Técnicas</li>
+          <li class="breadcrumb-item">Para Validação</li>
+      <li class="breadcrumb-item active">ETE034 - Configurar Integração Barramento AF</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ete033-configurar-integracao-barramento-af">ETE033 - Configurar Integração Barramento AF</h1>
+<p>Como administrador quero ser capaz de configurar a integração com o Barramento Integrado da Assistência Farmacêutica para que seja possível o acesso às bases de dados compartilhadas.</p>
+<h2 id="descricao">Descrição</h2>
+<p>O Barramento Integrado da Assistência Farmacêutica (BIAF) detém um conjunto de bases de dados de domínio público de forma a garantir a atualização e o acesso a informações de múltiplas origens num único ponto.<br />
+O BIAF garante a atualização das bases locais a partir de uma coleção de dados compartilhados por meio de API, que compreendem CNES, CNPJ e OBM (Até o momento).<br />
+Para acessar a API, o administrador precisa fazer um cadastro previamente que lhe garantirá as credenciais necessárias para o acesso ao mesmo.</p>
+<h2 id="elementos-de-tela">Elementos de Tela</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Campo</strong></th>
+<th><strong>Sugestão Tipo de Entrada</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Obrigatório</strong></th>
+<th><strong>Observações</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tipo de Instância</strong></td>
+<td><code>Dropdown</code></td>
+<td>Seleciona o tipo da instância: Estadual (E), Municipal (M), Consórcio (C), Entidade/Instituição (I), Federal (F).</td>
+<td>Sim</td>
+<td>Valores fixos.</td>
+</tr>
+<tr>
+<td><strong>UF</strong></td>
+<td><code>Dropdown</code></td>
+<td>Seleciona a Unidade Federativa (UF) associada.</td>
+<td>Não</td>
+<td>Preenchido a partir da tabela <strong>TB_UF</strong>.</td>
+</tr>
+<tr>
+<td><strong>Município</strong></td>
+<td><code>Dropdown</code></td>
+<td>Seleciona o município associado.</td>
+<td>Não</td>
+<td>Preenchido com base na tabela <strong>TB_MUNICIPIO</strong>.</td>
+</tr>
+<tr>
+<td><strong>Código CNES</strong></td>
+<td><code>Texto</code></td>
+<td>Insere o código CNES do estabelecimento associado.</td>
+<td>Não</td>
+<td>Relacionado à tabela <strong>TB_CNES</strong>.</td>
+</tr>
+<tr>
+<td><strong>Pessoa Jurídica</strong></td>
+<td><code>Texto</code></td>
+<td>Insere o código da Pessoa Jurídica associada.</td>
+<td>Não</td>
+<td>Relacionado à tabela <strong>TB_PESSOA_JURIDICA</strong>.</td>
+</tr>
+<tr>
+<td><strong>Nome do Responsável</strong></td>
+<td><code>Texto</code></td>
+<td>Insere o nome do responsável pela instância.</td>
+<td>Sim</td>
+<td>Máximo de 120 caracteres.</td>
+</tr>
+<tr>
+<td><strong>E-mail</strong></td>
+<td><code>Texto (e-mail)</code></td>
+<td>Insere o endereço de e-mail do responsável.</td>
+<td>Sim</td>
+<td>Deve ser validado como um e-mail válido.</td>
+</tr>
+<tr>
+<td><strong>Telefone</strong></td>
+<td><code>Texto</code></td>
+<td>Insere o número de telefone do responsável.</td>
+<td>Não</td>
+<td>Deve conter no máximo 11 dígitos.</td>
+</tr>
+<tr>
+<td><strong>Data de Inclusão</strong></td>
+<td><code>Texto (somente leitura)</code></td>
+<td>Exibe a data em que o registro foi incluído.</td>
+<td>Não</td>
+<td>Preenchido automaticamente pelo sistema.</td>
+</tr>
+<tr>
+<td><strong>Data de Alteração</strong></td>
+<td><code>Texto (somente leitura)</code></td>
+<td>Exibe a data em que o registro foi alterado pela última vez.</td>
+<td>Não</td>
+<td>Preenchido automaticamente pelo sistema.</td>
+</tr>
+<tr>
+<td><strong>Ativo</strong></td>
+<td><code>Checkbox</code></td>
+<td>Indica se o registro está ativo (Sim/Não).</td>
+<td>Sim</td>
+<td>Padrão: <strong>Sim</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
+<ol>
+<li>Ao cadastrar uma instância de aplicação do e-SUS AF no Barramento Integrado da AF, poderão ser selecionados os tipos: Estadual (E), Municipal (M), Consórcio (C), Entidade/Instituição (I), Federal (F).</li>
+<li>Caso o tipo Federal ou Consórcio seja selecionado, será obrigatório informar um UF, Município e CNPJ.</li>
+<li>Caso o tipo Estadual seja selecionado, será obrigatório informar apenas a UF.</li>
+<li>Caso o tipo Municipal seja selecionado, será obrigatório informar apenas a UF e Município.</li>
+<li>Caso o tipo Instituição/Entidade seja selecionado, será obrigatório informar apenas a UF, Município e CNES.</li>
+<li>Os dados de nome, e-mail e telefone deverão ser informados obrigatoriamente.</li>
+<li>Uma vez logrando-se êxito no cadastro, a aplicação deverá retornar mensagem de sucesso ao usuário e deverá armazenar na tb_configuracao o clientId, mantido com a chave "BIAF_CLIENTID" e a APIKEY, criptografada com a chave ECC da aplicação, com a chave "BIAF_APIKEY".</li>
+<li>Em caso de insucesso no cadastro de integração ao Barramento, o e-SUS AF deverá apresentar mensagem de erro informando o motivo retornado no corpo da resposta http.</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ETE033/" class="btn btn-neutral float-left" title="ETE033 - Gestão de Integrações"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ETE035/" class="btn btn-neutral float-right" title="ETE035 - Detalhar Integração Barramento AF">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ETE033/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ETE035/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

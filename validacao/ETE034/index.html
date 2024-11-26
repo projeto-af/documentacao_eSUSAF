@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>CT 004 - Solicitar uma permissão de acesso - e-SUS AF - Documentação Negocial</title>
+    <title>ETE034 - Configurar Integração Barramento AF - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "CT 004 - Solicitar uma permiss\u00e3o de acesso";
-        var mkdocs_page_input_path = "CasosDeTeste/CT004.md";
+        var mkdocs_page_name = "ETE034 - Configurar Integra\u00e7\u00e3o Barramento AF";
+        var mkdocs_page_input_path = "validacao/ETE034.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -44,7 +44,7 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/">Documento de Mensagens</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeRegrasv2/">Documento de Regras</a>
@@ -117,25 +117,33 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Para Validação</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Para Validação</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../ete023/">ETE023 - Consultar Saídas</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ete024/">ETE024 - Cadastrar Saídas</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ete025/">ETE025 - Editar Saídas</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ete026/">ETE026 - Detalhar Saídas</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ete029/">ETE029 - Estornar Saída</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE033/">ETE033 - Gestão de Integrações</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE033/">ETE033 - Gestão de Integrações</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE034/">ETE034 - Configurar Integração Barramento AF</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">ETE034 - Configurar Integração Barramento AF</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+    </li>
+    </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE035/">ETE035 - Detalhar Integração Barramento AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE035/">ETE035 - Detalhar Integração Barramento AF</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE036/">ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE036/">ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF</a>
                 </li>
     </ul>
                   </li>
@@ -154,7 +162,9 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">CT 004 - Solicitar uma permissão de acesso</li>
+          <li class="breadcrumb-item">Especificações Técnicas</li>
+          <li class="breadcrumb-item">Para Validação</li>
+      <li class="breadcrumb-item active">ETE034 - Configurar Integração Barramento AF</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -163,73 +173,121 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="ct-004-solicitar-uma-permissao-de-acesso">CT 004 - Solicitar uma permissão de acesso</h1>
-<p>Este reflete o comportamento esperado ao se solicitar um perfil de acesso ao sistema:  </p>
-<h2 id="casos-de-teste">Casos de Teste</h2>
-<p><strong>Funcionalidade: Solicitar um perfil de acesso</strong>  </p>
-<p><strong>Cenário:</strong> Usuário deseja solicitar um perfil de administrador<br />
-<strong>Dado</strong> que o usuário realiza login na aplicação<br />
-<strong>E</strong> clica sobre a funcionalidade "Solicitar Perfil"<br />
-<strong>E</strong> seleciona o perfil "Administrador"<br />
-<strong>Então</strong> o sistema deve validar a solicitação do usuário<br />
-<strong>E</strong> retornar mensagem de sucesso  </p>
-<p><strong>Cenário:</strong> Usuário deseja solicitar um perfil de administrador (Administrador não pode ser atribuído no contexto de instância)<br />
-<strong>Dado</strong> que o usuário realiza login na aplicação<br />
-<strong>E</strong> clica sobre a funcionalidade "Solicitar Perfil"<br />
-<strong>E</strong> seleciona UF ou UF/Município ou UF/Município/Estabelecimento<br />
-<strong>E</strong> seleciona o perfil "Administrador"<br />
-<strong>Então</strong> o sistema deve validar a solicitação do usuário<br />
-<strong>E</strong> retornar mensagem de insucesso  </p>
-<p><strong>Cenário:</strong> Usuário deseja solicitar um perfil de Gestor<br />
-<strong>Dado</strong> que o usuário realiza login na aplicação<br />
-<strong>E</strong> clica sobre a funcionalidade "Solicitar Perfil"<br />
-<strong>E</strong> seleciona uma UF ou UF/Município<br />
-<strong>E</strong> Seleciona o perfil "Gestor"<br />
-<strong>Então</strong> o sistema deve validar a solicitação do usuário<br />
-<strong>E</strong> retornar mensagem de sucesso  </p>
-<p><strong>Cenário:</strong> Usuário deseja solicitar um perfil de Gestor (Gestor não pode ser atribuído no contexto de estabelecimento)<br />
-<strong>Dado</strong> que o usuário realiza login na aplicação<br />
-<strong>E</strong> clica sobre a funcionalidade "Solicitar Perfil"<br />
-<strong>E</strong> seleciona UF/Município/Estabelecimento<br />
-<strong>E</strong> seleciona o perfil "Gestor"<br />
-<strong>Então</strong> o sistema deve validar a solicitação do usuário<br />
-<strong>E</strong> retornar mensagem de insucesso  </p>
-<p><strong>Cenário:</strong> Usuário deseja solicitar perfil diferente de administrador e gestor<br />
-<strong>Dado</strong> que o usuário realiza login na aplicação<br />
-<strong>E</strong> clica sobre a funcionalidade "Solicitar Perfil"<br />
-<strong>E</strong> seleciona uma UF/Estabelecimento ou UF/Município/Estabelecimento<br />
-<strong>E</strong> Seleciona um perfil diferente de Gestor ou Administrador<br />
-<strong>Então</strong> o sistema deve validar a solicitação do usuário<br />
-<strong>E</strong> retornar mensagem de sucesso  </p>
-<p><strong>Cenário:</strong> Usuário deseja solicitar perfil diferente de administrador e gestor (É necessário selecionar Estabelecimento)<br />
-<strong>Dado</strong> que o usuário realiza login na aplicação<br />
-<strong>E</strong> clica sobre a funcionalidade "Solicitar Perfil"<br />
-<strong>E</strong> seleciona UF ou UF/Município<br />
-<strong>E</strong> Seleciona um perfil diferente de Gestor ou Administrador<br />
-<strong>Então</strong> o sistema deve validar a solicitação do usuário<br />
-<strong>E</strong> retornar mensagem de insucesso  </p>
-<p><strong>Cenário:</strong> Aplicação só deve listar perfis personalizados vinculados a instância que o criou<br />
-<strong>Dados</strong> que o gestor tenha criado perfis personalizados<br />
-<strong>E</strong> que um usuário realize login na aplicação<br />
-<strong>E</strong> Clica sobre a funcionalidade "Solicitar Perfil"<br />
-<strong>E</strong> um usuário deseje solicitar acesso com perfil personalizado<br />
-<strong>E</strong> seleciona UF/Estabelecimento ou UF/Município/Estabelecimento<br />
-<strong>Então</strong> a aplicação deverá apresentar o conjunto de perfis padrão e perfis personalizados criados pelo Gestor  </p>
-<p><strong>Cenário:</strong> Usuário deseja solicitar mais de um perfil para o mesmo estabelecimento<br />
-<strong>Dado</strong> que o usuário realiza login na aplicação<br />
-<strong>E</strong> clica sobre a funcionalidade "Solicitar Perfil"<br />
-<strong>E</strong> seleciona UF/Estabelecimento ou UF/Município/Estabelecimento para estabelecimento para o qual já possui um perfil com status "aprovado"<br />
-<strong>Então</strong> o sistema deve validar a solicitação do usuário<br />
-<strong>E</strong> retornar mensagem de insucesso  </p>
-<p><strong>Cenário:</strong> Usuário deseja solicitar um novo perfil para estabelecimento distinto ao qual já possui perfil com status "aprovado"<br />
-<strong>Dado</strong> que o usuário realiza login na aplicação<br />
-<strong>E</strong> clica sobre a funcionalidade "Solicitar Perfil"<br />
-<strong>E</strong> seleciona UF/Estabelecimento ou UF/Município/Estabelecimento para estabelecimento para o qual ainda não possui um perfil com status "aprovado"<br />
-<strong>Então</strong> o sistema deve validar a solicitação do usuário<br />
-<strong>E</strong> retornar mensagem de sucesso  </p>
+                <h1 id="ete033-configurar-integracao-barramento-af">ETE033 - Configurar Integração Barramento AF</h1>
+<p>Como administrador quero ser capaz de configurar a integração com o Barramento Integrado da Assistência Farmacêutica para que seja possível o acesso às bases de dados compartilhadas.</p>
+<h2 id="descricao">Descrição</h2>
+<p>O Barramento Integrado da Assistência Farmacêutica (BIAF) detém um conjunto de bases de dados de domínio público de forma a garantir a atualização e o acesso a informações de múltiplas origens num único ponto.<br />
+O BIAF garante a atualização das bases locais a partir de uma coleção de dados compartilhados por meio de API, que compreendem CNES, CNPJ e OBM (Até o momento).<br />
+Para acessar a API, o administrador precisa fazer um cadastro previamente que lhe garantirá as credenciais necessárias para o acesso ao mesmo.</p>
+<h2 id="elementos-de-tela">Elementos de Tela</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Campo</strong></th>
+<th><strong>Sugestão Tipo de Entrada</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Obrigatório</strong></th>
+<th><strong>Observações</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tipo de Instância</strong></td>
+<td><code>Dropdown</code></td>
+<td>Seleciona o tipo da instância: Estadual (E), Municipal (M), Consórcio (C), Entidade/Instituição (I), Federal (F).</td>
+<td>Sim</td>
+<td>Valores fixos.</td>
+</tr>
+<tr>
+<td><strong>UF</strong></td>
+<td><code>Dropdown</code></td>
+<td>Seleciona a Unidade Federativa (UF) associada.</td>
+<td>Não</td>
+<td>Preenchido a partir da tabela <strong>TB_UF</strong>.</td>
+</tr>
+<tr>
+<td><strong>Município</strong></td>
+<td><code>Dropdown</code></td>
+<td>Seleciona o município associado.</td>
+<td>Não</td>
+<td>Preenchido com base na tabela <strong>TB_MUNICIPIO</strong>.</td>
+</tr>
+<tr>
+<td><strong>Código CNES</strong></td>
+<td><code>Texto</code></td>
+<td>Insere o código CNES do estabelecimento associado.</td>
+<td>Não</td>
+<td>Relacionado à tabela <strong>TB_CNES</strong>.</td>
+</tr>
+<tr>
+<td><strong>Pessoa Jurídica</strong></td>
+<td><code>Texto</code></td>
+<td>Insere o código da Pessoa Jurídica associada.</td>
+<td>Não</td>
+<td>Relacionado à tabela <strong>TB_PESSOA_JURIDICA</strong>.</td>
+</tr>
+<tr>
+<td><strong>Nome do Responsável</strong></td>
+<td><code>Texto</code></td>
+<td>Insere o nome do responsável pela instância.</td>
+<td>Sim</td>
+<td>Máximo de 120 caracteres.</td>
+</tr>
+<tr>
+<td><strong>E-mail</strong></td>
+<td><code>Texto (e-mail)</code></td>
+<td>Insere o endereço de e-mail do responsável.</td>
+<td>Sim</td>
+<td>Deve ser validado como um e-mail válido.</td>
+</tr>
+<tr>
+<td><strong>Telefone</strong></td>
+<td><code>Texto</code></td>
+<td>Insere o número de telefone do responsável.</td>
+<td>Não</td>
+<td>Deve conter no máximo 11 dígitos.</td>
+</tr>
+<tr>
+<td><strong>Data de Inclusão</strong></td>
+<td><code>Texto (somente leitura)</code></td>
+<td>Exibe a data em que o registro foi incluído.</td>
+<td>Não</td>
+<td>Preenchido automaticamente pelo sistema.</td>
+</tr>
+<tr>
+<td><strong>Data de Alteração</strong></td>
+<td><code>Texto (somente leitura)</code></td>
+<td>Exibe a data em que o registro foi alterado pela última vez.</td>
+<td>Não</td>
+<td>Preenchido automaticamente pelo sistema.</td>
+</tr>
+<tr>
+<td><strong>Ativo</strong></td>
+<td><code>Checkbox</code></td>
+<td>Indica se o registro está ativo (Sim/Não).</td>
+<td>Sim</td>
+<td>Padrão: <strong>Sim</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
+<ol>
+<li>Ao cadastrar uma instância de aplicação do e-SUS AF no Barramento Integrado da AF, poderão ser selecionados os tipos: Estadual (E), Municipal (M), Consórcio (C), Entidade/Instituição (I), Federal (F).</li>
+<li>Caso o tipo Federal ou Consórcio seja selecionado, será obrigatório informar um UF, Município e CNPJ.</li>
+<li>Caso o tipo Estadual seja selecionado, será obrigatório informar apenas a UF.</li>
+<li>Caso o tipo Municipal seja selecionado, será obrigatório informar apenas a UF e Município.</li>
+<li>Caso o tipo Instituição/Entidade seja selecionado, será obrigatório informar apenas a UF, Município e CNES.</li>
+<li>Os dados de nome, e-mail e telefone deverão ser informados obrigatoriamente.</li>
+<li>Uma vez logrando-se êxito no cadastro, a aplicação deverá retornar mensagem de sucesso ao usuário e deverá armazenar na tb_configuracao o clientId, mantido com a chave "BIAF_CLIENTID" e a APIKEY, criptografada com a chave ECC da aplicação, com a chave "BIAF_APIKEY".</li>
+<li>Em caso de insucesso no cadastro de integração ao Barramento, o e-SUS AF deverá apresentar mensagem de erro informando o motivo retornado no corpo da resposta http.</li>
+</ol>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ETE033/" class="btn btn-neutral float-left" title="ETE033 - Gestão de Integrações"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ETE035/" class="btn btn-neutral float-right" title="ETE035 - Detalhar Integração Barramento AF">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -251,6 +309,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="../ETE033/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ETE035/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

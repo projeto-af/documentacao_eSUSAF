@@ -136,6 +136,12 @@
     <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#tela-1-incluindo-a-url-no-borramento">Tela 1: Incluindo a URL no borramento</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#tela-2-cadastro-da-aplicacao-no-barramento">Tela 2: Cadastro da aplicação no Barramento</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
     </li>
@@ -177,9 +183,31 @@
 <p>Como administrador quero ser capaz de configurar a integração com o Barramento Integrado da Assistência Farmacêutica para que seja possível o acesso às bases de dados compartilhadas.</p>
 <h2 id="descricao">Descrição</h2>
 <p>O Barramento Integrado da Assistência Farmacêutica (BIAF) detém um conjunto de bases de dados de domínio público de forma a garantir a atualização e o acesso a informações de múltiplas origens num único ponto.<br />
-O BIAF garante a atualização das bases locais a partir de uma coleção de dados compartilhados por meio de API, que compreendem CNES, CNPJ e OBM (Até o momento).<br />
+O BIAF garante a atualização das bases locais a partir de uma coleção de dados compartilhados por meio de API, que compreendem CNES, CNPJ e OBM (Até o momento).
 Para acessar a API, o administrador precisa fazer um cadastro previamente que lhe garantirá as credenciais necessárias para o acesso ao mesmo.</p>
 <h2 id="elementos-de-tela">Elementos de Tela</h2>
+<h3 id="tela-1-incluindo-a-url-no-borramento">Tela 1: Incluindo a URL no borramento</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Campo</strong></th>
+<th><strong>Sugestão Tipo de Entrada</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Obrigatório</strong></th>
+<th><strong>Observações</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>URL Barramento</strong></td>
+<td><code>Texto</code></td>
+<td>URL onde o barramento está incluído.</td>
+<td>Sim</td>
+<td>Só é possível seguir para a próxima etapa caso uma url seja fornecida.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tela-2-cadastro-da-aplicacao-no-barramento">Tela 2: Cadastro da aplicação no Barramento</h3>
 <table>
 <thead>
 <tr>
@@ -272,6 +300,9 @@ Para acessar a API, o administrador precisa fazer um cadastro previamente que lh
 </table>
 <h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
 <ol>
+<li>Informar a URL do barramento é condição sinequanom para que o usuário possa se cadastrar no barramento.</li>
+<li>A informação da URL deverá ser armazenada com chave "BARRAMENTO_URL" e valor contendo a URL informada.</li>
+<li>Uma chamada ao recurso "alive", deverá ser realizada ao barramento, a aplicação só seguirá para a etapa de cadastro caso o recurso retorne sucesso.</li>
 <li>Ao cadastrar uma instância de aplicação do e-SUS AF no Barramento Integrado da AF, poderão ser selecionados os tipos: Estadual (E), Municipal (M), Consórcio (C), Entidade/Instituição (I), Federal (F).</li>
 <li>Caso o tipo Federal ou Consórcio seja selecionado, será obrigatório informar um UF, Município e CNPJ.</li>
 <li>Caso o tipo Estadual seja selecionado, será obrigatório informar apenas a UF.</li>

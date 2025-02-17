@@ -49,7 +49,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegrasv2/">Documento de Regras</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Especificações</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Especificações</a>
     <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" href="../ETE001/">ETE001 - Realizar Login</a>
                 </li>
@@ -111,7 +111,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE030/">ETE030 - Cadastrar Usuário SUS</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">ETE031 - Editar Usuário SUS</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE031 - Editar Usuário SUS</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
     </li>
@@ -127,9 +127,19 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE032/">ETE032 - Detalhar Usuário SUS</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE033/">ETE033 - Gestão de Integrações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE034/">ETE034 - Configurar Integração Barramento AF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE035/">ETE035 - Detalhar Integração Barramento AF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE036/">ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE037/">ETE037 - Gestão de Estoques</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
                 </li>
@@ -140,14 +150,6 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE033/">ETE033 - Gestão de Integrações</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE034/">ETE034 - Configurar Integração Barramento AF</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE035/">ETE035 - Detalhar Integração Barramento AF</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE036/">ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF</a>
                 </li>
     </ul>
                   </li>
@@ -274,7 +276,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>Quando o usuário acionar a opção “Editar”, em um registro de uma observação, o sistema carrega os campos com os dados informados anteriormente e permite a edição; </li>
 <li>Quando o usuário acionar a opção “Excluir”, em um registro de uma observação, o sistema deve exclui-la da lista das observações do usuário SUS; </li>
 <li>Quando o usuário acionar a opção de “Salvar”, o sistema verifica se o preenchimento das informações atende às validações listadas, atualiza o cadastro do Usuário SUS, mantém o estado do registro como “Ativo” e a situação como “Cadastrado”, apresenta a mensagem de sucesso e retorna à tela de consulta aos Usuários SUS apresentando este registro como o primeiro da relação dos Usuários cadastrados para a instância; <a href="../DocumentoDeMensagensv2/#msg093">MSG093</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </li>
-<li>Quando o usuário acionar a opção de “Salvar/Dispensar”, o sistema verifica se o preenchimento das informações atende às validações listadas, atualiza o cadastro do Usuário SUS, mantém o estado do registro como “Ativo” e a situação como “Cadastrado”, apresenta a mensagem de sucesso e direciona para a tela de cadastrar dispensação carregando automaticamente os dados do Usuário SUS recém cadastrado; <a href="../DocumentoDeMensagensv2/#msg093">MSG093</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> <a href="ETE034.md">ETE034</a></li>
+<li>Quando o usuário acionar a opção de “Salvar/Dispensar”, o sistema verifica se o preenchimento das informações atende às validações listadas, atualiza o cadastro do Usuário SUS, mantém o estado do registro como “Ativo” e a situação como “Cadastrado”, apresenta a mensagem de sucesso e direciona para a tela de cadastrar dispensação carregando automaticamente os dados do Usuário SUS recém cadastrado; <a href="../DocumentoDeMensagensv2/#msg093">MSG093</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> <a href="../ETE034/">ETE034</a></li>
 <li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, retorna à tela de consulta aos Usuários SUS e não salva as edições realizadas. Caso a ação não seja confirmada, permanece na tela de cadastro de Usuário SUS; <a href="../DocumentoDeMensagensv2/#msg006">MSG006</a> </li>
 <li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </li>
 </ol>

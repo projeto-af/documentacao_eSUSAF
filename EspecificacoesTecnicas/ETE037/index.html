@@ -251,54 +251,54 @@ O presente documento tem como objetivo detalhar os requisitos necessários para 
     Estoque-&gt;&gt;Saída/Dispensação: Saída de produto
 </div>
 <p>Uma vez entendido o ciclo de vida de um item de estoque, é necessário detalhar cenários onde a movimentação de itens entre localizações e a alteração de informações referentes ao item são necessárias e como podem alterar o estoque. Abaixo o conjunto de cenários onde ocorrem estas alterações.</p>
-<ol>
+<ul>
 <li>Um item é movimentoado de uma posição A para uma posição B em estoque. Neste cenário, a única mudança que ocorre diz respeito a localização física do item, sem alteração de informações referentes ao mesmo.</li>
-</ol>
+</ul>
 <div class="mermaid">    flowchart TD
     A[Localização Física A] --&gt;|Transferência total do item| B[Localização Física B]
 </div>
-<ol>
+<ul>
 <li>Um item é movimentoado de uma posição A para uma posição B em estoque, mas a quantidade movimentada é menor que a quantidade total do item. Neste cenário, a quantidade disponível em A é reduzida e a diferença, adicionada em B.</li>
-</ol>
+</ul>
 <div class="mermaid">    flowchart TD
     A[Localização Física A] --&gt;|Transferência parcial do item| B[Localização Física B]
 </div>
-<ol>
+<ul>
 <li>O programa de saúde ao qual um item está vinculado é alterado. Neste cenário, a única mudança que ocorre diz respeito ao programa de saúde ao qual o item está vinculado.</li>
-</ol>
+</ul>
 <div class="mermaid">    flowchart TD
     A[Programa de Saúde A] --&gt;|Alteração de programa de saúde| B[Programa de Saúde B]
 </div>
-<ol>
+<ul>
 <li>As condições de armazenamento de um item são alteradas. Neste cenário, a única mudança que ocorre diz respeito às condições de armazenamento do item.</li>
-</ol>
+</ul>
 <div class="mermaid">    flowchart TD
     A[Condições de Armazenamento A] --&gt;|Alteração de condições de armazenamento| B[Condições de Armazenamento B]
 </div>
-<ol>
+<ul>
 <li>O item é movimentado de uma localização A para uma localização B e, simultaneamente, o programa de saúde ao qual o item está vinculado é alterado. Neste cenário, a quantidade disponível em A é reduzida e a diferença, adicionada em B, e o programa de saúde ao qual o item está vinculado é alterado.</li>
-</ol>
+</ul>
 <div class="mermaid">    flowchart TD
     A[Localização Física A] --&gt;|Transferência total do item| B[Localização Física B]
     B --&gt;|Alteração de programa de saúde| C[Programa de Saúde B]
 </div>
-<ol>
+<ul>
 <li>O item é movimentado de uma localização A para uma localização B e, simultaneamente, as condições de armazenamento do item são alteradas. Neste cenário, a quantidade disponível em A é reduzida e a diferença, adicionada em B, e as condições de armazenamento do item são alteradas.</li>
-</ol>
+</ul>
 <div class="mermaid">    flowchart TD
     A[Localização Física A] --&gt;|Transferência total do item| B[Localização Física B]
     B --&gt;|Alteração de condições de armazenamento| C[Condições de Armazenamento B]
 </div>
-<ol>
+<ul>
 <li>O programa de saúde ao qual um item está vinculado é alterado e, simultaneamente, as condições de armazenamento do item são alteradas. Neste cenário, o programa de saúde ao qual o item está vinculado é alterado e as condições de armazenamento do item são alteradas.</li>
-</ol>
+</ul>
 <div class="mermaid">    flowchart TD
     A[Programa de Saúde A] --&gt;|Alteração de programa de saúde| B[Programa de Saúde B]
     B --&gt;|Alteração de condições de armazenamento| C[Condições de Armazenamento B]
 </div>
-<ol>
+<ul>
 <li>O item é movimentado de uma localização A para uma localização B, o programa de saúde ao qual o item está vinculado é alterado e, simultaneamente, as condições de armazenamento do item são alteradas. Neste cenário, a quantidade disponível em A é reduzida e a diferença, adicionada em B, o programa de saúde ao qual o item está vinculado é alterado e as condições de armazenamento do item são alteradas.</li>
-</ol>
+</ul>
 <div class="mermaid">    flowchart TD
     A[Localização Física A] --&gt;|Transferência total do item| B[Localização Física B]
     B --&gt;|Alteração de programa de saúde| C[Programa de Saúde B]

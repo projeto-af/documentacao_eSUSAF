@@ -4,7 +4,7 @@ dev_addr: 127.0.0.1:8005
 
 nav:
   - Home: index.md
-  - Especificações Técnicas: 
+  - Especificações Técnicas:
     - Documento de Mensagens: EspecificacoesTecnicas/DocumentoDeMensagensv2.md
     - Documento de Regras: EspecificacoesTecnicas/DocumentoDeRegrasv2.md
     - Especificações:
@@ -40,16 +40,17 @@ nav:
       - ETE030 - Cadastrar Usuário SUS: EspecificacoesTecnicas/ETE030.md
       - ETE031 - Editar Usuário SUS: EspecificacoesTecnicas/ETE031.md
       - ETE032 - Detalhar Usuário SUS: EspecificacoesTecnicas/ETE032.md
+      - ETE033 - Gestão de Integrações: EspecificacoesTecnicas/ETE033.md
+      - ETE034 - Configurar Integração Barramento AF: EspecificacoesTecnicas/ETE034.md
+      - ETE035 - Detalhar Integração Barramento AF: EspecificacoesTecnicas/ETE035.md
+      - ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF: EspecificacoesTecnicas/ETE036.md
+      - ETE037 - Gestão de Estoques: EspecificacoesTecnicas/ETE037.md
     - Para Validação:
       - ETE023 - Consultar Saídas : validacao/ete023.md
       - ETE024 - Cadastrar Saídas : validacao/ete024.md
       - ETE025 - Editar Saídas : validacao/ete025.md
       - ETE026 - Detalhar Saídas : validacao/ete026.md
       - ETE029 - Estornar Saída : validacao/ete029.md
-      - ETE033 - Gestão de Integrações : validacao/ETE033.md
-      - ETE034 - Configurar Integração Barramento AF : validacao/ETE034.md
-      - ETE035 - Detalhar Integração Barramento AF : validacao/ETE035.md
-      - ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF : validacao/ETE036.md
 
 
 #  - Histórias de Usuário:
@@ -62,3 +63,7 @@ nav:
   # - Sobre: sobre.md
 
 theme: readthedocs
+
+plugins:
+  - search
+  - mermaid2

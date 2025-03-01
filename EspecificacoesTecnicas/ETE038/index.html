@@ -372,7 +372,7 @@ Com este documento é possível detalhar os requisitos necessários para a imple
 <li>O ente cujas credenciais passarão a ser usadas para envio de dados é co-responsável pelo envio, e deverá atuar ativamente no monitoramento do envio dos dados.</li>
 <li>O ente federativo é responsável por garantir que as credenciais de acesso ao SI BNAFAR sejam utilizadas de forma segura e que o envio de dados seja realizado em conformidade com a periodicidade definida em portaria.</li>
 </ol>
-<p>Outro ponto de grande relevância é a necessidade de implementação de um fluxo de aprovação para a criação de um arranjo organizativo para envio de dados ao SI BNAFAR, de forma a garantir que o envio de dados seja realizado de forma segura e que o ente federativo seja devidamente autorizado a realizar o envio de dados. Abaixo um diagrama ilustra o fluxo.</p>
+<p>Outro ponto de grande relevância é a necessidade de implementação de um fluxo de aprovação para a criação de um arranjo organizativo para envio de dados ao SI BNAFAR, este fluxo garante que um ente ceda a outra a responsabilidade do envio. Um ente não poderá, no contexto da aplicação, estar em mais de um arranjo organizativo ou estar em um arranjo organizativo e enviar dados diretamente ao SI BNAFAR.</p>
 <p><strong>Diagrama de sequência 04: Fluxo de aprovação para criação de arranjo organizativo</strong></p>
 <div class="mermaid">
     sequenceDiagram
@@ -404,6 +404,29 @@ Com este documento é possível detalhar os requisitos necessários para a imple
     ParticipacaoAtiva --&gt; ParticipacaoRevogada: SES / Consórcio revoga
     ParticipacaoRevogada --&gt; ParticipacaoSolicitada: SES / Consórcio solicita novamente
 </div>
+<p><strong>Diagrama de fluxo 06: Fluxo de participação do ente num arranjo organizativo</strong></p>
+<div class="mermaid">flowchart TD
+    A[Estado ou Consórcio Solicita Participação do Ente] --&gt; B{Verifica se o ente está em outro arranjo}
+    B --&gt;|Sim| C{Revogar arranjo atual?}
+    C --&gt;|Sim| D[Revoga arranjo atual]
+    D --&gt; E[Aprova solicitação]
+    C --&gt;|Não| F[Reprova solicitação]
+    B --&gt;|Não| G{Envia direto?}
+    G --&gt;|Sim| H{Desativar credencial?}
+    H --&gt;|Sim| I[Desativa credencial]
+    I --&gt; E
+    H --&gt;|Não| F
+    G --&gt;|Não| J{Nenhum dos dois}
+    J --&gt;|Sim| K{Aprovar solicitação?}
+    K --&gt;|Sim| E
+    K --&gt;|Não| F
+    J --&gt;|Não| L{Cadastrar nova credencial?}
+    L --&gt;|Sim| M[Cadastra nova credencial]
+    L --&gt;|Não| F
+    E --&gt; N[Fim]
+    F --&gt; N
+    M --&gt; N
+</div>
 <h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
 <ul>
 <li>Deverá ser criado um novo perfil de nome "Gestor de Integrações" que poderá estar em escopo global ou restrito a um ente federativo.</li>
@@ -421,6 +444,10 @@ Com este documento é possível detalhar os requisitos necessários para a imple
 <li>A configuração de envio de dados ao SI BNAFAR deverrá estar em estado inativo até que credenciais estejam cadastradas.</li>
 <li>O cadastro com CNPJ indica que o ente federativo é um consórcio público, e deverá ser possível adicionar entes federativos ao consórcio, só podendo ser alterado em escopo global.</li>
 <li>Se a configuração ocorrer no escopo de ente, poderá incluir entes federativos no arranjo organizativo apenas se o ente federativo for um Estado.</li>
+<li>Um ente não pode estar em mais de um arranjo organizativo.</li>
+<li>Um ente não pode estar em um arranjo organizativo e enviar dados diretamente ao SI BNAFAR.</li>
+<li>Só deve ser possível aprovar a participação de um ente num arranjo organizativo se o ente não estiver em outro arranjo organizativo.</li>
+<li>Só deve ser possível cadastrar credenciais de acesso ao SI BNAFAR se o ente não estiver em outro arranjo organizativo.</li>
 </ul>
 <h2 id="modelo-de-dados">Modelo de Dados</h2>
 <p>Conjunto de dados 1: Credenciais de acesso ao SI BNAFAR</p>

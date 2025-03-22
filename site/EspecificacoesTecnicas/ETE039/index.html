@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<title>ETE039 - Autenticação com GOV.BR - e-SUS AF - Documentação Negocial</title>
+<link href="../../css/theme.css" rel="stylesheet"/>
+<link href="../../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
+<script>
+        // Current page data
+        var mkdocs_page_name = "ETE039 - Autentica\u00e7\u00e3o com GOV.BR";
+        var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE039.md";
+        var mkdocs_page_url = null;
+      </script>
+<!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+<body class="wy-body-for-nav" role="document">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href="../.."> e-SUS AF - Documentação Negocial
+        </a><div role="search">
+<form action="../../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
+</div>
+</div>
+<div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../DocumentoDeMensagensv2/">Documento de Mensagens</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegrasv2/">Documento de Regras</a>
+</li>
+<li class="toctree-l1 current"><a class="reference internal current">Especificações</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ETE001/">ETE001 - Realizar Login</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE002/">ETE002 - Cadastrar Usuário do Sistema</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE003/">ETE003 - Recuperar Senha</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE004/">ETE004 - Consultar Permissões de Acesso</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE005/">ETE005 - Atribuir Perfil de Acesso</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE007/">ETE007 - Consultar Meus Perfis</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE008/">ETE008 - Solicitar Perfil</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE009/">ETE009 - Detalhar Meu Perfil</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE010/">ETE010 - Consultar Perfil</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE011/">ETE011 - Cadastrar Perfil</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE012/">ETE012 - Detalhar Perfil</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE013/">ETE013 - Consultar Entes</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE014/">ETE014 - Cadastrar Ente</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE015/">ETE015 - Consultar Estabelecimento</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE016/">ETE016 - Cadastrar Estabelecimento</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE017/">ETE017 - Editar Estabelecimento</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE018/">ETE018 - Detalhar Estabelecimento</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE019/">ETE019 - Consultar Entrada</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE020/">ETE020 - Cadastrar Entrada</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE021/">ETE021 - Editar Entrada</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE022/">ETE022 - Detalhar Entrada</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE029/">ETE029 - Consultar Usuário SUS</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE030/">ETE030 - Cadastrar Usuário SUS</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE031/">ETE031 - Editar Usuário SUS</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE032/">ETE032 - Detalhar Usuário SUS</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE033/">ETE033 - Gestão de Integrações</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE034/">ETE034 - Configurar Integração Barramento AF</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE035/">ETE035 - Detalhar Integração Barramento AF</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE036/">ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE037/">ETE037 - Gestão de Estoques</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE038/">ETE038 - Configuração de integração SI BNAFAR</a>
+</li>
+<li class="toctree-l2 current"><a class="reference internal current" href="#">ETE039 - Autenticação com GOV.BR</a>
+<ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#historico-de-revisoes">Histórico de Revisões</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#resumo">Resumo</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#motivacao">Motivação</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#implementacao">Implementação</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#modelo-de-dados">Modelo de Dados</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal">Para Validação</a>
+<ul>
+<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="Mobile navigation menu" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../..">e-SUS AF - Documentação Negocial</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Docs" class="icon icon-home" href="../.."></a></li>
+<li class="breadcrumb-item">Especificações Técnicas</li>
+<li class="breadcrumb-item">Especificações</li>
+<li class="breadcrumb-item active">ETE039 - Autenticação com GOV.BR</li>
+<li class="wy-breadcrumbs-aside">
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div class="section" itemprop="articleBody">
+<h1 id="especificacao-tecnica-039-autenticacao-com-govbr">ESPECIFICAÇÃO TÉCNICA 039: AUTENTICAÇÃO COM GOV.BR</h1>
+<table>
+<thead>
+<tr>
+<th><strong>ETE:</strong></th>
+<th>039</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Título:</strong></td>
+<td>Autenticação com GOV.BR</td>
+</tr>
+<tr>
+<td><strong>Autor:</strong></td>
+<td>Jessé Azevêdo <a href="mailto:jesse.azevedo@saude.gov.br">jesse.azevedo@saude.gov.br</a></td>
+</tr>
+<tr>
+<td><strong>Status:</strong></td>
+<td>Em validação</td>
+</tr>
+<tr>
+<td><strong>Versão:</strong></td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="historico-de-revisoes">Histórico de Revisões</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Versão</strong></th>
+<th><strong>Data</strong></th>
+<th><strong>Autor</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>22/03/2025</td>
+<td>Jessé Azevêdo</td>
+<td>Criação do documento</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resumo">Resumo</h2>
+<p>Este documento tem por objetivo descrever o fluxo de autenticação e autorização para acesso ao e-SUS AF utilizando o serviço de Login Único do GOV.BR, bem como os requisitos necessários para a implementação do mesmo.</p>
+<h2 id="motivacao">Motivação</h2>
+<p>O e-SUS AF é um sistema de informação que tem por objetivo apoiar a gestão da Assistência Farmacêutica no âmbito do Sistema Único de Saúde (SUS), permitindo o registro e a consulta de informações sobre a dispensação de medicamentos e insumos, bem como a gestão de estoques e a geração de relatórios gerenciais.<br/>
+Um dos requisitos do sistema é a autenticação e autorização de usuários, de forma a garantir a segurança e a privacidade das informações registradas no sistema. Entre os requisitos, está a integração com o serviço de Login Único do GOV.BR, que permite aos usuários acessarem o sistema utilizando as credenciais do GOV.BR.</p>
+<h2 id="implementacao">Implementação</h2>
+<p>O fluxo de autenticação e autorização para acesso ao e-SUS AF poderá ser realizado usando o protocolo OAuth 2.0 e OpenID Connect implementado por meio do serviço de Login Único do GOV.BR.</p>
+<p>O processo de autorização envolve a interação entre um Cliente (aplicação) e o Servidor de Autorização (Gov.br), a interação pode ser resumida em 4 etapas:</p>
+<ol>
+<li><strong>Solicitação de autorização:</strong> O cliente solicita autorização ao usuário para acessar recursos protegidos.</li>
+<li><strong>Redirecionamento para Gov.br:</strong> O cliente redireciona o usuário para Gov.br para autenticação.</li>
+<li><strong>Retorno de código de autorização:</strong> Após a autenticação, Gov.br redireciona o usuário de volta para o cliente com um código de autorização.</li>
+<li><strong>Solicitação de token de acesso:</strong> O cliente solicita um token de acesso ao Servidor de Autorização, enviando o código de autorização e suas credenciais.</li>
+</ol>
+<p>Abaixo, o diagrama de sequência ilustra o fluxo em questão.</p>
+<div class="mermaid">sequenceDiagram
+participant Cliente
+participant Aplicação
+participant Gov.br
+participant Servidor de Autorização
+participant Servidor de Recursos
+    Cliente-&gt;&gt;Aplicação: Solicita acesso a recursos protegidos
+    Aplicação-&gt;&gt;Gov.br: Redireciona para Gov.br (tela de login)
+    Gov.br-&gt;&gt;Cliente: Exibe tela de login Gov.br
+    Cliente-&gt;&gt;Gov.br: Credenciais do usuário
+    Gov.br-&gt;&gt;Servidor de Autorização: Autentica usuário
+    Servidor de Autorização-&gt;&gt;Gov.br: Resposta de autenticação
+    Gov.br-&gt;&gt;Aplicação: Redireciona com código de autorização
+    Aplicação-&gt;&gt;Servidor de Autorização: Solicita token de acesso (código de autorização, Client ID, Client Secret)
+    Servidor de Autorização-&gt;&gt;Aplicação: Token de acesso e ID Token
+    Aplicação-&gt;&gt;Servidor de Recursos: Solicita recursos protegidos (com token de acesso)
+    Servidor de Recursos-&gt;&gt;Aplicação: Resposta com recursos protegidos
+    Aplicação-&gt;&gt;Cliente: Exibe recursos protegidos
+
+    note right of Servidor de Autorização: OpenID Connect: Validação do ID Token (informações do usuário)
+</div>
+<p>A implementação do fluxo de autorização deverá especificar os recursos que precisarão ser armazenados no banco de dados da aplicação, estes recursos serão passados por meio da <em>query string</em> <strong>scope</strong>. conforme tabela abaixo:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Escopo</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>openid</td>
+<td>Obrigatório para autenticação</td>
+</tr>
+<tr>
+<td>email</td>
+<td>E-mail do usuário</td>
+</tr>
+<tr>
+<td>profile</td>
+<td>Informações do usuário</td>
+</tr>
+<tr>
+<td>govbr_confiabilidades</td>
+<td>Nível de confiabilidade do usuário (selos)</td>
+</tr>
+</tbody>
+</table>
+<p>A aplicação deverá implementar a validação do ID Token, conforme especificado no <a href="https://openid.net/specs/openid-connect-core-1_0.html#IDTokenValidation">OpenID Connect</a>. Ao autenticar-se, o Gov.Br retornará um ID Token e um Access Token, que deverá ser validado pela aplicação, garantindo a autenticidade do usuário. O ID Token conterá informações do usuário autenticado, como nome, e-mail, CPF, entre outros conforme abaixo:</p>
+<p>Uma vez autenticado, a aplicação poderá solicitar recursos protegidos ao Servidor de Recursos, enviando o token de acesso no cabeçalho da requisição.<br/>
+Ao obter a autenticação</p>
+<pre><code class="language-json">{
+        "sub": "(CPF do usuário autenticado.)",
+        "amr": ["(Listagem dos fatores de autenticação do usuário com detalhamento. Verificar nas observações para os detalhamentos.)"],
+        "picture": "(URL de acesso à foto do usuário cadastrada no Gov.br. A mesma é protegida e pode ser acessada passando o access token recebido.)",
+        "name": "(Nome cadastrado no Gov.br do usuário autenticado.)",
+        "social_name": "(Nome Social cadastrado no Gov.br do usuário autenticado.Aparecerá apenas se existir no cadastro)",
+        "phone_number_verified": "(Confirma se o telefone foi validado no cadastro do Gov.br. Poderá ter o valor "true" ou "false")",
+        "phone_number": "(Número de telefone cadastrado no Gov.br do usuário autenticado. Caso o atributo phone_number_verified do ID_TOKEN tiver o valor false, o atributo phone_number não virá no ID_TOKEN)",
+        "email_verified": "(Confirma se o email foi validado no cadastro do Gov.br. Poderá ter o valor "true" ou "false")",
+        "email": "(Endereço de e-mail cadastrado no Gov.br do usuário autenticado. Caso o atributo email_verified do ID_TOKEN tiver o valor false, o atributo email não virá no ID_TOKEN)",
+        "cnpj": "(CNPJ vinculado ao usuário autenticado. Atributo será preenchido quando autenticação ocorrer por certificado digital de pessoal jurídica.)"
+}
+</code></pre>
+<p>Uma vez autenticado, a aplicação deverá guardar os dados do usuário na tabela "TB_USUARIO", sendo necessário que a aplicação valide se o usuário já possui cadastro na aplicação, caso não possua, a aplicação deverá solicitar ao usuário que complete seu cadastro, informando os dados obrigatários a seguir:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nível</th>
+<th style="text-align: left;">Atributo</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CNS</td>
+<td style="text-align: left;">CNS do usuário</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">E-mail</td>
+<td style="text-align: left;">E-mail do usuário</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Telefone</td>
+<td style="text-align: left;">Telefone do usuário</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Telefone_mensagem</td>
+<td style="text-align: left;">Telefone do usuário para mensagem instatânea</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CEP</td>
+<td style="text-align: left;">CEP do endereço</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Endereço</td>
+<td style="text-align: left;">Endereço do usuário</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Complemento</td>
+<td style="text-align: left;">Complemento do endereço</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Bairro</td>
+<td style="text-align: left;">Bairro do endereço</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">UF</td>
+<td style="text-align: left;">Estado do endereço</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Cidade</td>
+<td style="text-align: left;">Cidade do endereço</td>
+</tr>
+</tbody>
+</table>
+<p>Para recuperar os recursos relacionados a confiabilidade, a aplicação deverá solicitar ao Servidor de Recursos, enviando o token de acesso no cabeçalho da requisição. Como resposta, o Servidor de Recursos retornará os recursos solicitados. Esta chamada deverá ocorrer sempre que o usuário realizar uma autenticação na aplicação, muitos dos recursos da aplicação serão disponibilizados de acordo com o nível de confiabilidade do usuário. Abaixo retorno do Servidor de Recursos:</p>
+<pre><code class="language-json">[
+        {
+                "id": "1 (Bronze)",
+                "dataAtualizacao": "(Mostra a data e hora que ocorreu atualização da categoria na conta do usuário. A mascará será YYYY-MM-DD HH:MM:SS)"
+        },
+
+        {
+                "id": "2 (Prata)",
+                "dataAtualizacao": "(Mostra a data e hora que ocorreu atualização da categoria na conta do usuário. A mascará será YYYY-MM-DD HH:MM:SS)"
+        },
+
+        {
+                "id": "3 (Ouro)",
+                "dataAtualizacao": "(Mostra a data e hora que ocorreu atualização da categoria na conta do usuário. A mascará será YYYY-MM-DD HH:MM:SS)"
+        }
+]
+</code></pre>
+<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
+<ul>
+<li>A aplicação deverá implementar o fluxo de autorização utilizando OAuth 2.0 e OpenID Connect.</li>
+<li>A aplicação deverá implementar a validação do ID Token.</li>
+<li>A aplicação deverá persistir os recursos retornados pelo Servidor de Recursos.</li>
+<li>O Frontend da aplicação deverá possuir uma rota que recebe como parâmetro o access_token, o refresh_token e o id do usuário logado.</li>
+<li>Ao logar pela primeira vez, o usuário deverá complementar seu cadastro, informando dados adicionais conforme tabela com dados obrigatórios descrita no tópico <em>Implementação</em>.</li>
+<li>A aplicação deverá implementar a solicitação de recursos de confiabilidade ao Servidor de Recursos.</li>
+<li>A cada execução do fluxo de autenticação/autorização, a aplicação deverá verificar o retorno do nível de confiabilidade do usuário, a aplicação deverá reagir aos níveis de confiabilidade definidos e conjunto de permissões atribuidas ao usuário.</li>
+</ul>
+<h2 id="modelo-de-dados">Modelo de Dados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nível</th>
+<th style="text-align: left;">Atributo</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Cardinalidade</th>
+<th style="text-align: left;">Tipo de Dado</th>
+<th style="text-align: left;">Tamanho</th>
+<th style="text-align: left;">Formato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Identificador</td>
+<td style="text-align: left;">Código sequencial que identifica univocamente um usuário</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Nome</td>
+<td style="text-align: left;">Nome do usuário</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CPF</td>
+<td style="text-align: left;">CPF do usuário</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">CPF</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CNS</td>
+<td style="text-align: left;">CNS do usuário</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">CNS</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Senha</td>
+<td style="text-align: left;">Senha do usuário (Obrigatório apenas para autenticação com JWT default)</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">120</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">E-mail</td>
+<td style="text-align: left;">E-mail do usuário</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">120</td>
+<td style="text-align: left;">e-mail</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Telefone</td>
+<td style="text-align: left;">Telefone do usuário</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">(xx) xxxxx-xxxx</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Telefone_mensagem</td>
+<td style="text-align: left;">Telefone do usuário para mensagem instatânea</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">(xx) xxxxx-xxxx</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Objeto</td>
+<td style="text-align: left;">Identificador de objetos na tabela TB_OBJETOS</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CEP</td>
+<td style="text-align: left;">CEP do endereço</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Endereço</td>
+<td style="text-align: left;">Endereço do usuário</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">256</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Complemento</td>
+<td style="text-align: left;">Complemento do endereço</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">256</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Bairro</td>
+<td style="text-align: left;">Bairro do endereço</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">120</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">UF</td>
+<td style="text-align: left;">Estado do endereço</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Cidade</td>
+<td style="text-align: left;">Cidade do endereço</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><footer>
+<div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-left" href="../ETE038/" title="ETE038 - Configuração de integração SI BNAFAR"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../../validacao/ete023/" title="ETE023 - Consultar Saídas">Next <span class="icon icon-circle-arrow-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div aria-label="Versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../ETE038/" style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../../validacao/ete023/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script src="../../js/jquery-3.6.0.min.js"></script>
+<script>var base_url = "../..";</script>
+<script src="../../js/theme_extra.js"></script>
+<script src="../../js/theme.js"></script>
+<script src="../../search/main.js"></script>
+<script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>

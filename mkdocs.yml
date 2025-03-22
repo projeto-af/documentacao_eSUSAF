@@ -46,6 +46,7 @@ nav:
       - ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF: EspecificacoesTecnicas/ETE036.md
       - ETE037 - Gestão de Estoques: EspecificacoesTecnicas/ETE037.md
       - ETE038 - Configuração de integração SI BNAFAR: EspecificacoesTecnicas/ETE038.md
+      - ETE039 - Autenticação com GOV.BR: EspecificacoesTecnicas/ETE039.md
     - Para Validação:
       - ETE023 - Consultar Saídas : validacao/ete023.md
       - ETE024 - Cadastrar Saídas : validacao/ete024.md

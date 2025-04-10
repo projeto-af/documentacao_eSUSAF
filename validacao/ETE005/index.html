@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>ETE040 - Cadastro de Entes - e-SUS AF - Documentação Negocial</title>
+    <title>ETE005 - Atribuir Permissão de Acesso - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "ETE040 - Cadastro de Entes";
-        var mkdocs_page_input_path = "validacao/ETE040.md";
+        var mkdocs_page_name = "ETE005 - Atribuir Permiss\u00e3o de Acesso";
+        var mkdocs_page_input_path = "validacao/ETE005.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -133,7 +133,21 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" >Para Validação</a>
     <ul class="current">
-                <li class="toctree-l2"><a class="reference internal" href="../ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE005 - Atribuir Permissão de Acesso</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#historico-de-revisoes">Histórico de Revisões</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#historia-de-usuario">História de Usuário</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#motivacao">Motivação</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#implementacao">Implementação</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modelo-de-dados">Modelo de Dados</a>
+    </li>
+    </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
                 </li>
@@ -147,17 +161,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ete029/">ETE029 - Estornar Saída</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE040 - Cadastro de Entes</a>
-    <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#historico-de-revisoes">Histórico de Revisões</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#historia-de-usuario">História de Usuário</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#motivacao">Motivação</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#implementacao">Implementação</a>
-    </li>
-    </ul>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE040/">ETE040 - Cadastro de Entes</a>
                 </li>
     </ul>
                   </li>
@@ -178,7 +182,7 @@
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Especificações Técnicas</li>
           <li class="breadcrumb-item">Para Validação</li>
-      <li class="breadcrumb-item active">ETE040 - Cadastro de Entes</li>
+      <li class="breadcrumb-item active">ETE005 - Atribuir Permissão de Acesso</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -187,21 +191,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="especificacao-tecnica-040-integracao-ao-servico-pdq-do-cns">ESPECIFICAÇÃO TÉCNICA 040: INTEGRAÇÃO AO SERVIÇO PDQ DO CNS</h1>
+                <h1 id="especificacao-tecnica-005-atribuir-permissao-de-acesso">ESPECIFICAÇÃO TÉCNICA 005: ATRIBUIR PERMISSÃO DE ACESSO</h1>
 <table>
 <thead>
 <tr>
 <th><strong>ETE:</strong></th>
-<th>040</th>
+<th>005</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Título:</strong></td>
-<td>Integração ao serviço PDQ do CNS</td>
+<td>Atribuir Permissão de Acesso</td>
 </tr>
 <tr>
 <td><strong>Autor:</strong></td>
+<td>Samara Delboni <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#97;&#109;&#97;&#114;&#97;&#46;&#100;&#101;&#108;&#98;&#111;&#110;&#105;&#64;&#115;&#97;&#117;&#100;&#101;&#46;&#103;&#111;&#118;&#46;&#98;&#114;">&#115;&#97;&#109;&#97;&#114;&#97;&#46;&#100;&#101;&#108;&#98;&#111;&#110;&#105;&#64;&#115;&#97;&#117;&#100;&#101;&#46;&#103;&#111;&#118;&#46;&#98;&#114;</a></td>
+</tr>
+<tr>
+<td><strong>Autor:</strong></td>
+<td>Viviane Alves <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#108;&#118;&#101;&#115;&#46;&#118;&#105;&#118;&#105;&#97;&#110;&#101;&#64;&#115;&#97;&#117;&#100;&#101;&#46;&#103;&#111;&#118;&#46;&#98;&#114;">&#97;&#108;&#118;&#101;&#115;&#46;&#118;&#105;&#118;&#105;&#97;&#110;&#101;&#64;&#115;&#97;&#117;&#100;&#101;&#46;&#103;&#111;&#118;&#46;&#98;&#114;</a></td>
+</tr>
+<tr>
+<td><strong>Autor:</strong></td>
+<td>Alexandre Lage <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#108;&#101;&#120;&#97;&#110;&#100;&#114;&#101;&#46;&#108;&#97;&#103;&#101;&#64;&#115;&#97;&#117;&#100;&#101;&#46;&#103;&#111;&#118;&#46;&#98;&#114;">&#97;&#108;&#101;&#120;&#97;&#110;&#100;&#114;&#101;&#46;&#108;&#97;&#103;&#101;&#64;&#115;&#97;&#117;&#100;&#101;&#46;&#103;&#111;&#118;&#46;&#98;&#114;</a></td>
+</tr>
+<tr>
+<td><strong>Revisor:</strong></td>
 <td>Jessé Azevêdo <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#101;&#115;&#115;&#101;&#46;&#97;&#122;&#101;&#118;&#101;&#100;&#111;&#64;&#115;&#97;&#117;&#100;&#101;&#46;&#103;&#111;&#118;&#46;&#98;&#114;">&#106;&#101;&#115;&#115;&#101;&#46;&#97;&#122;&#101;&#118;&#101;&#100;&#111;&#64;&#115;&#97;&#117;&#100;&#101;&#46;&#103;&#111;&#118;&#46;&#98;&#114;</a></td>
 </tr>
 <tr>
@@ -227,26 +243,52 @@
 <tbody>
 <tr>
 <td>1.0</td>
-<td>07/04/2025</td>
-<td>Jessé Azevêdo</td>
+<td>14/08/2024</td>
+<td>Samara Delboni</td>
 <td>Criação do documento</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>10/04/2025</td>
+<td>Jessé Azevêdo</td>
+<td>Atualização do documento</td>
 </tr>
 </tbody>
 </table>
 <h2 id="historia-de-usuario">História de Usuário</h2>
-<p>Eu como usuário do e-SUS AF, desejo que o sistema esteja integrado ao serviço PDQ do CNS, para que eu possa consultar os dados de usuários do SUS de forma rápida e eficiente.</p>
+<p>Como usuário quero atribuir um perfil de acesso às funcionalidades do sistema para outro usuário.</p>
 <h2 id="motivacao">Motivação</h2>
-<p>O e-SUS AF possui registro específico para Usuários SUS, esses dados são utilizados para o registro de dispensação ou fornecimento de medicamentos e são essenciais para o envio de dados ao serviço de interoperabilidade do Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos (REDFM).
-De forma a facilitar o processo de inclusão de um usuário SUS na aplicação, a integração com o serviço PDQ do CNS traz inúmeras vantagens, evitando que o usuário redigite um conjunto de informações como CPF, nome, data de nascimento e nome da mãe. Essa integração permitirá que o sistema e-SUS AF tenha acesso a informações atualizadas e precisas sobre os usuários do SUS, facilitando a gestão da assistência farmacêutica.</p>
+<p>Para que o usuário do e-SUS AF possa acessar recursos restritos em um contexto de uma aplicação, é necessário que o mesmo possua uma permissão. Diz-se que uma permissão de acesso é o conjunto que engloba um ente, um estabelecimento e um perfil de acesso, permitindo a quem o possui realizar ações dentro da aplicação.<br />
+Uma permissão de acesso pode ser atribuída sem necessariamente estar vinculada a um ente e estabelecimento, desde que respeitadas algumas regras de forma a fazer com que o contexto no qual o usuário está inserido faça sentido. Um contexto por sua vez, é um conceito mais amplo e diz respeito à amplitude de ações que o usuário pode realizar dentro do sistema, no e-SUS AF há 3 contextos distintos, o contexto global, contexto de ente e contexto de estabelecimento. Diz-se que um usuário está em contexto de estabelecimento quando as ações realizadas pelo mesmo se restringem a um dado estabelecimento de saúde, em contexto de ente, quando suas ações afetam um ente como um todo e em contexto global quando suas ações afetam a aplicação como um todo, independente de ente ou estabelecimento.<br />
+Em posse desses conceitos, passamos ao conceito de atribuição de permissão. Trata-se de um recurso onde, um usuário uma permissão de acesso ao sistema. Apenas usuários com perfil que possua o recurso "ROLES:ASSIGN" é capaz de atribuir permissões de acesso a outros usuários. O sistema deve permitir que o usuário atribua permissões de acesso a outros usuários, desde que respeitadas as regras de atribuição de permissão que serão descretas no tópico <a href="#critérios-de-aceitação">Critérios de Aceitação</a>.</p>
 <h2 id="implementacao">Implementação</h2>
-<p>A integração com o serviço PDQ do CNS será realizada através de um serviço REST, utilizando o padrão FHIR (Fast Healthcare Interoperability Resources). O sistema e-SUS AF fará uma requisição ao serviço PDQ do CNS, passando o CPF ou CNS do usuário como parâmetro de busca. O serviço PDQ retornará os dados do usuário, que serão exibidos na tela de cadastro de usuários SUS do e-SUS AF.
-Para integração, o e-SUS AF deverá ser capaz de gerenciar os recursos necesssários para a comunicação com o serviço PDQ do CNS, incluindo autenticação, autorização e tratamento de erros. O sistema deverá garantir que os dados recebidos do serviço PDQ sejam armazenados de forma segura e em conformidade com as normas de proteção de dados pessoais.
-A princípio, a o administrador deverá contar com um recurso para configurar a integração com o serviço PDQ do CNS na tela de "Gestão de Integrações", onde deverá informar o endereço do serviço, e fazer o upload do certificado digital necessário a integração.</p>
+<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
+<ol>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="DocumentoDeRegrasv2.md#rgn001">RGN001</a></li>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso”, subitem “Moderar Perfil”, na tela “Consultar Permissões de Acesso”, quando acionar a opção “Novo”;  </li>
+<li>O sistema deve permitir a atribuição de perfis conforme:  </li>
+<li>O perfil de "Instalador" não pode ser atribuido ou solicitado por quaisquer usuário no contexto da aplicação;</li>
+<li>Um usuário com perfil de “Instalador” poderá atribuir somente perfil de “Administrador”;  </li>
+<li>Usuário com perfil de “Administrador” atribui perfil de “Administrador” e “Gestor”;  </li>
+<li>Usuário com perfil de “Gestor” poderá atribuir os perfis de "Gestor", "Gestor de Estabelecimento", "Farmacêutico", "Atendente", "Administrativo" e perfis personilizados criados para o ente;  </li>
+<li>Usuário com perfil de “Gestor Estabelecimento” poderá atribuir os perfis de "Gestor", "Gestor de Estabelecimento", "Farmacêutico", "Atendente", "Administrativo" e perfis personilizados criados para o ente;</li>
+<li>Perfis personalizados com o atributo "ROLES:ASSIGN" poderão atribuir os perfis de "Gestor", "Gestor de Estabelecimento", "Farmacêutico", "Atendente", "Administrativo" e perfis personilizados criados para o ente;</li>
+<li>Um perfil deve ser atribuído de acordo com o contexto em que o usuário está inserido conforme segue:</li>
+<li>Os perfis "Gestor de Estabelecimento", "Farmacêutico", "Atendente" e "Administrativo" devem ser atribuídos junto a um estabelecimento específico;</li>
+<li>O perfil Gestor deve estar vinculado apenas a um ente, não podendo ser atribuido a um estabelecimento;</li>
+<li>A aplicação não exercerá quaisquer controle sobre perfis personalizados, devendo o usuário que atribui o perfil personalizado ter ciência de quais permissões estão atreladas a este perfil e o contexto ao qual o mesmo se propõe a atender;</li>
+<li>Perfi Administrador não poderá ser atribuído a ente e estabelecimento, vinculando-se ao contexto global da aplicação;</li>
+<li>Um usuário não poderá possuir mais de um perfil para o mesmo estabelecimento; <a href="DocumentoDeRegrasv2.md#rgn054">RGN054</a> <a href="DocumentoDeMensagensv2.md#msg085">MSG085</a></li>
+<li>Quando o usuário acionar a opção “Atribuir”, o sistema deve atribuir o perfil de acesso ao sistema, gravar o estado do registro como “Ativo” e a situação como “Aprovado” e retornar para a tela de consultar permissões de acesso; <a href="DocumentoDeMensagensv2.md#msg082">MSG082</a> <a href="DocumentoDeMensagensv2.md#msg086">MSG086</a></li>
+<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="DocumentoDeRegrasv2.md#rgn005">RGN005</a></li>
+</ol>
+<h2 id="modelo-de-dados">Modelo de Dados</h2>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../ete029/" class="btn btn-neutral float-left" title="ETE029 - Estornar Saída"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../EspecificacoesTecnicas/ETE039/" class="btn btn-neutral float-left" title="ETE039 - Autenticação com GOV.BR"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ETE014/" class="btn btn-neutral float-right" title="ETE014 - Adicionar um ente / instituição ao e-SUS AF">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -269,8 +311,10 @@ A princípio, a o administrador deverá contar com um recurso para configurar a 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../ete029/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../EspecificacoesTecnicas/ETE039/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../ETE014/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

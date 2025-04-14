@@ -69,6 +69,10 @@ nav:
 
 theme: readthedocs
 
+markdown_extensions:
+  - pymdownx.emoji
+  - pymdownx.tilde
+
 plugins:
   - search
   - mermaid2

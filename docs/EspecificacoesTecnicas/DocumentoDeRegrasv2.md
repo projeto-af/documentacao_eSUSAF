@@ -390,7 +390,9 @@ Os dados de UF, Município e Estabelecimentos devem ser recuperados do cadastro 
 ---
 # RGN049
 ## Cadastro de Ente 
-O sistema não deve permitir o cadastro de um ente com mesma UF e/ou Município e CNES. 
+O sistema não deve permitir o cadastro de um ente:
+    - Com o mesmo CNPJ;
+    - Com a mesma UF e/ou Município na mesma esfera de gestão;
 
 ---
 # RGN050

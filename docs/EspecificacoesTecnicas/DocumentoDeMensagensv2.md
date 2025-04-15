@@ -311,7 +311,7 @@ O perfil foi inativado.
 
 ---
 # MSG071
-O Ente foi cadastrado. 
+Cadastro realizado com sucesso.
 
 ---
 # MSG072
@@ -319,7 +319,7 @@ O cadastro desse Ente já existe.
 
 ---
 # MSG073
-O Ente do CNES informado já está cadastrado para esta instância.
+~~O Ente do CNES informado já está cadastrado para esta instância.~~
 
 ---
 # MSG074

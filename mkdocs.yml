@@ -76,3 +76,7 @@ markdown_extensions:
 plugins:
   - search
   - mermaid2
+
+markdown_extensions:
+  - pymdownx.emoji
+  - pymdownx.tilde

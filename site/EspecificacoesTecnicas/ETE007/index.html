@@ -196,7 +196,7 @@
 <p><img alt="alt text" src="../../imagens/ete-007-prot-001.png" /></p>
 <h3 id="elementos-de-tela">Elementos de Tela:</h3>
 <ul>
-<li>Bread Crumb – “Controle de Acesso / Solicitar Perfil / Consulta” </li>
+<li>Bread Crumb – “Controle de Acesso / Solicitar Perfil / Consultar” </li>
 <li>Título da página – “Consultar Meus Perfis” </li>
 <li>“Seta” – M - retorna para a Tela Inicial/Dashboard </li>
 <li>“Novo” – BT - direciona para a Tela de Solicitar Perfil  </li>
@@ -221,14 +221,40 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <h3 id="criterios-de-aceite">Critérios de aceite</h3>
 <ol>
 <li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso” quando acionar o subitem “Solicitar Perfil”; </li>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso” quando acionar o subitem “Solicitar Perfil”; </li>
 <li>A funcionalidade deve sempre estar disponível para acesso independente do usuário possuir ou não um perfil vinculado ao seu cadastro; </li>
-<li>Quando o usuário acionar a opção de “Voltar”, o sistema deve retornar à tela inicial do sistema (dashboard); </li>
+<li>Quando o usuário acionar a seta para cima ao lado do título da página, o sistema deve retornar à tela inicial do sistema (dashboard); </li>
 <li>Quando o usuário acionar a opção “Novo”, o sistema deve direcionar à tela de “Solicitar Perfil”; <a href="../ETE008/">ETE008</a></li>
-<li>O sistema deve recuperar e apresentar o CPF e o Nome Completo do usuário logado e a lista dos perfis vinculados ao seu cadastro com a respectiva situação de cada registro. Caso não exista deve apresentar a grid sem registros;  </li>
-<li>O sistema, encontrando os registros de perfis do usuário logado, deve apresentar os dados: Perfil, UF, Município, Estabelecimento, Situação e a ação de “Detalhar”; </li>
+<li>O sistema deve recuperar e apresentar o CPF e o Nome Completo do usuário logado e a lista dos perfis vinculados ao seu cadastro com a respectiva situação de cada registro. Caso não exista deve apresentar a imagem padrão "nenhum registro encontrado";  </li>
+<li>
+<p>O sistema, encontrando os registros de perfis do usuário logado, deve apresentar os dados:</p>
+<table>
+<thead>
+<tr>
+<th>Perfil</th>
+<th>UF</th>
+<th>Município</th>
+<th>Estabelecimento</th>
+<th>Situação</th>
+<th>Botão "Detalhar"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>A tabela deverá permitir ordenação crescente / decrescente nas colunas;</p>
+</li>
 <li>Os dados de UF, Município e Estabelecimento devem ser recuperados do cadastro do estabelecimento vinculado ao perfil do usuário logado; <a href="../DocumentoDeRegrasv2/#rgn048">RGN048</a></li>
-<li>As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta; <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a></li>
 <li>Quando o usuário acionar a opção “Detalhar”, o sistema deve direcionar à tela de “Detalhar Meu Perfil”. <a href="../ETE009/">ETE009</a></li>
 </ol>
               

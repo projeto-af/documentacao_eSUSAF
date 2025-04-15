@@ -218,7 +218,6 @@
 </li>
 <li>Ações conforme situação: <ul>
 <li>Editar – BT - direciona para a Tela de Editar Estabelecimento</li>
-<li>Excluir – BT </li>
 <li>Ativar – BT  </li>
 <li>Inativar – BT  </li>
 <li>Detalhar – BT - direciona para a Tela de Detalhar Estabelecimento</li>
@@ -236,15 +235,15 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <ol>
 <li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
 <li>O acesso à funcionalidade é dado através do menu lateral no item “Cadastro” quando acionar o subitem “Estabelecimento”; </li>
-<li>Quando o usuário acionar a opção de “Voltar”, o sistema deve retornar para a tela inicial do sistema (dashboard); </li>
-<li>Quando o usuário acionar a opção de “Novo”, o sistema o sistema deve direcionar para a tela de cadastro de um novo estabelecimento de saúde; <a href="../ETE013/">ETE013</a></li>
-<li>No campo “Situação”, o sistema deve apresentar as opções: Em preenchimento, Ativo e Inativo; </li>
+<li>Quando o usuário acionar a seta para cima ao lado do título da página, o sistema deve retornar à tela inicial do sistema (dashboard); </li>
+<li>Quando o usuário acionar a opção de “Novo”, o sistema o sistema deve direcionar para a tela de cadastro de um novo estabelecimento de saúde; <a href="../ETE016/">ETE016</a></li>
+<li>No campo “Situação”, o sistema deve apresentar as opções: Ativo e Inativo; </li>
 <li>No campo “Tipo de Estabelecimento”, o sistema deve apresentar as opções: Almoxarifado/CAF, Almoxarifado Regional/Regional de Saúde e/ou Farmácia/Dispensário; </li>
 <li>Quando o usuário acionar a opção “Consultar”, o sistema deve recuperar e apresentar o(s) estabelecimento(s) de saúde dentre os cadastrados e vinculados os participantes da instância do usuário do logado de acordo com o(s) filtro(s) informado(s). Caso não seja informado nenhum filtro, o sistema deve recuperar e apresentar todo(s) o(s) estabelecimento(s) da instância. Caso algum campo retorne vazio, o sistema deve apresentar a descrição “Sem informação”; <a href="../DocumentoDeRegrasv2/#rgn002">RGN002</a></li>
 <li>O sistema, não encontrando o(s) estabelecimento(s) para os filtros informados, deve informar que o(s) registro(s) não foram encontrados; <a href="../DocumentoDeMensagensv2/#msg041">MSG041</a></li>
 <li>O sistema, encontrando o(s) estabelecimento(s) de saúde, deve apresentá-lo(s) em ordem decrescente de inclusão com os respectivos dados: CNES, CNPJ, Nome do Estabelecimento, Situação e as ações desejáveis para cada registro; </li>
 <li>No campo “Nome do Estabelecimento”, na grid do resultado, o sistema deve recuperar e apresentar o nome fantasia informado no cadastro do estabelecimento, caso retorne vazio deve apresentar a razão social deste; </li>
-<li>O sistema deve permitir excluir, editar, ativar, inativar ou detalhar um registro de estabelecimento de saúde; </li>
+<li>O sistema deve permitir editar, ativar, inativar ou detalhar um registro de estabelecimento de saúde; </li>
 <li>O sistema deve apresentar as ações conforme: <ul>
 <li>Para registro com situação “Ativo”, as opções “Editar”, “Inativar” e “Detalhar”; </li>
 <li>Para registro com situação “Inativo”, as opções “Ativar” e “Detalhar”;</li>
@@ -252,7 +251,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </li>
 <li>As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta; <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a></li>
 <li>Quando o usuário acionar a opção de “Limpar”, o sistema deve limpar o(s) filtro(s) informado(s), o resultado consulta e permanecer na tela de consultar estabelecimento; </li>
-<li>Quando o usuário acionar a opção “Editar”, o sistema deve direcionar para a tela de edição de um estabelecimento de saúde; <a href="../ETE014/">ETE014</a></li>
+<li>Quando o usuário acionar a opção “Editar”, o sistema deve direcionar para a tela de edição de um estabelecimento de saúde; <a href="../ETE017/">ETE017</a></li>
 <li>As opções “Ativar” e “Inativar” somente serão apresentadas para usuários com perfil de “Gestor”; </li>
 <li>Quando o usuário acionar a opção “Inativar”, o sistema deve: <ul>
 <li>Verificar se existe(m) produto(s) no estoque do estabelecimento, caso possua apresenta uma mensagem de impedimento; <a href="../DocumentoDeRegrasv2/#rgn008">RGN008</a> <a href="../DocumentoDeMensagensv2/#msg013">MSG013</a></li>
@@ -260,7 +259,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </ul>
 </li>
 <li>Quando o usuário acionar a opção “Ativar”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve o sistema altera o estado e a situação do registro para “Ativo” e apresenta a mensagem de sucesso; <a href="../DocumentoDeMensagensv2/#msg012">MSG012</a> <a href="../DocumentoDeMensagensv2/#msg050">MSG050</a></li>
-<li>Quando o usuário acionar a opção “Detalhar”, o sistema deve direcionar para a tela de detalhamento dos dados do estabelecimento de saúde; <a href="./">ETE015</a></li>
+<li>Quando o usuário acionar a opção “Detalhar”, o sistema deve direcionar para a tela de detalhamento dos dados do estabelecimento de saúde; <a href="../ETE018/">ETE018</a></li>
 <li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
 </ol>
               

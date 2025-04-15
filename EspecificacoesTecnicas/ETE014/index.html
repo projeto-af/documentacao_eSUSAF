@@ -89,6 +89,8 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modelo-de-dados">Modelo de Dados</a>
+    </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE015/">ETE015 - Consultar Estabelecimento</a>
@@ -189,44 +191,131 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="especificacao-tecnica-014-cadastrar-ente">Especificação Técnica 014 - Cadastrar Ente</h1>
+                <h1 id="especificacao-tecnica-014-cadastrar-entes-instituicoes">Especificação Técnica 014 - Cadastrar Entes / Instituições</h1>
 <h2 id="descricao">Descrição</h2>
-<p>Como usuário quero cadastrar um ente para participar da minha instância. </p>
+<p>Como Administrador de uma instância, quero cadastrar entes / instituições ao sistema, de modo que eles consigam utilizar as funcionalidades da aplicação. </p>
 <h2 id="prototipo-001">Protótipo 001</h2>
-<p><img alt="alt text" src="../../imagens/ete-014-prot-001.png" /></p>
+<p><a href="https://xd.adobe.com/view/73019e8a-bbd1-40fe-9f30-14e5c4740fe1-2652/">Protótipo Adobe XD</a></p>
 <h3 id="elementos-de-tela">Elementos de Tela:</h3>
 <ul>
-<li>Bread Crumb – “Configuração / Cadastro de Entes / Cadastro” </li>
-<li>Título da página – “Cadastrar Ente” </li>
-<li>“Seta” – M - retorna para a Tela Consultar Entes </li>
-<li>“Consultar” – BT - retorna para a Tela Consultar Entes </li>
-<li>UF – SU </li>
-<li>Município – SU </li>
-<li>CNES – N (7) </li>
-<li>“Cadastrar” – BT </li>
-<li>“Limpar” – BT </li>
+<li><del>Bread Crumb – “Configuração / Cadastro de Entes / Cadastro”</del></li>
+<li><del>Título da página – “Cadastrar Ente”</del></li>
+<li><del>– M - retorna para a Tela Consultar Entes</del></li>
+<li><del>“Consultar” – BT - retorna para a Tela Consultar Entes</del></li>
+<li><del>UF – SU</del></li>
+<li><del>Município – SU</del></li>
+<li><del>CNES – N (7)</del></li>
+<li><del>“Cadastrar” – BT</del></li>
+<li><del>“Limpar” – BT</del></li>
 </ul>
 <p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório. </p>
+<del>TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.</del></p>
 <h3 id="criterios-de-aceite">Critérios de aceite</h3>
 <ol>
-<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Configuração”, subitem “Cadastro de Entes”, na tela “Consultar Entes” quando acionar a opção “Novo”; </li>
-<li>No campo “UF”, o sistema deve apresentar a relação das unidades da federação em ordem alfabética; </li>
-<li>No campo “Município”, o sistema deve apresentar a relação dos municípios relacionados a UF selecionada no campo anterior; </li>
-<li>Quando o usuário informar noº do CNES no campo de igual nome, o sistema de recuperar e apresentar o nome do estabelecimento através da integração com o portal do Cadastro Nacional dos Estabelecimentos de Saúde (CNES); </li>
-<li>O sistema deve permitir cadastrar um ou mais ente e estes podem set de UF distintas; </li>
-<li>O sistema não deve permitir cadastrar: <ul>
-<li>Um Ente com mesma UF e Município já cadastrado e deve emitir alerta ao usuário; <a href="../DocumentoDeRegrasv2/#rgn049">RGN049</a> <a href="../DocumentoDeMensagensv2/#msg072">MSG072</a></li>
-<li>Mais de um Ente com o mesmo CNES para a mesma instância e deve emitir alerta ao usuário. <a href="../DocumentoDeRegrasv2/#rgn049">RGN049</a> <a href="../DocumentoDeMensagensv2/#msg073">MSG073</a></li>
+<li>Apenas um usuário com perfil de administrador poderá acessar a funcionalidade de "Cadastro de entes/instituições"; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a>;</li>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Configuração”, subitem “Cadastro de Entes / Instituições”, na tela “Consultar Entes / Instituições” quando acionar a opção “Novo”; </li>
+<li>Ao selecionar a esfera federal, os campos a seguir deverão ser apresentados ao usuário para preenchimento:<ul>
+<li>UF (obrigatório);</li>
+<li>Município (obrigatório);</li>
+<li>CNPJ; e</li>
+<li>Nome Fantasia;</li>
 </ul>
 </li>
-<li>Os Entes podem ser uma UF ou um Município ou um Estabelecimento de Saúde; </li>
-<li>Após o cadastro dos entes da instalação, o usuário deve obrigatoriamente indicar um gestor para cada participante; </li>
-<li>Quando o usuário acionar a opção de “Cadastrar”, o sistema deve verificar se o preenchimento das informações atende às validações listadas, efetivar o cadastro do ente, gravar o estado e a situação do registro como “Ativo”, apresentar a mensagem de sucesso e retornar à tela de consulta aos entes apresentando este registro como o primeiro da relação dos entes cadastrados para a instância; <a href="../DocumentoDeMensagensv2/#msg071">MSG071</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
+<li>Ao selecionar a esfera estadual, os campos a seguir deverão ser apresentados ao usuário para preenchimento:<ul>
+<li>UF (obrigatório);</li>
+</ul>
+</li>
+<li>Ao selecionar a esfera municipal, os campos a seguir deverão ser apresentados ao usuário para preenchimento:<ul>
+<li>UF (obrigatório);</li>
+<li>Município (obrigatório);</li>
+</ul>
+</li>
+<li>Ao selecionar a esfera Entidade / Instituição, os campos a seguir deverão ser apresentados ao usuário para preenchimento:<ul>
+<li>CNPJ (obrigatório);</li>
+<li>Nome Fantasia (obrigatório);</li>
+</ul>
+</li>
+<li>No campo “UF”, o sistema deve apresentar a relação das unidades da federação em ordem alfabética; </li>
+<li>No campo “Município”, o sistema deve apresentar a relação dos municípios relacionados a UF selecionada, em ordem alfabética;</li>
+<li>A aplicação não deverá permitir o cadastro de:<ul>
+<li>Entes com o mesmo CNPJ e apresentar um alerta ao usuário; <a href="../DocumentoDeRegrasv2/#rgn049">RGN049</a> <a href="../DocumentoDeMensagensv2/#msg072">MSG072</a></li>
+<li>Entes com mesma UF e/ou Município para a mesma esfera de gestão e apresentar um alerta ao usuário; <a href="../DocumentoDeRegrasv2/#rgn049">RGN049</a> <a href="../DocumentoDeMensagensv2/#msg072">MSG072</a></li>
+</ul>
+</li>
+<li>Quando o usuário acionar a opção de “Finalizar”, o sistema deve verificar se o preenchimento das informações atende às validações listadas, efetivar o cadastro do ente, gravar o estado e a situação do registro como “Ativo”, apresentar a mensagem de sucesso e retornar à tela de consulta; <a href="../DocumentoDeMensagensv2/#msg071">MSG071</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
 <li>Quando o usuário acionar a opção de “Voltar ou Consultar”, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, retorna à tela de consulta aos estabelecimentos de saúde e não salva os dados incluídos. Caso a ação não seja confirmada, permanece na tela de cadastro de estabelecimento; <a href="../DocumentoDeMensagensv2/#msg006">MSG006</a></li>
-<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
+<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </li>
 </ol>
+<h2 id="modelo-de-dados">Modelo de Dados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nível</th>
+<th style="text-align: left;">Atributo</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Cardinalidade</th>
+<th style="text-align: left;">Tipo de Dado</th>
+<th style="text-align: left;">Tamanho</th>
+<th style="text-align: left;">Formato / Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Identificador</td>
+<td style="text-align: left;">Código sequencial que identifica univocamente um ente/instituição no e-SUS AF</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Esfera de Gestão</td>
+<td style="text-align: left;">Campo enumerado contendo os valores da esfera de gestão</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">M - Municipal, E - Estadual, F - Federal e I - Entidade / Instituição</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Código da UF</td>
+<td style="text-align: left;">Código da Unidade de Federação conforme TB_UF</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Código da Unidade da Federação (Obrigatório Para Esfera E / M)</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Código Município</td>
+<td style="text-align: left;">Código do Município conforme TB_MUNICIPIO</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Código do município (Obrigatório Para Esfera M)</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CNPJ</td>
+<td style="text-align: left;">Número do CNPJ da instituição que passará a usar o e-SUS AF</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">Deve ser obrigatório para Entidades/Instituições</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Nome Fantasia</td>
+<td style="text-align: left;">Nome Fantasia da entidade/instituição</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">120</td>
+<td style="text-align: left;">Deve ser obrigatório para Entidades/Instituições</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>

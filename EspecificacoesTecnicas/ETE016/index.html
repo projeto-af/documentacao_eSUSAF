@@ -218,7 +218,7 @@
 </ul>
 </li>
 <li>Tipo de Estabelecimento* – SU </li>
-<li>É obrigatória a indicação de um farmacêutico responsável para este estabelecimento? – SU </li>
+<li><del>É obrigatória a indicação de um farmacêutico responsável para este estabelecimento? – SU</del></li>
 <li>Farmacêutico(s) <ul>
 <li>CPF – N (11) </li>
 <li>Nome Completo – A (150) </li>
@@ -270,9 +270,10 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>Quando o usuário informar o CNES, o sistema deve recuperar e apresentar os dados do estabelecimento através da integração com o portal do Cadastro Nacional dos Estabelecimentos de Saúde (CNES);  </li>
 <li>O sistema deve informar ao usuário caso a consulta retorne um estabelecimento com cadastro inativo ou não encontre o registro; <a href="../DocumentoDeMensagensv2/#msg002">MSG002</a></li>
 <li>Caso algum campo retornar vazio da consulta ao portal do CNES, o sistema deve apresentar a descrição “Sem informação”; </li>
-<li>No campo “Tipo de Estabelecimento”, o sistema deve apresentar as opções: Almoxarifado/CAF, Almoxarifado Regional/Regional de Saúde e Farmácia/Dispensário; </li>
+<li>No campo “Tipo de Estabelecimento”, o sistema deve apresentar as opções: Almoxarifado/CAF, Almoxarifado Regional/Regional de Saúde e Farmácia; </li>
+<li>O usuário somente poderá realizar os cadastros de Farmacêuticos / Departamentos / Localização Física se ele tiver permissões de Gestor ou Gestor de Estabelecimento e estiver dentro do contexto do estabelecimento desejado.</li>
 <li>Deve ser possível incluir farmacêutico(s) ao cadastro do estabelecimento conforme: <ul>
-<li>A inclusão do farmacêutico ao estabelecimento não é obrigatória, desde que não tenha sido indicado a obrigatoriedade; </li>
+<li><del>A inclusão do farmacêutico ao estabelecimento não é obrigatória, desde que não tenha sido indicado a obrigatoriedade;</del></li>
 <li>Pode ser incluído um ou mais farmacêuticos; </li>
 <li>Pode ser indicado um ou mais farmacêuticos como responsáveis pelo estabelecimento de saúde; </li>
 <li>O(s) farmacêutico(s) incluído(s) pode(m) ser excluído(s). <a href="../DocumentoDeRegrasv2/#rgn016">RGN016</a></li>
@@ -284,7 +285,7 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>Quando o usuário acionar a opção “Limpar”, o sistema deve apagar as informações preenchidas nos campos CPF, Nome, Nº CRF e UF; </li>
 <li>Quando o usuário acionar a opção “Incluir”, o sistema deve gravar o estado do registro como “Ativo” e apresentar os dados: CPF, Nome, Nº CRF, UF/CRF e se é responsável pelo estabelecimento na lista de farmacêutico(s) do estabelecimento, com as ações “Editar” e “Excluir” para cada registro.  </li>
 <li>Quando o usuário acionar a opção “Editar” o registro de um farmacêutico, o sistema carrega os campos CPF, Nome, Nº CRF, UF/CRF, com os dados informados anteriormente e permite a edição, bem como a indicação se o farmacêutico é responsável pelo estabelecimento de saúde; </li>
-<li>Quando o usuário acionar a opção “Excluir” o registro de um farmacêutico, o sistema deve excluí-lo da lista de farmacêutico(s) do estabelecimento de saúde e alterar o estado do registro para “inativo”; <a href="../DocumentoDeRegrasv2/#rgn016">RGN016</a></li>
+<li><del>Quando o usuário acionar a opção “Excluir” o registro de um farmacêutico, o sistema deve excluí-lo da lista de farmacêutico(s) do estabelecimento de saúde e alterar o estado do registro para “inativo”; <a href="../DocumentoDeRegrasv2/#rgn016">RGN016</a></del></li>
 <li>Deve ser possível incluir departamento(s) ao cadastro do estabelecimento de saúde conforme: <ul>
 <li>A inclusão de um departamento não é obrigatória; </li>
 <li>Pode ser incluído um ou mais departamentos; </li>

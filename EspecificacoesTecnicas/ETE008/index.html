@@ -214,14 +214,15 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>A funcionalidade deve sempre estar disponível para acesso independente do usuário possuir ou não um perfil vinculado ao seu cadastro; </li>
 <li>O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso”, subitem “Solicitar Perfil”, na tela “Consultar Meus Perfis” quando acionar a opção “Novo”; </li>
 <li>No campo ‘Perfil”, o sistema deve recuperar e apresentar os perfis com cadastro ativo na instância, exceto os perfis de “Instalador” e “Administrador”; </li>
-<li>No campo “UF” o sistema deve recuperar e apresentar as unidades federativas participantes da instância; </li>
-<li>No campo “Município” o sistema deve recuperar e apresentar a relação dos municípios vinculados à UF informada; </li>
-<li>No campo “Estabelecimento” o sistema deve recuperar e apresentar a relação dos estabelecimentos com cadastro ativo e vinculados à UF ou Município informados; </li>
+<li>No campo “UF” o sistema deve recuperar e apresentar as unidades federativas participantes da instância com situação Ativo; </li>
+<li>No campo “Município” o sistema deve recuperar e apresentar a relação dos municípios vinculados à UF selecionada; </li>
+<li>No campo “Estabelecimento” o sistema deve recuperar e apresentar a relação dos estabelecimentos com cadastro ativo e vinculados à UF e/ou Município selecionados; </li>
 <li>O usuário ao realizar uma solicitação de permissão de acesso ao sistema, deve informar uma justificativa; <a href="../DocumentoDeRegrasv2/#rgn053">RGN053</a> </li>
 <li>O sistema deve permitir solicitar: <ul>
+<li>Perfis de acesso somente para Entes com situação Ativo;</li>
 <li>Perfis de acesso iguais em estabelecimentos diferentes;  </li>
 <li>Perfis de acesso para uma UF e/ou a um Município e/ou a um Estabelecimento;  </li>
-<li>Perfis de acesso para UF a qual já possui permissão de acesso no Município e/ou Estabelecimento desta UF; </li>
+<li>Perfis de acesso para UF a qual já possui permissão de acesso no Município e/ou Estabelecimento desta UF;</li>
 <li>Perfis de acesso para municípios distintos na mesma UF. <a href="../DocumentoDeRegrasv2/#rgn012">RGN012</a> </li>
 </ul>
 </li>

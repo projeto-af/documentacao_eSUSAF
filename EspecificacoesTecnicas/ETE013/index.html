@@ -189,7 +189,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="especificacao-tecnica-013-consultar-entes">Especificação Técnica 013 - Consultar Entes</h1>
+                <h1 id="especificacao-tecnica-013-consultar-entes-insituicoes">Especificação Técnica 013 - Consultar Entes / Insituições</h1>
 <h2 id="descricao">Descrição</h2>
 <p>Como usuário quero consultar os entes que pertencem à minha instância. </p>
 <h2 id="prototipo-001">Protótipo 001</h2>
@@ -219,16 +219,47 @@
 TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório. </p>
 <h3 id="criterios-de-aceite">Critérios de aceite</h3>
 <ol>
-<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Configuração” quando acionar o subitem “Cadastro de Entes”; </li>
-<li>Quando o usuário acionar a opção de “Voltar”, o sistema deve retornar à tela inicial do sistema (dashboard); </li>
-<li>Quando o usuário acionar a opção de “Novo”, o sistema deve direcionar à tela “Cadastrar Ente”; <a href="../ETE014/">ETE014</a></li>
-<li>O sistema deve recuperar o(s) ente(s) cadastrado(s) e que pertence(m) à instância do usuário e apresentar a lista com os dados: UF, Município, CNES, Situação e as ações desejáveis para cada registro. Caso algum campo retornar vazio, o sistema deve apresentar a descrição “-”; </li>
-<li>O sistema deve apresentar as ações conforme: </li>
-<li>Para registro com situação “Ativo”, a opção “Inativar”; </li>
-<li>Para registro com situação “Inativo”, a opção “Ativar”; </li>
+<li>Apenas um usuário com perfil de administrador poderá acessar a funcionalidade de "Cadastro de entes/instituições"; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a>;</li>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Configuração” quando acionar o subitem “Cadastro de Entes / Instituições”; </li>
+<li>Quando o usuário acionar a seta para cima ao lado do título da página, o sistema deve retornar à tela inicial do sistema (dashboard); </li>
+<li>Quando o usuário acionar a opção de “Novo”, o sistema deve direcionar à tela “Cadastrar Ente / Instituição”; <a href="../ETE014/">ETE014</a></li>
+<li>
+<p>O sistema deve recuperar o(s) ente(s) cadastrado(s) e que pertence(m) à instância e apresentar a tabela com os dados:</p>
+<table>
+<thead>
+<tr>
+<th>Esfera</th>
+<th>UF</th>
+<th>Município</th>
+<th>CNPJ</th>
+<th>Nome</th>
+<th>Situação</th>
+<th>Ações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Na coluna de ações, apresentar as opções conforme situação: </p>
+<ul>
+<li>Para registro com situação “Ativo”, apresentar a opção “Inativar”; </li>
+<li>Para registro com situação “Inativo”, apresentar a opção “Ativar”; </li>
+</ul>
+</li>
 <li>Quando o usuário acionar a opção “Ativar”, o sistema deve apresentar mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve ativar a participação do ente e apresentar a mensagem de sucesso. Caso a ação não seja confirmada, o sistema permanece na tela de consulta; <a href="../DocumentoDeMensagensv2/#msg066">MSG066</a> <a href="../DocumentoDeMensagensv2/#msg068">MSG068</a></li>
 <li>Quando o usuário acionar a opção “Inativar”, o sistema deve apresentar mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve inativar a participação do ente e apresentar a mensagem de sucesso. Caso a ação não seja confirmada, o sistema permanece na tela de consulta; <a href="../DocumentoDeMensagensv2/#msg067">MSG067</a> <a href="../DocumentoDeMensagensv2/#msg069">MSG069</a></li>
+<li>O sistema deverá garantir que usuários não consigam acessar estabelecimentos de Entes na situação Inativo;</li>
 <li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
 </ol>
               

@@ -448,7 +448,7 @@ O sistema não deve permitir atribuir mais de um perfil de acesso por estabeleci
 ---
 # RGN055
 ## Indicação de estabelecimento na atribuição de perfil de acesso 
-Para atribuição de perfil de acesso é obrigatória a indicação de um estabelecimento exceto para os perfis de “Administrador” e “Gestor”. 
+~~Para atribuição de perfil de acesso é obrigatória a indicação de um estabelecimento exceto para os perfis de “Administrador” e “Gestor”.~~
 
 ---
 # RGN056

@@ -10,7 +10,7 @@ Como Gestor, desejo realizar a gestão dos perfis do meu Ente, de modo que seja 
 ![alt text](../imagens/ete-010-prot-001.png)
 
 ### Critérios de aceite
-2. O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso / Gerenciar Perfil”; 
+2. O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso" > "Gerenciar Perfil”; 
 3. Quando o usuário acionar a seta para cima ao lado do título da página, o sistema deve retornar à tela inicial do sistema (dashboard); 
 4. Quando o usuário acionar a opção de “Novo”, o sistema deve direcionar ao [Protótipo 002](ETE-gerenciar-perfil.md#prototipo-002);
 5. O sistema deve apresentar os perfis do sistema em uma tabela no modelo:

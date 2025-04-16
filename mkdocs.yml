@@ -48,6 +48,7 @@ nav:
       - ETE038 - Configuração de integração SI BNAFAR: EspecificacoesTecnicas/ETE038.md
       - ETE039 - Autenticação com GOV.BR: EspecificacoesTecnicas/ETE039.md
     - Para Validação:
+      - ETE - Gerenciar Perfil : validacao/ETE-gerenciar-perfil.md
       - ETE005 - Atribuir Permissão de Acesso : validacao/ETE005.md
       - ETE014 - Adicionar um ente / instituição ao e-SUS AF : validacao/ETE014.md
       - ETE023 - Consultar Saídas : validacao/ete023.md

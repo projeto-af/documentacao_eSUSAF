@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>HU016 - Cadastrar Entrada - e-SUS AF - Documentação Negocial</title>
+    <title>ETE042 - Requisição de produtos - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "HU016 - Cadastrar Entrada";
-        var mkdocs_page_input_path = "HistoriasDeUsuario/HU017.md";
+        var mkdocs_page_name = "ETE042 - Requisi\u00e7\u00e3o de produtos";
+        var mkdocs_page_input_path = "validacao/ETE042.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -44,7 +44,7 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/">Documento de Mensagens</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeRegrasv2/">Documento de Regras</a>
@@ -131,29 +131,51 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Para Validação</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ete023/">ETE023 - Consultar Saídas</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ete024/">ETE024 - Cadastrar Saídas</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ete025/">ETE025 - Editar Saídas</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ete026/">ETE026 - Detalhar Saídas</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ete029/">ETE029 - Estornar Saída</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE040/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE040/">ETE040 - Cadastro de Entes</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041/">ETE041 - Transferência entre estabelecimentos</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE041/">ETE041 - Transferência entre estabelecimentos</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE042/">ETE042 - Requisição de produtos</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE042 - Requisição de produtos</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#historia-de-usuario">História de Usuário</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#regras-de-negocio">Regras de Negócio</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fluxograma">Fluxograma</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modelo-de-dados">Modelo de Dados</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cenarios-de-testes-bdd">Cenários de testes (BDD)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#cenario-001">Cenário 001:</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
                 </li>
     </ul>
                   </li>
@@ -172,7 +194,9 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">HU016 - Cadastrar Entrada</li>
+          <li class="breadcrumb-item">Especificações Técnicas</li>
+          <li class="breadcrumb-item">Para Validação</li>
+      <li class="breadcrumb-item active">ETE042 - Requisição de produtos</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -181,195 +205,214 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="hu016-cadastrar-entrada">HU016 - Cadastrar Entrada</h1>
+                <h1 id="requisicao-de-produtos-para-estabelecimentos">Requisição de produtos para estabelecimentos</h1>
+<h2 id="historia-de-usuario">História de Usuário</h2>
+<p><strong>Como</strong> usuário do sistema de gestão farmacêutica,<br />
+<strong>Quero</strong> realizar requisições de produtos para estabelecimentos,<br />
+<strong>Para que</strong> eu possa recompor meu estoque e garantir a disponibilidade de produtos para atender os usuários SUS.</p>
+<hr />
 <h2 id="descricao">Descrição</h2>
-<p>Como usuário, desejo cadastrar as entradas de produtos, de modo a disponibilizar produtos no estoque para uso.</p>
-<h2 id="regras">Regras</h2>
-<ul>
-<li>Ao selecionar "Saldo de Implantação” ou “Ajuste de Estoque” como Tipo de Movimentação, os campos a seguir não deverão ser considerados obrigatórios.<ul>
-<li>Modalidade de Licitação</li>
-<li>Tipo de Documento</li>
-<li>Número do Documento</li>
-<li>Data do Documento</li>
-<li>CNES/CNPJ (fornecedor)</li>
-<li>Razão Social (fornecedor)</li>
+<p>A funcionalidade de Requisiçao de Produtos permite que estabelecimentos de saúde vinculadas a um mesmo ente federativo (como municípios, estados ou entidades) realizem o remanejamento de medicamentos e insumos de forma controlada, rastreável e integrada. A requisição ocorrerá por solicitação formalizada, podendo ser aceita ou não pelo estabelecimento requisitado.</p>
+<p>A funcionalidade tem como objetivo evitar o desperdício de medicamentos, melhorar a alocação de recursos e otimizar a gestão de estoques. O sistema controla todas as etapas da requisição — desde a criação da solicitação até o recebimento e conferência no destino — garantindo integridade, validação de prazos de validade, controle de status, e registro de divergências. Além disso, promove a atualização automática de estoques somente após o aceite e armazenamento no destino, assegurando rastreabilidade e confiabilidade nas movimentações.</p>
+<hr />
+<h2 id="regras-de-negocio">Regras de Negócio</h2>
+<ol>
+<li>Todas as etapas do processo de requisição deverão ser controladas</li>
+<li>Permitir requisição para todos os estabeleciemntos pertencentes ao Ente do estabelecimento requerente;</li>
+<li>Permitir consultar estoque de todos os estabelecimentos pertencentes ao Ente do estabelecimento requerente;</li>
+<li>Permitir aceite ou recusa de atendimento da solicitação pelos estabelecimentos requisitados;</li>
+<li>Emitir <a href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/#msg098">alerta de requisição</a> para estabelecimentos que receberam solicitação de transferência;<ul>
+<li><code>será possível ser atendido por mais de um estabelecimento na mesma requisição?</code></li>
 </ul>
 </li>
-<li>Ao selecionar “Produção Própria”, os campos a seguir não deverão ser considerados obrigatórios.<ul>
-<li>Tipo de Documento</li>
-<li>Número do Documento</li>
-<li>Data do Documento</li>
+<li>Impedir o envio de produtos:<ul>
+<li>com validade vencida;<ul>
+<li>Emitir <a href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/#msg096">alerta de validade vencida</a>;</li>
 </ul>
 </li>
-<li>Ao selecionar "Nota Fiscal Eletrônica” no campo “Tipo de documento”, apresentar o campo NFe (XML) para o usuário.</li>
-<li>Ao inserir o arquivo NFe (XML) no sistema, preencher os campos abaixo automaticamente, com dados extraídos do XML<ul>
-<li>Nº Documento</li>
-<li>Data do documento</li>
-<li>Valor do documento</li>
-<li>Fornecedor</li>
-<li>Produto com Fabricante</li>
-<li>Lote</li>
-<li>Validade</li>
+<li>com prazo de validade inferior a 3 meses;<ul>
+<li>Emitir <a href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/#msg097">alerta de validade próxima</a>;</li>
 </ul>
 </li>
-<li>Ao excluir o arquivo NFe (XML), apresentar uma mensagem de confirmação de exclusão e, caso seja confirmado, apagar os dados dos campos que foram preenchidos automaticamente.</li>
-<li>Em relação às datas:<ul>
-<li>Não permitir data anterior a 1 ano da data atual</li>
-<li>Não permitir data posterior à data atual</li>
 </ul>
 </li>
-<li>O campo "Valor do Documento" deverá ser calculado automaticamente com a somatória dos valores dos produtos adicionados à entrada, sendo apresentado da seguinte forma:<ul>
-<li>valor em reais (R$)</li>
-<li>com duas casas decimais</li>
-<li>seguindo a norma NBR 5891 da ABNT (que trata de arredondamento de números decimais)</li>
+<li>Fluxo de status:<ul>
+<li><code>Aberto</code><ul>
+<li>Quando uma solicitação de movimentação é iniciada. Cada solicitação gera um ID.</li>
 </ul>
 </li>
-<li>CNES e CNPJ deverão ser validados e:<ul>
-<li>se forem existentes, preencher o campo Razão Social do fornecedor</li>
-<li>se forem inexistentes, apresentar mensagem de erro MSG0017</li>
-<li>se o dados for inválido, apresentar mensagem de erro MSG0015</li>
+<li><code>Atendido</code><ul>
+<li>Quando a solicitação de movimentação é atendida por um estabelecimento ou CAF.</li>
 </ul>
 </li>
-<li>O campo "Data do Recebimento" deverá ser preenchido </li>
+<li><code>Cancelado</code><ul>
+<li>Operação interrompida antes do envio. O cancelamento poderá ser realizado pelo estabelecimento de origem, apenas se estiver nos status “Aberto, Atendido”, e pelo estabelecimento de destino, se o status for “Aberto”.</li>
 </ul>
-<h2 id="criterios-de-aceite">Critérios de aceite</h2>
-<p><strong>Cenário: Cadastrar nova entrada</strong><br />
-<strong>Dado</strong> que o usuário que possui permissão esteja na tela de cadastrar entrada<br />
-<strong>Quando</strong> ele preencher o formulário conforme obrigatoriedade dos campos<br />
-<strong>E</strong> clicar no botão armazenar<br />
-<strong>Então</strong> uma nova entrada será cadastrada</p>
-<p><strong>Cenário: Salvar rascunho de uma nova entrada</strong><br />
-<strong>Dado</strong> que o usuário que possui permissão esteja na tela de cadastrar entrada<br />
-<strong>Quando</strong> ele preencher o formulário conforme obrigatoriedade dos campos<br />
-<strong>E</strong> clicar no botão Salvar Parcial<br />
-<strong>Então</strong> um rascunho da nova entrada será salvo</p>
-<p><strong>Cenário: Excluir arquivo da Nota Fiscal Eletrônica (XML)</strong><br />
-<strong>Dado</strong> que um arquivo NFe (XML) foi importado para o sistema<br />
-<strong>Quando</strong> ele for excluído<br />
-<strong>Então</strong> apresentar uma mensagem de confirmação de exclusão ao usuário</p>
-<h2 id="modelo-de-dados">Modelo de dados</h2>
+</li>
+<li><code>Enviado</code><ul>
+<li>Medicamentos transferidos e em trânsito. Momento onde os itens saem do estoque da origem e passam a ser um estoque “em trânsito”.</li>
+</ul>
+</li>
+<li><code>Concluído</code><ul>
+<li>Medicamentos chegaram ao estabelecimento de destino. Estabelecimento confirma e ocorre a entrada automática no estoque do estabelecimento de destino.</li>
+</ul>
+</li>
+<li><code>Aceito parcial</code><ul>
+<li>Quando o estabelecimento destino identifica que algum item não deve ser recebido. Problemas de validade, quantidade, outros.</li>
+</ul>
+</li>
+<li><code>Recusado</code><ul>
+<li>Quando o estabelecimento destino identifica que todos os itens não estão em condições de serem recebidos. Problemas de validade, quantidade, outros.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Justificativas devem ser preenchidas caso haja divergências no envio / recebimento;</li>
+<li>Envios / recebimentos sempre deverão gerar registros nos estabelecimentos envolvidos no processo;</li>
+<li>Atualizar automaticamente o estoque após alteração do status da requisição para <code>Concluído</code>;</li>
+<li>No caso de <code>Aceito parcial</code>, o sistema somente efetivará a atualização do estoque de maneira automática após a confirmação de todos os estabelecimentos envolvidos, conforme fluxograma da funcionalidade;</li>
+</ol>
+<hr />
+<h2 id="fluxograma">Fluxograma</h2>
+<p><a href="../../imagens/ete041-fluxo-requisicao.png">Fluxo Requisição entre estabelecimentos</a>
+<img alt="Fluxo Requisição entre estabelecimentos" src="../../imagens/ete041-fluxo-requisicao.png" /></p>
+<hr />
+<h2 id="prototipo-001">Protótipo 001</h2>
+<p><em>(inserir link do protótipo não funcional nabegável via adobe XD ou similares)</em></p>
+<hr />
+<h2 id="criterios-de-aceite">Critérios de Aceite</h2>
+<ol>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../../EspecificacoesTecnicas/DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
+<li>Acesso<ul>
+<li>Menu &gt; Gestão de Estoque &gt; Requisições</li>
+</ul>
+</li>
+<li>O sistema deve validar todos os campos obrigatórios antes do envio.</li>
+<li>Transferências geram movimentações de saída/entrada automáticas ao terem status alterados para aceito.
+<code>E no caso de recebimento parcial onde há devolução para o rementente e ele aponta divergência nos produtos devolvidos?</code></li>
+<li>Estoques atualizados apenas após conferência e aceite pelo destino.</li>
+<li>Apenas registros sem movimentações podem ser editados.</li>
+<li>Alertas visíveis para destinatários com solicitações pendentes.</li>
+</ol>
+<hr />
+<h2 id="modelo-de-dados">Modelo de Dados</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Nível</th>
+<th>Nível</th>
 <th>Atributo</th>
 <th>Descrição</th>
-<th style="text-align: center;">Cardinalidade</th>
-<th style="text-align: center;">Tipo de Dados</th>
-<th style="text-align: center;">Tamanho</th>
-<th style="text-align: center;">Formato</th>
-<th style="text-align: center;">Obrigatoriedade</th>
+<th>Cardinalidade</th>
+<th>Tipo de Dado</th>
+<th>Tamanho</th>
+<th>Formato / Observação</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"></td>
 <td></td>
 <td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;"></td>
 <td></td>
 <td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;"></td>
 <td></td>
 <td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;"></td>
 <td></td>
-<td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;"></td>
-<td></td>
-<td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;"></td>
-<td></td>
-<td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;"></td>
-<td></td>
-<td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;"></td>
-<td></td>
-<td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;"></td>
-<td></td>
-<td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;"></td>
-<td></td>
-<td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
-<h2 id="design-conceitual">Design Conceitual</h2>
-<p><img alt="alt text" src="../imagens/10-cadastrar-entrada.png" /></p>
-<p><img alt="alt text" src="../imagens/11-estornar-entrada.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th>Obrigatório</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID Transferência</td>
+<td>UUID</td>
+<td>Sim</td>
+<td>Gerado automaticamente</td>
+</tr>
+<tr>
+<td>Estabelecimento Origem</td>
+<td>Referência</td>
+<td>Sim</td>
+<td>CNES e nome</td>
+</tr>
+<tr>
+<td>Estabelecimento Destino</td>
+<td>Referência</td>
+<td>Sim</td>
+<td>CNES e nome</td>
+</tr>
+<tr>
+<td>Produto</td>
+<td>Referência</td>
+<td>Sim</td>
+<td>Código OBM ou EAN</td>
+</tr>
+<tr>
+<td>Lote</td>
+<td>Texto</td>
+<td>Sim</td>
+<td></td>
+</tr>
+<tr>
+<td>Validade</td>
+<td>Data</td>
+<td>Sim</td>
+<td>Alerta se &lt; 3 meses. Rejeitar se vencido</td>
+</tr>
+<tr>
+<td>Quantidade</td>
+<td>Inteiro</td>
+<td>Sim</td>
+<td></td>
+</tr>
+<tr>
+<td>Motivo da Solicitação</td>
+<td>Texto</td>
+<td>Sim</td>
+<td></td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Enum</td>
+<td>Sim</td>
+<td>Aberto, Enviado, Finalizado, etc.</td>
+</tr>
+<tr>
+<td>Justificativa</td>
+<td>Texto</td>
+<td>Condicional</td>
+<td>Obrigatória para recusa, divergência ou devolução</td>
+</tr>
+<tr>
+<td>Usuário Solicitante</td>
+<td>Referência</td>
+<td>Sim</td>
+<td>Nome e ID do operador</td>
+</tr>
+<tr>
+<td>Data/Hora da Solicitação</td>
+<td>DateTime</td>
+<td>Sim</td>
+<td>Registro automático</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="cenarios-de-testes-bdd">Cenários de testes (BDD)</h2>
+<h3 id="cenario-001">Cenário 001:</h3>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ETE041/" class="btn btn-neutral float-left" title="ETE041 - Transferência entre estabelecimentos"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
 
   <hr/>
 
@@ -390,6 +433,8 @@
   <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
+    
+      <span><a href="../ETE041/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>

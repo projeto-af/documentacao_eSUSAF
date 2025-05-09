@@ -421,3 +421,18 @@ Usuário SUS com registro de óbito.
 ---
 # MSG095
 O Estabelecimento de Destino deve ser diferente do seu estabelecimento.
+
+---
+# MSG096
+Produto com validade vencida.
+
+---
+# MSG097
+Prazo de validade do produto é inferior a 3 meses.
+
+---
+# MSG098
+Requisição solicitada:  
+- Estabelecimento
+- Produto
+- Quantidade

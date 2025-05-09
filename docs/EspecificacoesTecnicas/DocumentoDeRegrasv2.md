@@ -3,49 +3,58 @@
 # RGN001
 ## Permissão de acesso por funcionalidade
 
-| Funcionalidade | Instalador | Administrador (ADM) | Gestor (GST) | Gestor Estabelecimento (GEST) | Farmacêutico (FAR) | Atendente (ATD) |
-| -------------- | :-----------------: | :-----------------: | :----------: | :---------------------------: | :----------------: | :-------------: |
-| **CONTROLE DE ACESSO** |
-| **MODERAR ACESSO** | 
-| Consultar Permissões Acesso | X | X | X | X |
-| Atribuir Perfil | X | X | X | X |
-| Detalhar Permissões Acesso | X | X | X | X |
-| **SOLICITAR PERFIL** | 
-| Consultar Meu Perfil | | X | X | X | X | X |
-| Solicitar Perfil | | X | X | X | X | X |
-| Detalhar Meu Perfil | | X | X | X | X | X |
-| **GERENCIAR PERFIL** | 
-| Consultar Perfil | | | X | 
-| Cadastrar Perfil | | | X |
-| Detalhar Perfil | | | X |
-| **CONFIGURAÇÃO** | 
-| **Cadastro de Entes** | 
-| Consultar Ente | | X | 
-| Cadastrar Ente | | X | 
-| **CADASTRO** | 
-| **Estabelecimento** | 
-| Consultar Estabelecimento | | | X | X | X | X |
-| Cadastrar Estabelecimento | | | X |
-| Editar Estabelecimento | | | X | X | X |
-| Detalhar Estabelecimento | | | X | X | X | X |
-| **Usuário SUS** | 
-| Consultar Usuário SUS | | | X | X | X | X |
-| Cadastrar Usuário SUS | | | X | X | X | X |
-| Editar Usuário SUS | | | X | X | X | X |
-| Detalhar Usuário SUS | | | X | X | X | X |
-| **MOVIMENTAÇÃO** | 
-| **Entrada** | 
-| Consultar Entrada | | | X | X | X | X |
-| Cadastrar Entrada | | | X | X | X | X |
-| Editar Entrada | | | X | X | X | X |
-| Detalhar Entrada | | | X | X | X | X |
-| **Saída** | 
-| Consultar Saída | | | X | X | X | X |  
-| Cadastrar Saída | | | X | X | X | X |
-| Editar Saída | | | X | X | X | X |
-| Detalhar Saída | | | X | X | X | X |
-| **Relatórios** | 
-| Posição de Estoque | | | X | X | X |
+| Funcionalidade              | Instalador          | Administrador (ADM) | Gestor (GST) | Gestor Estabelecimento (GEST) | Farmacêutico (FAR) | Atendente (ATD) | Administrativo (ATV) |
+| ----------------------------| :-----------------: | :-----------------: | :----------: | :---------------------------: | :----------------: | :-------------: | :------------------: |
+| **CONTROLE DE ACESSO**      |                     |                     |              |                               |                    |                 |                      |
+| **MODERAR ACESSO**          |                     |                     |              |                               |                    |                 |                      |
+| Consultar Permissões Acesso | X                   | X                   | X            | X                             |                    |                 |                      |
+| Atribuir Perfil             | X                   | X                   | X            | X                             |                    |                 |                      |
+| Detalhar Permissões Acesso  | X                   | X                   | X            | X                             |                    |                 |                      |
+| **SOLICITAR PERFIL**        |                     |                     |              |                               |                    |                 |                      |
+| Consultar Meu Perfil        |                     | X                   | X            | X                             | X                  | X               | X                    |
+| Solicitar Perfil            |                     | X                   | X            | X                             | X                  | X               | X                    |
+| Detalhar Meu Perfil         |                     | X                   | X            | X                             | X                  | X               | X                    |
+| **GERENCIAR PERFIL**        |                     |                     |              |                               |                    |                 |                      |
+| Consultar Perfil            |                     |                     | X            |                               |                    |                 |                      |
+| Cadastrar Perfil            |                     |                     | X            |                               |                    |                 |                      |
+| Detalhar Perfil             |                     |                     | X            |                               |                    |                 |                      |
+| **CONFIGURAÇÃO**            |                     |                     |              |                               |                    |                 |                      |
+| **GESTÃO DE INTEGRAÇÕES**   |                     |                     |              |                               |                    |                 |                      |
+| Consultar Integrações       |                     | X                   |              |                               |                    |                 |                      |
+| Configurar Integrações      |                     | X                   |              |                               |                    |                 |                      |
+| Detalhar Integrações        |                     | X                   |              |                               |                    |                 |                      |
+| **CADASTRO DE ENTES**       |                     |                     |              |                               |                    |                 |                      |
+| Consultar Ente              |                     | X                   |              |                               |                    |                 |                      |
+| Cadastrar Ente              |                     | X                   |              |                               |                    |                 |                      |
+| **CADASTRO**                |                     |                     |              |                               |                    |                 |                      |
+| **ESTABELECIMENTO**         |                     |                     |              |                               |                    |                 |                      |
+| Consultar Estabelecimento   |                     |                     | X            | X                             | X                  | X               | X                    |
+| Cadastrar Estabelecimento   |                     |                     | X            |                               |                    |                 |                      |
+| Editar Estabelecimento      |                     |                     | X            | X                             | X                  |                 |                      |
+| Detalhar Estabelecimento    |                     |                     | X            | X                             | X                  | X               | X                    |
+| **USUÁRIO SUS**             |                     |                     |              |                               |                    |                 |                      |
+| Consultar Usuário SUS       |                     |                     | X            | X                             | X                  | X               | X                    |
+| Cadastrar Usuário SUS       |                     |                     | X            | X                             | X                  | X               | X                    |
+| Editar Usuário SUS          |                     |                     | X            | X                             | X                  | X               | X                    |
+| Detalhar Usuário SUS        |                     |                     | X            | X                             | X                  | X               | X                    |
+| **MOVIMENTAÇÃO**            |                     |                     |              |                               |                    |                 |                      |
+| **ENTRADA**                 |                     |                     |              |                               |                    |                 |                      |
+| Consultar Entrada           |                     |                     | X            | X                             | X                  | X               | X                    |
+| Cadastrar Entrada           |                     |                     | X            | X                             | X                  | X               | X                    |
+| Editar Entrada              |                     |                     | X            | X                             | X                  | X               | X                    |
+| Detalhar Entrada            |                     |                     | X            | X                             | X                  | X               | X                    |
+| **SAÍDA**                   |                     |                     |              |                               |                    |                 |                      |
+| Consultar Saída             |                     |                     | X            | X                             | X                  | X               | X                    |
+| Cadastrar Saída             |                     |                     | X            | X                             | X                  | X               | X                    |
+| Editar Saída                |                     |                     | X            | X                             | X                  | X               | X                    |
+| Detalhar Saída              |                     |                     | X            | X                             | X                  | X               | X                    |
+| **GESTÃO DE ESTOQUE**       |                     |                     |              |                               |                    |                 |                      |
+| Consultar Estoque           |                     |                     | X            | X                             | X                  |                 |                      |
+| Editar Estoque              |                     |                     | X            | X                             | X                  |                 |                      |
+| **RELATÓRIOS**              |                     |                     |              |                               |                    |                 |                      |
+| Posição de Estoque          |                     |                     | X            | X                             | X                  | X               | X                    |
+| Movimentações               |                     |                     | X            | X                             | X                  | X               | X                    |
+| Dispensação / Fornecimento  |                     |                     | X            | X                             | X                  | X               | X                    |
 
 **OBSERVAÇÃO:**  
 As açoes realizadas pelos perfis de acordo com os proviégios afetam:

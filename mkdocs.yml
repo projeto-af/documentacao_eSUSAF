@@ -57,6 +57,8 @@ nav:
       - ETE026 - Detalhar Saídas : validacao/ete026.md
       - ETE029 - Estornar Saída : validacao/ete029.md
       - ETE040 - Cadastro de Entes : validacao/ETE040.md
+      - ETE041 - Transferência entre estabelecimentos : validacao/ETE041.md
+      - ETE042 - Requisição de produtos : validacao/ETE042.md
 
 
 #  - Histórias de Usuário:

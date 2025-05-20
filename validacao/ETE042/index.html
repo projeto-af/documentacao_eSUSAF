@@ -221,10 +221,7 @@
 <li>Permitir requisição para todos os estabeleciemntos pertencentes ao Ente do estabelecimento requerente;</li>
 <li>Permitir consultar estoque de todos os estabelecimentos pertencentes ao Ente do estabelecimento requerente;</li>
 <li>Permitir aceite ou recusa de atendimento da solicitação pelos estabelecimentos requisitados;</li>
-<li>Emitir <a href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/#msg098">alerta de requisição</a> para estabelecimentos que receberam solicitação de transferência;<ul>
-<li><code>será possível ser atendido por mais de um estabelecimento na mesma requisição?</code></li>
-</ul>
-</li>
+<li>Emitir <a href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/#msg098">alerta de requisição</a> para estabelecimentos que receberam solicitação de transferência;</li>
 <li>Impedir o envio de produtos:<ul>
 <li>com validade vencida;<ul>
 <li>Emitir <a href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/#msg096">alerta de validade vencida</a>;</li>
@@ -253,7 +250,7 @@
 <li>Medicamentos transferidos e em trânsito. Momento onde os itens saem do estoque da origem e passam a ser um estoque “em trânsito”.</li>
 </ul>
 </li>
-<li><code>Concluído</code><ul>
+<li><code>Aceito</code><ul>
 <li>Medicamentos chegaram ao estabelecimento de destino. Estabelecimento confirma e ocorre a entrada automática no estoque do estabelecimento de destino.</li>
 </ul>
 </li>
@@ -269,7 +266,7 @@
 </li>
 <li>Justificativas devem ser preenchidas caso haja divergências no envio / recebimento;</li>
 <li>Envios / recebimentos sempre deverão gerar registros nos estabelecimentos envolvidos no processo;</li>
-<li>Atualizar automaticamente o estoque após alteração do status da requisição para <code>Concluído</code>;</li>
+<li>Atualizar automaticamente o estoque após alteração do status da requisição para <code>Aceito</code>;</li>
 <li>No caso de <code>Aceito parcial</code>, o sistema somente efetivará a atualização do estoque de maneira automática após a confirmação de todos os estabelecimentos envolvidos, conforme fluxograma da funcionalidade;</li>
 </ol>
 <hr />
@@ -288,8 +285,7 @@
 </ul>
 </li>
 <li>O sistema deve validar todos os campos obrigatórios antes do envio.</li>
-<li>Transferências geram movimentações de saída/entrada automáticas ao terem status alterados para aceito.
-<code>E no caso de recebimento parcial onde há devolução para o rementente e ele aponta divergência nos produtos devolvidos?</code></li>
+<li>Transferências geram movimentações de saída/entrada automáticas ao terem status alterados para aceito.</li>
 <li>Estoques atualizados apenas após conferência e aceite pelo destino.</li>
 <li>Apenas registros sem movimentações podem ser editados.</li>
 <li>Alertas visíveis para destinatários com solicitações pendentes.</li>

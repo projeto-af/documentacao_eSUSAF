@@ -48,6 +48,11 @@
 | Cadastrar Saída             |                     |                     | X            | X                             | X                  | X               | X                    |
 | Editar Saída                |                     |                     | X            | X                             | X                  | X               | X                    |
 | Detalhar Saída              |                     |                     | X            | X                             | X                  | X               | X                    |
+| **REQUISIÇÃO**              |                     |                     |              |                               |                    |                 |                      |
+| Consultar Requisição        |                     |                     | X            | X                             | X                  |                 |                      |
+| Cadastrar Requisição        |                     |                     | X            | X                             | X                  |                 |                      |
+| Editar Requisição           |                     |                     | X            | X                             | X                  |                 |                      |
+| Detalhar Requisição         |                     |                     | X            | X                             | X                  |                 |                      |
 | **GESTÃO DE ESTOQUE**       |                     |                     |              |                               |                    |                 |                      |
 | Consultar Estoque           |                     |                     | X            | X                             | X                  |                 |                      |
 | Editar Estoque              |                     |                     | X            | X                             | X                  |                 |                      |

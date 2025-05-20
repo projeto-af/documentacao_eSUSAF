@@ -436,3 +436,10 @@ Requisição solicitada:
 - Estabelecimento
 - Produto
 - Quantidade
+
+---
+# MSG099
+Confirmação de saída  
+
+Antes de confirmar a saída é importante separar os produtos para o envio. 
+Sendo assim deseja confirmá-la?

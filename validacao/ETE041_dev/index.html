@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>ETE040 - Cadastro de Entes - e-SUS AF - Documentação Negocial</title>
+    <title>ESPECIFICAÇÃO TÉCNICA 040: INTEGRAÇÃO AO SERVIÇO PDQ DO CNS - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "ETE040 - Cadastro de Entes";
-        var mkdocs_page_input_path = "validacao/ETE040.md";
+        var mkdocs_page_name = "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA 040: INTEGRA\u00c7\u00c3O AO SERVI\u00c7O PDQ DO CNS";
+        var mkdocs_page_input_path = "validacao/ETE041_dev.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -44,7 +44,7 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
-              <ul class="current">
+              <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/">Documento de Mensagens</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeRegrasv2/">Documento de Regras</a>
@@ -125,14 +125,22 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE037/">ETE037 - Gestão de Estoques</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE038/">ETE038 - Configuração de integração SI BNAFAR</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE038/">ETE038 - Autenticação com GOV.BR</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE039/">ETE039 - Autenticação com GOV.BR</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE039/">ETE039 - Transferência de Produtos entre Estabelecimentos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE040/">ETE040 - Requisição de produtos para estabelecimentos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE041/">ETE041 - Selecionar Transmissor Federal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE042/">ETE042 - Configurar transmissão SI Bnafar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE043/">ETE043 - Transmitir dados SI Bnafar</a>
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" >Para Validação</a>
-    <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+    <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
@@ -149,21 +157,9 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ete029/">ETE029 - Estornar Saída</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE040 - Cadastro de Entes</a>
-    <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#historico-de-revisoes">Histórico de Revisões</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#historia-de-usuario">História de Usuário</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#motivacao">Motivação</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#implementacao">Implementação</a>
-    </li>
-    </ul>
+                <li class="toctree-l2"><a class="" href="../ETE040.md">ETE040 - Cadastro de Entes</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE041/">ETE041 - Transferência entre estabelecimentos</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE042/">ETE042 - Requisição de produtos</a>
+                <li class="toctree-l2"><a class="" href="../ETE042.md">ETE042 - Requisição de produtos</a>
                 </li>
     </ul>
                   </li>
@@ -182,9 +178,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Especificações Técnicas</li>
-          <li class="breadcrumb-item">Para Validação</li>
-      <li class="breadcrumb-item active">ETE040 - Cadastro de Entes</li>
+      <li class="breadcrumb-item active">ESPECIFICAÇÃO TÉCNICA 040: INTEGRAÇÃO AO SERVIÇO PDQ DO CNS</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -251,10 +245,6 @@ A princípio, a o administrador deverá contar com um recurso para configurar a 
               
             </div>
           </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../ete029/" class="btn btn-neutral float-left" title="ETE029 - Estornar Saída"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../ETE041/" class="btn btn-neutral float-right" title="ETE041 - Transferência entre estabelecimentos">Next <span class="icon icon-circle-arrow-right"></span></a>
-    </div>
 
   <hr/>
 
@@ -276,10 +266,6 @@ A princípio, a o administrador deverá contar com um recurso para configurar a 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../ete029/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../ETE041/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -45,8 +45,12 @@ nav:
       - ETE035 - Detalhar Integração Barramento AF: EspecificacoesTecnicas/ETE035.md
       - ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF: EspecificacoesTecnicas/ETE036.md
       - ETE037 - Gestão de Estoques: EspecificacoesTecnicas/ETE037.md
-      - ETE038 - Configuração de integração SI BNAFAR: EspecificacoesTecnicas/ETE038.md
-      - ETE039 - Autenticação com GOV.BR: EspecificacoesTecnicas/ETE039.md
+      - ETE038 - Autenticação com GOV.BR: EspecificacoesTecnicas/ETE038.md
+      - ETE039 - Transferência de Produtos entre Estabelecimentos: EspecificacoesTecnicas/ETE039.md
+      - ETE040 - Requisição de produtos para estabelecimentos: EspecificacoesTecnicas/ETE040.md
+      - ETE041 - Selecionar Transmissor Federal : EspecificacoesTecnicas/ETE041.md
+      - ETE042 - Configurar transmissão SI Bnafar : EspecificacoesTecnicas/ETE042.md
+      - ETE043 - Transmitir dados SI Bnafar : EspecificacoesTecnicas/ETE043.md
     - Para Validação:
       - ETE - Gerenciar Perfil : validacao/ETE-gerenciar-perfil.md
       - ETE005 - Atribuir Permissão de Acesso : validacao/ETE005.md
@@ -57,7 +61,6 @@ nav:
       - ETE026 - Detalhar Saídas : validacao/ete026.md
       - ETE029 - Estornar Saída : validacao/ete029.md
       - ETE040 - Cadastro de Entes : validacao/ETE040.md
-      - ETE041 - Transferência entre estabelecimentos : validacao/ETE041.md
       - ETE042 - Requisição de produtos : validacao/ETE042.md
 
 
@@ -75,11 +78,9 @@ theme: readthedocs
 markdown_extensions:
   - pymdownx.emoji
   - pymdownx.tilde
+  - admonition
+  - pymdownx.superfences
 
 plugins:
   - search
   - mermaid2
-
-markdown_extensions:
-  - pymdownx.emoji
-  - pymdownx.tilde

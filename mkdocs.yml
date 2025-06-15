@@ -60,8 +60,7 @@ nav:
       - ETE025 - Editar Saídas : validacao/ete025.md
       - ETE026 - Detalhar Saídas : validacao/ete026.md
       - ETE029 - Estornar Saída : validacao/ete029.md
-      - ETE040 - Cadastro de Entes : validacao/ETE040.md
-      - ETE042 - Requisição de produtos : validacao/ETE042.md
+      - ETE040 - Cadastro de Entes : validacao/ETE041_dev.md
 
 
 #  - Histórias de Usuário:
@@ -79,7 +78,6 @@ markdown_extensions:
   - pymdownx.emoji
   - pymdownx.tilde
   - admonition
-  - pymdownx.superfences
 
 plugins:
   - search

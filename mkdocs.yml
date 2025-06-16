@@ -51,6 +51,7 @@ nav:
       - ETE041 - Selecionar Transmissor Federal : EspecificacoesTecnicas/ETE041.md
       - ETE042 - Configurar transmissão SI Bnafar : EspecificacoesTecnicas/ETE042.md
       - ETE043 - Transmitir dados SI Bnafar : EspecificacoesTecnicas/ETE043.md
+      - ETE044 - Visualizar transmissão federal  : EspecificacoesTecnicas/ETE044.md
     - Para Validação:
       - ETE - Gerenciar Perfil : validacao/ETE-gerenciar-perfil.md
       - ETE005 - Atribuir Permissão de Acesso : validacao/ETE005.md

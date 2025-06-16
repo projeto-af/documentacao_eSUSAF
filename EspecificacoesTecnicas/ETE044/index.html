@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>ETE013 - Consultar Entes - e-SUS AF - Documentação Negocial</title>
+    <title>ETE044 - Visualizar transmissão federal - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "ETE013 - Consultar Entes";
-        var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE013.md";
+        var mkdocs_page_name = "ETE044 - Visualizar transmiss\u00e3o federal";
+        var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE044.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -75,19 +75,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE012/">ETE012 - Detalhar Perfil</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE013 - Consultar Entes</a>
-    <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela:</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de aceite</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE013/">ETE013 - Consultar Entes</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE014/">ETE014 - Cadastrar Ente</a>
                 </li>
@@ -149,7 +137,21 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE043/">ETE043 - Transmitir dados SI Bnafar</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Visualizar transmissão federal</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE044 - Visualizar transmissão federal</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#historico-de-revisoes">Histórico de Revisões</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#historia-de-usuario">História de Usuário</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#prototipo">Protótipo</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
                 </li>
     </ul>
                   </li>
@@ -192,7 +194,7 @@
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Especificações Técnicas</li>
           <li class="breadcrumb-item">Especificações</li>
-      <li class="breadcrumb-item active">ETE013 - Consultar Entes</li>
+      <li class="breadcrumb-item active">ETE044 - Visualizar transmissão federal</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -201,85 +203,150 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="especificacao-tecnica-013-consultar-entes-insituicoes">Especificação Técnica 013 - Consultar Entes / Insituições</h1>
-<h2 id="descricao">Descrição</h2>
-<p>Como usuário quero consultar os entes que pertencem à minha instância. </p>
-<h2 id="prototipo-001">Protótipo 001</h2>
-<p><img alt="alt text" src="../../imagens/ete-013-prot-001.png" /></p>
-<h3 id="elementos-de-tela">Elementos de Tela:</h3>
-<ul>
-<li>Bread Crumb – “Configuração / Cadastro de Entes / Consulta” </li>
-<li>Título da página – “Consultar Entes” </li>
-<li>“Seta” – M - retorna para a Tela Inicial/Dashboard </li>
-<li>“Novo” – BT - direciona para a Tela de Cadastrar Ente </li>
-<li>Buscar por – A / AC </li>
-<li>Lista de entes <ul>
-<li>UF – A (2) </li>
-<li>Município – A (50) </li>
-<li>CNES – N (7)  </li>
-<li>Situação – A (20) </li>
-<li>“Ativar” – BT </li>
-<li>“Desativar” – BT </li>
-</ul>
-</li>
-<li>Ordenação nas colunas </li>
-<li>Paginação </li>
-<li>Registro por página </li>
-<li>Ir para página </li>
-</ul>
-<p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório. </p>
-<h3 id="criterios-de-aceite">Critérios de aceite</h3>
-<ol>
-<li>Apenas um usuário com perfil de administrador poderá acessar a funcionalidade de "Cadastro de entes/instituições"; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a>;</li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Configuração” quando acionar o subitem “Cadastro de Entes / Instituições”; </li>
-<li>Quando o usuário acionar a seta para cima ao lado do título da página, o sistema deve retornar à tela inicial do sistema (dashboard); </li>
-<li>Quando o usuário acionar a opção de “Novo”, o sistema deve direcionar à tela “Cadastrar Ente / Instituição”; <a href="../ETE014/">ETE014</a></li>
-<li>
-<p>O sistema deve recuperar o(s) ente(s) cadastrado(s) e que pertence(m) à instância e apresentar a tabela com os dados:</p>
+                <h1 id="especificacao-tecnica-044-visualizar-transmissao-federal">ESPECIFICAÇÃO TÉCNICA 044: Visualizar transmissão federal</h1>
 <table>
 <thead>
 <tr>
-<th>Esfera</th>
-<th>UF</th>
-<th>Município</th>
-<th>CNPJ</th>
-<th>Nome</th>
-<th>Situação</th>
-<th>Ações</th>
+<th><strong>ETE:</strong></th>
+<th>044</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>Título:</strong></td>
+<td>Visualizar transmissão federal</td>
+</tr>
+<tr>
+<td><strong>Autor:</strong></td>
+<td>Ricardo Ronsoni <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#105;&#99;&#97;&#114;&#100;&#111;&#46;&#114;&#111;&#110;&#115;&#111;&#110;&#105;&#64;&#115;&#97;&#117;&#100;&#101;&#46;&#103;&#111;&#118;&#46;&#98;&#114;">&#114;&#105;&#99;&#97;&#114;&#100;&#111;&#46;&#114;&#111;&#110;&#115;&#111;&#110;&#105;&#64;&#115;&#97;&#117;&#100;&#101;&#46;&#103;&#111;&#118;&#46;&#98;&#114;</a></td>
+</tr>
+<tr>
+<td><strong>Revisor:</strong></td>
+<td>Jessé Azevêdo <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#101;&#115;&#115;&#101;&#46;&#97;&#122;&#101;&#118;&#101;&#100;&#111;&#64;&#115;&#97;&#117;&#100;&#101;&#46;&#103;&#111;&#118;&#46;&#98;&#114;">&#106;&#101;&#115;&#115;&#101;&#46;&#97;&#122;&#101;&#118;&#101;&#100;&#111;&#64;&#115;&#97;&#117;&#100;&#101;&#46;&#103;&#111;&#118;&#46;&#98;&#114;</a></td>
+</tr>
+<tr>
+<td><strong>Revisor:</strong></td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Status:</strong></td>
+<td>Aprovado</td>
+</tr>
+<tr>
+<td><strong>Versão:</strong></td>
+<td>1.0</td>
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>Na coluna de ações, apresentar as opções conforme situação: </p>
-<ul>
-<li>Para registro com situação “Ativo”, apresentar a opção “Inativar”; </li>
-<li>Para registro com situação “Inativo”, apresentar a opção “Ativar”; </li>
+<h2 id="historico-de-revisoes">Histórico de Revisões</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Versão</strong></th>
+<th><strong>Data</strong></th>
+<th><strong>Autor</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>05/06/2025</td>
+<td>Ricardo Ronsoni</td>
+<td>Criação do documento</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>16/06/2025</td>
+<td>Jessé Azevêdo</td>
+<td>Revisão do documento</td>
+</tr>
+</tbody>
+</table>
+<h2 id="historia-de-usuario">História de Usuário</h2>
+<p>Como usuário quero visualizar de forma individualizada o status das transmissões realizadas para os serviços federais.</p>
+<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
+<ol>
+<li>O usuário somente pode acessar a funcionalidade caso tenha permissão; RGN001 .</li>
+<li>O acesso à funcionalidade é dado através do menu lateral no item “Transmissão federal”, subitem “Visualizar transmissões”. O menu deve ser apresentado apenas para os usuários que possuem perfil de acesso a funcionalidade.</li>
+<li>Caso o usuário possua perfil de esfera municipal, o sistema deverá apresentar o campo “Munícipio” oculto. Nesse caso, o usuário somente visualizará os dados do seu munícipio.</li>
+<li>O campo “Munícipio” deverá apresentar o nome de todos os municípios que estão ou estiveram na instância do sistema. Os nomes devem ser apresentados em ordem alfabética.</li>
+<li>O sistema deverá apresentar a opção “Todos” no campo “Munícipio”. Ao ser selecionado deverá apresentar os dados consolidados de todos os municípios da instância. A opção “Todos” deverá ser a primeira opção do campo, bem como ser a opção default do campo.</li>
+<li>No campo “Tipo de dado” deve ser apresentado os seguintes itens: “Posição de estoque”, “Saída” e “Todos”. A opção “Todos” deve estar selecionada por default. Caso o usuário selecione outra opção, o resultado da pesquisa deverá obedecer o filtro informado.</li>
+<li>Sistema deve validar as datas inseridas nos campos “Data inicial” e “Data final” e retornar as seguintes mensagens:  <ul>
+<li>Período de seleção não pode ser superior a 1 mês: MSG xx  </li>
+<li>Data final deve ser igual ou superior a data inicial: MSG xx  </li>
+<li>Os dois campos precisam estar preenchidos, se um deles for informado: MSG xx  </li>
+<li>As datas devem ser válidas: MSG xx  </li>
+<li>Data(s) futura(s) não permitida(s): MSG xx7  </li>
 </ul>
 </li>
-<li>Quando o usuário acionar a opção “Ativar”, o sistema deve apresentar mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve ativar a participação do ente e apresentar a mensagem de sucesso. Caso a ação não seja confirmada, o sistema permanece na tela de consulta; <a href="../DocumentoDeMensagensv2/#msg066">MSG066</a> <a href="../DocumentoDeMensagensv2/#msg068">MSG068</a></li>
-<li>Quando o usuário acionar a opção “Inativar”, o sistema deve apresentar mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve inativar a participação do ente e apresentar a mensagem de sucesso. Caso a ação não seja confirmada, o sistema permanece na tela de consulta; <a href="../DocumentoDeMensagensv2/#msg067">MSG067</a> <a href="../DocumentoDeMensagensv2/#msg069">MSG069</a></li>
-<li>O sistema deverá garantir que usuários não consigam acessar estabelecimentos de Entes na situação Inativo;</li>
-<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
+<li>Se for selecionado um período que não possui dados para o(s) município(s), o sistema deverá apresentar o resultado em branco e a MSG041.</li>
+<li>A tabela com o resultado deverá ser apresentada após o acionamento do botão “Consultar”. Deverá ser apresentada uma linha para cada protocolo transmitido para o SI Bnafar. As colunas da tabela devem permitir ordenação dos dados.</li>
+<li>A tabela com o resultado deverá apresentar os seguintes campos:<ul>
+<li>Município: Referente ao município de referência dos dados. Deverá ser ocultado para usuários com perfil municipal</li>
+<li>Envio: Data de transmissão para o SI Bnafar</li>
+<li>Dado: Tipo de dado (Posição de estoque ou Saída)</li>
+<li>Protocolo: Número do protocolo do SI Bnafar</li>
+<li>Quantidade registros: Quantidade de registros inseridos no lote de envio</li>
+<li>Status processamento: Nome do domínio do status de processamento do SI Bnafar</li>
+<li>Processamento: Data de processamento realizado pelo SI Bnafar.</li>
+<li>Inconsistências: Quantidade de itens inconsistentes no protocolo. Deverá apresentar valor somente após o término de processamento do SI Bnafar</li>
+<li>Download: Ícone para habilitar a exportação csv dos dados de inconsistência. Somente exibir caso a quantidade de inconsistência seja maior que zero</li>
+</ul>
+</li>
+<li>Caso o usuário selecione a opção de realizar download das inconsistências, o sistema deverá gerar um arquivo CSV com as seguintes colunas:<ul>
+<li>Tipo: Posição de estoque ou saída</li>
+<li>Código IBGE: Código IBGE do município com erro</li>
+<li>Munícipio: Nome do município</li>
+<li>UF: Unidade da federação</li>
+<li>ID registro: ID do registro (somente para a saída)</li>
+<li>Data registro: Data do registro no eSUS AF</li>
+<li>Protocolo: Número do protocolo do SI Bnafar</li>
+<li>Código inconsistência: Código da inconsistência retornado pelo SI Bnafar</li>
+<li>Mensagem: Mensagem retornada no SI Bnafar</li>
+<li>Campo erro: Campo com o valor incorreto</li>
+<li>Valor informado: Valor incorreto informado</li>
+</ul>
+</li>
 </ol>
+<h2 id="elementos-de-tela">Elementos de Tela</h2>
+<ul>
+<li>Bread Crumb – “Transmissão Federal / Visualizar transmissões”</li>
+<li>Título da página – “Consultar transmissões analítico”</li>
+<li>“Seta” – M - retorna para a Tela Inicial/Dashboard</li>
+<li>“Munícipio” – SU. Default “Todos”</li>
+<li>“Tipo de dados” – SU. Default “Todos”</li>
+<li>Título da sessão: “Período”  <ul>
+<li>“Data inicial” – D (dd/mm/aaaa)  </li>
+<li>“Data final” – D (dd/mm/aaaa)  </li>
+</ul>
+</li>
+<li>“Consultar” - BT</li>
+<li>“Limpar” – BT</li>
+<li>Título da sessão: “Resultado – Status processamento”</li>
+<li>Tabela:<ul>
+<li>Município – A (50)</li>
+<li>Envio – D (dd/mm/aaaa)</li>
+<li>Dado - A (20)</li>
+<li>Protocolo – A (20)</li>
+<li>Quantidade registros – N (5)</li>
+<li>Status processamento – A (20)</li>
+<li>Processamento – D (dd/mm/aaaa)</li>
+<li>Inconsistências – N (5)</li>
+<li>Ícone download- M</li>
+</ul>
+</li>
+<li>Paginação.</li>
+</ul>
+<h3 id="prototipo">Protótipo</h3>
+<p><a href="https://xd.adobe.com/view/b10875f3-b816-4ec6-9948-a3ef8df26a52-e45b/screen/518aadb2-7bd7-495a-8ff2-b5effc590a0f/">Protótipo não funcional navegável via Adobe XD</a></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../ETE012/" class="btn btn-neutral float-left" title="ETE012 - Detalhar Perfil"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../ETE014/" class="btn btn-neutral float-right" title="ETE014 - Cadastrar Ente">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ETE043/" class="btn btn-neutral float-left" title="ETE043 - Transmitir dados SI Bnafar"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../validacao/ETE-gerenciar-perfil/" class="btn btn-neutral float-right" title="ETE - Gerenciar Perfil">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -302,10 +369,10 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../ETE012/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../ETE043/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../ETE014/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../validacao/ETE-gerenciar-perfil/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -139,7 +139,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE043/">ETE043 - Transmitir dados SI Bnafar</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Visualizar transmissão federal</a>
+                <li class="toctree-l2"><a class="" href="../ETE044.md">ETE044 - Visualizar transmissão federal</a>
                 </li>
     </ul>
                   </li>
@@ -1199,6 +1199,46 @@ As açoes realizadas pelos perfis de acordo com os proviégios afetam:</p>
 <h1 id="rgn067">RGN067</h1>
 <h2 id="quantidade-a-expedir">Quantidade a Expedir</h2>
 <p>O sistema deve permitir informar um valor independente do saldo em estoque do produto </p>
+<hr />
+<h1 id="rgn068">RGN068</h1>
+<h2 id="credenciais-si-bnafar">Credenciais SI Bnafar</h2>
+<p>As configurações de credenciais e transmissão de dados para o SI Bnafar será realizada a nível estadual, e será aplicada para todos os entes vinculados a instância estadual.   </p>
+<hr />
+<h1 id="rgn069">RGN069</h1>
+<h2 id="tipo-rename-si-bnafar">Tipo Rename SI Bnafar</h2>
+<p>O gestor de integração pode configurar para sua instância se o sistema irá transmitir todos os produtos com registro em banco para os serviços federais (SI Bnafar e RNDS), ou apenas os itens da RENAME.   </p>
+<hr />
+<h1 id="rgn070">RGN070</h1>
+<h2 id="auditoria-servicos-federais">Auditoria Serviços Federais</h2>
+<p>O sistema deve auditar as transmissões de dados realizadas para os serviços federais (SI Bnafar e RNDS) e persistir no banco por prazo parametrizável. Após o vencimento do prazo de auditoria, uma rotina deve realizar a exclusão física dos registros.    </p>
+<hr />
+<h1 id="rgn071">RGN071</h1>
+<h2 id="selecionar-municipios-transmissao-federal">Selecionar Municípios Transmissão Federal</h2>
+<p>O gestor de integração deve selecionar os municípios de sua instância para não realizar o envio de dados para os serviços federais (SI Bnafar e RNDS).  </p>
+<hr />
+<h1 id="rgn072">RGN072</h1>
+<h2 id="configuracao-ativa-si-bnafar">Configuração ativa SI Bnafar</h2>
+<p>A transmissão de dados para o SI Bnafar somente deve ocorrer caso a configuração do serviço esteja salva no sistema para a UF e com o campo “Ativo” selecionado com a opção “Sim”.    </p>
+<hr />
+<h1 id="rgn073">RGN073</h1>
+<h2 id="tipos-saida-si-bnafar">Tipos Saída SI Bnafar</h2>
+<p>O sistema deverá transmitir os dados de saída e posição de estoque para o SI Bnafar. As saídas do tipo “Saída por Estorno de Entrada” e “Saída por Dispensação” não deverão ser transmitidas.    </p>
+<hr />
+<h1 id="rgn074">RGN074</h1>
+<h2 id="registros-saida-si-bnafar">Registros Saída SI Bnafar</h2>
+<p>Para o envio dos dados de saída para o SI Bnafar devem ser contabilizadas as saídas que foram registradas no dia anterior (00:00:00 até as 23:59:59), bem como as saídas dos dias anteriores que ainda não foram enviadas.  </p>
+<hr />
+<h1 id="rgn075">RGN075</h1>
+<h2 id="registros-posicao-estoque-si-bnafar">Registros Posição Estoque SI Bnafar</h2>
+<p>Para o envio dos dados de posição de estoque para o SI Bnafar, deve ser considerado a posição de estoque da meia-noite (início da rotina de transmissão), bem como as posições de estoque dos dias anteriores que não foram enviadas (também da meia-noite do respectivo dia). Caso a transmissão seja iniciada em outro horário diferente da meia-noite, o cálculo do estoque deverá levar em consideração o estoque da meia-noite.  </p>
+<hr />
+<h1 id="rgn076">RGN076</h1>
+<h2 id="estorno-si-bnafar">Estorno SI Bnafar</h2>
+<p>As saídas com registro de estorno não deverão ser transmitidas para o SI Bnafar.  </p>
+<hr />
+<h1 id="rgn077">RGN077</h1>
+<h2 id="prazo-estorno-saida-si-bnafar">Prazo Estorno Saída SI Bnafar</h2>
+<p>Caso uma saída seja estornada no sistema após o envio do registro para o SI Bnafar, o sistema deverá identificar o protocolo e código do registro relativo a saída e transmitir a exclusão desse registro para o SI Bnafar. Isso somente deve ocorrer caso o estorno ocorra até o último dia do mês subsequente da saída (ex: saída realizada em 05/11 somente poderá ser excluída no SI Bnafar até 31/12).</p>
               
             </div>
           </div><footer>

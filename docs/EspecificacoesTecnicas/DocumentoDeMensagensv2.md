@@ -443,3 +443,27 @@ Confirmação de saída
 
 Antes de confirmar a saída é importante separar os produtos para o envio. 
 Sendo assim deseja confirmá-la?
+
+---
+# MSG100
+Período máximo de consulta é de 6 meses.  
+
+---
+# MSG101
+Data final deve ser igual ou superior a data inicial.  
+
+---
+# MSG102
+Informe a data inicial e final para filtrar por período.  
+
+---
+# MSG103
+Data informada no campo `<nome do campo>` inválida.  
+
+---
+# MSG104
+Dados salvos com sucesso.  
+
+---
+# MSG105
+Não é permitido inserir data futura.  

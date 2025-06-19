@@ -524,3 +524,52 @@ O sistema deve calcular a Quantidade Expedida da Saída somando todas as quantid
 ## Quantidade a Expedir
 O sistema deve permitir informar um valor independente do saldo em estoque do produto 
 
+---
+# RGN068
+## Credenciais SI Bnafar  
+As configurações de credenciais e transmissão de dados para o SI Bnafar será realizada a nível estadual, e será aplicada para todos os entes vinculados a instância estadual.   
+
+---
+# RGN069
+## Tipo Rename SI Bnafar
+O gestor de integração pode configurar para sua instância se o sistema irá transmitir todos os produtos com registro em banco para os serviços federais (SI Bnafar e RNDS), ou apenas os itens da RENAME.   
+
+---
+# RGN070
+## Auditoria Serviços Federais
+O sistema deve auditar as transmissões de dados realizadas para os serviços federais (SI Bnafar e RNDS) e persistir no banco por prazo parametrizável. Após o vencimento do prazo de auditoria, uma rotina deve realizar a exclusão física dos registros.    
+
+---
+# RGN071
+## Selecionar Municípios Transmissão Federal
+O gestor de integração deve selecionar os municípios de sua instância para não realizar o envio de dados para os serviços federais (SI Bnafar e RNDS).  
+
+---
+# RGN072
+## Configuração ativa SI Bnafar
+A transmissão de dados para o SI Bnafar somente deve ocorrer caso a configuração do serviço esteja salva no sistema para a UF e com o campo “Ativo” selecionado com a opção “Sim”.    
+
+---
+# RGN073
+## Tipos Saída SI Bnafar
+O sistema deverá transmitir os dados de saída e posição de estoque para o SI Bnafar. As saídas do tipo “Saída por Estorno de Entrada” e “Saída por Dispensação” não deverão ser transmitidas.    
+
+---
+# RGN074
+## Registros Saída SI Bnafar
+Para o envio dos dados de saída para o SI Bnafar devem ser contabilizadas as saídas que foram registradas no dia anterior (00:00:00 até as 23:59:59), bem como as saídas dos dias anteriores que ainda não foram enviadas.  
+
+---
+# RGN075
+## Registros Posição Estoque SI Bnafar
+Para o envio dos dados de posição de estoque para o SI Bnafar, deve ser considerado a posição de estoque da meia-noite (início da rotina de transmissão), bem como as posições de estoque dos dias anteriores que não foram enviadas (também da meia-noite do respectivo dia). Caso a transmissão seja iniciada em outro horário diferente da meia-noite, o cálculo do estoque deverá levar em consideração o estoque da meia-noite.  
+
+---
+# RGN076
+## Estorno SI Bnafar
+As saídas com registro de estorno não deverão ser transmitidas para o SI Bnafar.  
+
+---
+# RGN077
+## Prazo Estorno Saída SI Bnafar
+Caso uma saída seja estornada no sistema após o envio do registro para o SI Bnafar, o sistema deverá identificar o protocolo e código do registro relativo a saída e transmitir a exclusão desse registro para o SI Bnafar. Isso somente deve ocorrer caso o estorno ocorra até o último dia do mês subsequente da saída (ex: saída realizada em 05/11 somente poderá ser excluída no SI Bnafar até 31/12).

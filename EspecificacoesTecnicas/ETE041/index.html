@@ -268,7 +268,7 @@
 <ol>
 <li>O usuário somente pode acessar a funcionalidade caso tenha permissão. <a href="../DocumentoDeRegrasv2/">#RGN001</a>.  </li>
 <li>O acesso à funcionalidade é dado através do menu lateral no item “Transmissão federal”, subitem “Configurar transmissão”, e selecionado o card “SI Bnafar”. O menu deve ser apresentado apenas para os usuários que possuem perfil de acesso a funcionalidade.  </li>
-<li>As configurações de credenciais e transmissão de dados para o SI Bnafar será realizada a nível estadual, e será aplicada para todos os entes vinculados a instância estadual. <a href="../DocumentoDeRegrasv2/">#RGN068</a>.  </li>
+<li>Credenciais SI Bnafar. Ver <a href="../DocumentoDeRegrasv2/">#RGN068</a>.  </li>
 <li>A senha para a transmissão dos dados deverá ser gravada de forma criptografada no banco. Contudo, o método de criptografia deverá permitir a descriptografia para posterior utilização nas transmissões. </li>
 <li>Caso o campo “Ativo” seja selecionado com a opção “Sim”, todos os demais campos da tela tornam-se obrigatórios, exceto: “Cargo”, “E-mail” e “Telefone”. Não é obrigatório incluir um item no campo “Municípios excluídos” para salvar a configuração como ativa.  </li>
 <li>Caso o usuário tente salvar as configurações com o campo “Ativo” selecionado com a opção “Não”, deverá ser apresentada uma modal com:  <ul>
@@ -279,7 +279,7 @@
 </li>
 <li>No campo “Auditar transmissões” o usuário pode selecionar se as requisições e repostas do SI Bnafar serão persistidas para fins de auditoria. Se for selecionada a opção “Sim”, deve ser habilitado o campo obrigatório “Dias”. <a href="../DocumentoDeRegrasv2/">#RGN070</a>.  </li>
 <li>Caso o cadastro seja salvo com o campo “Auditar transmissões” selecionado com “Não”, o sistema deverá realizar a exclusão física das auditorias persistidas até então no banco de dados para a respectiva UF e todos os municípios da instância.</li>
-<li>Caso o campo “Escopo” esteja selecionado com a opção “Apenas Rename”, o sistema deve transmitir para o SI Bnafar apenas os medicamentos e produtos que fazem parte da Rename, conforme o cadastro do sistema. <a href="../DocumentoDeRegrasv2/">#RGN069</a>.  </li>
+<li>O campo “Escopo” especifica quais medicamentos e produtos deverão ser transmitidos para o SI Bnafar. <a href="../DocumentoDeRegrasv2/">#RGN069</a>.  </li>
 <li>Caso o usuário selecione a opção “Sim” no campo “Configurações Avançadas”:<ul>
 <li>Deve ser apresentada uma modal com a seguinte mensagem “A alteração dos parâmetros pode gerar grande impacto na transmissão dos dados para o SI Bnafar.\n\n Faça a alteração apenas em caso de recomendação do Ministério da Saúde.” Adicionalmente, deverá ser exibido o botão “Fechar” para fechar a modal.</li>
 <li>Deve ser habilitado o campo “Limite registros por lote”, onde o usuário pode definir a quantidade máxima de registros por lote de envio para o SI Bnafar.</li>

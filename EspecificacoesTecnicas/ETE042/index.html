@@ -268,7 +268,7 @@
 <ol>
 <li>As configurações de credenciais e transmissão de dados para o SI Bnafar será realizada a nível estadual, e será aplicada para todos os entes vinculados a instância estadual. <a href="../DocumentoDeRegrasv2/">#RGN001</a>. </li>
 <li>A transmissão deve ocorrer conforme a configuração do SI Bnafar para a instância. <a href="../DocumentoDeRegrasv2/">#RGN072</a>.  </li>
-<li>A persistência dos dados para auditoria deve ocorrer somente no caso do campo “Tempo guarda envios (dias)” da <a href="../ETE041/">ETE041</a> estar preenchido com “Sim”. Somente deverão ser auditados as requisições referentes ao envio de dados (consultas não serão incluídas).</li>
+<li>A persistência dos dados para auditoria deve ocorrer somente no caso do campo “Tempo guarda envios (dias)” da <a href="../ETE041/">ETE041</a> estar preenchido com “Sim”. Somente deverão ser auditados as requisições referentes ao envio de dados (consultas não serão incluídas). <a href="../DocumentoDeRegrasv2/">#RGN070</a>.  </li>
 <li>Para realizar a auditoria dos envios, o sistema deve persistir a requisição e resposta completa realizada para o SI Bnafar:<ul>
 <li>Para requisições com status 2xx, 4xx ou 5xx: Deverá ser persistido o header, body, URL, método, status HTTP, timestamp envio, timestamp resposta. Para status 2xx também deverá ser persistido o número de protocolo relativo ao envio.</li>
 <li>Para os casos de insucesso devido a problemas de conexão (ex: API indisponível ou timeout): Deverá ser persistido somente os dados da requisição (header, body, URL, método, timestamp envio), e o motivo do erro. Se o motivo for timeout do serviço, deverá ser persistido o valor do timeout utilizado na transmissão.</li>
@@ -276,15 +276,15 @@
 </li>
 <li>O sistema deve possuir uma rotina para excluir os registros de auditoria com o tempo maior de persistência do que especificado no “Auditar transmissões” -&gt; “Dias” no <a href="../ETE041/">#ETE041</a>. Exclusão deverá ser física. <a href="../DocumentoDeRegrasv2/">#RGN070</a>.  </li>
 <li>A relação dos itens a serem transmitidos devem obedecer a configuração da integração. <a href="../DocumentoDeRegrasv2/">#RGN069</a>.  </li>
-<li>O sistema deverá transmitir os dados de saída e posição de estoque para o SI Bnafar. As saídas do tipo “Saída por Estorno de Entrada” e “Saída por Dispensação” não deverão ser transmitidas. <a href="../DocumentoDeRegrasv2/">#RGN073</a>.  </li>
+<li>Nem todos os tipos de saída deverão ser transmitidos para o SI Bnafar. Ver <a href="../DocumentoDeRegrasv2/">#RGN073</a>.  </li>
 <li>Se o campo “Configurações Avançadas” da <a href="../ETE041/">#ETE041</a> estiver preenchido com “Sim”, deverão ser observados os campos “Limite registros por lote” e “Timeout (ms)” para realizar as transmissões. Se o campo estiver preenchido com “Não”, deverá ser utilizado o timeout de 45000 ms e o limite de 1000 registros por lote.  </li>
 <li>Municípios informados como excluídos na <a href="../ETE041/">#ETE041</a> não deverão ter os seus dados de saída e estoque transmitidos para o SI Bnafar, para a referida instância e UF. <a href="../DocumentoDeRegrasv2/">#RGN071</a>.  </li>
 <li>A transmissão para o SI Bnafar deverá ser realizada diariamente, a partir da 00h. A nível federal, cada UF terá uma rotina própria para envio e consulta dos dados.</li>
 <li>Os envios devem iniciar com os dados da posição de estoque e posteriormente com as saídas.</li>
 <li>Deverão ser utilizados os endpoints de envio em lote do SI Bnafar para realizar a transmissão das saídas e posição de estoque. Os lotes devem conter os dados de apenas um munícipio e de uma data, para que se tenha maior controle posterior.</li>
 <li>Os envios e consultas ao SI Bnafar deverão seguir a documentação e o padrão do serviço, disponível no site do Ministério da Saúde (https://servicos-datasus.saude.gov.br/detalhe/DxRPsAn2mh)</li>
-<li>Para o envio dos dados de saída deverão ser contabilizadas as saídas que foram registradas no dia anterior (00:00:00 até as 23:59:59), bem como as saídas dos dias anteriores que ainda não foram enviadas. <a href="../DocumentoDeRegrasv2/">#RGN074</a>.  </li>
-<li>Para o envio dos dados de posição de estoque, deverá ser considerado a posição de estoque da meia-noite (início da rotina de transmissão), bem como as posições de estoque dos dias anteriores que não tiveram sucesso no envio. RGN xx8. <a href="../DocumentoDeRegrasv2/">#RGN075</a>.  </li>
+<li>Deverá ser observada a <a href="../DocumentoDeRegrasv2/">#RGN074</a> para recuperar os registros de saída a serem transmitidos para o SI Bnafar.  </li>
+<li>Deverá ser observada a <a href="../DocumentoDeRegrasv2/">#RGN075</a> para obter os registros de posição de estoque a serem transmitidos para o SI Bnafar.  </li>
 <li>
 <p>Sistema deverá possuir tabelas próprias para controlar as transmissões para o SI Bnafar. Essas tabelas deverão persistir:  </p>
 <ul>
@@ -309,7 +309,7 @@
 <li>
 <p>As saídas com registro de estorno não deverão ser transmitidas para o SI Bnafar. <a href="../DocumentoDeRegrasv2/">#RGN076</a>.  </p>
 </li>
-<li>Caso uma saída seja estornada no sistema após o envio do registro para o SI Bnafar, o sistema deverá identificar o protocolo e código do registro relativo a saída e transmitir a exclusão desse registro para o SI Bnafar. Isso somente deve ocorrer caso o estorno ocorra até o último dia do mês subsequente da saída (ex: saída realizada em 05/11 somente poderá ser excluída no SI Bnafar até 31/12). <a href="../DocumentoDeRegrasv2/">#RGN077</a>.  </li>
+<li>Deverá ser observado o prazo de registro de estorno do SI Bnafar. Ver <a href="../DocumentoDeRegrasv2/">#RGN077</a>.  </li>
 <li>Caso um lote de posição de estoque tenha problema de transmissão em sua primeira tentativa, o sistema deverá gravar o mesmo em banco de dados para o envio posterior. Isso é necessário para que não seja calculado a posição de estoque retroativa para cada tentativa de reenvio. Após o sucesso no envio, o lote poderá ser excluído do banco.</li>
 <li>Caso ocorra algum erro na transmissão por (ex: 5xx, timeout ou indisponibilidade do serviço), o sistema deve tentar realizar três reenvios em tempo de execução. Caso a transmissão não ocorra, novas tentativas posteriores serão realizadas (rotina segregada).</li>
 <li>Além da transmissão dos dados, o sistema deverá possuir outra rotina com horários distintos para consultar o processamento e as inconsistências dos registros.</li>
@@ -324,7 +324,7 @@
 </li>
 <li>Para gerar a autenticação no SI Bnafar devem ser utilizadas as credenciais informadas nos campos “Usuário” e “Senha” da <a href="../ETE041/">#ETE041</a>.</li>
 <li>Para o envio da posição de estoque:<ul>
-<li>Transmissão deve abranger todos os lotes e localizações físicas por unidade de saúde (deve ser obedecido esse grão e os dados não devem ser consolidados);</li>
+<li>Transmissão deve abranger todos os lotes e programas de saúde por unidade de saúde (deve ser obedecido esse grão e os dados não devem ser consolidados). Ex: Um mesmo produto em um estabelecimento possui lotes diferentes e programas de saúde distintos -&gt; Cada combinação deverá gerar um registro de envio;</li>
 <li>Itens com valores zerados no estoque não deverão ser transmitidos;</li>
 <li>Estoque de produtos vencidos deverão ser transmitidos.</li>
 </ul>

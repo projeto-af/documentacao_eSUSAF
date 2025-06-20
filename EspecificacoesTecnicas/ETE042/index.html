@@ -6,13 +6,13 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../../img/favicon.ico" rel="shortcut icon"/>
-<title>ETE042 - Configurar transmissão SI Bnafar - e-SUS AF - Documentação Negocial</title>
+<title>ETE042 - Transmitir dados SI Bnafar - e-SUS AF - Documentação Negocial</title>
 <link href="../../css/theme.css" rel="stylesheet"/>
 <link href="../../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "ETE042 - Configurar transmiss\u00e3o SI Bnafar";
+        var mkdocs_page_name = "ETE042 - Transmitir dados SI Bnafar";
         var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE042.md";
         var mkdocs_page_url = null;
       </script>
@@ -127,9 +127,9 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../ETE040/">ETE040 - Requisição de produtos para estabelecimentos</a>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../ETE041/">ETE041 - Selecionar Transmissor Federal</a>
+<li class="toctree-l2"><a class="reference internal" href="../ETE041/">ETE041 - Configurar transmissão SI Bnafar</a>
 </li>
-<li class="toctree-l2 current"><a class="reference internal current" href="#">ETE042 - Configurar transmissão SI Bnafar</a>
+<li class="toctree-l2 current"><a class="reference internal current" href="#">ETE042 - Transmitir dados SI Bnafar</a>
 <ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="#historico-de-revisoes">Histórico de Revisões</a>
 </li>
@@ -147,9 +147,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../ETE043/">ETE043 - Transmitir dados SI Bnafar</a>
-</li>
-<li class="toctree-l2"><a class="" href="../ETE044.md">ETE044 - Visualizar transmissão federal</a>
+<li class="toctree-l2"><a class="reference internal" href="../ETE043/">ETE043 - Visualizar transmissão federal</a>
 </li>
 </ul>
 </li>
@@ -190,7 +188,7 @@
 <li><a aria-label="Docs" class="icon icon-home" href="../.."></a></li>
 <li class="breadcrumb-item">Especificações Técnicas</li>
 <li class="breadcrumb-item">Especificações</li>
-<li class="breadcrumb-item active">ETE042 - Configurar transmissão SI Bnafar</li>
+<li class="breadcrumb-item active">ETE042 - Transmitir dados SI Bnafar</li>
 <li class="wy-breadcrumbs-aside">
 </li>
 </ul>
@@ -270,13 +268,13 @@
 <ol>
 <li>As configurações de credenciais e transmissão de dados para o SI Bnafar será realizada a nível estadual, e será aplicada para todos os entes vinculados a instância estadual. <a href="../DocumentoDeRegrasv2/">#RGN001</a>. </li>
 <li>A transmissão deve ocorrer conforme a configuração do SI Bnafar para a instância. <a href="../DocumentoDeRegrasv2/">#RGN072</a>.  </li>
-<li>A persistência dos dados para auditoria deve ocorrer somente no caso do campo “Tempo guarda envios (dias)” da <a href="../ETE041/">ESPECIFICAÇÃO TÉCNICA 041: Configurar transmissão SI Bnafar</a> estar preenchido com “Sim”. Somente deverão ser auditados as requisições referentes ao envio de dados (consultas não serão incluídas).</li>
+<li>A persistência dos dados para auditoria deve ocorrer somente no caso do campo “Tempo guarda envios (dias)” da <a href="../ETE041/">ETE041</a> estar preenchido com “Sim”. Somente deverão ser auditados as requisições referentes ao envio de dados (consultas não serão incluídas).</li>
 <li>Para realizar a auditoria dos envios, o sistema deve persistir a requisição e resposta completa realizada para o SI Bnafar:<ul>
 <li>Para requisições com status 2xx, 4xx ou 5xx: Deverá ser persistido o header, body, URL, método, status HTTP, timestamp envio, timestamp resposta. Para status 2xx também deverá ser persistido o número de protocolo relativo ao envio.</li>
 <li>Para os casos de insucesso devido a problemas de conexão (ex: API indisponível ou timeout): Deverá ser persistido somente os dados da requisição (header, body, URL, método, timestamp envio), e o motivo do erro. Se o motivo for timeout do serviço, deverá ser persistido o valor do timeout utilizado na transmissão.</li>
 </ul>
 </li>
-<li>O sistema deve possuir uma rotina para excluir os registros de auditoria com o tempo maior de persistência do que especificado no “Auditar transmissões” -&gt; “Dias” no <a href="../ETE041/">#ESPECIFICAÇÃO TÉCNICA 041: Configurar transmissão SI Bnafar</a>. Exclusão deverá ser física. <a href="../DocumentoDeRegrasv2/">#RGN070</a>.  </li>
+<li>O sistema deve possuir uma rotina para excluir os registros de auditoria com o tempo maior de persistência do que especificado no “Auditar transmissões” -&gt; “Dias” no <a href="../ETE041/">#ETE041</a>. Exclusão deverá ser física. <a href="../DocumentoDeRegrasv2/">#RGN070</a>.  </li>
 <li>A relação dos itens a serem transmitidos devem obedecer a configuração da integração. <a href="../DocumentoDeRegrasv2/">#RGN069</a>.  </li>
 <li>O sistema deverá transmitir os dados de saída e posição de estoque para o SI Bnafar. As saídas do tipo “Saída por Estorno de Entrada” e “Saída por Dispensação” não deverão ser transmitidas. <a href="../DocumentoDeRegrasv2/">#RGN073</a>.  </li>
 <li>Se o campo “Configurações Avançadas” da <a href="../ETE041/">#ETE041</a> estiver preenchido com “Sim”, deverão ser observados os campos “Limite registros por lote” e “Timeout (ms)” para realizar as transmissões. Se o campo estiver preenchido com “Não”, deverá ser utilizado o timeout de 45000 ms e o limite de 1000 registros por lote.  </li>
@@ -680,8 +678,8 @@
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
-<a class="btn btn-neutral float-left" href="../ETE041/" title="ETE041 - Selecionar Transmissor Federal"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-<a class="btn btn-neutral float-right" href="../ETE043/" title="ETE043 - Transmitir dados SI Bnafar">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral float-left" href="../ETE041/" title="ETE041 - Configurar transmissão SI Bnafar"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../ETE043/" title="ETE043 - Visualizar transmissão federal">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
 <hr/>
 <div role="contentinfo">

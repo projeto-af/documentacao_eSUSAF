@@ -537,7 +537,7 @@ O gestor de integração pode configurar para sua instância se o sistema irá t
 ---
 # RGN070
 ## Auditoria Serviços Federais
-O sistema deve auditar as transmissões de dados realizadas para os serviços federais (SI Bnafar e RNDS) e persistir no banco por prazo parametrizável. Após o vencimento do prazo de auditoria, uma rotina deve realizar a exclusão física dos registros.    
+O sistema deve auditar as transmissões de dados realizadas para os serviços federais (SI Bnafar e RNDS) e persistir no banco por prazo parametrizável. As consultas não precisam ser auditadas. Após o vencimento do prazo de auditoria, uma rotina deve realizar a exclusão física dos registros.    
 
 ---
 # RGN071
@@ -557,7 +557,7 @@ O sistema deverá transmitir os dados de saída e posição de estoque para o SI
 ---
 # RGN074
 ## Registros Saída SI Bnafar
-Para o envio dos dados de saída para o SI Bnafar devem ser contabilizadas as saídas que foram registradas no dia anterior (00:00:00 até as 23:59:59), bem como as saídas dos dias anteriores que ainda não foram enviadas.  
+Para o envio dos dados de saída para o SI Bnafar devem ser contabilizadas as saídas que foram registradas no dia anterior (00:00:00 até as 23:59:59), bem como as saídas dos dias anteriores que ainda não foram enviadas devido a algum problema.  
 
 ---
 # RGN075

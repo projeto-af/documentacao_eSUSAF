@@ -62,16 +62,7 @@ nav:
       - ETE026 - Detalhar Saídas : validacao/ete026.md
       - ETE029 - Estornar Saída : validacao/ete029.md
       - ETE040 - Cadastro de Entes : validacao/ETE041_dev.md
-
-
-#  - Histórias de Usuário:
-#    - HU001 - Cadastro e Login: HistoriasDeUsuario/HU001.md
-#    - HU004 - Solicitar Acesso: HistoriasDeUsuario/HU004.md
-#    - HU016 - Consultar Entrada: HistoriasDeUsuario/HU016.md
-#    - HU017 - Cadastrar Entrada: HistoriasDeUsuario/HU017.md
-#  - Casos de Teste:
-#    - CT004 - Solicitar Uma Permissão de acesso: CasosDeTeste/CT004.md
-  # - Sobre: sobre.md
+      - ETE999 - Cadastro de Entes : validacao/ETE999.md
 
 theme: readthedocs
 

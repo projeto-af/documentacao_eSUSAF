@@ -62,7 +62,12 @@ nav:
       - ETE026 - Detalhar Saídas : validacao/ete026.md
       - ETE029 - Estornar Saída : validacao/ete029.md
       - ETE040 - Cadastro de Entes : validacao/ETE041_dev.md
-      - ETE999 - Cadastro de Entes : validacao/ETE999.md
+      - ETE999 - Modelo : validacao/ETE999.md
+    - Modelos:
+      - Dominios : modelos/modelo-doc-dominios.md
+      - Histórias : modelos/modelo-doc-historias.md
+      - Mensagens : modelos/modelo-doc-mensagens.md
+      - Regras : modelos/modelo-doc-regras.md
 
 theme: readthedocs
 

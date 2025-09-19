@@ -140,11 +140,11 @@
     <li class="toctree-l3"><a class="reference internal" href="#historico-de-revisoes">Histórico de Revisões</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#historia-de-usuario">História de Usuário</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
         <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso">Acesso</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
+    </li>
     <li class="toctree-l4"><a class="reference internal" href="#prototipo">Protótipo</a>
     </li>
         </ul>
@@ -153,27 +153,37 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -271,24 +281,25 @@
 </table>
 <h2 id="historia-de-usuario">História de Usuário</h2>
 <p>Como usuário quero visualizar de forma individualizada o status das transmissões realizadas para os serviços federais.</p>
-<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
+<h3 id="acesso">Acesso</h3>
+<p>Transmissão federal &gt; Visualizar transmissões</p>
+<h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
-<li>O usuário somente pode acessar a funcionalidade caso tenha permissão. <a href="../DocumentoDeRegrasv2/">#RGN001</a>.  </li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Transmissão federal”, subitem “Visualizar transmissões”. O menu deve ser apresentado apenas para os usuários que possuem perfil de acesso a funcionalidade.</li>
-<li>Caso o usuário possua perfil de esfera municipal, o sistema deverá apresentar o campo “Munícipio” oculto. Nesse caso, o usuário somente visualizará os dados do seu munícipio.</li>
-<li>O campo “Munícipio” deverá apresentar o nome de todos os municípios que estão ou estiveram na instância do sistema. Os nomes devem ser apresentados em ordem alfabética.</li>
-<li>O sistema deverá apresentar a opção “Todos” no campo “Munícipio”. Ao ser selecionado deverá apresentar os dados consolidados de todos os municípios da instância. A opção “Todos” deverá ser a primeira opção do campo, bem como ser a opção default do campo.</li>
-<li>No campo “Tipo de dado” deve ser apresentado os seguintes itens: “Posição de estoque”, “Saída” e “Todos”. A opção “Todos” deve estar selecionada por default. Caso o usuário selecione outra opção, o resultado da pesquisa deverá obedecer o filtro informado.</li>
+<li>O usuário somente pode acessar a funcionalidade caso tenha permissão. <a href="../DocumentoDeRegrasv2/">#RGN001</a>;  </li>
+<li>Caso o usuário possua perfil de esfera municipal, o sistema deverá apresentar o campo “Munícipio” oculto. Nesse caso, o usuário somente visualizará os dados do seu munícipio;</li>
+<li>O campo “Munícipio” deverá apresentar o nome de todos os municípios que estão ou estiveram na instância do sistema. Os nomes devem ser apresentados em ordem alfabética;</li>
+<li>O sistema deverá apresentar a opção “Todos” no campo “Munícipio”. Ao ser selecionado deverá apresentar os dados consolidados de todos os municípios da instância. A opção “Todos” deverá ser a primeira opção do campo, bem como ser a opção default do campo;</li>
+<li>No campo “Tipo de dado” deve ser apresentado os seguintes itens: “Posição de estoque”, “Saída” e “Todos”. A opção “Todos” deve estar selecionada por default. Caso o usuário selecione outra opção, o resultado da pesquisa deverá obedecer o filtro informado;</li>
 <li>Sistema deve validar as datas inseridas nos campos “Data inicial” e “Data final” e retornar as seguintes mensagens:  <ul>
-<li>Período de seleção não pode ser superior a 1 mês: <a href="../DocumentoDeMensagensv2/#msg100">MSG100</a>  </li>
-<li>Data final deve ser igual ou superior a data inicial: <a href="../DocumentoDeMensagensv2/#msg101">MSG101</a>  </li>
-<li>Os dois campos precisam estar preenchidos, se apenas um deles for informado: <a href="../DocumentoDeMensagensv2/#msg102">MSG102</a>  </li>
-<li>As datas devem ser válidas: <a href="../DocumentoDeMensagensv2/#msg103">MSG103</a>  </li>
-<li>Data(s) futura(s) não permitida(s): <a href="../DocumentoDeMensagensv2/#msg105">MSG105</a>  </li>
+<li>Período de seleção não pode ser superior a 1 mês: <a href="../DocumentoDeMensagensv2/#msg100">MSG100</a>.  </li>
+<li>Data final deve ser igual ou superior a data inicial: <a href="../DocumentoDeMensagensv2/#msg101">MSG101</a>.  </li>
+<li>Os dois campos precisam estar preenchidos, se apenas um deles for informado: <a href="../DocumentoDeMensagensv2/#msg102">MSG102</a>.  </li>
+<li>As datas devem ser válidas: <a href="../DocumentoDeMensagensv2/#msg103">MSG103</a>.  </li>
+<li>Data(s) futura(s) não permitida(s): <a href="../DocumentoDeMensagensv2/#msg105">MSG105</a>.  </li>
 </ul>
 </li>
-<li>Se for selecionado um período que não possui dados para o(s) município(s), o sistema deverá apresentar o resultado em branco e a <a href="../DocumentoDeMensagensv2/#msg41">MSG41</a>  .</li>
-<li>A tabela com o resultado deverá ser apresentada após o acionamento do botão “Consultar”. Deverá ser apresentada uma linha para cada protocolo transmitido para o SI Bnafar. As colunas da tabela devem permitir ordenação dos dados.</li>
+<li>Se for selecionado um período que não possui dados para o(s) município(s), o sistema deverá apresentar o resultado em branco e a <a href="../DocumentoDeMensagensv2/#msg41">MSG41</a>;</li>
+<li>A tabela com o resultado deverá ser apresentada após o acionamento do botão “Consultar”. Deverá ser apresentada uma linha para cada protocolo transmitido para o SI Bnafar. As colunas da tabela devem permitir ordenação dos dados;</li>
 <li>A tabela com o resultado deverá apresentar os seguintes campos:<ul>
 <li>Município: Referente ao município de referência dos dados. Deverá ser ocultado para usuários com perfil municipal</li>
 <li>Envio: Data de transmissão para o SI Bnafar</li>
@@ -316,35 +327,6 @@
 </ul>
 </li>
 </ol>
-<h2 id="elementos-de-tela">Elementos de Tela</h2>
-<ul>
-<li>Bread Crumb – “Transmissão Federal / Visualizar transmissões”</li>
-<li>Título da página – “Consultar transmissões analítico”</li>
-<li>“Seta” – M - retorna para a Tela Inicial/Dashboard</li>
-<li>“Munícipio” – SU. Default “Todos”</li>
-<li>“Tipo de dados” – SU. Default “Todos”</li>
-<li>Título da sessão: “Período”  <ul>
-<li>“Data inicial” – D (dd/mm/aaaa)  </li>
-<li>“Data final” – D (dd/mm/aaaa)  </li>
-</ul>
-</li>
-<li>“Consultar” - BT</li>
-<li>“Limpar” – BT</li>
-<li>Título da sessão: “Resultado – Status processamento”</li>
-<li>Tabela:<ul>
-<li>Município – A (50)</li>
-<li>Envio – D (dd/mm/aaaa)</li>
-<li>Dado - A (20)</li>
-<li>Protocolo – A (20)</li>
-<li>Quantidade registros – N (5)</li>
-<li>Status processamento – A (20)</li>
-<li>Processamento – D (dd/mm/aaaa)</li>
-<li>Inconsistências – N (5)</li>
-<li>Ícone download- M</li>
-</ul>
-</li>
-<li>Paginação.</li>
-</ul>
 <h3 id="prototipo">Protótipo</h3>
 <p><a href="https://xd.adobe.com/view/b10875f3-b816-4ec6-9948-a3ef8df26a52-e45b/screen/518aadb2-7bd7-495a-8ff2-b5effc590a0f/">Protótipo não funcional navegável via Adobe XD</a></p>
               

@@ -118,10 +118,10 @@
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE033 - Gestão de Integrações</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#elementos-de-tela">Elementos de tela</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+        </ul>
     </li>
     </ul>
                 </li>
@@ -147,27 +147,37 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -203,31 +213,14 @@
 <p>O e-SUS AF deverá integrar-se com um conjunto de aplicações e bases de dados. Muitos destes precisão passar por algum nível de configuração prévia, seja para armazenar usuário e senha ou para atribuir parâmetros necessários à integração da base.<br />
 Neste contexto, é necessário criar uma área onde seja possível verificar o conjunto de integrações possíveis para o e-SUS AF e, acessar o conjunto de recursos disponíveis para proceder a integração.<br />
 Esta área deverá ser parte do menu configuração e deve ser</p>
-<h2 id="elementos-de-tela">Elementos de tela</h2>
+<h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
-<li><strong>Sistema/Base de dados:</strong> Descreve o sistema ou base de dados para integração.</li>
-<li><strong>Situação:</strong> Apresenta o estado atual da integração, podendo ser:<ul>
-<li>Configurado: A base de dados/aplicação se encontra configurada e pronta para uso.</li>
-<li>Não configurado: A base de dados/aplicação não se encontra configurada e precisa de alguma ação.</li>
-</ul>
-</li>
-<li><strong>Ações:</strong> Conjunto de ações possíveis conforme estado de consfiração. Serão apresentadas as ações:<ul>
-<li>Configurar: Ação que levará a alguma tela/wizard de configuração.</li>
-<li>Detalhar: Ação que apresentará detalhes quanto a integração realizada.</li>
-<li>Editar: Ação que possibilita alterar parâmetros da configuração.</li>
-<li>Desativar: Ação que possibilita desativar parâmetros da configuração.</li>
-<li>Ativar: Ação que habilita uma integração previamente configurada.</li>
-</ul>
-</li>
-</ol>
-<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
-<ol>
-<li>O status de configuração de um dado sistema/base de integração respeitará critérios específicos, definidos pelo conjunto de regras que deverão ser seguidas para que o mesmo possa ser considerada configurada.</li>
-<li>As ações deverão refletir o regras específicas definidas pelo sistema/base de dados integrado.</li>
-<li>As ações detalhar, editar, desativa e ativar deverão estar desabilitadas caso o situação da integração seja "Não Configurado".</li>
-<li>Uma vez configurado o Barramento Integrado da Assistência Farmacêutica (BIAF),  deverão estar disponíveis as ações Detalhar e Editar.</li>
-<li>Para a integração GOV.BR, não haverá tela de configuração e as únicas ações possíveis serão ativar e desativar.</li>
-<li>O estado de integração ao GOV.BR deverá ser "Não Configurado" quando integração inativa e "Configurado" quando integração ativa.</li>
+<li>O status de configuração de um dado sistema/base de integração respeitará critérios específicos, definidos pelo conjunto de regras que deverão ser seguidas para que o mesmo possa ser considerada configurada;</li>
+<li>As ações deverão refletir o regras específicas definidas pelo sistema/base de dados integrado;</li>
+<li>As ações detalhar, editar, desativa e ativar deverão estar desabilitadas caso o situação da integração seja "Não Configurado";</li>
+<li>Uma vez configurado o Barramento Integrado da Assistência Farmacêutica (BIAF),  deverão estar disponíveis as ações Detalhar e Editar;</li>
+<li>Para a integração GOV.BR, não haverá tela de configuração e as únicas ações possíveis serão ativar e desativar;</li>
+<li>O estado de integração ao GOV.BR deverá ser "Não Configurado" quando integração inativa e "Configurado" quando integração ativa;</li>
 <li>O estado da integração gov.br deverá ser armazenada em tb_configuração com a chave "GOV_BR_STATUS".</li>
 </ol>
               

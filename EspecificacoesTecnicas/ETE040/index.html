@@ -131,23 +131,15 @@
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE040 - Requisição de produtos para estabelecimentos</a>
     <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#historia-de-usuario">História de Usuário</a>
-    </li>
     <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#regras-de-negocio">Regras de Negócio</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#fluxograma">Fluxograma</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#modelo-de-dados">Modelo de Dados</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#cenarios-de-testes-bdd">Cenários de testes (BDD)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#prototipo-002">Protótipo 002</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#cenario-001">Cenário 001:</a>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso">Acesso</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
     </li>
         </ul>
     </li>
@@ -161,27 +153,37 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -212,18 +214,13 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="requisicao-de-produtos-para-estabelecimentos">Requisição de produtos para estabelecimentos</h1>
-<h2 id="historia-de-usuario">História de Usuário</h2>
-<p><strong>Como</strong> usuário do sistema de gestão farmacêutica,<br />
-<strong>Quero</strong> realizar requisições de produtos para estabelecimentos,<br />
-<strong>Para que</strong> eu possa recompor meu estoque e garantir a disponibilidade de produtos para atender os usuários SUS.</p>
-<hr />
 <h2 id="descricao">Descrição</h2>
-<p>A funcionalidade de Requisiçao de Produtos permite que estabelecimentos de saúde vinculadas a um mesmo ente federativo (como municípios, estados ou entidades) realizem o remanejamento de medicamentos e insumos de forma controlada, rastreável e integrada. A requisição ocorrerá por solicitação formalizada, podendo ser aceita ou não pelo estabelecimento requisitado.</p>
-<p>A funcionalidade tem como objetivo evitar o desperdício de medicamentos, melhorar a alocação de recursos e otimizar a gestão de estoques. O sistema controla todas as etapas da requisição — desde a criação da solicitação até o recebimento e conferência no destino — garantindo integridade, validação de prazos de validade, controle de status, e registro de divergências. Além disso, promove a atualização automática de estoques somente após o aceite e armazenamento no destino, assegurando rastreabilidade e confiabilidade nas movimentações.</p>
+<p>A  Requisição de Produtos permite que estabelecimentos de saúde vinculadas a um mesmo ente federativo (como municípios, estados ou entidades) realizem a movimentação de medicamentos e insumos de forma controlada, rastreável e integrada, de um estabelecimento para outro,  onde um estabelecimento faz uma solicitação para que outro estabelecimento atenda os produtos com itens do seu estoque, garantindo o controle eficiente, rastreamento detalhado e atualização automática dos estoques em ambos os estabelecimentos. A requisição ocorrerá por solicitação formalizada, podendo ser aceita ou não pelo estabelecimento requisitado. </p>
+<p>A funcionalidade tem como objetivo evitar o desperdício de medicamentos, melhorar a alocação de recursos e otimizar a gestão de estoques. O sistema controla todas as etapas da requisição — desde a criação da solicitação até o recebimento e conferência no destino — garantindo integridade, validação de prazos de validade, controle de status, e registro de divergências. Além disso, promove a atualização automática de estoques somente após o aceite e armazenamento no destino, assegurando rastreabilidade e confiabilidade nas movimentações </p>
 <hr />
 <h2 id="regras-de-negocio">Regras de Negócio</h2>
 <ol>
-<li>Todas as etapas do processo de requisição deverão ser controladas</li>
+<li>Todas as etapas do processo de requisição deverão ser controladas;</li>
 <li>Permitir requisição para todos os estabeleciemntos pertencentes ao Ente do estabelecimento requerente;</li>
 <li>Permitir consultar estoque de todos os estabelecimentos pertencentes ao Ente do estabelecimento requerente;</li>
 <li>Permitir aceite ou recusa de atendimento da solicitação pelos estabelecimentos requisitados;</li>
@@ -273,142 +270,22 @@
 <li>Justificativas devem ser preenchidas caso haja divergências no envio / recebimento;</li>
 <li>Envios / recebimentos sempre deverão gerar registros nos estabelecimentos envolvidos no processo;</li>
 <li>Atualizar automaticamente o estoque após alteração do status da requisição para <code>Aceito</code>;</li>
-<li>No caso de <code>Aceito parcial</code>, o sistema somente efetivará a atualização do estoque de maneira automática após a confirmação de todos os estabelecimentos envolvidos, conforme fluxograma da funcionalidade;</li>
+<li>No caso de <code>Aceito parcial</code>, o sistema somente efetivará a atualização do estoque de maneira automática após a confirmação de todos os estabelecimentos envolvidos, conforme fluxograma da funcionalidade.</li>
 </ol>
 <hr />
-<h2 id="fluxograma">Fluxograma</h2>
-<p><a href="../../imagens/ete041-fluxo-requisicao.png">Fluxo Requisição entre estabelecimentos</a>
-<img alt="Fluxo Requisição entre estabelecimentos" src="../../imagens/ete041-fluxo-requisicao.png" /></p>
-<hr />
-<h2 id="prototipo-001">Protótipo 001</h2>
-<p><em>(inserir link do protótipo não funcional nabegável via adobe XD ou similares)</em></p>
-<hr />
-<h2 id="criterios-de-aceite">Critérios de Aceite</h2>
+<h2 id="prototipo-002">Protótipo 002</h2>
+<p>[Inserir imagem]</p>
+<h3 id="acesso">Acesso</h3>
+<p>Menu lateral &gt; Movimentação &gt; Requisição </p>
+<h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
-<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
-<li>Acesso<ul>
-<li>Menu &gt; Gestão de Estoque &gt; Requisições</li>
-</ul>
-</li>
-<li>O sistema deve validar todos os campos obrigatórios antes do envio.</li>
-<li>Transferências geram movimentações de saída/entrada automáticas ao terem status alterados para aceito.</li>
-<li>Estoques atualizados apenas após conferência e aceite pelo destino.</li>
-<li>Apenas registros sem movimentações podem ser editados.</li>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão. <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a>;</li>
+<li>O sistema deve validar todos os campos obrigatórios antes do envio;</li>
+<li>Transferências geram movimentações de saída/entrada automáticas ao terem status alterados para aceito;</li>
+<li>Estoques atualizados apenas após conferência e aceite pelo destino;</li>
+<li>Apenas registros sem movimentações podem ser editados;</li>
 <li>Alertas visíveis para destinatários com solicitações pendentes.</li>
 </ol>
-<hr />
-<h2 id="modelo-de-dados">Modelo de Dados</h2>
-<table>
-<thead>
-<tr>
-<th>Nível</th>
-<th>Atributo</th>
-<th>Descrição</th>
-<th>Cardinalidade</th>
-<th>Tipo de Dado</th>
-<th>Tamanho</th>
-<th>Formato / Observação</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Campo</th>
-<th>Tipo</th>
-<th>Obrigatório</th>
-<th>Observações</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ID Transferência</td>
-<td>UUID</td>
-<td>Sim</td>
-<td>Gerado automaticamente</td>
-</tr>
-<tr>
-<td>Estabelecimento Origem</td>
-<td>Referência</td>
-<td>Sim</td>
-<td>CNES e nome</td>
-</tr>
-<tr>
-<td>Estabelecimento Destino</td>
-<td>Referência</td>
-<td>Sim</td>
-<td>CNES e nome</td>
-</tr>
-<tr>
-<td>Produto</td>
-<td>Referência</td>
-<td>Sim</td>
-<td>Código OBM ou EAN</td>
-</tr>
-<tr>
-<td>Lote</td>
-<td>Texto</td>
-<td>Sim</td>
-<td></td>
-</tr>
-<tr>
-<td>Validade</td>
-<td>Data</td>
-<td>Sim</td>
-<td>Alerta se &lt; 3 meses. Rejeitar se vencido</td>
-</tr>
-<tr>
-<td>Quantidade</td>
-<td>Inteiro</td>
-<td>Sim</td>
-<td></td>
-</tr>
-<tr>
-<td>Motivo da Solicitação</td>
-<td>Texto</td>
-<td>Sim</td>
-<td></td>
-</tr>
-<tr>
-<td>Status</td>
-<td>Enum</td>
-<td>Sim</td>
-<td>Aberto, Enviado, Finalizado, etc.</td>
-</tr>
-<tr>
-<td>Justificativa</td>
-<td>Texto</td>
-<td>Condicional</td>
-<td>Obrigatória para recusa, divergência ou devolução</td>
-</tr>
-<tr>
-<td>Usuário Solicitante</td>
-<td>Referência</td>
-<td>Sim</td>
-<td>Nome e ID do operador</td>
-</tr>
-<tr>
-<td>Data/Hora da Solicitação</td>
-<td>DateTime</td>
-<td>Sim</td>
-<td>Registro automático</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="cenarios-de-testes-bdd">Cenários de testes (BDD)</h2>
-<h3 id="cenario-001">Cenário 001:</h3>
               
             </div>
           </div><footer>

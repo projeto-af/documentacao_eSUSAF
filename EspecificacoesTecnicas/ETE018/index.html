@@ -87,11 +87,11 @@
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE018 - Detalhar Estabelecimento</a>
     <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso">Acesso</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
     </li>
@@ -151,27 +151,37 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -202,69 +212,19 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="ete018-detalhar-estabelecimento-de-saude">ETE018 - Detalhar Estabelecimento de Saúde</h1>
-<h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
+<h2 id="descricao">Descrição</h2>
 <p>Como usuário quero detalhar os dados de estabelecimento de saúde. </p>
 <h2 id="prototipo-001">Protótipo 001</h2>
-<p><img alt="alt text" src="../../imagens/ete-018-prot-001.png" /></p>
-<h3 id="elementos-de-tela">Elementos de Tela</h3>
-<ul>
-<li>Bread Crumb – “Cadastro / Estabelecimento / Dados do Estabelecimento” </li>
-<li>Título da página – “Detalhar Estabelecimento” </li>
-<li>“Seta” – M - retorna para a Tela de Consultar Estabelecimento</li>
-<li>“Imprimir” – BT </li>
-<li>“Consultar” – BT - retorna para a Tela de Consultar Estabelecimento</li>
-<li>Logotipo e-SUS AF - M </li>
-<li>Cabeçalho:  <ul>
-<li>Estabelecimento: <ul>
-<li>CNES / Nome do estabelecimento logado / Município / UF  </li>
-</ul>
-</li>
-<li>Alterado por:  <ul>
-<li>CPF / Nome completo do usuário que realizou a última ação no cadastro da entrada (anonimizar os dados)  </li>
-<li>Data e Hora da última alteração: </li>
-</ul>
-</li>
-</ul>
-</li>
-<li>CNES  </li>
-<li>CNPJ </li>
-<li>Razão Social  </li>
-<li>Tipo Gestão </li>
-<li>Nome Fantasia </li>
-<li>Tipo de Estabelecimento  </li>
-<li>CEP </li>
-<li>Endereço </li>
-<li>Número </li>
-<li>Bairro </li>
-<li>Município </li>
-<li>UF </li>
-<li>É obrigatória a indicação de um farmacêutico responsável para este estabelecimento? - Sim ou Não </li>
-<li>Farmacêutico(s) <ul>
-<li>CPF </li>
-<li>Nome </li>
-<li>UF/Nº CRF </li>
-<li>Responsável - Sim ou Não </li>
-</ul>
-</li>
-<li>Departamento(s) <ul>
-<li>Descrição departamento </li>
-</ul>
-</li>
-<li>Mapa do Endereçamento Físico de Armazenamento <ul>
-<li>Código &gt; Descrição Endereço </li>
-</ul>
-</li>
-<li>Situação do Registro
- </li>
-</ul>
+<p>[Inserir imagem] <!-- <img alt="alt text" src="../imagens/ete-018-prot-001.png" /> --></p>
+<h3 id="acesso">Acesso</h3>
+<p>Cadastro &gt; Estabelecimento &gt; Consultar estabelecimento &gt; Acionar o botão “detalhar” </p>
 <h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
-<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Cadastro”, subitem “Estabelecimento”, na tela “Consultar Estabelecimento” quando for acionada a opção “Detalhar”;   </li>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão. <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a>;</li>
 <li>O sistema deve recuperar e apresentar os dados relacionados ao cadastro do estabelecimento de saúde que o usuário deseja detalhar; </li>
-<li>Os dados do CNES, Nome, Município e UF, do cabeçalho (Emitido por:), devem ser recuperados do cadastro do estabelecimento do usuário logado. Já o Nome e CPF do usuário responsável pela última alteração no registro do cadastro e a data dessa ação devem ser recuperados do histórico do registro da funcionalidade em questão; <a href="../DocumentoDeRegrasv2/#rgn014">RGN014</a></li>
+<li>Os dados do CNES, Nome, Município e UF, do cabeçalho (Emitido por:), devem ser recuperados do cadastro do estabelecimento do usuário logado. Já o Nome e CPF do usuário responsável pela última alteração no registro do cadastro e a data dessa ação devem ser recuperados do histórico do registro da funcionalidade em questão. <a href="../DocumentoDeRegrasv2/#rgn014">RGN014</a>;</li>
 <li>Quando o usuário acionar a opção de “Imprimir”, o sistema deve permitir imprimir as informações da tela ou salvá-las em um arquivo no formato desejado (padrão Windows); </li>
-<li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema finaliza o detalhamento e retorna à tela de consulta aos estabelecimentos de saúde. <a href="../ETE015/">ETE015</a></li>
+<li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema finaliza o detalhamento e retorna à tela de consulta aos estabelecimentos de saúde. <a href="../ETE015/">ETE015</a>.</li>
 </ol>
               
             </div>

@@ -132,11 +132,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#historico-de-revisoes">Histórico de Revisões</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#historia-de-usuario">História de Usuário</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
 <ul>
+<li class="toctree-l4"><a class="reference internal" href="#acesso">Acesso</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="#prototipo">Protótipo</a>
 </li>
 </ul>
@@ -151,27 +151,37 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+</li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal">Para Validação</a>
+<li class="toctree-l1"><a class="reference internal">Modelos</a>
 <ul>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+<li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+<li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+<li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+<li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
 </li>
 </ul>
 </li>
@@ -266,67 +276,32 @@
 </table>
 <h2 id="historia-de-usuario">História de Usuário</h2>
 <p>Como usuário quero configurar a transmissão de dados da minha instância do eSUS AF para o SI Bnafar.</p>
-<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
+<h3 id="acesso">Acesso</h3>
+<p>Transmissão federal &gt; Configurar transmissão &gt; SI Bnafar</p>
+<h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
-<li>O usuário somente pode acessar a funcionalidade caso tenha permissão. <a href="../DocumentoDeRegrasv2/">#RGN001</a>.  </li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Transmissão federal”, subitem “Configurar transmissão”, e selecionado o card “SI Bnafar”. O menu deve ser apresentado apenas para os usuários que possuem perfil de acesso a funcionalidade.  </li>
-<li>Credenciais SI Bnafar. Ver <a href="../DocumentoDeRegrasv2/">#RGN068</a>.  </li>
-<li>A senha para a transmissão dos dados deverá ser gravada de forma criptografada no banco. Contudo, o método de criptografia deverá permitir a descriptografia para posterior utilização nas transmissões. </li>
-<li>Caso o campo “Ativo” seja selecionado com a opção “Sim”, todos os demais campos da tela tornam-se obrigatórios, exceto: “Cargo”, “E-mail” e “Telefone”. Não é obrigatório incluir um item no campo “Municípios excluídos” para salvar a configuração como ativa.  </li>
+<li>O usuário somente pode acessar a funcionalidade caso tenha permissão. <a href="../DocumentoDeRegrasv2/">#RGN001</a>;  </li>
+<li>Credenciais SI Bnafar. Ver <a href="../DocumentoDeRegrasv2/">#RGN068</a>;   </li>
+<li>A senha para a transmissão dos dados deverá ser gravada de forma criptografada no banco. Contudo, o método de criptografia deverá permitir a descriptografia para posterior utilização nas transmissões; </li>
+<li>Caso o campo “Ativo” seja selecionado com a opção “Sim”, todos os demais campos da tela tornam-se obrigatórios, exceto: “Cargo”, “E-mail” e “Telefone”. Não é obrigatório incluir um item no campo “Municípios excluídos” para salvar a configuração como ativa;  </li>
 <li>Caso o usuário tente salvar as configurações com o campo “Ativo” selecionado com a opção “Não”, deverá ser apresentada uma modal com:  <ul>
 <li>Mensagem: “A interrupção no envio de dados para o SI Bnafar pode ocasionar impactos financeiros para os municípios. Deseja continuar?”  </li>
-<li>Botão “Confirmar”: Confirma o salvamento da tela com a opção “Não” selecionada  </li>
+<li>Botão “Confirmar”: Confirma o salvamento da tela com a opção “Não” selecionada.  </li>
 <li>Botão “Cancelar”: Fecha a modal, sem salvar os dados.</li>
 </ul>
 </li>
-<li>No campo “Auditar transmissões” o usuário pode selecionar se as requisições e repostas do SI Bnafar serão persistidas para fins de auditoria. Se for selecionada a opção “Sim”, deve ser habilitado o campo obrigatório “Dias”. <a href="../DocumentoDeRegrasv2/">#RGN070</a>.  </li>
-<li>Caso o cadastro seja salvo com o campo “Auditar transmissões” selecionado com “Não”, o sistema deverá realizar a exclusão física das auditorias persistidas até então no banco de dados para a respectiva UF e todos os municípios da instância.</li>
-<li>O campo “Escopo” especifica quais medicamentos e produtos deverão ser transmitidos para o SI Bnafar. <a href="../DocumentoDeRegrasv2/">#RGN069</a>.  </li>
+<li>No campo “Auditar transmissões” o usuário pode selecionar se as requisições e repostas do SI Bnafar serão persistidas para fins de auditoria. Se for selecionada a opção “Sim”, deve ser habilitado o campo obrigatório “Dias”. <a href="../DocumentoDeRegrasv2/">#RGN070</a>;  </li>
+<li>Caso o cadastro seja salvo com o campo “Auditar transmissões” selecionado com “Não”, o sistema deverá realizar a exclusão física das auditorias persistidas até então no banco de dados para a respectiva UF e todos os municípios da instância;</li>
+<li>O campo “Escopo” especifica quais medicamentos e produtos deverão ser transmitidos para o SI Bnafar. <a href="../DocumentoDeRegrasv2/">#RGN069</a>;  </li>
 <li>Caso o usuário selecione a opção “Sim” no campo “Configurações Avançadas”:<ul>
 <li>Deve ser apresentada uma modal com a seguinte mensagem “A alteração dos parâmetros pode gerar grande impacto na transmissão dos dados para o SI Bnafar.\n\n Faça a alteração apenas em caso de recomendação do Ministério da Saúde.” Adicionalmente, deverá ser exibido o botão “Fechar” para fechar a modal.</li>
 <li>Deve ser habilitado o campo “Limite registros por lote”, onde o usuário pode definir a quantidade máxima de registros por lote de envio para o SI Bnafar.</li>
 <li>Deve ser habilitado o campo “Timeout (ms)”, onde o usuário pode informar o tempo de timeout do cliente do SI Bnafar.</li>
 </ul>
 </li>
-<li>Sistema deve apresentar duas listas (carrinho de compra) para seleção de quais municípios irão transmitir os dados para o SI Bnafar. Somente deverão ser exibidos os municípios que fazem parte da instância do sistema, e da mesma UF do usuário logado. Os municípios devem ser apresentados por default na lista de envio dos dados, em ordem alfabética. <a href="../DocumentoDeRegrasv2/">#RGN071</a>.  </li>
+<li>Sistema deve apresentar duas listas (carrinho de compra) para seleção de quais municípios irão transmitir os dados para o SI Bnafar. Somente deverão ser exibidos os municípios que fazem parte da instância do sistema, e da mesma UF do usuário logado. Os municípios devem ser apresentados por default na lista de envio dos dados, em ordem alfabética. <a href="../DocumentoDeRegrasv2/">#RGN071</a>;  </li>
 <li>Ao clicar no botão “Salvar”, e caso não ocorra nenhum erro, o sistema deve apresentar a MSG xx6.</li>
 </ol>
-<h2 id="elementos-de-tela">Elementos de Tela</h2>
-<ul>
-<li>Bread Crumb – “Transmissão Federal / Configurar Transmissão / SI Bnafar”</li>
-<li>Título da página – “Configurar SI Bnafar”</li>
-<li>“Seta” – M - retorna para a Tela <a href="../ETE033/">#ETE033</a></li>
-<li>“Ativo”* – SU (Sim/Não). Default “Não”</li>
-<li>Título da sessão: “Credenciais”  <ul>
-<li>“Usuário” – A (20)  </li>
-<li>“Senha” - A (20). Ocultar caracteres digitados  </li>
-<li>“Nome responsável credencial”: A (50)  </li>
-<li>“Cargo”: A (50)  </li>
-<li>“e-mail”: A (50)  </li>
-<li>“Telefone”:  N (13)  </li>
-</ul>
-</li>
-<li>Título da sessão: “Parâmetros”  <ul>
-<li>“Escopo” - SU (Rol completo/Apenas Rename). Default “Rol completo”  </li>
-<li>“Auditar transmissões” - SU (Sim/Não). Default “Sim”. Se “Sim”, habilitar “Dias”  <ul>
-<li>“Dias” – N (4). Default 365, mínimo 1 e máximo 1095  </li>
-</ul>
-</li>
-</ul>
-</li>
-<li>“Configurações Avançadas” - SU (Sim/Não). Default “Não”. Se “Sim”, habilitar “Limite registros por lote” e “Timeout (ms)”  <ul>
-<li>“Limite registros por lote” – N (4). Default 1000, mínimo 50 e máximo 1000  </li>
-<li>“Timeout (ms)” – N (6). Default 45000, mínimo 20000, máximo 150000  </li>
-</ul>
-</li>
-<li>Título da sessão: “Municípios habilitados para transmissão”  <ul>
-<li>Lista “Envio”  </li>
-<li>Lista “Não envio”  </li>
-</ul>
-</li>
-<li>“Salvar”: BT  </li>
-<li>“Voltar”: BT  </li>
-</ul>
 <h3 id="prototipo">Protótipo</h3>
 <p><a href="https://xd.adobe.com/view/b10875f3-b816-4ec6-9948-a3ef8df26a52-e45b/screen/518aadb2-7bd7-495a-8ff2-b5effc590a0f/">Protótipo não funcional navegável via Adobe XD</a></p>
 <h2 id="modelo-de-dados">Modelo de Dados</h2>

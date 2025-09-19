@@ -61,9 +61,17 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela:</a>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso">Acesso</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de aceite</a>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prototipo-002">Protótipo 002</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso_1">Acesso</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite_1">Critérios de Aceite</a>
     </li>
         </ul>
     </li>
@@ -151,27 +159,37 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -206,58 +224,26 @@
 <p>Como usuário quero realizar meu cadastro para acessar o sistema e suas funcionalidades.</p>
 <h2 id="prototipo-001">Protótipo 001</h2>
 <p><img alt="alt text" src="../../imagens/ete-003-prot-001.png" /></p>
-<h3 id="elementos-de-tela">Elementos de Tela:</h3>
-<ul>
-<li>Logotipo gov.br – M </li>
-<li>Idioma – SU </li>
-<li>Logotipo e-SUS AF – M </li>
-<li>Título da página – “Esqueci minha Senha” </li>
-<li>Subtítulo da página – “Informe seu CPF para redefinir sua senha:” </li>
-<li>CPF*– N (11) </li>
-<li>“Solicitar Alteração” – BT </li>
-<li>“Retornar ao Login” – BT  </li>
-</ul>
-<p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório. </p>
-<h3 id="criterios-de-aceite">Critérios de aceite</h3>
+<h3 id="acesso">Acesso</h3>
+<p>Login &gt; Esqueci minha senha</p>
+<h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
-<li>O acesso a funcionalidade é dado através da tela de “Login”, quando for acionada a opção “Esqueci minha senha”; </li>
-<li>O sistema deve considerar o idioma “Português-Brasil” como padrão, permitido ao usuário alterá-lo a qualquer momento; </li>
-<li>Quando o usuário acionar opção “Idioma”, o sistema deve apresentar as alternativas de idiomas para utilização do sistema na língua desejada; <a href="./#prototipo-003">Protótipo 003</a> </li>
 <li>O sistema deve permitir que o usuário informe o CPF para solicitar a alteração da senha;  </li>
 <li>Quando o usuário acionar a opção “Solicitar alteração” o sistema deve: <ul>
 <li>Verificar se os campos obrigatórios estão preenchidos, caso não, realçar o campo e apresentar mensagem de alerta; MSG053 </li>
-<li>Verificar se o usuário informado tem cadastro, caso não, apresentar mensagem de alerta; <a href="../DocumentoDeMensagensv2/#msg058">MSG058</a><br />
-Atendendo as validações, o sistema apresenta mensagem de sucesso, envia um e-mail de confirmação ao usuário e direciona para à tela de login do sistema; <a href="../DocumentoDeMensagensv2/#msg059">MSG059</a> <a href="../DocumentoDeMensagensv2/#msg060">MSG060</a> <a href="../DocumentoDeRegrasv2/#rgn047">RGN047</a></li>
+<li>Verificar se o usuário informado tem cadastro, caso não, apresentar mensagem de alerta. <a href="../DocumentoDeMensagensv2/#msg058">MSG058</a>;<br />
+Atendendo as validações, o sistema apresenta mensagem de sucesso, envia um e-mail de confirmação ao usuário e direciona para à tela de login do sistema. <a href="../DocumentoDeMensagensv2/#msg059">MSG059</a> <a href="../DocumentoDeMensagensv2/#msg060">MSG060</a> <a href="../DocumentoDeRegrasv2/#rgn047">RGN047</a>;</li>
 </ul>
 </li>
-<li>Quando o usuário corrigir um alerta emitido pelo sistema o campo não deve permanecer realçado. </li>
-<li>Quando o usuário acionar a opção “Retornar ao Login”, o sistema deve retornar à tela de “Login”. <a href="../ETE001/">ETE001</a></li>
+<li>Quando o usuário corrigir um alerta emitido pelo sistema o campo não deve permanecer realçado; </li>
+<li>Quando o usuário acionar a opção “Retornar ao Login”, o sistema deve retornar à tela de “Login”. <a href="../ETE001/">ETE001</a>.</li>
 </ol>
-<h1 id="prototipo-002">Protótipo 002</h1>
+<h2 id="prototipo-002">Protótipo 002</h2>
 <p><img alt="alt text" src="../../imagens/ete-003-prot-002.png" /></p>
-<h3 id="elementos-de-tela_1">Elementos de tela</h3>
-<ul>
-<li>Logotipo gov.br – M </li>
-<li>Idioma – SU </li>
-<li>Logotipo e-SUS AF – M </li>
-<li>Título da página – “Redefinir Senha” </li>
-<li>Subtítulo da página – “Informe a nova senha e confirme no campo abaixo:” </li>
-<li>Senha* – A (30) </li>
-<li>“Informação Senha” * – M  </li>
-<li>“Visualizar Senha” * – M </li>
-<li>Confirme a Senha* – A (30) </li>
-<li>“Visualizar Senha” * – M </li>
-<li>“Alterar Senha” – BT </li>
-<li>“Retornar ao Login” – BT </li>
-</ul>
-<p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório. </p>
-<h3 id="criterios-de-aceite_1">Critérios de aceite</h3>
+<h3 id="acesso_1">Acesso</h3>
+<p>E-mail &gt; "Quero alterar minha senha"</p>
+<h3 id="criterios-de-aceite_1">Critérios de Aceite</h3>
 <ol>
-<li>O acesso a funcionalidade é dado através da mensagem encaminhada para o e-mail, quando for acionada a opção “Quero alterar minha senha”; </li>
-<li>O sistema deve considerar o idioma “Português-Brasil” como padrão, permitido ao usuário alterá-lo a qualquer momento; </li>
-<li>Quando o usuário acionar opção “Idioma”, o sistema deve apresentar as alternativas de idiomas para utilização do sistema na língua desejada; Protótipo 003 </li>
 <li>O sistema deve permitir que o usuário informe a nova senha; </li>
 <li>O sistema deve apresentar o ícone “Informação Senha” com o texto: <ul>
 <li>Critérios para a nova senha: <ul>
@@ -273,34 +259,13 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 </li>
 <li>O sistema deve apresentar o ícone “Visualizar Senha” para permitir a visualização da senha informada; </li>
 <li>Quando o usuário acionar a opção “Alterar senha”, o sistema deve: <ul>
-<li>Verificar se os campos obrigatórios estão preenchidos, caso não, realçar o campo e apresentar mensagem de alerta; <a href="../DocumentoDeMensagensv2/#msg053">MSG053</a></li>
-<li>Verificar se os dados informados nos campos “Senha” e “Confirme a Senha” são idênticos, caso não, realçar o campo e apresentar mensagem de alerta; <a href="../DocumentoDeMensagensv2/#msg054">MSG054</a><br />
-  Atendendo as validações, o sistema apresenta mensagem de sucesso e direciona à tela de login do sistema; <a href="../DocumentoDeMensagensv2/#msg061">MSG061</a></li>
+<li>Verificar se os campos obrigatórios estão preenchidos, caso não, realçar o campo e apresentar mensagem de alerta. <a href="../DocumentoDeMensagensv2/#msg053">MSG053</a>;</li>
+<li>Verificar se os dados informados nos campos “Senha” e “Confirme a Senha” são idênticos, caso não, realçar o campo e apresentar mensagem de alerta. <a href="../DocumentoDeMensagensv2/#msg054">MSG054</a>;
+  Atendendo as validações, o sistema apresenta mensagem de sucesso e direciona à tela de login do sistema. <a href="../DocumentoDeMensagensv2/#msg061">MSG061</a>.</li>
 </ul>
 </li>
 <li>Quando o usuário corrigir um alerta emitido pelo sistema o campo não deve permanecer realçado; </li>
-<li>Quando o usuário acionar a opção “Retornar ao Login”, o sistema deve retornar à tela de “Login”. <a href="../ETE001/">ETE001</a> </li>
-</ol>
-<h2 id="prototipo-003">Protótipo 003</h2>
-<p><img alt="alt text" src="../../imagens/lang-pt-br.png" /></p>
-<p><img alt="alt text" src="../../imagens/lang-es_es.png" /></p>
-<p><img alt="alt text" src="../../imagens/lang-en-us.png" /></p>
-<h3 id="elementos-de-tela_2">Elementos de tela</h3>
-<ul>
-<li>Título da página – “Selecione o idioma desejado:” </li>
-<li>Bandeira Brasil - Português – M / SU </li>
-<li>Bandeira Espanha - Espanhol – M / SU </li>
-<li>Bandeira Inglaterra - Inglês – M / SU </li>
-<li>“Alterar Idioma” – BT </li>
-<li>“Sair” – BT  </li>
-</ul>
-<p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório. </p>
-<h3 id="criterios-de-aceite_2">Critérios de aceite</h3>
-<ol>
-<li>Quando o usuário selecionar o idioma para a utilização da aplicação, o sistema deve alterar automaticamente o texto da mensagem e dos botões para o idioma selecionado. </li>
-<li>Quando o usuário acionar opção “Alterar Idioma”, o sistema deve alterar o idioma da aplicação; </li>
-<li>Quando o usuário acionar opção “Sair”, o sistema deve retornar à tela de “Login”. <a href="../ETE001/">ETE001</a> </li>
+<li>Quando o usuário acionar a opção “Retornar ao Login”, o sistema deve retornar à tela de “Login”. <a href="../ETE001/">ETE001</a>. </li>
 </ol>
               
             </div>

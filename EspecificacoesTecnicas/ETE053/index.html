@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>ETE053 - Cadastrar dispensação/fornecimento - e-SUS AF - Documentação Negocial</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "ETE053 - Cadastrar dispensa\u00e7\u00e3o/fornecimento";
+        var mkdocs_page_input_path = "EspecificacoesTecnicas/ETE053.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> e-SUS AF - Documentação Negocial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeMensagensv2/">Documento de Mensagens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DocumentoDeRegrasv2/">Documento de Regras</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Especificações</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../ETE001/">ETE001 - Realizar Login</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE002/">ETE002 - Cadastrar Usuário do Sistema</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE003/">ETE003 - Recuperar Senha</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE004/">ETE004 - Consultar Permissões de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE005/">ETE005 - Atribuir Perfil de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE006/">ETE006 - Detalhar Permissão de Acesso</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE007/">ETE007 - Consultar Meus Perfis</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE008/">ETE008 - Solicitar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE009/">ETE009 - Detalhar Meu Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE010/">ETE010 - Consultar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE011/">ETE011 - Cadastrar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE012/">ETE012 - Detalhar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE013/">ETE013 - Consultar Entes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE014/">ETE014 - Cadastrar Ente</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE015/">ETE015 - Consultar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE016/">ETE016 - Cadastrar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE017/">ETE017 - Editar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE018/">ETE018 - Detalhar Estabelecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE019/">ETE019 - Consultar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE020/">ETE020 - Cadastrar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE021/">ETE021 - Editar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE022/">ETE022 - Detalhar Entrada</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE023/">ETE023 - Consultar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE024/">ETE024 - Cadastrar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE025/">ETE025 - Editar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE026/">ETE026 - Detalhar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE027/">ETE027 - Emitir Relatório de Posição de Estoque</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE028/">ETE028 - Detalhar Relatório de Posição de Estoque</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE029/">ETE029 - Consultar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE030/">ETE030 - Cadastrar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE031/">ETE031 - Editar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE032/">ETE032 - Detalhar Usuário SUS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE033/">ETE033 - Gestão de Integrações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE034/">ETE034 - Configurar Integração Barramento AF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE035/">ETE035 - Detalhar Integração Barramento AF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE036/">ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE037/">ETE037 - Gestão de Estoques</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE038/">ETE038 - Autenticação com GOV.BR</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE039/">ETE039 - Transferência de Produtos entre Estabelecimentos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE040/">ETE040 - Requisição de produtos para estabelecimentos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE041/">ETE041 - Configurar transmissão SI Bnafar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE042/">ETE042 - Transmitir dados SI Bnafar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE043/">ETE043 - Visualizar transmissão federal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE053 - Cadastrar dispensação/fornecimento</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso">Acesso</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prototipo-002">Protótipo 002</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso_1">Acesso</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite_1">Critérios de Aceite</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prototipo-003">Protótipo 003</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso_2">Acesso</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite_2">Critérios de Aceite</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prototipo-004">Protótipo 004</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso_3">Acesso</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite_3">Critérios de Aceite</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">e-SUS AF - Documentação Negocial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Especificações Técnicas</li>
+          <li class="breadcrumb-item">Especificações</li>
+      <li class="breadcrumb-item active">ETE053 - Cadastrar dispensação/fornecimento</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ete053-cadastrar-dispensacaofornecimento">ETE053- Cadastrar dispensação/fornecimento <!-- Estou criando do zero este .md de acordo com o docx. --></h1>
+<h2 id="descricao">Descrição</h2>
+<p>Como usuário, quero cadastrar uma nova dispensação/fornecimento de produto(s) ao Usuário SUS, no estabelecimento de saúde logado. </p>
+<h2 id="prototipo-001">Protótipo 001</h2>
+<p>[Inserir imagem]</p>
+<h3 id="acesso">Acesso</h3>
+<p>Menu lateral &gt; Movimentação &gt; Dispensação/Fornecimento &gt; Cadastrar </p>
+<h3 id="criterios-de-aceite">Critérios de Aceite</h3>
+<ol>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão;  </li>
+<li>Esta funcionalidade estará disponível apenas para usuários cadastrados no sistema como Farmacêutico, Gestor do estabelecimento ou Atendente do estabelecimento logado; </li>
+<li>Quando o usuário acessar a funcionalidade, o sistema deve apresentar a tela contendo os seguintes campos: <ul>
+<li>Nº da Dispensação: Este número será gerado de forma automática pelo sistema e será o “ID” da dispensação. </li>
+<li>Dados do Usuário SUS: <ul>
+<li>CPF/CNS: Preenchendo o número do documento, as demais informações do Usuário SUS serão buscadas na base de dados do sistema (banco local), ou da integração com o CADSUS (banco nacional), que irá atualizar a base local:  <ul>
+<li>Caso o sistema não localize um Usuário SUS através da informação do número de CPF/CNS, este deverá ser previamente cadastrado no sistema; </li>
+<li>Apresentar uma mensagem de alerta ao usuário caso a consulta não retorne um Usuário SUS válido; </li>
+<li>Apresentar uma mensagem de alerta ao usuário caso a consulta retorne um Usuário SUS com registro de óbito </li>
+</ul>
+</li>
+<li>Nome Completo: será preenchido de forma automática após a informação do CPF/CNS;  </li>
+<li>Nome Social: será preenchido de forma automática após a informação do CPF/CNS, se aplicável;  </li>
+<li>Sexo biológico/nascimento: será preenchido de forma automática após a informação do CPF/CNS;  </li>
+<li>Data de Nascimento: será preenchido de forma automática após a informação do CPF/CNS <ul>
+<li>Identificação do Responsável pela Retirada: </li>
+</ul>
+</li>
+<li>Retirado por: as opções listadas serão “Usuário SUS”, “Responsável Legal”, “Outros”:  <ul>
+<li>Por padrão, serão trazidos os dados do “Usuário SUS”, preenchidos nos “Dados do Usuário”, onde as informações do usuário serão replicadas nos próximos campos; </li>
+<li>No caso de um Usuário SUS menor de idade, incapaz, ou demais situações em que seu Responsável Legal esteja realizando a retirada, deverá ser marcada a opção “Responsável Legal”, onde serão trazidas as informações de Responsável (is) Legal (is) vinculado(s) ao Usuário SUS, através da busca do registro da base local ou da base nacional;  </li>
+<li>No caso de mais de um Responsável Legal cadastrado, o sistema deverá listar todas as opções para o operador selecione o nome do Responsável que está presencialmente realizando a retirada. Assim, os demais dados de identificação do responsável serão preenchidos automaticamente; </li>
+<li>Se a retirada for feita por outro responsável que não esteja vinculado ao Usuário SUS, deverá ser marcada a opção “Outros”, onde para esta, os demais dados de identificação de responsável deverão ser preenchidas pelo operador do sistema. </li>
+</ul>
+</li>
+<li>CPF/CNS: Quando selecionado em “Retirado por” as opções “Usuário SUS” ou “Responsável Legal”, o número do documento será preenchido de forma automática, pela busca às bases:  <ul>
+<li>Se for selecionada a opção “Outros”, um dos documentos (CPF/CNS) deverá ser digitado. </li>
+</ul>
+</li>
+<li>Nome Completo: Quando selecionado em “Retirado por” as opções “Usuário SUS” ou “Responsável Legal”, o campo será preenchido de forma automática, pela busca às bases:  <ul>
+<li>Se for selecionada a opção “Outros”, o nome completo do responsável deverá ser digitado, conforme documento. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>O preenchimento desta tela com as informações de Usuário SUS e o Responsável pela Retirada são obrigatórios para prosseguir avançar nas etapas da dispensação;  </li>
+<li>Os ícones localizados na parte superior/centralizada da tela ficariam habilitados para navegação apenas após os dados serem salvos; </li>
+<li>Ao clicar no botão “VOLTAR”, nenhum dado será gravado, e retornará para a telade consulta; </li>
+<li>Ao clicar em “Salvar e avançar” o sistema deve validar se todas as informações foram preenchidas. Se alguma informação obrigatória não foi inserida, o sistema sinaliza qual informação está faltando ser preenchida. Se estiver tudo de acordo, o sistema avança para a próxima etapa, e o registro será criado; </li>
+<li>Caso o usuário saia da tela de dispensação, após o registro criado, esses dados estarão salvos na tela de consulta com o status “Em preenchimento”, podendo dar prosseguimento ao preenchimento dos dados, sem perder as informações já salvas.  </li>
+</ol>
+<h2 id="prototipo-002">Protótipo 002</h2>
+<p>[Inserir imagem]</p>
+<h3 id="acesso_1">Acesso</h3>
+<p>Menu lateral &gt; Movimentação &gt; Dispensação/Fornecimento &gt; Cadastrar &gt; Salvar e avançar </p>
+<h3 id="criterios-de-aceite_1">Critérios de Aceite</h3>
+<ol>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão;  </li>
+<li>Esta funcionalidade estará disponível apenas para usuários cadastrados como Farmacêutico, Gestor de estabelecimento ou Atendente do estabelecimento logado; </li>
+<li>Esta tela só está disponível após o preenchimento dos dados obrigatórios do Protótipo 001; </li>
+<li>Quando o usuário acessar a funcionalidade, o sistema deve apresentar a tela contendo os seguintes campos: <ul>
+<li>Data da Receita/Prescrição: Será informada a data que consta na receita/prescrição do medicamento. O operador poderá digitar os números, ou clicar no ícone do calendário que fica à direita, para preenchimento deste campo.  <ul>
+<li>Apresentar uma mensagem de alerta ao usuário caso seja inserida uma data posterior à atual; </li>
+<li>Não é permitido cadastro de receita com data futura. </li>
+</ul>
+</li>
+<li>Registro Eletrônico: No caso de prescrições eletrônicas, neste campo será informado o token/código da receita. Este campo não é obrigatório, no momento, e deve ser no formato alfanumérico.  </li>
+<li>CPF/CNS: Neste, deverá ser informado o documento do prescritor.  </li>
+<li>Nome Completo: Deverá ser preenchido o nome completo do prescritor, sem abreviações. Campo obrigatório.  </li>
+<li>Conselho de classe: Campo onde será selecionado em qual conselho de classe o prescritor está inscrito, dentre as opções:  <ul>
+<li>Conselho Regional de Enfermagem </li>
+<li>Conselho Regional de Farmácia </li>
+<li>Conselho Regional de Fisioterapia e Terapia Ocupacional </li>
+<li>Conselho Regional de Medicina </li>
+<li>Conselho Regional de Odontologia </li>
+<li>Registro do Ministério da Saúde (Programa Mais Médicos) </li>
+</ul>
+</li>
+<li>Número do Conselho: Deverá ser digitado o número de registro do conselho de classe ao qual o prescritor está inscrito.  </li>
+<li>UF do Conselho: Campo para selecionar em qual unidade federativa o prescritor está inscrito em seu conselho de classe.  </li>
+<li>Número do RQE: Quando o profissional possuir especialidade médica, nomeado como Registro de Qualificação de Especialista (RQE), deverá ser digitado o número deste registro.  </li>
+<li>Especialidade médica: Quando informado um RQE, este campo se tornará obrigatório, onde deverá ser selecionada uma especialidade médica dentre as 55 opções disponíveis (RESOLUÇÃO CFM nº 2.380, DE 18 DE JUNHO DE 2024).  </li>
+<li>CNES: Deverá ser informado o número do Cadastro Nacional de Estabelecimentos de Saúde onde ocorreu a prescrição.  <ul>
+<li>Se o número do CNES informado for inválido, o sistema irá acusar com mensagem. </li>
+</ul>
+</li>
+<li>UF do Estabelecimento: após a informação do CNES, essa informação é carregada automaticamente ao clicar na lupa.  </li>
+<li>Nome do Estabelecimento: após a informação do CNES, essa informação é carregada automaticamente ao clicar na lupa.  </li>
+<li>Tipo: Será necessário selecionar uma das opções entre CID-10 ou CIAP.  </li>
+<li>Condição Clínica: De acordo com a seleção do “Tipo”, esse campo permitirá a busca pelo código da CID-10 ou CIAP ou ainda, pelo nome da condição clínica.  <ul>
+<li>A busca inicia quando digitado pelo menos 3 caracteres (autocompleta); </li>
+<li>Quando clicar na linha contendo a informação desejada (ex.: K71.2 – Doença hepática tóxica com hepatite aguda), automaticamente será destinada à lista; </li>
+<li>Quando a condição clínica for incluída na lista, o campo ficará limpo, podendo ser localizada outra condição clínica; </li>
+<li>Caso a condição clínica incluída não seja a correta, clicando no ícone de lixeira, localizado à direita da tela, o registro será excluído. </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Os ícones localizados na parte superior/centralizada da tela ficariam habilitados para navegação apenas após os dados serem salvos; </li>
+<li>Ao clicar no botão “Voltar”, nenhum dado será gravado, e retornará para a tela “Dados da Dispensação/Fornecimento”;</li>
+<li>Ao clicar em “Salvar e avançar” o sistema deve validar se todas as informações foram preenchidas. Se alguma informação obrigatória não foi inserida, o sistema sinaliza qual informação está faltando ser preenchida. Se estiver tudo de acordo, o sistema avança para a próxima etapa; </li>
+<li>Caso o usuário saia da tela de dispensação, após o registro criado, esses dados estarão salvos na tela de consulta com o status “Em preenchimento”, podendo dar prosseguimento ao preenchimento dos dados, sem perder as informações já salvas. </li>
+</ol>
+<h2 id="prototipo-003">Protótipo 003</h2>
+<h3 id="acesso_2">Acesso</h3>
+<p>Menu lateral &gt; Movimentação &gt; Dispensação/Fornecimento &gt; Cadastrar &gt; Salvar e avançar </p>
+<h3 id="criterios-de-aceite_2">Critérios de Aceite</h3>
+<ol>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão;  </li>
+<li>Esta funcionalidade estará disponível apenas para usuários cadastrados como Farmacêutico, Gestor de estabelecimento ou Atendente do estabelecimento logado; </li>
+<li>Após o preenchimento das informações do Protótipo 002, ao clicar em Salvar e avançar, o sistema deve apresentar a tela contendo os seguintes campos: <ul>
+<li>Buscar por produto: o operador irá selecionar o produto a ser dispensado. Ao digitar pelo menos 3 caracteres, a lista (autocomplete) trará as opções disponíveis. </li>
+<li>A busca poderá ser realizada pelo nome do produto (conforme denominação comum brasileira) ou sua marca comercial. </li>
+</ul>
+</li>
+<li>
+<p>Ao selecionar o produto desejado, irá abrir um modal com as informações do produto, contendo os seguintes campos: </p>
+<ul>
+<li>Produto: Reporta o nome completo do produto escolhido, contendo o princípio ativo e sua concentração. Ex.: Isoniazida 150mg + Rifampicina 300mg. <ul>
+<li>A ordenação apresentada, quando possuir estoque, será sempre pela validade do produto, trazendo o com validade mais curta, acima. </li>
+</ul>
+</li>
+<li>Apresentação: Como alguns produtos são fabricados na mesma concentração em diferentes formas farmacêuticas, esta informação se torna importante para a conferência do produto a ser dispensado. Este dado está atrelado ao cadastro do produto (movimentação de entrada). Assim, quando o produto é selecionado no campo anterior, essa informação será replicada da base. </li>
+<li>Status: Esse campo irá informar três situações que podem ocorrer no atendimento da demanda: “Não Atendido”, “Atendimento parcial” e “Atendimento total”. <ul>
+<li>Não atendido: Sempre que não for possível realizar uma dispensação, seja por falta de estoque ou por outra questão técnica que impossibilitar utilizar o medicamento em estoque, a “Quantidade Dispensada” será zero. Assim, a demanda não será atendida e o Status reportará esse não atendimento, com justificativa obrigatória; </li>
+<li>Atendimento Parcial: Nas situações em que não será possível dispensar a quantidade total de produto solicitada (“Quantidade prescrita” - “Quantidade Dispensada” &gt; 0) teremos este status, onde a justificativa torna-se obrigatória; </li>
+<li>Atendimento Total: Quando eu tenho estoque disponível e consigo utilizá-lo pata atender toda a quantidade solicitada (“Quantidade prescrita” - “Quantidade Dispensada” = 0), realizando a entrega total do produto. Como terei o atendimento integral do produto, não caberá justificativa; </li>
+<li>O campo será automaticamente preenchido considerando as informações de “Quantidade prescrita” e “Quantidade dispensada”. </li>
+</ul>
+</li>
+<li>Quantidade prescrita: Deverá ser informada a quantidade prescrita do produto, em função da posologia e do tempo de tratamento. Esse cálculo fica a cargo do farmacêutico ou atendente. Deverá ser informada sempre a menor unidade de distribuição (ex.: por comprimido, frasco, bisnaga, ampola, etc.).  </li>
+<li>
+<p>Quantidade dispensada/fornecida: Esse campo será automaticamente preenchido (não permite digitação) de acordo com a informação fornecida pelo operador no campo “Quantidade dispensada/fornecida” relacionada ao lote específico. Ela nunca poderá ser maior que a quantidade informada no campo “Quantidade prescrita”. </p>
+<p>Os campos “Fabricante”, “Lote”, “Data Validade”, “Quantidade estoque”, “Programa de Saúde” e “Endereço físico”, serão informações replicadas da posição de estoque em tempo real. Esses campos não permitem edição. </p>
+</li>
+<li>
+<p>Quantidade dispensada/fornecida: Esse campo se repete na tela. Neste caso campo é digitável, permitindo que o operador insira um valor que não ultrapasse a “Quantidade estoque”, e seja menor ou igual à “Quantidade prescrita”. </p>
+<ul>
+<li>Caso seja informada uma quantidade superior à “Quantidade prescrita”, o sistema irá sinalizar o operador com mensagem; </li>
+<li>Mesmo havendo quantidade em estoque, o operador pode desejar não realizar o atendimento, deixando o campo zerado e clicando em incluir, cabendo nesse caso a justificativa, uma vez que será uma demanda assumirá o status de “Não atendida”. </li>
+</ul>
+</li>
+<li>Justificativa: Esse campo texto só irá ser obrigatório quando o Status estiver como “Não atendido” e “Atendimento parcial”. </li>
+<li>Ao clicar no botão “Salvar” as informações registradas no modal serão salvas e reportadas para a tela “Dados dos Dispensados”, na forma de lista; </li>
+<li>Ao clicar no botão “Cancelar”, não salvará nenhuma informação e retornará para a tela “Dados da Dispensação/Fornecimento”; </li>
+<li>Serão listadas todas as informações salvas do preenchimento do modal: </li>
+<li>Descrição do produto </li>
+<li>Quantidade prescrita </li>
+<li>Quantidade dispensada </li>
+<li>Status </li>
+<li>A tela contará com dois botões de ação: Editar e Excluir: </li>
+<li>Ao clicar no ícone “Editar” será reaberto o modal para edição das informações já salvas; </li>
+<li>Ao clicar em Excluir, a informação daquele produto será excluída. O sistema irá alertar o operador com mensagem. Se clicar em “SIM”, o registro do produto será excluído. Se clicar em “NÃO”, retorna para a tela “Dados dos Dispensados”. </li>
+<li>O operador pode incluir quantos produtos forem necessários, realizando novamente a busca por Produto nesta tela;  </li>
+<li>Quando finalizar a adição dos produtos, clicar no botão “Salvar e avançar”, o operador será direcionado para a próxima etapa; </li>
+<li>Os ícones localizados na parte superior/centralizada da tela ficariam habilitados para navegação apenas após os dados serem salvos; </li>
+<li>Ao clicar no botão “Voltar”, e retornará para a tela “Dados da prescrição”; </li>
+<li>Ao clicar em “Salvar e avançar” o sistema deve validar se todas as informações foram preenchidas. É necessário no mínimo o registro de um produto. Caso tente avançar sem o registro de um produto o sistema sinaliza com mensagem. Se estiver tudo de acordo, o sistema avança para a próxima etapa; </li>
+<li>Caso o usuário saia da tela de dispensação, após o registro criado, esses dados estarão salvos na tela de consulta com o status “Em preenchimento”, podendo dar prosseguimento ao preenchimento dos dados, sem perder as informações já salvas. </li>
+</ul>
+</li>
+</ol>
+<h2 id="prototipo-004">Protótipo 004</h2>
+<p>[Inserir imagem]</p>
+<h3 id="acesso_3">Acesso</h3>
+<p>Menu lateral &gt; Movimentação &gt; Dispensação/Fornecimento &gt; Cadastrar &gt; Salvar e avançar </p>
+<h3 id="criterios-de-aceite_3">Critérios de Aceite</h3>
+<ol>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão;  </li>
+<li>Esta funcionalidade estará disponível apenas para usuários cadastrados como Farmacêutico, Gestor de estabelecimento ou Atendente do estabelecimento logado; </li>
+<li>Quando o usuário estiver nesta tela, o sistema deve apresentá-la contendo os seguintes campos: <ul>
+<li>Dados gerais para revisão: Resume todas as informações preenchidas em uma única tela para conferência do operador. </li>
+</ul>
+</li>
+<li>Caso algum dado obrigatório não tenha sido preenchido, o sistema irá informar qual o dado que está inconsistente, e disponibilizar um botão que direcionará para a etapa com inconsistência, para correto preenchimento; </li>
+<li>Para concluir a dispensação, deverá ser clicado no botão “Confirmar dispensação”; </li>
+<li>O botão “Confirmar Dispensação” só ficará habilitado quando não existir nenhuma inconsistência de dados; </li>
+<li>Após clicar em “Confirmar Dispensação” o sistema irá gravar todos os dados da dispensação e realizar todas as movimentações de saída no sistema, assim como irá guardar os dados de data, hora e operador e estabelecimento responsável pela dispensação; </li>
+<li>Ao finalizar o processo, o sistema irá direcionar para a tela de consulta. </li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ETE052/" class="btn btn-neutral float-left" title="ETE052 - Gerenciar Perfil"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ETE054/" class="btn btn-neutral float-right" title="ETE054 - Estornar dispensação">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ETE052/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ETE054/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -71,9 +71,9 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela:</a>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso">Acesso</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de aceite</a>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
     </li>
         </ul>
     </li>
@@ -151,27 +151,37 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -205,45 +215,70 @@
 <h2 id="descricao">Descrição</h2>
 <p>Como usuário quero solicitar um perfil de acesso às funcionalidades do sistema, com suas respectivas permissões. </p>
 <h2 id="prototipo-001">Protótipo 001</h2>
-<p><img alt="alt text" src="../../imagens/ete-008-prot-001.png" /></p>
-<h3 id="elementos-de-tela">Elementos de Tela:</h3>
-<ul>
-<li>Título da página – “Solicitar Perfil” </li>
-<li>“Seta” – M - retorna para a Tela Consultar Meus Perfis </li>
-<li>“Consultar” – BT - retorna para a Tela Consultar Meus Perfis </li>
-<li>Perfil* – A (50) </li>
-<li>UF – A (50) </li>
-<li>Município – A (50) </li>
-<li>Estabelecimento – A (50) </li>
-<li>Justificativa* – A (250) </li>
-<li>“Solicitar” – BT </li>
-<li>“Limpar” – BT </li>
-</ul>
-<p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório. </p>
-<h3 id="criterios-de-aceite">Critérios de aceite</h3>
+<p>[Inserir imagem]<!-- <img alt="alt text" src="../imagens/ete-008-prot-001.png" /> --></p>
+<h3 id="acesso">Acesso</h3>
+<p>Controle de acesso &gt; Solicitar perfil &gt; ”Novo”</p>
+<h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
 <li>A funcionalidade deve sempre estar disponível para acesso independente do usuário possuir ou não um perfil vinculado ao seu cadastro; </li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Controle de Acesso”, subitem “Solicitar Perfil”, na tela “Consultar Meus Perfis” quando acionar a opção “Novo”; </li>
 <li>No campo ‘Perfil”, o sistema deve recuperar e apresentar os perfis com cadastro ativo na instância, exceto os perfis de “Instalador” e “Administrador”; </li>
 <li>No campo “UF” o sistema deve recuperar e apresentar as unidades federativas participantes da instância com situação Ativo; </li>
 <li>No campo “Município” o sistema deve recuperar e apresentar a relação dos municípios vinculados à UF selecionada; </li>
 <li>No campo “Estabelecimento” o sistema deve recuperar e apresentar a relação dos estabelecimentos com cadastro ativo e vinculados à UF e/ou Município selecionados; </li>
-<li>O usuário ao realizar uma solicitação de permissão de acesso ao sistema, deve informar uma justificativa; <a href="../DocumentoDeRegrasv2/#rgn053">RGN053</a> </li>
+<li>O usuário ao realizar uma solicitação de permissão de acesso ao sistema, deve informar uma justificativa. <a href="../DocumentoDeRegrasv2/#rgn053">RGN053</a>; </li>
 <li>O sistema deve permitir solicitar: <ul>
 <li>Perfis de acesso somente para Entes com situação Ativo;</li>
 <li>Perfis de acesso iguais em estabelecimentos diferentes;  </li>
 <li>Perfis de acesso para uma UF e/ou a um Município e/ou a um Estabelecimento;  </li>
 <li>Perfis de acesso para UF a qual já possui permissão de acesso no Município e/ou Estabelecimento desta UF;</li>
-<li>Perfis de acesso para municípios distintos na mesma UF. <a href="../DocumentoDeRegrasv2/#rgn012">RGN012</a> </li>
+<li>Perfis de acesso para municípios distintos na mesma UF. <a href="../DocumentoDeRegrasv2/#rgn012">RGN012</a>. </li>
 </ul>
 </li>
-<li>O sistema não deve permitir solicitar mais de um perfil de acesso por estabelecimento; <a href="../DocumentoDeMensagensv2/#msg087">MSG087</a> <a href="../DocumentoDeRegrasv2/#rgn012">RGN012</a> </li>
-<li>Para solicitações de acesso é obrigatória a indicação de um estabelecimento exceto para os perfis de “Gestor”; <a href="../DocumentoDeRegrasv2/#rgn056">RGN056</a> </li>
-<li>Quando o usuário acionar a opção de “Solicitar”, o sistema deve verificar se o preenchimento das informações atende às validações listadas, efetivar a solicitação do perfil de acesso, gravar o estado do registro como “Ativo” e a situação como “Solicitado”, apresentar a mensagem de sucesso e retornar à tela de consulta aos meus perfis apresentando este registro como o primeiro da listagem; <a href="../DocumentoDeMensagensv2/#msg088">MSG088</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </li>
-<li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, retorna à tela de consulta aos meus perfis e não salva os dados preenchidos. Caso a ação não seja confirmada, permanece na tela de solicitar perfil; <a href="../DocumentoDeMensagensv2/#msg006">MSG006</a> </li>
+<li>O sistema não deve permitir solicitar mais de um perfil de acesso por estabelecimento. <a href="../DocumentoDeMensagensv2/#msg087">MSG087</a> <a href="../DocumentoDeRegrasv2/#rgn012">RGN012</a>; </li>
+<li>Para solicitações de acesso é obrigatória a indicação de um estabelecimento exceto para os perfis de “Gestor”. <a href="../DocumentoDeRegrasv2/#rgn056">RGN056</a>; </li>
+<li>Quando o usuário acionar a opção de “Solicitar”, o sistema deve verificar se o preenchimento das informações atende às validações listadas, efetivar a solicitação do perfil de acesso, gravar o estado do registro como “Ativo” e a situação como “Solicitado”, apresentar a mensagem de sucesso e retornar à tela de consulta aos meus perfis apresentando este registro como o primeiro da listagem. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a>; </li>
 <li>Quando o usuário acionar a opção de “Limpar”, o sistema deve limpar os dados preenchidos e permanecer na tela de solicitar perfil;  </li>
-<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </li>
+<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a>; </li>
+<li>Quando usuário do sistema selecionar o perfil “Administrativo” abrir os campos: </li>
+<li>Esfera “federal” abrir os campos: entes, estabelecimento e justificativa;  </li>
+<li>Esfera “estadual” abrir os campos: UF, estabelecimento e justificativa; </li>
+<li>Esfera “municipal” abrir os campos: UF, município, estabelecimento e justificativa; </li>
+<li>Esfera “Entidade/Instituição” abrir os campos: CNPJ / Nome fantasia, estabelecimento e justificativa.  </li>
+<li>Quando usuário do sistema selecionar o perfil “Atendente” abrir os campos: <ul>
+<li>Esfera “federal” abrir os campos: entes, estabelecimento e justificativa;  </li>
+<li>Esfera “estadual” abrir os campos: UF, estabelecimento e justificativa; </li>
+<li>Esfera “municipal” abrir os campos: UF, município, estabelecimento e justificativa; </li>
+<li>Esfera “Entidade/Instituição” abrir os campos: CNPJ / Nome fantasia, estabelecimento e justificativa.  </li>
+</ul>
+</li>
+<li>Quando usuário do sistema selecionar o perfil “Farmacêutico” abrir os campos: <ul>
+<li>Esfera “federal” abrir os campos: entes, estabelecimento e justificativa;  </li>
+<li>Esfera “estadual” abrir os campos: UF, estabelecimento e justificativa; </li>
+<li>Esfera “municipal” abrir os campos: UF, município, estabelecimento e justificativa; </li>
+<li>Esfera “Entidade/Instituição” abrir os campos: CNPJ / Nome fantasia, estabelecimento e justificativa.</li>
+</ul>
+</li>
+<li>Quando usuário do sistema selecionar o perfil "Gestor" abrir os campos:<ul>
+<li>Esfera "federal" abrir os campos: entes e justificativa;</li>
+<li>Esfera "estadual" abrir os campos: UF e justificativa;</li>
+<li>Esfera "municipal" abrir os campos: UF, município e justificativa;</li>
+<li>Esfera "Entidade/Instituição" abrir os campos: CNPJ / Nome fantasia, e justificativa.</li>
+</ul>
+</li>
+<li>Quando usuário do sistema selecionar o perfil "Gestor de Estabelecimento" abrir os campos:<ul>
+<li>Esfera "federal" abrir os campos: entes, estabelecimento e justificativa;</li>
+<li>Esfera "estadual" abrir os campos: UF, estabelecimento e justificativa;</li>
+<li>Esfera "municipal" abrir os campos: UF, município, estabelecimento e justificativa;</li>
+<li>Esfera "Entidade/Instituição" abrir os campos: CNPJ / Nome fantasia, estabelecimento e justificativa.</li>
+</ul>
+</li>
+<li>Quando usuário do sistema selecionar o perfil “Perfil Personalizados” abrir os campos: <ul>
+<li>Esfera “federal” abrir os campos: entes, estabelecimento e justificativa;  </li>
+<li>Esfera “estadual” abrir os campos: UF, estabelecimento e justificativa; </li>
+<li>Esfera “municipal” abrir os campos: UF, município, estabelecimento e justificativa; </li>
+<li>Esfera “Entidade/Instituição” abrir os campos: CNPJ / Nome fantasia, estabelecimento e justificativa.  </li>
+</ul>
+</li>
 </ol>
               
             </div>

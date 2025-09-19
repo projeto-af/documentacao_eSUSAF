@@ -105,11 +105,11 @@
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE027 - Emitir Relatório de Posição de Estoque</a>
     <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso">Acesso</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
     </li>
@@ -151,27 +151,37 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -202,65 +212,25 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="ete027-emitir-relatorio-de-posicao-de-estoque">ETE027 - Emitir Relatório de Posição de Estoque</h1>
-<h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
+<h2 id="descricao">Descrição</h2>
 <p>Como usuário quero consultar os dados de posição de estoque dos produtos para emitir um relatório. </p>
 <h2 id="prototipo-001">Protótipo 001</h2>
-<p><img alt="alt text" src="../../imagens/ete-027-prot-001.png" /></p>
-<h3 id="elementos-de-tela">Elementos de Tela</h3>
-<ul>
-<li>Bread Crumb – “Relatórios / Posição de Estoque / Consulta” </li>
-<li>Título da página – “Consultar Dados de Posição de Estoque” </li>
-<li>“Seta” – M - retorna para a Tela Inicial/Dashboard </li>
-<li>CNES/CNPJ do Fabricante – N (7/14) </li>
-<li>Programa de Saúde – SU / AC </li>
-<li>Endereçamento Físico – SU / AC </li>
-<li>Nº do Lote – A (20) </li>
-<li>Data de Validade – D (DD/MM/AAAA) </li>
-<li>Produto – A (500) / AC <ul>
-<li>“Excluir” – BT </li>
-</ul>
-</li>
-<li>“Emitir” – BT </li>
-<li>“Limpar” – BT </li>
-</ul>
-<p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.
- </p>
+<p>[Inserir imagem] <!-- <img alt="alt text" src="../imagens/ete-027-prot-001.png" /> --></p>
+<h3 id="acesso">Acesso</h3>
+<p>Menu lateral &gt; Relatórios &gt; Posição do Estoque </p>
 <h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
-<li>O usuário somente pode acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a> </li>
+<li>O usuário somente pode acessar a funcionalidade caso tenha permissão. <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a>; </li>
 <li>O acesso à funcionalidade é dado através do menu lateral no item “Relatórios”, subitem “Posição de Estoque”; </li>
-<li>No campo “CNES/CNPJ do Fabricante”, o sistema deve recuperar e apresentar o Fabricante do produto através do CNES, CNPJ ou nome a partir do 3º caractere, que deseja obter a posição de estoque; <a href="../DocumentoDeRegrasv2/#rgn020">RGN020</a> MSG045 </li>
+<li>No campo “CNES/CNPJ do Fabricante”, o sistema deve recuperar e apresentar o Fabricante do produto através do CNES, CNPJ ou nome a partir do 3º caractere, que deseja obter a posição de estoque. <a href="../DocumentoDeRegrasv2/#rgn020">RGN020</a> <a href="../DocumentoDeMensagensv2/#msg045">MSG045</a>;<!-- No documento de origem diz: "Nada está funcionando!": --> </li>
 <li>No campo “Programa de Saúde”, o sistema deve recuperar e apresentar a relação dos programas de saúde ativos no sistema e permitir selecionar o que deseja obter a posição de estoque; </li>
-<li>No campo “Endereçamento Físico”, o sistema deve recuperar e apresentar a relação dos endereçamentos físicos cadastrados e ativos para o estabelecimento e permitir selecionar o que deseja obter a posição de estoque:  <ul>
-<li>Caso o estabelecimento não possua um endereçamento físico cadastrado e ativo, o campo deve ser desabilitado para edição; </li>
-<li>Caso o estabelecimento possua apenas um endereçamento físico cadastrado e ativo, o campo deve ser carregado automaticamente com o endereçamento existente. </li>
-</ul>
-</li>
+<li>No campo “Endereçamento Físico”, o sistema deve recuperar e apresentar a relação dos endereçamentos físicos cadastrados e ativos para o estabelecimento e permitir selecionar o que deseja obter a posição de estoque;  </li>
 <li>No campo “Nº do Lote”, o sistema deve permitir informar o número do lote do produto que deseja obter a posição de estoque; </li>
 <li>No campo “Data de Validade”, o sistema deve permitir informar data de validade do produto que deseja obter a posição de estoque; </li>
-<li>No campo “Produto” quando o usuário informar: <ul>
-<li>O Código de Barras do produto, o sistema deve: <ul>
-<li>Recuperar o produto relacionado ao código de barras da base de dados de medicamentos; <a href="../DocumentoDeRegrasv2/#rgn015">RGN015</a> </li>
-<li>Emitir um alerta ao usuário caso o sistema não encontre o produto na base de dados de medicamentos; <a href="../DocumentoDeMensagensv2/#msg022">MSG022</a> </li>
-<li>Limpar o campo Produto, quando o dado de código de barras for apagado. </li>
-</ul>
-</li>
-<li>O Princípio Ativo ou Nome Comercial de um Medicamento ou Descrição do Produto para Saúde, o sistema deve: <ul>
-<li>Emitir um alerta ao usuário caso o sistema não encontre o produto na base de dados de medicamentos ou produtos para saúde; <a href="../DocumentoDeMensagensv2/#msg022">MSG022</a> </li>
-<li>Apresentar a lista de produtos ativos no sistema correspondestes ao valor informado no campo autocomplete a partir da indicação do 3º caractere; <a href="../DocumentoDeRegrasv2/#rgn015">RGN015</a> </li>
-<li>O usuário deve selecionar o produto que deseja adicionar na lista produtos ativos no sistema; </li>
-</ul>
-</li>
-<li>O sistema deve permitir adicionar mais de um produto que deseja obter a posição de estoque; </li>
-<li>O sistema não deve permitir adicionar um produto já relacionado para consulta à posição de estoque; <a href="../DocumentoDeMensagensv2/#msg089">MSG089</a> </li>
-<li>Quando o usuário acionar a opção “Excluir”, o sistema deve permitir excluir o produto adicionado para consulta à posição de estoque; </li>
-</ul>
-</li>
-<li>Caso o usuário não informe nenhum filtro de pesquisa, o sistema deve considerar todas as opções ao gerar o relatório. Exceto para usuários com perfil de “Gestor” que desejam emitir a posição de estoque de todos os estabelecimentos de sua instância, que deve indicar ao menos um produto; <a href="../DocumentoDeRegrasv2/#rgn058">RGN058</a> </li>
+<li>Caso o usuário não informe nenhum filtro de pesquisa, o sistema deve considerar todas as opções ao gerar o relatório;   </li>
 <li>Quando o usuário acionar a opção “Emitir”, o sistema deve: <ul>
-<li>Apresentar a mensagem de alerta caso não encontre registros na base de dados para os filtros informados; <a href="../DocumentoDeMensagensv2/#msg041">MSG041</a> </li>
-<li>Direcionar para a tela de visualização do relatório de posição de estoque de produtos, gerado conforme os filtros informados. <a href="../ETE028/">ETE028</a></li>
+<li>Apresentar a mensagem de alerta caso não encontre registros na base de dados para os filtros informados. <a href="../DocumentoDeMensagensv2/#msg041">MSG041</a>; </li>
+<li>Direcionar para a tela de visualização do relatório de posição de estoque de produtos, gerado conforme os filtros informados. <a href="../ETE028/">ETE028</a>;</li>
 </ul>
 </li>
 <li>Quando o usuário acionar a opção “Limpar”, o sistema deve limpar o(s) filtro(s) informado(s) e permanecer na tela de emitir relatório de posição de estoque; </li>

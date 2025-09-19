@@ -113,11 +113,11 @@
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE031 - Editar Usuário SUS</a>
     <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso">Acesso</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
     </li>
@@ -151,27 +151,37 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -202,85 +212,32 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="ete031-editar-usuario-sus">ETE031 - Editar Usuário SUS</h1>
-<h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
+<h2 id="descricao">Descrição</h2>
 <p>Como usuário quero editar o cadastro de um usuário SUS através da recuperação de dados do portal do CADSUS para minha instância.</p>
 <h2 id="prototipo-001">Protótipo 001</h2>
-<p><img alt="alt text" src="../../imagens/ete-031-prot-001.png" /></p>
-<h3 id="elementos-de-tela">Elementos de Tela</h3>
-<ul>
-<li>Bread Crumb – “Cadastro / Usuário SUS / Edição” </li>
-<li>Título da página – “Editar Usuário SUS” </li>
-<li>“Seta” – M - retorna para a Tela de Consultar Usuário SUS  </li>
-<li>“Consultar” – BT - retorna para a Tela de Consultar Usuário SUS </li>
-<li>Título da sessão: Dados do Usuário (Campos recuperados do CADSUS e desabilitados para edição) <ul>
-<li>Data e Hora da última atualização do Cadastro  </li>
-<li>CPF </li>
-<li>CNS </li>
-<li>Nome Completo </li>
-<li>Data de Nascimento </li>
-<li>Nome da Mãe </li>
-</ul>
-</li>
-<li>Título da Sessão: Responsáveis pelo usuário SUS <ul>
-<li>“Expandir/Retrair” – M </li>
-<li>CPF – N (11) </li>
-<li>Nome Completo – A (50) </li>
-<li>Telefone – N (13) </li>
-<li>“Incluir” – BT </li>
-<li>“Limpar” – BT </li>
-<li>Relação Responsáveis pelo usuário SUS <ul>
-<li>CPF </li>
-<li>Nome Completo </li>
-<li>Telefone  </li>
-<li>“Editar” – BT </li>
-<li>“Excluir” – BT </li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Título da sessão: Observações  </li>
-<li>Descrição – A (200) / Contador regressivo </li>
-<li>“Incluir” – BT </li>
-<li>“Limpar” – BT  </li>
-<li>Relação das Observações  <ul>
-<li>Incluído por: <ul>
-<li>Nome do usuário do sistema que incluiu a observação </li>
-</ul>
-</li>
-<li>Data e hora da inclusão </li>
-<li>Informação da observação inserida </li>
-<li>“Editar” – BT </li>
-<li>“Excluir” – BT </li>
-</ul>
-</li>
-<li>“Salvar” – BT </li>
-<li>“Salvar/Dispensar” – BT  </li>
-<li>“Limpar” – BT </li>
-</ul>
-<p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.
- </p>
+<p><img alt="alt text" src="../../imagens/ete-031-prot-001.png" /> <!-- Não sei se já foi alterada --></p>
+<h3 id="acesso">Acesso</h3>
+<p>Menu lateral &gt; Cadastro &gt; Usuário SUS &gt; Ação Editar </p>
 <h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
-<li>O usuário somente pode acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a> </li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Cadastro”, subitem “Usuário SUS”, na tela “Consultar Usuários SUS” quando for acionada a opção “Editar”; </li>
-<li>O sistema deve recuperar os dados do usuário SUS cadastrado previamente, permitindo somente a edição dos campos: Responsável pelo Usuário SUS e Observações;  </li>
-<li>Caso algum campo retornar vazio da consulta ao portal do CADSUS, este deve ser preenchido com a descrição “Sem informação”; </li>
+<li>O usuário somente pode acessar a funcionalidade caso tenha permissão. <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a>; </li>
+<li>O sistema deve recuperar os dados do usuário SUS cadastrado previamente, permitindo somente a edição dos campos Nome social, Celular, e-mail referente aos dados do usuário. Ainda, pode ser editado o Endereço do paciente, Responsável pelo Usuário SUS e Observações;     </li>
+<li>Caso algum campo retornar vazio da consulta poderá ser preenchido com as informações corretas.</li>
 <li>O sistema deve permitir incluir um responsável pelo Usuário SUS, conforme: <ul>
 <li>A inclusão de um responsável pelo Usuário SUS não é obrigatória; </li>
 <li>Pode ser incluído um ou mais responsáveis pelo Usuário SUS; </li>
-<li>O(s) responsável(is) incluído(s) pode(m) ser excluído(s); </li>
-<li>É necessário informar o nº do CPF, nome completo e nº do telefone do responsável. </li>
+<li>O(s) responsável(is) incluído(s) pode(m) ser inativados(s); </li>
+<li>É necessário informar o nº do CPF e nome completo, sendo opcional o nº do celular e e-mail do responsável.</li>
 </ul>
 </li>
-<li>O sistema não deve permitir incluir um responsável com o mesmo nº de CPF de um já relacionado; </li>
+<li>O sistema não deve permitir incluir um responsável com o mesmo nº de CPF de um já relacionado;</li>
 <li>Quando o usuário acionar a opção “incluir” o sistema deve: <ul>
 <li>Incluí-lo na relação dos responsáveis pelo usuário SUS; </li>
 <li>Apresentar a relação dos responsáveis incluídos com as ações desejáveis para cada registro. </li>
 </ul>
 </li>
-<li>Quando o usuário acionar a opção “Editar” em um registro de um responsável, o sistema carrega os dados informados anteriormente e permite alterar somente o número de telefone do responsável; </li>
-<li>Quando o usuário acionar a opção “Excluir”, em um registro de um responsável, o sistema deve excluí-lo da lista de responsáveis pelo usuário SUS; </li>
+<li>Quando o usuário acionar a opção “Editar” em um registro de um responsável, o sistema carrega os dados informados anteriormente e permite alterar somente o número de telefone do responsável; </li>
+<li>Quando o usuário acionar a opção “Inativar”, em um registro de um responsável, o sistema deve inativá-lo da lista de responsáveis pelo usuário SUS; </li>
 <li>O sistema deve permitir incluir observações ao cadastro do Usuário SUS, conforme: <ul>
 <li>A indicação de uma observação não é obrigatória; </li>
 <li>Pode ser incluída uma ou mais observações para o Usuário SUS; </li>
@@ -290,17 +247,14 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>Para a inclusão de uma ou mais observações ao cadastro do Usuário SUS, o usuário deve informar o detalhe da observação; </li>
 <li>Quando o usuário acionar a opção “incluir” o sistema deve: <ul>
 <li>Incluí-la na relação das observações; </li>
-<li>Apresentar o nome completo do usuário do sistema que a incluiu e a data e hora da inclusão.  </li>
-<li>Apresentar a lista de observações em ordem cronológica decrescente (da última à primeira); </li>
+<li>Apresentar a lista de observações em ordem cronológica decrescente (da última à primeira);  </li>
 </ul>
 </li>
-<li>As ações “Editar” e “Excluir” somente serão apresentadas para cada registro criado pelo usuário que incluiu a observação; </li>
 <li>Quando o usuário acionar a opção “Editar”, em um registro de uma observação, o sistema carrega os campos com os dados informados anteriormente e permite a edição; </li>
 <li>Quando o usuário acionar a opção “Excluir”, em um registro de uma observação, o sistema deve exclui-la da lista das observações do usuário SUS; </li>
-<li>Quando o usuário acionar a opção de “Salvar”, o sistema verifica se o preenchimento das informações atende às validações listadas, atualiza o cadastro do Usuário SUS, mantém o estado do registro como “Ativo” e a situação como “Cadastrado”, apresenta a mensagem de sucesso e retorna à tela de consulta aos Usuários SUS apresentando este registro como o primeiro da relação dos Usuários cadastrados para a instância; <a href="../DocumentoDeMensagensv2/#msg093">MSG093</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </li>
-<li>Quando o usuário acionar a opção de “Salvar/Dispensar”, o sistema verifica se o preenchimento das informações atende às validações listadas, atualiza o cadastro do Usuário SUS, mantém o estado do registro como “Ativo” e a situação como “Cadastrado”, apresenta a mensagem de sucesso e direciona para a tela de cadastrar dispensação carregando automaticamente os dados do Usuário SUS recém cadastrado; <a href="../DocumentoDeMensagensv2/#msg093">MSG093</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> <a href="../ETE034/">ETE034</a></li>
-<li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema deve apresentar a mensagem de alerta ao usuário. Caso confirme a ação, retorna à tela de consulta aos Usuários SUS e não salva as edições realizadas. Caso a ação não seja confirmada, permanece na tela de cadastro de Usuário SUS; <a href="../DocumentoDeMensagensv2/#msg006">MSG006</a> </li>
-<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </li>
+<li>Quando o usuário acionar a opção de “Salvar”, o sistema verifica se o preenchimento das informações atende às validações listadas, atualiza o cadastro do Usuário SUS, mantém o estado do registro como “Ativo” e a situação como “Cadastrado”, apresenta a mensagem de sucesso e retorna à tela de consulta aos Usuários SUS apresentando este registro como o primeiro da relação dos Usuários cadastrados para a instância; <a href="../DocumentoDeMensagensv2/#msg093">MSG093</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a>;</li>
+<li>Quando o usuário acionar a opção de “Voltar” ou “Consultar”, o sistema retorna à tela de consulta aos Usuários SUS e não salva as edições realizadas.  </li>
+<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração no estado do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a>. </li>
 </ol>
               
             </div>

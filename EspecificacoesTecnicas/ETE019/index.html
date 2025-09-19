@@ -89,11 +89,11 @@
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE019 - Consultar Entrada</a>
     <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso">Acesso</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
     </li>
@@ -151,27 +151,37 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -202,86 +212,53 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="ete019-consultar-entrada">ETE019 - Consultar Entrada</h1>
-<h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
+<h2 id="descricao">Descrição</h2>
 <p>Como usuário quero consultar a(s) entrada(s) de produto(s) realizada(s) no estabelecimento de saúde logado</p>
 <h2 id="prototipo-001">Protótipo 001</h2>
-<p><img alt="alt text" src="../../imagens/ete-019-prot-001.png" /></p>
-<h3 id="elementos-de-tela">Elementos de Tela</h3>
-<ul>
-<li>Bread Crumb – “Movimentação / Entrada / Consulta” </li>
-<li>Título da página – “Consultar Entrada” </li>
-<li>“Seta” – M - retorna para a Tela Inicial/Dashboard </li>
-<li>“Novo” – BT - direciona para a Tela de Cadastrar Entrada </li>
-<li>Filtros para consulta: <ul>
-<li>Nº da Entrada – N (11) </li>
-<li>Nº do Documento – A (20) </li>
-<li>Tipo de Movimentação – SU  </li>
-<li>Produto – AC (500) </li>
-<li>Lote do Produto – A (20) </li>
-<li>Nº CNES/CNPJ do Fornecedor – N (14) </li>
-<li>Data Início do Recebimento – D (dd/mm/aaaa) </li>
-<li>Data Fim do Recebimento – D (dd/mm/aaaa) </li>
-<li>Situação – SM </li>
-</ul>
-</li>
-<li>“Consultar” – BT </li>
-<li>“Limpar” – BT </li>
-<li>Lista de registro de entrada(s) no estabelecimento logado: <ul>
-<li>Nº da Entrada </li>
-<li>Data do Recebimento </li>
-<li>Fornecedor – A (100) - (CNES ou CNPJ) - (Razão Social) </li>
-<li>Situação – A (9) </li>
-</ul>
-</li>
-<li>Ações conforme situação: <ul>
-<li>Editar – BT - direciona para a Tela de Editar Entrada  </li>
-<li>Excluir – BT </li>
-<li>Estornar – BT </li>
-</ul>
-</li>
-<li>Detalhar - direciona para a Tela de Detalhar Entrada  </li>
-<li>Ordenação nas colunas </li>
-<li>Paginação </li>
-<li>Registro por página </li>
-<li>Ir para página </li>
-</ul>
-<p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.<br />
-</p>
+<p>[Inserir imagem] <!-- <img alt="alt text" src="../imagens/ete-019-prot-001.png" /> --></p>
+<h3 id="acesso">Acesso</h3>
+<p>Menu lateral &gt; Movimentações &gt; Entrada </p>
 <h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
-<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a> </li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Movimentação” quando acionar o subitem “Entrada”; </li>
-<li>Quando o usuário acessar a funcionalidade, o sistema deve apresentar os filtros de pesquisa e somente apresentar a lista de resultado da consulta quando a opção “Consultar” for acionada; <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a> </li>
-<li>No campo “Tipo de Movimentação”, o sistema deve apresentar as opções: Ajuste de Estoque, Doação/Permuta, Entrada Ordinária, Produção Própria, Saldo de Implantação, Entrada por Estorno de Dispensação, Entrada por Estorno de Saída Diversa e Entrada por Estorno de Distribuição; </li>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão. <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a>; </li>
+<li>Quando o usuário acessar a funcionalidade, o sistema deve apresentar os filtros de pesquisa e somente apresentar a lista de resultado da consulta quando a opção “Consultar” for acionada. <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a>; </li>
+<li>No campo “Tipo de Movimentação”, o sistema deve apresentar as opções:  <ul>
+<li>Ajuste de estoque </li>
+<li>Entrada ordinária </li>
+<li>Entrada por estorno </li>
+<li>Entrada por estorno de dispensação </li>
+<li>Produção própria </li>
+<li>Saída por estorno </li>
+<li>Saldo de implantação </li>
+</ul>
+</li>
 <li>Quando o campo “Produto” for informado, o sistema deve: <ul>
-<li>Apresentar a lista de produtos ativos no sistema que correspondam ao valor informado no campo autocomplete a partir da indicação do 3º caractere, consultando por nome do produto ou princípio ativo do medicamento, código de barras e CATMAT Raiz; <a href="../DocumentoDeRegrasv2/#rgn015">RGN015</a> </li>
-<li>Validar se o produto informado foi encontrado. Caso não, o sistema deve realçar o campo e alertar ao usuário; <a href="../DocumentoDeMensagensv2/#msg015">MSG015</a> </li>
+<li>Apresentar a lista de produtos ativos no sistema que correspondam ao valor informado no campo autocomplete a partir da indicação do 3º caractere, consultando por nome do produto ou princípio ativo do medicamento, código de barras e CATMAT Raiz. <a href="../DocumentoDeRegrasv2/#rgn015">RGN015</a>;</li>
+<li>Validar se o produto informado foi encontrado. Caso não, o sistema deve realçar o campo e alertar ao usuário. <a href="../DocumentoDeMensagensv2/#msg015">MSG015</a>; </li>
 <li>Recuperar e apresentar a(s) entrada(s) cujo ao menos um do(s) produto(s) relacionado(s) a ela, possua um dos dados informados: Código de Barras, CATMAT, forma farmacêutica ou princípio ativo do medicamento.  </li>
 </ul>
 </li>
 <li>Quando o campo “Lote do Produto” for informado, o sistema deve recuperar e apresentar a(s) entrada(s) cujo ao menos um dos produtos relacionados a ela, possua o dado informado; </li>
-<li>Quando o campo “CNES/CNPJ do Fornecedor” for informado, o sistema deve verificar se o dado é válido.  Caso não, o sistema deve realçar o campo e alertar ao usuário; <a href="../DocumentoDeMensagensv2/#msg015">MSG015</a> </li>
+<li>Quando o campo “CNES/CNPJ do Fornecedor” for informado, o sistema deve verificar se o dado é válido.  Caso não, o sistema deve realçar o campo e alertar ao usuário. <a href="../DocumentoDeMensagensv2/#msg015">MSG015</a>; </li>
 <li>No campo “Situação”, o sistema deve apresentar as opções: Em preenchimento, Armazenada e Estornada; </li>
 <li>Quando o usuário acionar a opção “Consultar”, o sistema deve recuperar e apresentar o(s) registro(s) de entrada do estabelecimento logado de acordo com o(s) filtro(s) informado(s). Caso não seja informado nenhum filtro, o sistema deve recuperar e apresentar todo(s) o(s) registro(s) de entrada do estabelecimento logado. Caso algum campo retorne vazio, o sistema deve apresentar a descrição “Sem informação”; </li>
-<li>O sistema, não encontrando a(s) entrada(s) para os filtros informados, deve informar que o(s) registro(s) não foram encontrados; <a href="../DocumentoDeMensagensv2/#msg041">MSG041</a> </li>
+<li>O sistema, não encontrando a(s) entrada(s) para os filtros informados, deve informar que o(s) registro(s) não foram encontrados. <a href="../DocumentoDeMensagensv2/#msg041">MSG041</a>; </li>
 <li>O sistema, encontrando a(s) entrada(s), deve apresentá-la(s) em ordem decrescente de data de recebimento com os respectivos dados: Nº da Entrada, Data do Recebimento, Fornecedor [(CNES ou CNPJ) - (Razão Social)] e Situação e as ações desejáveis para cada registro; </li>
-<li>O sistema deve permitir excluir, editar, estornar ou detalhar um registro de entrada; </li>
+<li>O sistema deve permitir copiar, estornar, detalhar e copiar, excluir e estornar um registro de entrada;  </li>
 <li>O sistema deve apresentar as ações conforme: <ul>
-<li>Para registro com situação “Em preenchimento”, as opções “Excluir”, “Editar” e “Detalhar”; </li>
-<li>Para registro com situação “Armazenada”, as opções “Estornar” e “Detalhar”, exceto para a situação a seguir: </li>
-<li>Para a(s) entrada(s) do tipo “Entrada por Estorno de Dispensação”, “Entrada por Estorno de Saída Diversa” e “Entrada por Estorno de Distribuição”, o sistema deve apresentar apenas a opção “Detalhar”, uma vez que se trata(m) de entrada(s) gerada(s) automaticamente pelo sistema para o controle de estoque. </li>
-<li>Para registro com situação “Estornada” a opção “Detalhar”. </li>
+<li>Para registro com situação “Em preenchimento”, as opções “Excluir”, “Editar” e “Detalhar”;  </li>
+<li>Para registro com situação “Armazenada”, as opções: detalhar, estornar, copiar e estornar e copiar exceto para a situação a seguir:  </li>
+<li>Para registro com situação “Estornada” a opção “Detalhar” e “copiar”. </li>
 </ul>
 </li>
-<li>A grid com resultados de consultas deve permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta; <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a>  </li>
-<li>Quando o usuário acionar a opção “Novo”, o sistema deve direcionar para a tela de cadastro de uma nova entrada; <a href="../ETE020/">ETE020</a> </li>
+<li>A grid com resultados de consultas deve permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta. <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a>;  </li>
+<li>Quando o usuário acionar a opção “Novo”, o sistema deve direcionar para a tela de cadastro de uma nova entrada. <a href="../ETE020/">ETE020</a>; </li>
 <li>Quando o usuário acionar a opção “Limpar”, o sistema deve limpar o(s) filtro(s) informado(s), o resultado consulta e permanecer na tela de consultar entrada;  </li>
 <li>Quando o usuário acionar a opção “Voltar”, o sistema deve retornar para a tela inicial do sistema (dashboard); </li>
-<li>Quando o usuário acionar a opção “Editar”, o sistema deve direcionar para a tela de edição de uma entrada <a href="../ETE021/">ETE021</a>; </li>
-<li>Quando o usuário acionar a opção “Excluir”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve excluir o registro da entrada e deixar de apresentá-lo no resultado da consulta. Caso a ação não seja confirmada, o sistema permanece na tela de consulta. A exclusão física somente será possível para entrada(s) com situação “Em preenchimento”; <a href="../DocumentoDeMensagensv2/#msg010">MSG010</a> <a href="../DocumentoDeMensagensv2/#msg042">MSG042</a> <a href="../DocumentoDeRegrasv2/#rgn016">RGN016</a> </li>
-<li>Quando o usuário acionar a opção “Estornar”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema estorna a entrada do(s) produto(s), altera a situação da entrada para “Estornada” e retira o(s) produto(s) do estoque do estabelecimento da entrada estornada, considerando o lote, validade e programa de saúde, através da criação de um registro de saída. Caso a ação não seja confirmada, o sistema permanecerá na tela de consulta; <a href="../DocumentoDeMensagensv2/#msg016">MSG016</a> <a href="../DocumentoDeMensagensv2/#msg043">MSG043</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a>  </li>
-<li>O sistema não deve permitir estornar uma entrada se ao menos um do(s) produto(s) vinculado(s) a ela foi movimentado, ou seja, distribuído, dispensado ou uma saída diversa foi registrada no estoque; <a href="../DocumentoDeRegrasv2/#rgn017">RGN017</a> </li>
+<li>Quando o usuário acionar a opção “Editar”, o sistema deve direcionar para a tela de edição de uma entrada. <a href="../ETE021/">ETE021</a>; </li>
+<li>Quando o usuário acionar a opção “Excluir”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve excluir o registro da entrada e deixar de apresentá-lo no resultado da consulta. Caso a ação não seja confirmada, o sistema permanece na tela de consulta. A exclusão física somente será possível para entrada(s) com situação “Em preenchimento”. <a href="../DocumentoDeMensagensv2/#msg010">MSG010</a> <a href="../DocumentoDeMensagensv2/#msg042">MSG042</a> <a href="../DocumentoDeRegrasv2/#rgn016">RGN016</a>; </li>
+<li>Quando o usuário acionar a opção “Estornar”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema estorna a entrada do(s) produto(s), altera a situação da entrada para “Estornada” e retira o(s) produto(s) do estoque do estabelecimento da entrada estornada, considerando o lote, validade e programa de saúde, através da criação de um registro de saída. Caso a ação não seja confirmada, o sistema permanecerá na tela de consulta. <a href="../DocumentoDeMensagensv2/#msg016">MSG016</a> <a href="../DocumentoDeMensagensv2/#msg043">MSG043</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a>;  </li>
+<li>O sistema não deve permitir estornar uma entrada se ao menos um do(s) produto(s) vinculado(s) a ela foi movimentado, ou seja, distribuído, dispensado ou uma saída diversa foi registrada no estoque. <a href="../DocumentoDeRegrasv2/#rgn017">RGN017</a>; </li>
 <li>Ao realizar o estorno da entrada do(s) produto(s), o sistema deve: <ul>
 <li>Retirar o(s) produto(s) do estoque do estabelecimento da entrada estornada, através da criação de um registro de saída, gravando as seguintes informações: </li>
 <li>Tipo de Saída = “Saída por Estorno de Entrada”;  </li>
@@ -298,12 +275,12 @@ TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = 
 <li>Valor Unitário </li>
 <li>Quantidade  </li>
 <li>Situação do registro de saída como “Registrada”; </li>
-<li>Alterar a situação do cadastro da entrada para “Estornada”; <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> <a href="../DocumentoDeRegrasv2/#rgn018">RGN018</a> </li>
+<li>Alterar a situação do cadastro da entrada para “Estornada”. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> <a href="../DocumentoDeRegrasv2/#rgn018">RGN018</a>. </li>
 </ul>
 </li>
-<li>O sistema, identificando que uma entrada de produto(s) foi estornada, deve debitar a quantidade do saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou o estorno da entrada; <a href="../DocumentoDeRegrasv2/#rgn019">RGN019</a> </li>
-<li>Quando o usuário acionar a opção “Detalhar”, o sistema deve direcionar para a tela de detalhamento dos dados da entrada; <a href="../ETE022/">ETE022</a> </li>
-<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração na situação do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> </li>
+<li>O sistema, identificando que uma entrada de produto(s) foi estornada, deve debitar a quantidade do saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou o estorno da entrada. <a href="../DocumentoDeRegrasv2/#rgn019">RGN019</a>; </li>
+<li>Quando o usuário acionar a opção “Detalhar”, o sistema deve direcionar para a tela de detalhamento dos dados da entrada. <a href="../ETE022/">ETE022</a>; </li>
+<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração na situação do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a>. </li>
 </ol>
               
             </div>

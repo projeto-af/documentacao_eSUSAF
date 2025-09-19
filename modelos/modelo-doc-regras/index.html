@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>HU 004: Solicitação de Perfil - e-SUS AF - Documentação Negocial</title>
+    <title>Regras - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "HU 004: Solicita\u00e7\u00e3o de Perfil";
-        var mkdocs_page_input_path = "HistoriasDeUsuario/HU004.md";
+        var mkdocs_page_name = "Regras";
+        var mkdocs_page_input_path = "modelos/modelo-doc-regras.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -44,7 +44,7 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/">Documento de Mensagens</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeRegrasv2/">Documento de Regras</a>
@@ -139,27 +139,59 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Modelos</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Regras</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#tabela-de-regras-de-negocio">Tabela de Regras de Negócio</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rn-001">RN-001</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#validacao-cpf">Validação CPF</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rn-002">RN-002</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#unico-cpf">Único CPF</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rn-003">RN-003</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#diretriz-cadastro-de-nomes">Diretriz cadastro de nomes</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
                 </li>
     </ul>
                   </li>
@@ -178,7 +210,9 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">HU 004: Solicitação de Perfil</li>
+          <li class="breadcrumb-item">Especificações Técnicas</li>
+          <li class="breadcrumb-item">Modelos</li>
+      <li class="breadcrumb-item active">Regras</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -187,111 +221,101 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="hu-004-solicitacao-de-perfil">HU 004: Solicitação de Perfil</h1>
-<p>Como um usuário, quero solicitar um perfil no sistema, para acessar funcionalidades especificas daquele determinado perfil.  </p>
-<h2 id="descricao">Descrição</h2>
-<p>Após acessar o sistema, o usuário deseja solicitar um perfil de acesso para ele, para que ele possa ter permissões condizentes com o perfil solicitado.  </p>
-<h2 id="criterio-de-aceite">Critério de Aceite</h2>
-<ul>
-<li>Os perfis de Administrador e Gestor Master não devem ser apresentados para solicitação.  </li>
-<li>O usuário deverá selecionar o perfil e o estabelecimento desejados e clicar em "solicitar".  </li>
-<li>Caso o usuário já tenha um perfil em um determinado estabelecimento, o perfil que ele já possuir deve aparecer inativo para seleção.  </li>
-<li>O usuário só poderá selecionar um perfil e estabelecimento por solicitação.  </li>
-<li>Ele poderá acumular mais de um tipo de perfil.  </li>
-<li>Caso tenha mais de um perfil, ele deverá acumular as permissões de todos os perfis aprovados, levando em consideração o estabelecimento vinculado ao perfil.  </li>
-<li>O usuário deverá ser notificado do envio da solicitação.  </li>
-<li>O usuário também deverá ser notificado quando a solicitação for aprovada ou recusada.  </li>
-<li>Após ter um ou mais perfis aprovados, o usuário deverá ter acesso a todas as funcionalidades referentes a todos os perfis aprovados.  </li>
-</ul>
-<h2 id="modelo-de-dados">Modelo de Dados</h2>
+                <h1 id="documento-de-regras-de-negocio">Documento de Regras de Negócio</h1>
+<h2 id="tabela-de-regras-de-negocio">Tabela de Regras de Negócio</h2>
 <table>
 <thead>
 <tr>
-<th>Atributo</th>
+<th>ID</th>
 <th>Descrição</th>
-<th>Cardinalidade</th>
-<th>Tipo de Dados</th>
-<th>Tamanho</th>
-<th>Formato</th>
-<th>Exemplo</th>
-<th>Obrigatoriedade</th>
+<th>Fonte/Norma</th>
 <th>Observações</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Id da Instância</td>
-<td>Identificador do ente na tabela instância de configuração</td>
-<td>1..1</td>
-<td>número</td>
-<td>-</td>
-<td>-</td>
-<td>1</td>
-<td>S</td>
-<td>-</td>
+<td>RN-001</td>
+<td>CPF deve ser válido conforme algoritmo oficial</td>
+<td>Receita Federal</td>
+<td>Aplicar validação cliente + servidor</td>
 </tr>
 <tr>
-<td>cpf</td>
-<td>CPF do usuário que realiza a solicitação de perfil</td>
-<td>1..1</td>
-<td>Texto</td>
-<td>11</td>
-<td>00000000000</td>
-<td>00000000000</td>
-<td>S</td>
-<td>-</td>
+<td>RN-002</td>
+<td>CPF deve ser único no sistema</td>
+<td>Política de identificação SUS</td>
+<td>Verificação de duplicidade</td>
 </tr>
 <tr>
-<td>Id do Estabelecimento</td>
-<td>Identificador do Estabelecimento para qual se solicita o perfil</td>
-<td>1..1</td>
-<td>número</td>
-<td>-</td>
-<td>-</td>
-<td>1</td>
-<td>N</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Id do Perfil</td>
-<td>Identificador do perfil solicitado</td>
-<td>1..1</td>
-<td>número</td>
-<td>-</td>
-<td>-</td>
-<td>1</td>
-<td>S</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Justificativa de Solicitação</td>
-<td>Motivação do pedido de solicitação de acesso ao perfil</td>
-<td>1..1</td>
-<td>Texto</td>
-<td>250</td>
-<td>-</td>
-<td>Acesso ao estabelecimento para movimentação logística</td>
-<td>S</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Status</td>
-<td>Estado da solicitação (Aprovado, Reprovado, Inativo, Aguardando Aprovação)</td>
-<td>1..1</td>
-<td>Texto</td>
-<td>1</td>
-<td>-</td>
-<td>A</td>
-<td>S</td>
-<td>-</td>
+<td>RN-003</td>
+<td>Nome deve conter ao menos duas palavras</td>
+<td>Diretriz de cadastro cidadão</td>
+<td>Evitar abreviações e apelidos</td>
 </tr>
 </tbody>
 </table>
-<h2 id="design-conceitual">Design Conceitual</h2>
-<p><a href="https://xd.adobe.com/view/61ef362e-1abc-453c-81c7-658e701362e5-34bc/screen/ae513758-3e88-4778-9b7c-f6c4e1e4ef83">Design Conceitual: Solicitação de Perfil</a></p>
+<hr />
+<h2 id="rn-001">RN-001</h2>
+<h3 id="validacao-cpf">Validação CPF</h3>
+<table>
+<thead>
+<tr>
+<th>Descrição</th>
+<th>Fonte/Norma</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPF deve ser válido conforme algoritmo oficial</td>
+<td>Receita Federal</td>
+<td>Aplicar validação cliente + servidor</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="rn-002">RN-002</h2>
+<h3 id="unico-cpf">Único CPF</h3>
+<table>
+<thead>
+<tr>
+<th>Descrição</th>
+<th>Fonte/Norma</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPF deve ser único no sistema</td>
+<td>Política de identificação SUS</td>
+<td>Verificação de duplicidade</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="rn-003">RN-003</h2>
+<h3 id="diretriz-cadastro-de-nomes">Diretriz cadastro de nomes</h3>
+<table>
+<thead>
+<tr>
+<th>Descrição</th>
+<th>Fonte/Norma</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nome deve conter ao menos duas palavras</td>
+<td>Diretriz de cadastro cidadão</td>
+<td>Evitar abreviações e apelidos</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../modelo-doc-mensagens/" class="btn btn-neutral float-left" title="Mensagens"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
 
   <hr/>
 
@@ -312,6 +336,8 @@
   <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
+    
+      <span><a href="../modelo-doc-mensagens/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>

@@ -97,21 +97,13 @@
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE023 - Consultar Saída</a>
     <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#prototipo-001">Protótipo 001</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
+    <li class="toctree-l4"><a class="reference internal" href="#acesso">Acesso</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#prototipo-002">Protótipo 002</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#elementos-de-tela_1">Elementos de Tela</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite_1">Critérios de Aceite</a>
     </li>
         </ul>
     </li>
@@ -159,27 +151,37 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -210,138 +212,44 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="ete023-consultar-saida">ETE023 - Consultar Saída</h1>
-<h2 id="descricao-modelo-historia-de-usuario">Descrição (modelo história de usuário)</h2>
-<p>Como usuário quero consultar a(s) saída(s) de produto(s) realizada(s) no estabelecimento de saúde logado</p>
+<h2 id="descricao">Descrição</h2>
+<p>Como usuário quero consultar a(s) saída(s) de produto(s) realizada(s) no estabelecimento de saúde logado e poder realizar estornos que se façam necessários para estas movimentações. <!-- Documento não informa qual deixa e qual apaga. Este é o que estava neste arquivo md e, possivelmente, é o antigo: Como usuário quero consultar a(s) saída(s) de produto(s) realizada(s) no estabelecimento de saúde logado --></p>
 <h2 id="prototipo-001">Protótipo 001</h2>
-<p><img alt="alt text" src="../../imagens/ete-023-prot-001.png" /></p>
-<h3 id="elementos-de-tela">Elementos de Tela</h3>
-<ul>
-<li>Bread Crumb – “Movimentação / Saída / Consulta” </li>
-<li>Título da página – “Consultar Saída” </li>
-<li>“Seta” – M - retorna para a Tela Inicial/Dashboard </li>
-<li>“Novo” – BT - direciona para a Tela de Cadastrar Saída </li>
-<li>Filtros para consulta: <ul>
-<li>Nº da Saída – N (11) </li>
-<li>Nº do Documento – A (20) </li>
-<li>Tipo de Documento - SU</li>
-<li>Produto – AC (500) </li>
-<li>Lote do Produto – A (20) </li>
-<li>Justificativa – SU </li>
-<li>CNES/CNPJ do Estabelecimento de Destino/Departamento – A (50) </li>
-<li>Data Início da Saída – D (dd/mm/aaaa) </li>
-<li>Data Fim da Saída – D (dd/mm/aaaa) </li>
-<li>Situação – SU</li>
-</ul>
-</li>
-<li>“Consultar” – BT </li>
-<li>“Limpar” – BT </li>
-<li>Lista de registro da(s) saída(s) no estabelecimento logado:<ul>
-<li>Nº da Saída </li>
-<li>Data da Saída </li>
-<li>Tipo da Saída </li>
-<li>Destino</li>
-<li>Situação </li>
-</ul>
-</li>
-<li>Ações conforme situação: <ul>
-<li>Editar – BT - direciona para a Tela de Editar Saída  </li>
-<li>Excluir – BT </li>
-<li>Estornar – BT </li>
-<li>Detalhar - direciona para a Tela de Detalhar Saída </li>
-</ul>
-</li>
-<li>Ordenação nas colunas </li>
-<li>Paginação </li>
-<li>Registro por página </li>
-<li>Ir para página </li>
-</ul>
-<p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.</p>
+<p>[Inserir imagem] <!-- <img alt="alt text" src="../imagens/ete-023-prot-001.png" /> --></p>
+<h3 id="acesso">Acesso</h3>
+<p>Menu lateral &gt; Movimentação &gt; Saída </p>
 <h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
-<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão; <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a></li>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Movimentação” quando acionar o subitem “Saída”;  </li>
-<li>Quando o usuário acessar a funcionalidade, o sistema deve apresentar os filtros de pesquisa e somente apresentar a lista de resultado da consulta quando a opção “Consultar” for acionada; <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a></li>
-<li>No campo “Tipo de Saída” o sistema deve apresentar as opções: Ajuste de Estoque, Amostra, Exposição e Análise, Apreensão Sanitária, Distribuição sem Requisição, Empréstimo, Perda, Requisição, Roubo, Saída para Departamento, Saída por Dispensação, Saída por Estorno de Entrada, Transferência, Usuário SUS Não Identificado, Validade Vencida; </li>
+<li>O usuário somente poderá acessar a funcionalidade caso tenha permissão. <a href="../DocumentoDeRegrasv2/#rgn001">RGN001</a>;</li>
+<li>Quando o usuário acessar a funcionalidade, o sistema apresenta os filtros de pesquisa e a lista de resultados é apresentada previamente sem nenhum filtro adicionado. Para apresentar a lista com filtros desejados é necessário selecionar e clicar no botão “Consultar”; </li>
+<li>No campo “Tipo de Saída” o sistema deve apresentar as opções: Ajuste de Estoque, Amostra, Exposição e Análise, Apreensão Sanitária, Distribuição sem Requisição, Empréstimo, Perda, Requisição, Roubo, Saída para Departamento, Saída por Dispensação, Saída por Estorno de Entrada, Transferência, Usuário SUS Não Identificado, Validade Vencida;</li>
 <li>No campo “Tipo de Documento” o sistema deve apresentar as opções: Aviso, Boletim, Carta, Certidão, Circular, Comprovante, Contrato, Convênio, Decreto, Despacho, Edital, Fax, Guia, Guia De Remessa, Instrução Normativa, Memorando, Mensagem, Nota Fiscal, Nota Fiscal Eletrônica, Ofício, Ordem De Serviço, Parecer, Portaria, Protocolo, Requerimento, Requisição, Resolução; </li>
 <li>Quando o campo “Produto” for informado, o sistema deve: <ul>
-<li>Apresentar a lista de produtos ativos no sistema que correspondam ao valor informado no campo autocomplete a partir da indicação do 3º caractere, consultando por nome do produto ou princípio ativo do medicamento, código de barras e CATMAT Raiz; <a href="../DocumentoDeRegrasv2/#rgn015">RGN015</a> </li>
-<li>Validar se o produto informado foi encontrado. Caso não, o sistema deve realçar o campo e alertar ao usuário; <a href="../DocumentoDeMensagensv2/#msg015">MSG015</a> </li>
+<li>Validar se o produto foi encontrado. Caso não, o sistema deve apresentar a mensagem de “Nenhum registro encontrado”; </li>
 <li>Recuperar e apresentar a(s) saída(s) cujo ao menos um do(s) produto(s) relacionado(s) a ela, possua um dos dados informados: CATMAT, forma farmacêutica ou princípio ativo do medicamento.  </li>
 </ul>
 </li>
 <li>Quando o campo “Lote do Produto” for informado, o sistema deve recuperar e apresentar a(s) saída(s) cujo ao menos um dos produtos relacionados a ela, possua o dado informado; </li>
-<li>No campo “Justificativa” o sistema deve apresentar as opções: Diferença de Estoque, Quebra do produto/medicamento, Recebimento maior que a demanda, Recebimento próximo da validade, Roubo, Sistema Inoperante, Outros; </li>
-<li>No campo “Situação”, o sistema deve apresentar as opções: Em preenchimento, Registrada e Estornada; </li>
-<li>Quando o usuário acionar a opção “Consultar”, o sistema deve recuperar e apresentar o(s) registro(s) de Saída do estabelecimento logado de acordo com o(s) filtro(s) informado(s). Caso não seja informado nenhum filtro, o sistema deve recuperar e apresentar todo(s) o(s) registro(s) de Saída do estabelecimento logado. Caso algum campo retorne vazio, o sistema deve apresentar a descrição “Sem informação”; </li>
-<li>O sistema, não encontrando a(s) saída(s) para os filtros informados, deve informar que o(s) registro(s) não foram encontrados; <a href="../DocumentoDeMensagensv2/#msg041">MSG041</a> </li>
+<li>No campo “Justificativa” o sistema deve apresentar as opções: Ajuste de estoque, Demanda ordinária,  Descarte ou devolução a fornecedores, Devolução e empréstimos, Doação, Outros, Quebra do produto/medicamento, Recebimento maior que a demanda, Recebimento próximo da validade, Roubo, Sistema inoperante, ou Transferência;</li>
+<li>No campo “Situação”, o sistema deve apresentar as opções: Em preenchimento, Distribuído e Estornado; </li>
+<li>Quando o usuário acionar a opção “Consultar”, o sistema deve recuperar e apresentar o(s) registro(s) de Saída do estabelecimento logado de acordo com o(s) filtro(s) informado(s). Caso não seja informado nenhum filtro, o sistema deve recuperar e apresentar todo(s) o(s) registro(s) de Saída do estabelecimento logado. Caso algum campo retorne vazio, o sistema deve apresentar a mensagem “Nenhum registro encontrado”;  </li>
+<li>O sistema, não encontrando a(s) saída(s) para os filtros informados, deve informar que o(s) registro(s) não foram encontrados. <a href="../DocumentoDeMensagensv2/#msg041">MSG041</a>;</li>
 <li>O sistema, encontrando a(s) saída(s), deve apresentá-la(s) em ordem decrescente de data da saída com os respectivos dados: Nº da Saída, Data da Saída, Tipo da Saída, Destino e Situação e as ações desejáveis para cada registro; </li>
-<li>O sistema deve permitir excluir, editar, estornar ou detalhar um registro de Saída; </li>
+<li>O sistema deve permitir excluir, editar, estornar, copiar, estornar e copiar ou detalhar um registro de Saída;  </li>
 <li>O sistema deve apresentar as ações conforme: <ul>
 <li>Para registro com situação “Em preenchimento” as opções “Excluir”, “Editar” e “Detalhar”; </li>
-<li>Para registro com situação “Registrada” as opções “Estornar” e “Detalhar”, exceto para a situação a seguir: <ul>
-<li>Para a(s) saída(s) do tipo Saída por Dispensação” e “Saída por Estorno de Entrada”, o sistema deve apresentar apenas a opção “Detalhar”, uma vez que se trata(m) de saída(s) gerada(s) automaticamente pelo sistema para o controle de estoque.</li>
+<li>Para registro com situação “Distribuído” as opções “Estornar” e “Detalhar”, “Copiar” e “Estornar e copiar”; </li>
+<li>Para registro com situação “Estornada” a opção “Detalhar” e “Copiar”. </li>
 </ul>
 </li>
-<li>Para registro com situação “Estornada” a opção “Detalhar”. </li>
-</ul>
-</li>
-<li>As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta; <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a> </li>
-<li>Quando o usuário acionar a opção “Novo”, o sistema deve direcionar para a tela de cadastro de uma nova Saída; <a href="../ETE024/">ETE024</a> </li>
+<li>As grids com resultados de consultas devem permitir a ordenação por coluna, paginação, seleção de registro por página e filtrar o resultado da consulta. <a href="../DocumentoDeRegrasv2/#rgn004">RGN004</a>;</li>
+<li>Quando o usuário acionar a opção “Novo”, o sistema deve direcionar para a tela de cadastro de uma nova Saída. <a href="../ETE024/">ETE024</a>; </li>
 <li>Quando o usuário acionar a opção “Limpar”, o sistema deve limpar o(s) filtro(s) informado(s), o resultado consulta e permanecer na tela de consultar Saída;  </li>
 <li>Quando o usuário acionar a opção “Voltar”, o sistema deve retornar para a tela inicial do sistema (dashboard); </li>
 <li>Quando o usuário acionar a opção “Editar”, o sistema deve direcionar para a tela de edição de uma Saída; <a href="../ETE025/">ETE025</a> </li>
-<li>Quando o usuário acionar a opção “Excluir”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve excluir o registro da Saída e seus descendentes e deixar de apresentá-lo no resultado da consulta. Caso a ação não seja confirmada, o sistema permanece na tela de consulta. A exclusão física somente será possível para saída(s) com situação “Em preenchimento”; <a href="../DocumentoDeMensagensv2/#msg010">MSG010</a> <a href="../DocumentoDeMensagensv2/#msg046">MSG046</a> <a href="../DocumentoDeRegrasv2/#rgn016">RGN016</a> </li>
-<li>Quando o usuário acionar a opção “Estornar”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema estorna a Saída do(s) produto(s), altera a situação da Saída para “Estornada” e credita o(s) produto(s) no estoque do estabelecimento da Saída estornada, considerando lote, validade e programa de saúde, através da criação de um registro de entrada. Caso a ação não seja confirmada, o sistema permanecerá na tela de consulta; <a href="../DocumentoDeMensagensv2/#msg016">MSG016</a> <a href="./#prototipo-002">Protótipo 002</a> </li>
-<li>Quando o usuário acionar a opção “Detalhar”, o sistema deve direcionar para a tela de detalhamento dos dados da Saída; <a href="../ETE026/">ETE026</a></li>
-</ol>
-<h2 id="prototipo-002">Protótipo 002</h2>
-<p><img alt="alt text" src="../../imagens/ete-023-prot-002.png" /></p>
-<h3 id="elementos-de-tela_1">Elementos de Tela</h3>
-<ul>
-<li>Título da página – “Informações sobre o Estorno da Saída” </li>
-<li>Nº da Saída – N (36) </li>
-<li>Tipo de Saída – A (50) </li>
-<li>Data da Saída – D (DD/MM/AAAA) </li>
-<li>Valor Total Saída – N (13,9) (R$ 99999999999999,999999999) </li>
-<li>“Justificativa” * – A (250) </li>
-<li>“Estornar” – BT  </li>
-<li>“Sair” – BT  </li>
-</ul>
-<p><strong>Legenda</strong><br />
-TIPO: A = Alfanumérico, N = Numérico, D = Data, M = Imagem, BT = Botão, LK = Link, SU = Seleção Única, SM = Seleção Múltipla, AC = Autocomplete, * = Obrigatório.</p>
-<h3 id="criterios-de-aceite_1">Critérios de Aceite</h3>
-<ol>
-<li>O acesso à funcionalidade é dado através do menu lateral no item “Movimentação”, subitem “Saída”, na tela “Consultar Saídas” quando acionar a opção “Estornar”; </li>
-<li>O sistema deve recuperar e apresentar os dados da saída, com os dados:  Nº da Saída, Tipo de Saída, Data da Saída, Valor Total Saída e o campo para inclusão da justificativa; </li>
-<li>Quando o usuário acionar a opção “Estornar”, o sistema estorna a Saída do(s) produto(s), mantém o estado do registro como “Ativo”, altera a situação da Saída para “Estornada” e credita o(s) produto(s) no estoque do estabelecimento da Saída estornada, considerando lote, validade e programa de saúde, através da criação de um registro de entrada. <a href="../DocumentoDeMensagensv2/#msg047">MSG047</a> <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
-<li>Ao realizar o estorno da Saída do(s) produto(s), o sistema deve: <ul>
-<li>Creditar o(s) produto(s) no estoque do estabelecimento da saída estornada, através da criação de um registro de entrada, gravando as seguintes informações: </li>
-<li>Modalidade de Licitação = “Saída”;  </li>
-<li>Tipo de Movimentação = “Entrada por Estorno de Saída”;  </li>
-<li>Fornecedor = CNES ou CNPJ do estabelecimento que realizou saída;  </li>
-<li>Tipo de Documento = “Estorno de Saída”;  </li>
-<li>Número do Documento = Número da saída que foi estornada; </li>
-<li>No detalhamento do produto:  <ul>
-<li>Princípio ativo ou Descrição do produto </li>
-<li>Concentração + Forma farmacêutica (se for medicamento) </li>
-<li>CATMAT </li>
-<li>Fabricante </li>
-<li>Lote </li>
-<li>Validade </li>
-<li>Valor Unitário </li>
-<li>Quantidade  </li>
-</ul>
-</li>
-<li>Estado do registro de entrada como “Ativo”; </li>
-<li>Situação do registro de entrada como “Armazenada”; </li>
-<li>Manter o estado do registro da Saída como “Ativo”; </li>
-<li>Alterar a situação do registro da Saída para “Estornada”. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a> <a href="../DocumentoDeRegrasv2/#rgn032">RGN032</a></li>
-</ul>
-</li>
-<li>O sistema, identificando que uma Saída de produto(s) foi estornada, deve creditar a quantidade no saldo deste(s), considerando o lote, validade e programa de saúde e atualizar a posição de estoque do estabelecimento que realizou o estorno da Saída; <a href="../DocumentoDeRegrasv2/#rgn033">RGN033</a></li>
-<li>Quando usuário acionar a opção “Sair”, o sistema retorna à tela de consulta; </li>
-<li>O sistema deve gravar a data, hora e CPF e nome do usuário que a executou qualquer ação de alteração na situação do registro. <a href="../DocumentoDeRegrasv2/#rgn005">RGN005</a></li>
+<li>Quando o usuário acionar a opção “Excluir”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema deve excluir o registro da Saída e seus descendentes e deixar de apresentá-lo no resultado da consulta. Caso a ação não seja confirmada, o sistema permanece na tela de consulta. A exclusão física somente será possível para saída(s) com situação “Em preenchimento”. <a href="../DocumentoDeMensagensv2/#msg010">MSG010</a> <a href="../DocumentoDeMensagensv2/#msg046">MSG046</a> <a href="../DocumentoDeRegrasv2/#rgn016">RGN016</a>; </li>
+<li>Quando o usuário acionar a opção “Estornar”, o sistema deve apresentar a mensagem de confirmação ao usuário. Caso o usuário confirme a ação, o sistema estorna a Saída do(s) produto(s), altera a situação da Saída para “Estornada” e credita o(s) produto(s) no estoque do estabelecimento da Saída estornada, considerando lote, validade e programa de saúde, através da criação de um registro de entrada. Caso a ação não seja confirmada, o sistema permanecerá na tela de consulta. <a href="../DocumentoDeMensagensv2/#msg016">MSG016</a> <a href="./#prototipo-002">Protótipo 002</a>;</li>
+<li>Quando o usuário acionar a opção “Detalhar”, o sistema deve direcionar para a tela de detalhamento dos dados da Saída. <a href="../ETE026/">ETE026</a>.</li>
 </ol>
               
             </div>

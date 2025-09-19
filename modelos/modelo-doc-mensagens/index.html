@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>HU001 - Cadastro e Login - e-SUS AF - Documentação Negocial</title>
+    <title>Mensagens - e-SUS AF - Documentação Negocial</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "HU001 - Cadastro e Login";
-        var mkdocs_page_input_path = "HistoriasDeUsuario/HU001.md";
+        var mkdocs_page_name = "Mensagens";
+        var mkdocs_page_input_path = "modelos/modelo-doc-mensagens.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -44,7 +44,7 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Especificações Técnicas</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeMensagensv2/">Documento de Mensagens</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../EspecificacoesTecnicas/DocumentoDeRegrasv2/">Documento de Regras</a>
@@ -139,27 +139,53 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../EspecificacoesTecnicas/ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Modelos</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Mensagens</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#tabela-de-mensagens">Tabela de Mensagens</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#catalogo-de-mensagens">Catálogo de Mensagens</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#msg-001-cnes-ou-cnpj-invalido">MSG-001 — CNES ou CNPJ inválido</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#msg-002-data-do-documento-nao-pode-ser-maior-que-a-atual">MSG-002 — Data do documento não pode ser maior que a atual</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#msg-003-ja-existe-uma-entrada-com-este-documento-e-fornecedor">MSG-003 — Já existe uma entrada com este documento e fornecedor</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#msg-004-cpf-invalido">MSG-004 — CPF Inválido</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -178,7 +204,9 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">HU001 - Cadastro e Login</li>
+          <li class="breadcrumb-item">Especificações Técnicas</li>
+          <li class="breadcrumb-item">Modelos</li>
+      <li class="breadcrumb-item active">Mensagens</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -187,262 +215,74 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="hu001-cadastro-e-login">HU001 - Cadastro e Login</h1>
-<h2 id="descricao">Descrição</h2>
-<p>Como usuário, desejo realizar o cadastro / login na aplicação, de modo a ter acesso a recursos exclusivos.</p>
-<h2 id="regras">Regras</h2>
-<ul>
-<li>Ao tentar realizar o cadastro o sistema deverá verificar se o CPF já existe na base  </li>
-<li>Após preencher o campo CEP, o sistema deverá preencher os demais campos do formulário de endereço automaticaAo com base noa dados oriundos dos Correios </li>
-<li>Após finalizar o cadastro, o sistema deve enviar um e-mail de confirmação para o usuário; </li>
-<li>O usuário, após confirmar o cadastro por e-mail, deverá conseguir realizar login usando suas credenciais; </li>
-<li>A senha do usuário deverá ter: <ul>
-<li>Mínimo de 8 caracteres </li>
-<li>Máximo de 30 caracteres </li>
-<li>Letras maiúsculas: pelo menos uma </li>
-<li>Letras minúsculas: pelo menos uma </li>
-<li>Número: pelo menos um </li>
-<li>Caracteres especiais: pelo menos um </li>
-</ul>
-</li>
-</ul>
-<h2 id="criterios-de-aceite">Critérios de aceite</h2>
-<p><strong>Cenário: Realizar novo cadastro</strong><br />
-<strong>Dado</strong> que o usuário esteja na tela de realizar novo cadastro<br />
-<strong>Quando</strong> ele preencher o formulário de cadastro com seus dados<br />
-<strong>Então</strong> enviar um e-mail de validação de cadastro para ele  </p>
-<p><strong>Cenário: Tentativa de cadastro de usuário já existente</strong><br />
-<strong>Dado</strong> que o usuário preencha o formulário na tela de realizar cadastro<br />
-<strong>Quando</strong> ele clicar no botão de se cadastrar<br />
-<strong>E</strong> o usuário já existir na base<br />
-<strong>Então</strong> apresentar uma mensagem de erro</p>
-<p><strong>Cenário: Realizar login com credenciais válidas</strong><br />
-<strong>Dado</strong> que o usuário esteja na tela inicial<br />
-<strong>Quando</strong> ele preencher os campos<br />
-<strong>E</strong> suas credenciais forem válidas<br />
-<strong>Então</strong> realizar login do usuário  </p>
-<p><strong>Cenário: Realizar login com credenciais inválidas</strong><br />
-<strong>Dado</strong> que o usuário esteja na tela inicial<br />
-<strong>Quando</strong> ele preencher os campos<br />
-<strong>E</strong> suas credenciais forem inválidas<br />
-<strong>Então</strong> apresentar mensagem de erro de credenciais inválidas  </p>
-<p><strong>Cenário: Redefinir senha de usuário existente</strong><br />
-<strong>Dado</strong> que o usuário preencha o formulário de redefinir senha<br />
-<strong>E</strong> esteja cadastrado na base<br />
-<strong>Quando</strong> ele clicar no link de redefinir senha no e-mail enviado à ele<br />
-<strong>Então</strong> apresentar formulário para criação de nova senha respeitando as regras de senha da aplicação  </p>
-<p><strong>Cenário: Redefinir senha de usuário inexistente</strong><br />
-<strong>Dado</strong> que o usuário esteja na tela de redefinir senha<br />
-<strong>Quando</strong> ele preencher o formulário<br />
-<strong>E</strong> o usuário não estiver cadastrado na base<br />
-<strong>Então</strong> apresentar uma mensagem de usuario inexistente</p>
-<h2 id="definicao-de-pronto">Definição de pronto</h2>
-<ul>
-<li>A funcionalidade deve estar completa e funcional.  </li>
-<li>Todos os critérios de aceite devem ser atendidos.  </li>
-<li>A história deve ter sido testada e validada.  </li>
-<li>A documentação da história deve estar completa.  </li>
-</ul>
-<h2 id="modelo-de-dados">Modelo de dados</h2>
+                <h1 id="documento-de-mensagens">Documento de Mensagens</h1>
+<h2 id="tabela-de-mensagens">Tabela de Mensagens</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Nível</th>
-<th>Atributo</th>
-<th>Descrição</th>
-<th style="text-align: center;">Cardinalidade</th>
-<th style="text-align: center;">Tipo de Dados</th>
-<th style="text-align: center;">Tamanho</th>
-<th style="text-align: center;">Formato</th>
-<th style="text-align: center;">Obrigatoriedade</th>
+<th>ID</th>
+<th>Tipo</th>
+<th>Contexto</th>
+<th>Texto</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"></td>
-<td>Identificação do usuário</td>
-<td></td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">sim</td>
+<td>MSG-001</td>
+<td>Erro</td>
+<td>Consulta de fornecedor</td>
+<td>"CNES ou CNPJ inválido."</td>
 </tr>
 <tr>
-<td style="text-align: center;">1</td>
-<td>Foto</td>
-<td>Foto de usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">não</td>
+<td>MSG-002</td>
+<td>Alerta</td>
+<td>Validação de campo Data Documento</td>
+<td>"Data do documento não pode ser maior que a atual."</td>
 </tr>
 <tr>
-<td style="text-align: center;">1</td>
-<td>CNS</td>
-<td>Número do cartão nacional de saúde do usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">texto</td>
-<td style="text-align: center;">15</td>
-<td style="text-align: center;">XXXX XXXX XXXX XXX</td>
-<td style="text-align: center;">não</td>
-</tr>
-<tr>
-<td style="text-align: center;">1</td>
-<td>CPF</td>
-<td>Número do CPF do usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">texto</td>
-<td style="text-align: center;">11</td>
-<td style="text-align: center;">XXX.XXX.XXX-XX</td>
-<td style="text-align: center;">sim</td>
-</tr>
-<tr>
-<td style="text-align: center;">1</td>
-<td>Nome</td>
-<td>Nome do usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">texto</td>
-<td style="text-align: center;">80</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">sim</td>
-</tr>
-<tr>
-<td style="text-align: center;">1</td>
-<td>E-mail</td>
-<td>E-mail do usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">texto</td>
-<td style="text-align: center;">80</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">sim</td>
-</tr>
-<tr>
-<td style="text-align: center;">1</td>
-<td>Celular</td>
-<td>Número de celular do usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">texto</td>
-<td style="text-align: center;">11</td>
-<td style="text-align: center;">(XX) XXXXX-XXXX</td>
-<td style="text-align: center;">sim</td>
-</tr>
-<tr>
-<td style="text-align: center;">1</td>
-<td>Senha</td>
-<td>Senha do usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">Texto</td>
-<td style="text-align: center;">30</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">sim</td>
-</tr>
-<tr>
-<td style="text-align: center;"></td>
-<td>Endereço</td>
-<td></td>
-<td style="text-align: center;">1..N</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">sim</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td>Tipo de endereço</td>
-<td>Tipo de endereço (Residencial, Comercial, Profissional, Outro)</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">texto</td>
-<td style="text-align: center;">15</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">sim</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td>CEP</td>
-<td>CEP do endereço do usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">texto</td>
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">XX.XXX-XXX</td>
-<td style="text-align: center;">sim</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td>UF</td>
-<td>UF do usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">texto</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">XX</td>
-<td style="text-align: center;">sim</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td>Município</td>
-<td>Município do usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">texto</td>
-<td style="text-align: center;">60</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">sim</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td>Endereço/Logradouro</td>
-<td>Endereço do usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">texto</td>
-<td style="text-align: center;">250</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">sim</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td>Bairro</td>
-<td>Bairro do usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">texto</td>
-<td style="text-align: center;">120</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">sim</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td>Complemento</td>
-<td>Complemento do endereço do usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">texto</td>
-<td style="text-align: center;">120</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">sim</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td>Número</td>
-<td>Número do endereço do usuário</td>
-<td style="text-align: center;">1..1</td>
-<td style="text-align: center;">texto</td>
-<td style="text-align: center;">10</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">sim</td>
+<td>MSG-003</td>
+<td>Alerta</td>
+<td>Salvar cadastro de entrada</td>
+<td>"Já existe uma entrada com este documento e fornecedor."</td>
 </tr>
 </tbody>
 </table>
-<h2 id="design-conceitual">Design Conceitual</h2>
-<p><img alt="alt text" src="../imagens/01-tela-de-login.png" /></p>
-<p><img alt="alt text" src="../imagens/02-tela-de-cadastro.png" /></p>
-<p><img alt="alt text" src="../imagens/03-confirmacao-de-cadastro.png" /></p>
-<p><img alt="alt text" src="../imagens/04-dados-do-usuario-apos-cadastro.png" /></p>
-<p><img alt="alt text" src="../imagens/05-mensagem-email-redefinir-senha.png" /></p>
-<p><img alt="alt text" src="../imagens/06-tela-de-redefinir-senha.png" /></p>
-<p><img alt="alt text" src="../imagens/07-mensagem-de-confirmar-redefinir-senha.png" /></p>
-<p><img alt="alt text" src="../imagens/08-tela-esqueceu-senha.png" /></p>
-<p><img alt="alt text" src="../imagens/09-mensagem-de-confirmacao-redefinir-senha.png" /></p>
+<hr />
+<h2 id="catalogo-de-mensagens">Catálogo de Mensagens</h2>
+<h3 id="msg-001-cnes-ou-cnpj-invalido">MSG-001 — CNES ou CNPJ inválido</h3>
+<ul>
+<li><strong>Tipo:</strong> Erro  </li>
+<li><strong>Contexto:</strong> Consulta de fornecedor  </li>
+<li><strong>Texto:</strong> "CNES ou CNPJ inválido."  </li>
+</ul>
+<hr />
+<h3 id="msg-002-data-do-documento-nao-pode-ser-maior-que-a-atual">MSG-002 — Data do documento não pode ser maior que a atual</h3>
+<ul>
+<li><strong>Tipo:</strong> Alerta  </li>
+<li><strong>Contexto:</strong> Validação de campo Data Documento  </li>
+<li><strong>Texto:</strong> "Data do documento não pode ser maior que a atual."  </li>
+</ul>
+<hr />
+<h3 id="msg-003-ja-existe-uma-entrada-com-este-documento-e-fornecedor">MSG-003 — Já existe uma entrada com este documento e fornecedor</h3>
+<ul>
+<li><strong>Tipo:</strong> Alerta  </li>
+<li><strong>Contexto:</strong> Salvar cadastro de entrada  </li>
+<li><strong>Texto:</strong> "Já existe uma entrada com este documento e fornecedor."  </li>
+</ul>
+<hr />
+<h3 id="msg-004-cpf-invalido">MSG-004 — CPF Inválido</h3>
+<ul>
+<li><strong>Tipo:</strong> Erro  </li>
+<li><strong>Contexto:</strong> Salvar dados de usuário  </li>
+<li><strong>Texto:</strong> "CPF inválido."</li>
+</ul>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../modelo-doc-historias/" class="btn btn-neutral float-left" title="Histórias"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../modelo-doc-regras/" class="btn btn-neutral float-right" title="Regras">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -464,6 +304,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="../modelo-doc-historias/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../modelo-doc-regras/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

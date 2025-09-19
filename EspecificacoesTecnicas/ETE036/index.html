@@ -124,10 +124,10 @@
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+        </ul>
     </li>
     </ul>
                 </li>
@@ -147,27 +147,37 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -197,104 +207,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="ete033-atualizar-dados-cadastrais-de-integracao-barramento-af">ETE033 - Atualizar Dados Cadastrais de Integração Barramento AF</h1>
+                <h1 id="ete036-atualizar-dados-cadastrais-de-integracao-barramento-af">ETE036 - Atualizar Dados Cadastrais de Integração Barramento AF</h1>
 <p>Como administrador quero ser capaz de editar os dados cadastrais referentes a integração com o Barramento Integrado da Assistência Farmacêutica para que seja possível o atualizar dados de contato.</p>
 <h2 id="descricao">Descrição</h2>
 <p>O Barramento Integrado da Assistência Farmacêutica (BIAF) detém um conjunto de bases de dados de domínio público de forma a garantir a atualização e o acesso a informações de múltiplas origens num único ponto.<br />
 O BIAF garante a atualização das bases locais a partir de uma coleção de dados compartilhados por meio de API, que compreendem CNES, CNPJ e OBM (Até o momento).<br />
 Para acessar a API, o administrador precisa fazer um cadastro previamente que lhe garantirá as credenciais necessárias para o acesso ao mesmo.</p>
-<h2 id="elementos-de-tela">Elementos de Tela</h2>
-<table>
-<thead>
-<tr>
-<th><strong>Campo</strong></th>
-<th><strong>Sugestão Tipo de Entrada</strong></th>
-<th><strong>Descrição</strong></th>
-<th><strong>Obrigatório</strong></th>
-<th><strong>Observações</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Tipo de Instância</strong></td>
-<td><code>Dropdown</code></td>
-<td>Seleciona o tipo da instância: Estadual (E), Municipal (M), Consórcio (C), Entidade/Instituição (I), Federal (F).</td>
-<td>Sim</td>
-<td>Valores fixos.</td>
-</tr>
-<tr>
-<td><strong>UF</strong></td>
-<td><code>Dropdown</code></td>
-<td>Seleciona a Unidade Federativa (UF) associada.</td>
-<td>Não</td>
-<td>Preenchido a partir da tabela <strong>TB_UF</strong>.</td>
-</tr>
-<tr>
-<td><strong>Município</strong></td>
-<td><code>Dropdown</code></td>
-<td>Seleciona o município associado.</td>
-<td>Não</td>
-<td>Preenchido com base na tabela <strong>TB_MUNICIPIO</strong>.</td>
-</tr>
-<tr>
-<td><strong>Código CNES</strong></td>
-<td><code>Texto</code></td>
-<td>Insere o código CNES do estabelecimento associado.</td>
-<td>Não</td>
-<td>Relacionado à tabela <strong>TB_CNES</strong>.</td>
-</tr>
-<tr>
-<td><strong>Pessoa Jurídica</strong></td>
-<td><code>Texto</code></td>
-<td>Insere o código da Pessoa Jurídica associada.</td>
-<td>Não</td>
-<td>Relacionado à tabela <strong>TB_PESSOA_JURIDICA</strong>.</td>
-</tr>
-<tr>
-<td><strong>Nome do Responsável</strong></td>
-<td><code>Texto</code></td>
-<td>Insere o nome do responsável pela instância.</td>
-<td>Sim</td>
-<td>Máximo de 120 caracteres.</td>
-</tr>
-<tr>
-<td><strong>E-mail</strong></td>
-<td><code>Texto (e-mail)</code></td>
-<td>Insere o endereço de e-mail do responsável.</td>
-<td>Sim</td>
-<td>Deve ser validado como um e-mail válido.</td>
-</tr>
-<tr>
-<td><strong>Telefone</strong></td>
-<td><code>Texto</code></td>
-<td>Insere o número de telefone do responsável.</td>
-<td>Não</td>
-<td>Deve conter no máximo 11 dígitos.</td>
-</tr>
-<tr>
-<td><strong>Data de Inclusão</strong></td>
-<td><code>Texto (somente leitura)</code></td>
-<td>Exibe a data em que o registro foi incluído.</td>
-<td>Não</td>
-<td>Preenchido automaticamente pelo sistema.</td>
-</tr>
-<tr>
-<td><strong>Data de Alteração</strong></td>
-<td><code>Texto (somente leitura)</code></td>
-<td>Exibe a data em que o registro foi alterado pela última vez.</td>
-<td>Não</td>
-<td>Preenchido automaticamente pelo sistema.</td>
-</tr>
-<tr>
-<td><strong>Ativo</strong></td>
-<td><code>Checkbox</code></td>
-<td>Indica se o registro está ativo (Sim/Não).</td>
-<td>Sim</td>
-<td>Padrão: <strong>Sim</strong>.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
+<h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
 <li>A edição de dados cadastrais deverá se restringir aos dados relacionados ao responsável pela integração (nome do responsável, e-mail e telefone).</li>
 </ol>

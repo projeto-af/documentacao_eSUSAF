@@ -129,7 +129,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#implementacao">Implementação</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+<li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#modelo-de-dados">Modelo de Dados</a>
 </li>
@@ -151,27 +151,37 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+</li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal">Para Validação</a>
+<li class="toctree-l1"><a class="reference internal">Modelos</a>
 <ul>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+<li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+<li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+<li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+<li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
 </li>
 </ul>
 </li>
@@ -326,16 +336,16 @@ O presente documento tem como objetivo detalhar os requisitos necessários para 
     B --&gt;|Alteração de programa de saúde| C[Programa de Saúde B]
     C --&gt;|Alteração de condições de armazenamento| D[Condições de Armazenamento B]
 </div>
-<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
-<ul>
-<li>O sistema deve permitir a movimentação de itens entre localizações físicas.</li>
-<li>O sistema deve permitir a alteração de Programa de Saúde e Condições de Armazenamento de um item.</li>
-<li>A quantidade transferida não deve ser supeior a quantidade disponível em estoque.</li>
-<li>A quantidade disponível em uma localização não pode ser negativa.</li>
-<li>A mudanção de programa de saúde pode ocorrer para todos os itens em uma localização física ou apenas para uma parte.</li>
-<li>A mudança de condições de armazenamento pode ocorrer para todos os itens em uma localização física ou apenas para uma parte.</li>
+<h2 id="criterios-de-aceite">Critérios de Aceite</h2>
+<ol>
+<li>O sistema deve permitir a movimentação de itens entre localizações físicas;</li>
+<li>O sistema deve permitir a alteração de Programa de Saúde e Condições de Armazenamento de um item;</li>
+<li>A quantidade transferida não deve ser supeior a quantidade disponível em estoque;</li>
+<li>A quantidade disponível em uma localização não pode ser negativa;</li>
+<li>A mudanção de programa de saúde pode ocorrer para todos os itens em uma localização física ou apenas para uma parte;</li>
+<li>A mudança de condições de armazenamento pode ocorrer para todos os itens em uma localização física ou apenas para uma parte</li>
 <li>è possível movimentar um item entre localizações, alterar o programa de saúde e as condições de armazenamento simultaneamente.</li>
-</ul>
+</ol>
 <h2 id="modelo-de-dados">Modelo de Dados</h2>
 <p>Por tratar-se apenas de operações de estoque, não se aplica.</p>
 <h2 id="elementos-de-interface">Elementos de Interface</h2>

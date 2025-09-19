@@ -142,10 +142,10 @@
     <li class="toctree-l3"><a class="reference internal" href="#historico-de-revisoes">Histórico de Revisões</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#historia-de-usuario">História de Usuário</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+        </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#modelo-de-dados">Modelo de Dados</a>
     </li>
@@ -153,27 +153,37 @@
     </li>
     </ul>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -260,39 +270,14 @@
 <h2 id="historia-de-usuario">História de Usuário</h2>
 <p>Como usuário gostaria de configurar os parâmetros necessários à integração com o PDQ do Cartão Nacional de Saúde para que seja
 possível obter os dados de usuários SUS atendidos no contexto do e-SUS AF.</p>
-<h2 id="elementos-de-tela">Elementos de Tela</h2>
-<table>
-<thead>
-<tr>
-<th><strong>Elemento</strong></th>
-<th><strong>Descrição</strong></th>
-<th><strong>Tipo Elemento</strong></th>
-<th><strong>Observações</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Username</td>
-<td>Credencial de acesso ao serviço do CNS</td>
-<td>Textfield</td>
-<td></td>
-</tr>
-<tr>
-<td>Password</td>
-<td>Senha de acesso ao serviço do CNS</td>
-<td>Textfield</td>
-<td>Campo deve estar mascarado</td>
-</tr>
-</tbody>
-</table>
-<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
-<ul>
-<li>A aplicação deve ser capaz de guardar dados de usuário e senha para acesso ao CNS</li>
-<li>A senha não deverá estar vísivel em texto claro para a aplicação.</li>
-<li>A senha de acesso ao serviço do CNS deverá ser armazenada em banco de dados devidamente criptografada.</li>
-<li>Apenas operadores com o perfil Administrador poderão configurar um acesso para o Cartão Nacional de Saúde.</li>
+<h3 id="criterios-de-aceite">Critérios de Aceite</h3>
+<ol>
+<li>A aplicação deve ser capaz de guardar dados de usuário e senha para acesso ao CNS;</li>
+<li>A senha não deverá estar vísivel em texto claro para a aplicação;</li>
+<li>A senha de acesso ao serviço do CNS deverá ser armazenada em banco de dados devidamente criptografada;</li>
+<li>Apenas operadores com o perfil Administrador poderão configurar um acesso para o Cartão Nacional de Saúde;</li>
 <li>Todo e qualquer usuário que tenha como permissão o cadastro de usuário SUS poderá usar a integração ao CNS, o acesso ao conjunto de dados no WS do CNS seguirá regras estabelecidas pelo serviço.</li>
-</ul>
+</ol>
 <h2 id="modelo-de-dados">Modelo de Dados</h2>
 <p>Deverá ser utilizada a tabela de configuração trazendo os dados conforme segue:</p>
 <table>
@@ -326,7 +311,7 @@ possível obter os dados de usuários SUS atendidos no contexto do e-SUS AF.</p>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../ETE043/" class="btn btn-neutral float-left" title="ETE043 - Visualizar transmissão federal"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../validacao/ETE-gerenciar-perfil/" class="btn btn-neutral float-right" title="ETE - Gerenciar Perfil">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ETE045/" class="btn btn-neutral float-right" title="ETE045 - Consultar Dispensação">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -352,7 +337,7 @@ possível obter os dados de usuários SUS atendidos no contexto do e-SUS AF.</p>
       <span><a href="../ETE043/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../validacao/ETE-gerenciar-perfil/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../ETE045/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -120,16 +120,14 @@
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">ETE034 - Configurar Integração Barramento AF</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#descricao">Descrição</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#elementos-de-tela">Elementos de Tela</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#tela-1-incluindo-a-url-no-borramento">Tela 1: Incluindo a URL no borramento</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#tela-2-cadastro-da-aplicacao-no-barramento">Tela 2: Cadastro da aplicação no Barramento</a>
     </li>
-        </ul>
+    <li class="toctree-l4"><a class="reference internal" href="#criterios-de-aceite">Critérios de Aceite</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+        </ul>
     </li>
     </ul>
                 </li>
@@ -153,27 +151,37 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../ETE044/">ETE044 - Gestão de integração Cartão Nacional de Saúde</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE045/">ETE045 - Consultar Dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE046/">ETE046 - Detalhar dispensação</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE047/">ETE047 - Detalhar Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE048/">ETE048 - Detalhar Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE049/">ETE049 - Emitir Relatório de Dispensação/Fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE050/">ETE050 - Emitir Relatório de Movimentações</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE051/">ETE051 - Estornar Saída</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE052/">ETE052 - Gerenciar Perfil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE053/">ETE053 - Cadastrar dispensação/fornecimento</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ETE054/">ETE054 - Estornar dispensação</a>
+                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Para Validação</a>
+                  <li class="toctree-l1"><a class="reference internal" >Modelos</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE-gerenciar-perfil/">ETE - Gerenciar Perfil</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-dominios/">Dominios</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE005/">ETE005 - Atribuir Permissão de Acesso</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-historias/">Histórias</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE014/">ETE014 - Adicionar um ente / instituição ao e-SUS AF</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-mensagens/">Mensagens</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete023/">ETE023 - Consultar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete024/">ETE024 - Cadastrar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete025/">ETE025 - Editar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete026/">ETE026 - Detalhar Saídas</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ete029/">ETE029 - Estornar Saída</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../validacao/ETE041_dev/">ETE040 - Cadastro de Entes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../modelos/modelo-doc-regras/">Regras</a>
                 </li>
     </ul>
                   </li>
@@ -203,13 +211,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="ete033-configurar-integracao-barramento-af">ETE033 - Configurar Integração Barramento AF</h1>
+                <h1 id="ete034-configurar-integracao-barramento-af">ETE034 - Configurar Integração Barramento AF</h1>
 <p>Como administrador quero ser capaz de configurar a integração com o Barramento Integrado da Assistência Farmacêutica para que seja possível o acesso às bases de dados compartilhadas.</p>
 <h2 id="descricao">Descrição</h2>
 <p>O Barramento Integrado da Assistência Farmacêutica (BIAF) detém um conjunto de bases de dados de domínio público de forma a garantir a atualização e o acesso a informações de múltiplas origens num único ponto.<br />
 O BIAF garante a atualização das bases locais a partir de uma coleção de dados compartilhados por meio de API, que compreendem CNES, CNPJ e OBM (Até o momento).
 Para acessar a API, o administrador precisa fazer um cadastro previamente que lhe garantirá as credenciais necessárias para o acesso ao mesmo.</p>
-<h2 id="elementos-de-tela">Elementos de Tela</h2>
 <h3 id="tela-1-incluindo-a-url-no-borramento">Tela 1: Incluindo a URL no borramento</h3>
 <table>
 <thead>
@@ -322,18 +329,18 @@ Para acessar a API, o administrador precisa fazer um cadastro previamente que lh
 </tr>
 </tbody>
 </table>
-<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
+<h3 id="criterios-de-aceite">Critérios de Aceite</h3>
 <ol>
-<li>Informar a URL do barramento é condição sinequanom para que o usuário possa se cadastrar no barramento.</li>
-<li>A informação da URL deverá ser armazenada com chave "BARRAMENTO_URL" e valor contendo a URL informada.</li>
-<li>Uma chamada ao recurso "alive", deverá ser realizada ao barramento, a aplicação só seguirá para a etapa de cadastro caso o recurso retorne sucesso.</li>
-<li>Ao cadastrar uma instância de aplicação do e-SUS AF no Barramento Integrado da AF, poderão ser selecionados os tipos: Estadual (E), Municipal (M), Consórcio (C), Entidade/Instituição (I), Federal (F).</li>
-<li>Caso o tipo Federal ou Consórcio seja selecionado, será obrigatório informar um UF, Município e CNPJ.</li>
-<li>Caso o tipo Estadual seja selecionado, será obrigatório informar apenas a UF.</li>
-<li>Caso o tipo Municipal seja selecionado, será obrigatório informar apenas a UF e Município.</li>
-<li>Caso o tipo Instituição/Entidade seja selecionado, será obrigatório informar apenas a UF, Município e CNES.</li>
-<li>Os dados de nome, e-mail e telefone deverão ser informados obrigatoriamente.</li>
-<li>Uma vez logrando-se êxito no cadastro, a aplicação deverá retornar mensagem de sucesso ao usuário e deverá armazenar na tb_configuracao o clientId, mantido com a chave "BIAF_CLIENTID" e a APIKEY, criptografada com a chave ECC da aplicação, com a chave "BIAF_APIKEY".</li>
+<li>Informar a URL do barramento é condição sinequanom para que o usuário possa se cadastrar no barramento;</li>
+<li>A informação da URL deverá ser armazenada com chave "BARRAMENTO_URL" e valor contendo a URL informada;</li>
+<li>Uma chamada ao recurso "alive", deverá ser realizada ao barramento, a aplicação só seguirá para a etapa de cadastro caso o recurso retorne sucesso;</li>
+<li>Ao cadastrar uma instância de aplicação do e-SUS AF no Barramento Integrado da AF, poderão ser selecionados os tipos: Estadual (E), Municipal (M), Consórcio (C), Entidade/Instituição (I), Federal (F);</li>
+<li>Caso o tipo Federal ou Consórcio seja selecionado, será obrigatório informar um UF, Município e CNPJ;</li>
+<li>Caso o tipo Estadual seja selecionado, será obrigatório informar apenas a UF;</li>
+<li>Caso o tipo Municipal seja selecionado, será obrigatório informar apenas a UF e Município;</li>
+<li>Caso o tipo Instituição/Entidade seja selecionado, será obrigatório informar apenas a UF, Município e CNES;</li>
+<li>Os dados de nome, e-mail e telefone deverão ser informados obrigatoriamente;</li>
+<li>Uma vez logrando-se êxito no cadastro, a aplicação deverá retornar mensagem de sucesso ao usuário e deverá armazenar na tb_configuracao o clientId, mantido com a chave "BIAF_CLIENTID" e a APIKEY, criptografada com a chave ECC da aplicação, com a chave "BIAF_APIKEY";</li>
 <li>Em caso de insucesso no cadastro de integração ao Barramento, o e-SUS AF deverá apresentar mensagem de erro informando o motivo retornado no corpo da resposta http.</li>
 </ol>
               

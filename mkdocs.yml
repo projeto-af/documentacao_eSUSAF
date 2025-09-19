@@ -62,11 +62,6 @@ nav:
       - ETE052 - Gerenciar Perfil: EspecificacoesTecnicas/ETE052.md
       - ETE053 - Cadastrar dispensação/fornecimento: EspecificacoesTecnicas/ETE053.md
       - ETE054 - Estornar dispensação: EspecificacoesTecnicas/ETE054.md
-    - Modelos:
-      - Dominios : modelos/modelo-doc-dominios.md
-      - Histórias : modelos/modelo-doc-historias.md
-      - Mensagens : modelos/modelo-doc-mensagens.md
-      - Regras : modelos/modelo-doc-regras.md
 
 theme: readthedocs
 

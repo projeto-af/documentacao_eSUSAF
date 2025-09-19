@@ -52,26 +52,21 @@ nav:
       - ETE042 - Transmitir dados SI Bnafar: EspecificacoesTecnicas/ETE042.md
       - ETE043 - Visualizar transmissão federal: EspecificacoesTecnicas/ETE043.md
       - ETE044 - Gestão de integração Cartão Nacional de Saúde: EspecificacoesTecnicas/ETE044.md
-    - Para Validação:
-      - ETE - Gerenciar Perfil : validacao/ETE-gerenciar-perfil.md
-      - ETE005 - Atribuir Permissão de Acesso : validacao/ETE005.md
-      - ETE014 - Adicionar um ente / instituição ao e-SUS AF : validacao/ETE014.md
-      - ETE023 - Consultar Saídas : validacao/ete023.md
-      - ETE024 - Cadastrar Saídas : validacao/ete024.md
-      - ETE025 - Editar Saídas : validacao/ete025.md
-      - ETE026 - Detalhar Saídas : validacao/ete026.md
-      - ETE029 - Estornar Saída : validacao/ete029.md
-      - ETE040 - Cadastro de Entes : validacao/ETE041_dev.md
-
-
-#  - Histórias de Usuário:
-#    - HU001 - Cadastro e Login: HistoriasDeUsuario/HU001.md
-#    - HU004 - Solicitar Acesso: HistoriasDeUsuario/HU004.md
-#    - HU016 - Consultar Entrada: HistoriasDeUsuario/HU016.md
-#    - HU017 - Cadastrar Entrada: HistoriasDeUsuario/HU017.md
-#  - Casos de Teste:
-#    - CT004 - Solicitar Uma Permissão de acesso: CasosDeTeste/CT004.md
-  # - Sobre: sobre.md
+      - ETE045 - Consultar Dispensação: EspecificacoesTecnicas/ETE045.md
+      - ETE046 - Detalhar dispensação: EspecificacoesTecnicas/ETE046.md
+      - ETE047 - Detalhar Relatório de Dispensação/Fornecimento: EspecificacoesTecnicas/ETE047.md
+      - ETE048 - Detalhar Relatório de Movimentações: EspecificacoesTecnicas/ETE048.md
+      - ETE049 - Emitir Relatório de Dispensação/Fornecimento: EspecificacoesTecnicas/ETE049.md
+      - ETE050 - Emitir Relatório de Movimentações: EspecificacoesTecnicas/ETE050.md
+      - ETE051 - Estornar Saída: EspecificacoesTecnicas/ETE051.md
+      - ETE052 - Gerenciar Perfil: EspecificacoesTecnicas/ETE052.md
+      - ETE053 - Cadastrar dispensação/fornecimento: EspecificacoesTecnicas/ETE053.md
+      - ETE054 - Estornar dispensação: EspecificacoesTecnicas/ETE054.md
+    - Modelos:
+      - Dominios : modelos/modelo-doc-dominios.md
+      - Histórias : modelos/modelo-doc-historias.md
+      - Mensagens : modelos/modelo-doc-mensagens.md
+      - Regras : modelos/modelo-doc-regras.md
 
 theme: readthedocs
 
